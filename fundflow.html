@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>主力资金净流入榜 · 2026年09月16日</title>
+<style>/* ============================================================
+   A股主线与情绪复盘 — 白底·黑字·红涨配色
+   涨 = 红 ｜ 跌 = 灰（不使用绿色）
+   ============================================================ */
+
+:root{
+  /* 基础：白 */
+  --bg:#ffffff;
+  --bg2:#f6f6f6;
+  --card:#ffffff;
+  --card2:#f7f7f7;
+  --line:#e6e6e6;
+  --line2:#d4d4d4;
+
+  /* 文字：黑 / 灰阶 */
+  --txt:#141414;
+  --txt2:#5a5a5a;
+  --txt3:#8c8c8c;
+
+  /* 涨 = 红 */
+  --up:#e01515;
+  --up2:#ff3b3b;
+  --upbg:rgba(224,21,21,.07);
+
+  /* 跌 = 灰（去绿） */
+  --dn:#888888;
+  --dn2:#5f5f5f;
+  --dnbg:rgba(136,136,136,.10);
+
+  /* 强调 = 红 */
+  --acc:#e01515;
+  --acc2:#ff3b3b;
+  --accbg:rgba(224,21,21,.06);
+
+  /* 中性替代色（原蓝/紫/青统一归灰） */
+  --blue:#8c8c8c;
+  --purple:#8c8c8c;
+  --cyan:#8c8c8c;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased;
+  padding:0 0 60px;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ---------------- HEADER ---------------- */
+header{
+  background:linear-gradient(170deg,#ffffff 0%,#f4f4f4 65%);
+  border-bottom:1px solid var(--line);
+  padding:44px 0 36px; margin-bottom:34px;
+  position:relative; overflow:hidden;
+}
+header::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background:linear-gradient(180deg,var(--up),transparent);
+}
+header::after{
+  content:""; position:absolute; top:-140px; right:-100px;
+  width:420px; height:420px; border-radius:50%;
+  background:radial-gradient(circle,rgba(224,21,21,.06),transparent 70%);
+}
+.tag{
+  display:inline-block; font-size:11.5px; letter-spacing:2.5px;
+  color:var(--up); border:1px solid rgba(224,21,21,.40);
+  background:rgba(224,21,21,.05);
+  padding:4px 13px; border-radius:2px; margin-bottom:18px;
+  font-weight:600;
+}
+h1{font-size:32px;font-weight:800;letter-spacing:-.5px;line-height:1.38;margin-bottom:13px;color:var(--txt)}
+h1 .em{color:var(--up)}
+.sub{color:var(--txt2);font-size:13.5px}
+.sub b{color:var(--txt)}
+
+/* ---------------- KPI ---------------- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:26px 0 8px}
+.kpi{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:4px; padding:18px 16px; position:relative; overflow:hidden;
+}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--line2)}
+.kpi.up::before{background:var(--up)}
+.kpi.dn::before{background:var(--dn)}
+.kpi.ac::before{background:var(--acc)}
+.kpi.bl::before{background:var(--blue)}
+.kpi .lb{font-size:11.5px;color:var(--txt3);margin-bottom:8px;letter-spacing:.6px}
+.kpi .vl{font-size:27px;font-weight:800;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+.kpi .nt{font-size:11px;color:var(--txt3);margin-top:6px}
+
+/* 色彩工具类：涨红 跌灰 */
+.c-up{color:var(--up)}
+.c-dn{color:var(--dn)}
+.c-ac{color:var(--acc)}
+.c-bl{color:var(--blue)}
+.c-cy{color:var(--cyan)}
+.c-pu{color:var(--purple)}
+
+/* ---------------- VERDICT ---------------- */
+.verdict{
+  background:linear-gradient(135deg,rgba(224,21,21,.06),rgba(224,21,21,.015));
+  border:1px solid rgba(224,21,21,.28); border-left:3px solid var(--up);
+  border-radius:4px; padding:21px 23px; margin:26px 0;
+}
+.verdict .t{font-size:15.5px;font-weight:800;color:var(--up);margin-bottom:10px;letter-spacing:.3px}
+.verdict p{font-size:13.5px;color:var(--txt2)}
+.verdict p b{color:var(--txt)}
+
+/* ---------------- SECTION ---------------- */
+section{margin-bottom:42px}
+h2{font-size:20px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:10px;color:var(--txt)}
+h2 .n{
+  font-size:12px;font-weight:800;color:#fff;background:var(--up);
+  width:23px;height:23px;border-radius:3px;display:flex;
+  align-items:center;justify-content:center;flex:0 0 auto;
+}
+.h2sub{font-size:12.5px;color:var(--txt3);margin-bottom:20px;padding-left:33px}
+h3{font-size:15px;font-weight:700;margin:24px 0 12px;color:var(--txt)}
+h3::before{content:"";display:inline-block;width:3px;height:14px;background:var(--up);
+  border-radius:1px;margin-right:9px;vertical-align:-2px}
+
+p.body{font-size:13.5px;color:var(--txt2);margin-bottom:14px}
+p.body b{color:var(--txt)}
+p.body .up{color:var(--up);font-weight:700}
+p.body .dn{color:var(--dn);font-weight:700}
+
+/* ---------------- CARD ---------------- */
+.card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:4px;padding:20px;margin-bottom:14px;
+}
+.card.hl{border-color:rgba(224,21,21,.28);background:linear-gradient(135deg,rgba(224,21,21,.04),transparent 60%)}
+.card.hl2{border-color:var(--line2);background:linear-gradient(135deg,rgba(20,20,20,.02),transparent 60%)}
+.card .ct{font-size:13.5px;font-weight:700;margin-bottom:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--txt)}
+
+/* 徽标 */
+.badge{font-size:11px;padding:2.5px 8px;border-radius:2px;font-weight:700;letter-spacing:.3px}
+.bg-up{background:var(--upbg);color:var(--up);border:1px solid rgba(224,21,21,.34)}
+.bg-dn{background:var(--dnbg);color:var(--dn2);border:1px solid rgba(136,136,136,.30)}
+.bg-ac{background:var(--accbg);color:var(--up);border:1px solid rgba(224,21,21,.34)}
+.bg-bl{background:rgba(140,140,140,.12);color:var(--dn2);border:1px solid var(--line2)}
+.bg-gy{background:rgba(140,140,140,.10);color:var(--txt2);border:1px solid var(--line2)}
+
+/* ---------------- TABLE ---------------- */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{
+  text-align:left;font-size:11px;color:var(--txt3);font-weight:700;
+  padding:10px;border-bottom:1px solid var(--line2);white-space:nowrap;letter-spacing:.5px;
+}
+td{padding:10px;border-bottom:1px solid var(--line);color:var(--txt2);font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(20,20,20,.035)}
+td.nm{color:var(--txt);font-weight:600}
+td.num{text-align:right}
+th.num{text-align:right}
+.mono{font-variant-numeric:tabular-nums;font-weight:700}
+
+/* ---------------- 条形图 ---------------- */
+.bars{display:flex;flex-direction:column;gap:9px;margin:6px 0 4px}
+.bar-row{display:grid;grid-template-columns:104px 1fr 82px;gap:12px;align-items:center}
+.bar-lb{font-size:12.5px;color:var(--txt2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:22px;background:rgba(20,20,20,.045);border-radius:2px;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;position:relative;transition:width .8s cubic-bezier(.2,.8,.3,1)}
+.bar-fill.up{background:linear-gradient(90deg,rgba(224,21,21,.42),var(--up))}
+.bar-fill.dn{background:linear-gradient(90deg,rgba(136,136,136,.28),var(--dn))}
+.bar-fill.mix{background:linear-gradient(90deg,rgba(20,20,20,.10),rgba(20,20,20,.40))}
+.bar-vl{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+
+/* ---------------- 涨停梯队 ---------------- */
+.ladder{display:flex;flex-direction:column;gap:10px}
+.rung{display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:stretch}
+.rung-h{
+  background:linear-gradient(135deg,rgba(224,21,21,.12),rgba(224,21,21,.03));
+  border:1px solid rgba(224,21,21,.26); border-radius:3px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 4px;
+}
+.rung-h .n{font-size:22px;font-weight:900;color:var(--up);line-height:1}
+.rung-h .t{font-size:10.5px;color:var(--txt3);margin-top:3px}
+.rung-h.low{
+  background:linear-gradient(135deg,rgba(20,20,20,.04),rgba(20,20,20,.01));
+  border-color:rgba(20,20,20,.18);
+}
+.rung-h.low .n{color:var(--txt)}
+.rung-b{
+  background:var(--card2);border:1px solid var(--line);border-radius:3px;
+  padding:11px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+}
+.stk{
+  font-size:12px;padding:4px 10px;border-radius:2px;
+  background:rgba(224,21,21,.08);color:var(--up);
+  border:1px solid rgba(224,21,21,.20);white-space:nowrap;
+}
+.stk .s{color:var(--txt3);font-size:10.5px;margin-left:3px}
+.stk.g{background:rgba(20,20,20,.03);color:var(--txt2);border-color:var(--line2)}
+.stk.g .s{color:var(--txt3)}
+
+/* ---------------- 温度计 ---------------- */
+.gauge{margin:10px 0 20px}
+.gauge-track{
+  height:16px;border-radius:2px;position:relative;
+  /* 冷 → 热：浅灰 → 中灰 → 暗红 → 亮红 */
+  background:linear-gradient(90deg,#eaeaea 0%,#c9c9c9 22%,#a3a3a3 42%,#c0392b 62%,#e01515 82%,#ff3b3b 100%);
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.06);
+}
+.gauge-mark{
+  position:absolute;top:-6px;width:3px;height:28px;border-radius:1px;
+  background:var(--txt);box-shadow:0 0 8px rgba(20,20,20,.4);
+  transform:translateX(-50%);
+}
+.gauge-mark::after{
+  content:attr(data-lb);position:absolute;top:-25px;left:50%;transform:translateX(-50%);
+  font-size:11.5px;font-weight:800;background:var(--up);
+  padding:2px 8px;border-radius:2px;white-space:nowrap;color:#fff;
+}
+.gauge-scale{display:flex;justify-content:space-between;font-size:11px;color:var(--txt3);margin-top:9px}
+
+/* ---------------- 四指标 ---------------- */
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mbox{background:var(--card2);border:1px solid var(--line);border-radius:4px;padding:16px 13px;text-align:center}
+.mbox .mv{font-size:24px;font-weight:900;letter-spacing:-.5px;font-variant-numeric:tabular-nums;line-height:1.15}
+.mbox .ml{font-size:11px;color:var(--txt3);margin-top:7px;line-height:1.5}
+
+/* ---------------- 预警 / 支撑 ---------------- */
+.warn{
+  background:linear-gradient(135deg,rgba(224,21,21,.06),rgba(224,21,21,.01));
+  border:1px solid rgba(224,21,21,.26); border-left:3px solid var(--up);
+  border-radius:3px; padding:16px 18px; margin-bottom:12px;
+}
+.warn .wt{font-size:13.5px;font-weight:800;color:var(--up);margin-bottom:6px}
+.warn p{font-size:13px;color:var(--txt2)}
+.warn p b{color:var(--txt)}
+
+.ok{
+  background:linear-gradient(135deg,rgba(20,20,20,.025),transparent);
+  border:1px solid var(--line2); border-left:3px solid var(--txt);
+  border-radius:3px; padding:16px 18px; margin-bottom:12px;
+}
+.ok .wt{font-size:13.5px;font-weight:800;color:var(--txt);margin-bottom:6px}
+.ok p{font-size:13px;color:var(--txt2)}
+.ok p b{color:var(--txt)}
+
+/* ---------------- 清单 ---------------- */
+.ck{list-style:none;display:flex;flex-direction:column;gap:11px}
+.ck li{display:grid;grid-template-columns:24px 1fr;gap:11px;font-size:13.5px;
+  color:var(--txt2); align-items:start;list-style:none}
+.ck li .ic{
+  width:21px;height:21px;border-radius:2px;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:800;margin-top:1px;
+  border:1px solid var(--line2);background:rgba(20,20,20,.03);color:var(--txt2);
+}
+.ck li .ic.r{background:var(--upbg);color:var(--up);border-color:rgba(224,21,21,.38)}
+.ck li .ic.g{background:rgba(20,20,20,.05);color:var(--txt);border-color:rgba(20,20,20,.22)}
+.ck li .ic.a{background:rgba(20,20,20,.03);color:var(--txt2);border-color:var(--line2)}
+.ck li b{color:var(--txt)}
+
+/* ---------------- 图例 ---------------- */
+.legend{display:flex;flex-direction:column;gap:9px;font-size:12.5px;color:var(--txt2)}
+.legend div{display:flex;align-items:center;gap:8px}
+.dot{width:11px;height:11px;border-radius:2px;flex:0 0 auto}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+  border-top:1px solid var(--line);margin-top:46px;padding-top:22px;
+  font-size:12px;color:var(--txt3);line-height:1.85;
+}
+footer b{color:var(--txt2)}
+.disc{
+  background:rgba(20,20,20,.02);border:1px solid var(--line);
+  border-radius:3px;padding:15px 17px;margin-top:14px;font-size:11.5px;color:var(--txt3);
+}
+
+/* ---------------- 响应式 ---------------- */
+@media (max-width:760px){
+  h1{font-size:23px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .mgrid{grid-template-columns:repeat(2,1fr)}
+  .bar-row{grid-template-columns:78px 1fr 70px}
+  .rung{grid-template-columns:64px 1fr}
+  .wrap{padding:0 14px}
+  table{font-size:12px}
+  td,th{padding:8px 6px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="tag">资金 · 日更</span>
+    <h1>主力资金净流入榜 <span class="em">· 钱往哪去</span></h1>
+    <div class="sub">行业 / 概念 / 个股 主力净流入与净流出排行 ｜ <b>2026年09月16日</b></div>
+  </div>
+</header>
+<div class="wrap">
+
+  <div class="verdict">
+    <div class="t">今日资金焦点</div>
+    <p>今日主力资金最集中的行业为 <b class='c-up'>半导体</b>（净流入 44.61亿），概念方向最强 <b class='c-up'>半导体概念</b>（净流入 40.75亿）。个股侧，主力净流入榜首 <b>通鼎互联</b>（19.55亿），净流出榜首 <b>立讯精密</b>（-9.22亿）——资金净流入代表主动买入占比高，是观察「钱往哪去」的第一信号。</p>
+  </div>
+
+  <section>
+    <h2><span class="n">1</span>行业资金净流入 Top 12</h2>
+    <div class="h2sub">按主力净流入排序（单位：元）</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>行业</th><th class="num">当日</th><th class="num">主力净流入</th><th class="num">主力占比</th></tr></thead>
+        <tbody><tr><td class="nm">半导体</td><td class="num mono c-up">1.34%</td><td class="num mono c-up">44.61亿</td><td class="num mono c-up">2.33%</td></tr><tr><td class="nm">通信线缆及配套</td><td class="num mono c-dn">-0.66%</td><td class="num mono c-up">22.74亿</td><td class="num mono c-up">6.05%</td></tr><tr><td class="nm">半导体设备</td><td class="num mono c-up">2.86%</td><td class="num mono c-up">16.81亿</td><td class="num mono c-up">4.61%</td></tr><tr><td class="nm">玻纤制造</td><td class="num mono c-up">0.59%</td><td class="num mono c-up">16.08亿</td><td class="num mono c-up">4.90%</td></tr><tr><td class="nm">玻璃玻纤</td><td class="num mono c-dn">-0.95%</td><td class="num mono c-up">15.88亿</td><td class="num mono c-up">4.70%</td></tr><tr><td class="nm">建筑材料</td><td class="num mono c-dn">-1.89%</td><td class="num mono c-up">14.19亿</td><td class="num mono c-up">3.68%</td></tr><tr><td class="nm">塑料</td><td class="num mono c-dn">-0.03%</td><td class="num mono c-up">13.35亿</td><td class="num mono c-up">6.01%</td></tr><tr><td class="nm">小金属</td><td class="num mono c-up">0.74%</td><td class="num mono c-up">13.33亿</td><td class="num mono c-up">5.12%</td></tr><tr><td class="nm">钨</td><td class="num mono c-up">5.88%</td><td class="num mono c-up">12.41亿</td><td class="num mono c-up">9.59%</td></tr><tr><td class="nm">半导体材料</td><td class="num mono c-up">1.81%</td><td class="num mono c-up">12.09亿</td><td class="num mono c-up">4.30%</td></tr><tr><td class="nm">风电零部件</td><td class="num mono c-up">4.78%</td><td class="num mono c-up">11.97亿</td><td class="num mono c-up">11.69%</td></tr><tr><td class="nm">风电设备</td><td class="num mono c-up">4.20%</td><td class="num mono c-up">11.57亿</td><td class="num mono c-up">8.01%</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>概念资金净流入 Top 12</h2>
+    <div class="h2sub">按主力净流入排序</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>概念</th><th class="num">当日</th><th class="num">主力净流入</th><th class="num">主力占比</th></tr></thead>
+        <tbody><tr><td class="nm">半导体概念</td><td class="num mono c-up">0.30%</td><td class="num mono c-up">40.75亿</td><td class="num mono c-up">1.08%</td></tr><tr><td class="nm">PCB</td><td class="num mono c-up">0.79%</td><td class="num mono c-up">39.18亿</td><td class="num mono c-up">1.54%</td></tr><tr><td class="nm">存储芯片</td><td class="num mono c-up">1.01%</td><td class="num mono c-up">28.81亿</td><td class="num mono c-up">1.54%</td></tr><tr><td class="nm">中芯概念</td><td class="num mono c-up">1.24%</td><td class="num mono c-up">22.76亿</td><td class="num mono c-up">3.08%</td></tr><tr><td class="nm">2026中报扭亏</td><td class="num mono c-dn">-1.52%</td><td class="num mono c-up">20.63亿</td><td class="num mono c-up">2.72%</td></tr><tr><td class="nm">北交所概念</td><td class="num mono c-dn">-1.20%</td><td class="num mono c-up">18.75亿</td><td class="num mono c-up">15.43%</td></tr><tr><td class="nm">新材料</td><td class="num mono c-dn">-0.45%</td><td class="num mono c-up">17.80亿</td><td class="num mono c-up">0.90%</td></tr><tr><td class="nm">网络安全</td><td class="num mono c-dn">-0.91%</td><td class="num mono c-up">14.10亿</td><td class="num mono c-up">2.05%</td></tr><tr><td class="nm">光刻胶</td><td class="num mono c-up">1.09%</td><td class="num mono c-up">13.24亿</td><td class="num mono c-up">5.04%</td></tr><tr><td class="nm">国产芯片</td><td class="num mono c-dn">-0.10%</td><td class="num mono c-up">12.60亿</td><td class="num mono c-up">0.42%</td></tr><tr><td class="nm">先进封装</td><td class="num mono c-up">1.13%</td><td class="num mono c-up">11.88亿</td><td class="num mono c-up">1.30%</td></tr><tr><td class="nm">超级电容</td><td class="num mono c-dn">-0.08%</td><td class="num mono c-up">11.46亿</td><td class="num mono c-up">2.98%</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>个股主力净流入 Top 20</h2>
+    <div class="h2sub">沪A + 深A 主板，按主力净流入排序</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>个股</th><th class="num">当日</th><th class="num">主力净流入</th><th class="num">主力占比</th></tr></thead>
+        <tbody><tr><td class="nm">通鼎互联 <span class="badge bg-gy">002491</span></td><td class="num mono c-up">10.00%</td><td class="num mono c-up">19.55亿</td><td class="num mono c-up">33.47%</td></tr><tr><td class="nm">诺德股份 <span class="badge bg-gy">600110</span></td><td class="num mono c-up">9.97%</td><td class="num mono c-up">9.51亿</td><td class="num mono c-up">41.14%</td></tr><tr><td class="nm">华正新材 <span class="badge bg-gy">603186</span></td><td class="num mono c-up">10.00%</td><td class="num mono c-up">7.07亿</td><td class="num mono c-up">28.47%</td></tr><tr><td class="nm">生益科技 <span class="badge bg-gy">600183</span></td><td class="num mono c-up">2.91%</td><td class="num mono c-up">6.93亿</td><td class="num mono c-up">5.58%</td></tr><tr><td class="nm">中国巨石 <span class="badge bg-gy">600176</span></td><td class="num mono c-up">3.97%</td><td class="num mono c-up">6.06亿</td><td class="num mono c-up">4.13%</td></tr><tr><td class="nm">大金重工 <span class="badge bg-gy">002487</span></td><td class="num mono c-up">10.01%</td><td class="num mono c-up">6.02亿</td><td class="num mono c-up">19.73%</td></tr><tr><td class="nm">宏和科技 <span class="badge bg-gy">603256</span></td><td class="num mono c-up">5.79%</td><td class="num mono c-up">5.86亿</td><td class="num mono c-up">12.78%</td></tr><tr><td class="nm">中钨高新 <span class="badge bg-gy">000657</span></td><td class="num mono c-up">5.17%</td><td class="num mono c-up">5.39亿</td><td class="num mono c-up">8.79%</td></tr><tr><td class="nm">中天科技 <span class="badge bg-gy">600522</span></td><td class="num mono c-up">1.86%</td><td class="num mono c-up">5.25亿</td><td class="num mono c-up">6.49%</td></tr><tr><td class="nm">山子高科 <span class="badge bg-gy">000981</span></td><td class="num mono c-up">5.96%</td><td class="num mono c-up">3.98亿</td><td class="num mono c-up">8.60%</td></tr><tr><td class="nm">翔鹭钨业 <span class="badge bg-gy">002842</span></td><td class="num mono c-up">9.06%</td><td class="num mono c-up">3.77亿</td><td class="num mono c-up">16.97%</td></tr><tr><td class="nm">北方华创 <span class="badge bg-gy">002371</span></td><td class="num mono c-up">1.94%</td><td class="num mono c-up">3.38亿</td><td class="num mono c-up">7.91%</td></tr><tr><td class="nm">华天科技 <span class="badge bg-gy">002185</span></td><td class="num mono c-up">2.25%</td><td class="num mono c-up">3.06亿</td><td class="num mono c-up">8.61%</td></tr><tr><td class="nm">双星新材 <span class="badge bg-gy">002585</span></td><td class="num mono c-up">10.04%</td><td class="num mono c-up">2.93亿</td><td class="num mono c-up">12.58%</td></tr><tr><td class="nm">人民网 <span class="badge bg-gy">603000</span></td><td class="num mono c-up">3.98%</td><td class="num mono c-up">2.57亿</td><td class="num mono c-up">19.43%</td></tr><tr><td class="nm">华工科技 <span class="badge bg-gy">000988</span></td><td class="num mono c-up">0.20%</td><td class="num mono c-up">2.37亿</td><td class="num mono c-up">6.52%</td></tr><tr><td class="nm">百亚股份 <span class="badge bg-gy">003006</span></td><td class="num mono c-dn">-5.31%</td><td class="num mono c-up">2.35亿</td><td class="num mono c-up">17.23%</td></tr><tr><td class="nm">大族激光 <span class="badge bg-gy">002008</span></td><td class="num mono c-up">1.43%</td><td class="num mono c-up">2.29亿</td><td class="num mono c-up">6.18%</td></tr><tr><td class="nm">厦门钨业 <span class="badge bg-gy">600549</span></td><td class="num mono c-up">3.56%</td><td class="num mono c-up">2.22亿</td><td class="num mono c-up">7.13%</td></tr><tr><td class="nm">中材科技 <span class="badge bg-gy">002080</span></td><td class="num mono c-up">1.86%</td><td class="num mono c-up">2.19亿</td><td class="num mono c-up">6.50%</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>个股主力净流出 Top 20</h2>
+    <div class="h2sub">资金出逃方向，规避参考</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>个股</th><th class="num">当日</th><th class="num">主力净流入</th><th class="num">主力占比</th></tr></thead>
+        <tbody><tr><td class="nm">立讯精密 <span class="badge bg-gy">002475</span></td><td class="num mono c-dn">-2.18%</td><td class="num mono c-dn">-9.22亿</td><td class="num mono c-dn">-20.31%</td></tr><tr><td class="nm">远东股份 <span class="badge bg-gy">600869</span></td><td class="num mono c-dn">-10.02%</td><td class="num mono c-dn">-8.22亿</td><td class="num mono c-dn">-12.96%</td></tr><tr><td class="nm">东山精密 <span class="badge bg-gy">002384</span></td><td class="num mono c-dn">-1.24%</td><td class="num mono c-dn">-6.98亿</td><td class="num mono c-dn">-7.88%</td></tr><tr><td class="nm">中国船舶 <span class="badge bg-gy">600150</span></td><td class="num mono c-dn">-2.10%</td><td class="num mono c-dn">-6.63亿</td><td class="num mono c-dn">-14.17%</td></tr><tr><td class="nm">紫金矿业 <span class="badge bg-gy">601899</span></td><td class="num mono c-dn">-1.77%</td><td class="num mono c-dn">-6.02亿</td><td class="num mono c-dn">-14.51%</td></tr><tr><td class="nm">景旺电子 <span class="badge bg-gy">603228</span></td><td class="num mono c-dn">-3.36%</td><td class="num mono c-dn">-5.92亿</td><td class="num mono c-dn">-14.09%</td></tr><tr><td class="nm">莲花控股 <span class="badge bg-gy">600186</span></td><td class="num mono c-dn">-3.95%</td><td class="num mono c-dn">-5.44亿</td><td class="num mono c-dn">-13.10%</td></tr><tr><td class="nm">黄河旋风 <span class="badge bg-gy">600172</span></td><td class="num mono c-dn">-1.03%</td><td class="num mono c-dn">-4.91亿</td><td class="num mono c-dn">-11.81%</td></tr><tr><td class="nm">工业富联 <span class="badge bg-gy">601138</span></td><td class="num mono c-dn">-1.25%</td><td class="num mono c-dn">-4.88亿</td><td class="num mono c-dn">-12.95%</td></tr><tr><td class="nm">风华高科 <span class="badge bg-gy">000636</span></td><td class="num mono c-dn">-2.36%</td><td class="num mono c-dn">-4.85亿</td><td class="num mono c-dn">-5.35%</td></tr><tr><td class="nm">光迅科技 <span class="badge bg-gy">002281</span></td><td class="num mono c-dn">-2.00%</td><td class="num mono c-dn">-4.79亿</td><td class="num mono c-dn">-11.99%</td></tr><tr><td class="nm">天通股份 <span class="badge bg-gy">600330</span></td><td class="num mono c-dn">-3.97%</td><td class="num mono c-dn">-4.28亿</td><td class="num mono c-dn">-11.73%</td></tr><tr><td class="nm">超声电子 <span class="badge bg-gy">000823</span></td><td class="num mono c-up">5.61%</td><td class="num mono c-dn">-4.16亿</td><td class="num mono c-dn">-7.18%</td></tr><tr><td class="nm">洛阳钼业 <span class="badge bg-gy">603993</span></td><td class="num mono c-dn">-1.40%</td><td class="num mono c-dn">-3.27亿</td><td class="num mono c-dn">-17.82%</td></tr><tr><td class="nm">亨通光电 <span class="badge bg-gy">600487</span></td><td class="num mono c-dn">-1.23%</td><td class="num mono c-dn">-2.92亿</td><td class="num mono c-dn">-4.11%</td></tr><tr><td class="nm">领益智造 <span class="badge bg-gy">002600</span></td><td class="num mono c-dn">-4.32%</td><td class="num mono c-dn">-2.78亿</td><td class="num mono c-dn">-15.55%</td></tr><tr><td class="nm">招商银行 <span class="badge bg-gy">600036</span></td><td class="num mono c-dn">-1.75%</td><td class="num mono c-dn">-2.65亿</td><td class="num mono c-dn">-11.30%</td></tr><tr><td class="nm">航发动力 <span class="badge bg-gy">600893</span></td><td class="num mono c-dn">-1.49%</td><td class="num mono c-dn">-2.61亿</td><td class="num mono c-dn">-19.96%</td></tr><tr><td class="nm">方正科技 <span class="badge bg-gy">600601</span></td><td class="num mono c-dn">-1.89%</td><td class="num mono c-dn">-2.58亿</td><td class="num mono c-dn">-9.48%</td></tr><tr><td class="nm">中信证券 <span class="badge bg-gy">600030</span></td><td class="num mono c-dn">-0.98%</td><td class="num mono c-dn">-2.48亿</td><td class="num mono c-dn">-11.28%</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <b>数据来源：</b>东方财富公开行情接口（板块 / 个股主力资金流）｜数据截至 <b>2026年09月16日 收盘</b>｜报告生成 2026-09-16 05:29
+    <div class="disc">
+      <b>免责声明：</b>本页为公开市场数据的客观整理，主力资金流为基于逐笔成交的<b>推演口径</b>，
+      不同数据源定义可能略有差异，不构成任何投资建议。仅供观察资金动向参考，决策须谨慎。
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
