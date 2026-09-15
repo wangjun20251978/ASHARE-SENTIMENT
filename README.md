@@ -1,71 +1,72 @@
-# A股主线与情绪复盘 · 每日自动更新
+# A股每日复盘产品矩阵 · 自动更新
 
-单文件 HTML · 双击即用 · 本机打开 · 数据不上传
+单文件 HTML · 白底黑字红涨（涨=红 / 跌=灰，不使用绿色）· 工作日 16:30 自动更新
 
-**在线版：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/
+**总览导航：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/hub.html
+**情绪复盘（原页）：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/
 
 ---
 
-## 这是什么
+## 这套矩阵是什么
 
-一个「**收盘后 5 分钟看懂今天**」的复盘页面，每天自动更新，回答两个问题：
+同一套「数据驱动 + 单页 HTML + 自动日更」打法，覆盖 A 股复盘的不同切面。每个报告独立成页，统一皮肤，
+工作日 16:30（北京时间）由 GitHub Actions 统一抓取、渲染、部署。
 
-1. **今天市场在交易什么主线？**（是真主线还是诱多）
-2. **情绪到了几度？**（能不能接着做）
+> 注：原计划含「ETF 每日轮动信号」，因你已有 ETF-DASHBOARD2006 三因子看板（同类重复），已砍掉。
+> 现共 8 个报告（含原情绪页）。
 
-## 页面包含
+| # | 报告 | 页面 | 数据源 | 看点 |
+|---|---|---|---|---|
+| 0 | A股主线与情绪复盘 | index.html | 东财行情 | 板块强弱 / 涨停梯队 / 情绪温度 / 主线识别 |
+| 2 | 主力资金净流入榜 | fundflow.html | 东财板块+个股资金流 | 行业 / 概念 / 个股 主力净流入与净流出 |
+| 3 | 龙虎榜席位动向 | lhb.html | 东财数据中心 | 机构 / 游资 主动买卖方向 |
+| 4 | 大类资产夜盘温度计 | global.html | 东财外盘 | 美股 / 港股 / 日经 / 商品 / 外汇 / 债券 |
+| 5 | 指数估值分位看板 | valuation.html | 东财指数行情 | 主要宽基 点位 / 强弱 / 定性估值带 |
+| 6 | 新股 / 次新复盘 | ipo.html | 东财概念板 | 近端次新强度（情绪先锋） |
+| 7 | 转债市场温度计 | bond.html | 东财可转债 | 等权估值 / 双低池 / 涨幅榜 |
+| 8 | 基金净值 / 重仓追踪 | fund.html | 东财 ETF行情 + 基金净值 | 持有 + 关注基金 净值 / 涨跌 |
 
-| 模块 | 内容 |
-|---|---|
-| 市场温度 | 六大指数涨跌、近 6 日量能趋势、市场广度（涨跌家数） |
-| 板块强弱 | 概念板块涨幅（已过滤情绪类伪概念）、行业板块涨幅榜 |
-| 主线识别 | 题材主线（概念口径）/ 产业主线（行业口径）/ 涨停归属分布 / 疑似诱多 |
-| 情绪温度计 | 0–10 档位、四维指标（涨停家数·封板率·连板高度·晋级率）、涨停梯队分层 |
-| 延续性预警 | 自动生成风险预警 + 支撑因素 |
-| 隔夜判断 | 下一交易日观察清单 + 操作含义（非投资建议） |
+## 两个数据源说明（重要）
 
-## 情绪温度怎么算
-
-四个维度加权，每个维度先按 A 股现实标尺归一化：
-
-| 维度 | 权重 | 满分标准 |
-|---|---|---|
-| 涨停家数 | 30 | 100 家 |
-| 封板率 | 25 | 90%（40% 以下记 0 分） |
-| 连板高度 | 25 | 8 板（2 板以下记 0 分） |
-| 连板晋级率 | 20 | 55%（10% 以下记 0 分） |
-
-档位：0–2 冰点 / 2–3.5 冷 / 3.5–5.5 中性 / 5.5–7.5 热 / 7.5–10 沸腾
-
-## 数据来源
-
-| 数据 | 来源 |
-|---|---|
-| 指数快照、板块行情、板块资金流 | 东方财富公开行情接口 |
-| 涨停池 / 炸板池 / 跌停池（连板数、所属行业、封板时间） | 东方财富公开行情接口 |
-| 交易日序列、量能趋势 | 腾讯行情 |
-
-纯 Python 标准库实现，**无需安装任何第三方依赖**。
+- **龙虎榜（#3）**：依赖东方财富**数据中心**接口，本沙箱环境出口被拦截，抓取失败时页面显示「数据暂缺」，
+  **日更任务运行于海外服务器时通常可正常获取**（次日 16:30 自动补齐）。
+- **指数估值分位（#5）**：实时 PE/PB 历史分位接口在本环境不稳，故以「近期 PE 参考区间 + 定性结论」呈现，
+  涨跌幅为每日真实更新；估值带为定性参考，非精确历史分位。
 
 ## 自动更新
 
 `.github/workflows/daily.yml` 每个交易日（周一至周五）北京时间 **16:30** 自动运行：
 
 ```
-抓取数据 → 生成页面 → 校验产出 → 提交 → GitHub Pages 自动部署
+抓取 8 份数据 → 生成 8 个页面 → 校验产出 → 提交 → GitHub Pages 自动部署
 ```
 
-也可在 Actions 页面手动触发，支持指定日期回补。
+也可在 Actions 页面手动触发（`workflow_dispatch`），支持指定日期回补。
 
 ## 本地使用
 
 ```bash
-python scripts/fetch_data.py            # 抓取最近交易日数据 → data.json
-python scripts/render_report.py         # 渲染 → index.html
+python scripts/fetch_data.py      # 情绪页数据 → data.json
+python scripts/flow_fetch.py      # 资金榜数据 → data_flow.json
+python scripts/lhb_fetch.py       # 龙虎榜数据 → data_lhb.json（可能空）
+python scripts/global_fetch.py    # 大类资产 → data_global.json
+python scripts/val_fetch.py       # 估值 → data_val.json
+python scripts/ipo_fetch.py       # 次新 → data_ipo.json
+python scripts/bond_fetch.py      # 转债 → data_bond.json
+python scripts/fund_fetch.py      # 基金 → data_fund.json
+
+python scripts/render_report.py   # → index.html
+python scripts/flow_render.py     # → fundflow.html
+python scripts/lhb_render.py      # → lhb.html
+python scripts/global_render.py   # → global.html
+python scripts/val_render.py      # → valuation.html
+python scripts/ipo_render.py      # → ipo.html
+python scripts/bond_render.py     # → bond.html
+python scripts/fund_render.py     # → fund.html
 ```
 
-或直接下载 `index.html`，双击用浏览器打开。
+所有脚本纯 Python 标准库实现，**无需安装任何第三方依赖**。
 
 ---
 
-**免责声明**：本项目为公开市场数据的客观整理与结构化呈现，所有「情绪温度」「主线判定」「延续性预警」「操作含义」均为基于历史数据的框架化推演，不构成任何证券投资咨询或投资建议。投资有风险，决策须谨慎。
+**免责声明**：本项目为公开市场数据的客观整理与结构化呈现，所有判定均为框架化推演，不构成任何证券投资咨询或投资建议。投资有风险，决策须谨慎。
