@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A股主线与情绪温度 · 2026-09-15 收盘复盘</title>
+<style>
+:root{
+  --bg:#0d1117; --bg2:#131a24; --card:#161d29; --card2:#1b2431;
+  --line:#25303f; --line2:#2f3b4d;
+  --txt:#e8edf5; --txt2:#9aa8bd; --txt3:#6b7a90;
+  --up:#ff4d4f; --up2:#ff7875; --upbg:rgba(255,77,79,.12);
+  --dn:#00b96b; --dn2:#3ddc97; --dnbg:rgba(0,185,107,.12);
+  --acc:#f5a623; --acc2:#ffc53d;
+  --blue:#4a9eff; --purple:#a78bfa; --cyan:#22d3ee;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased;
+  padding:0 0 60px;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ===== HEADER ===== */
+header{
+  background:linear-gradient(160deg,#141c28 0%,#0d1117 60%);
+  border-bottom:1px solid var(--line);
+  padding:42px 0 34px; margin-bottom:34px;
+  position:relative; overflow:hidden;
+}
+header::after{
+  content:""; position:absolute; top:-120px; right:-80px;
+  width:380px; height:380px; border-radius:50%;
+  background:radial-gradient(circle,rgba(255,77,79,.10),transparent 70%);
+}
+.tag{
+  display:inline-block; font-size:12px; letter-spacing:2px;
+  color:var(--acc); border:1px solid rgba(245,166,35,.35);
+  background:rgba(245,166,35,.08);
+  padding:3px 12px; border-radius:3px; margin-bottom:16px;
+}
+h1{font-size:31px;font-weight:800;letter-spacing:-.5px;line-height:1.35;margin-bottom:12px}
+h1 .em{color:var(--up)}
+.sub{color:var(--txt2);font-size:14px}
+.sub b{color:var(--txt)}
+
+/* ===== KPI ===== */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 8px}
+.kpi{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:18px 16px; position:relative; overflow:hidden;
+}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--line2)}
+.kpi.up::before{background:var(--up)}
+.kpi.dn::before{background:var(--dn)}
+.kpi.ac::before{background:var(--acc)}
+.kpi.bl::before{background:var(--blue)}
+.kpi .lb{font-size:12px;color:var(--txt3);margin-bottom:7px;letter-spacing:.5px}
+.kpi .vl{font-size:27px;font-weight:800;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+.kpi .vl.s{font-size:21px}
+.kpi .nt{font-size:11px;color:var(--txt3);margin-top:5px}
+.c-up{color:var(--up)} .c-dn{color:var(--dn)} .c-ac{color:var(--acc)} .c-bl{color:var(--blue)}
+.c-cy{color:var(--cyan)} .c-pu{color:var(--purple)}
+
+/* ===== VERDICT ===== */
+.verdict{
+  background:linear-gradient(135deg,rgba(245,166,35,.10),rgba(245,166,35,.03));
+  border:1px solid rgba(245,166,35,.30); border-left:4px solid var(--acc);
+  border-radius:10px; padding:20px 22px; margin:26px 0;
+}
+.verdict .t{font-size:16px;font-weight:800;color:var(--acc);margin-bottom:9px}
+.verdict p{font-size:14px;color:var(--txt2)}
+.verdict p b{color:var(--txt)}
+
+/* ===== SECTION ===== */
+section{margin-bottom:40px}
+h2{
+  font-size:20px;font-weight:800;margin-bottom:6px;
+  display:flex;align-items:center;gap:10px;
+}
+h2 .n{
+  font-size:12px;font-weight:700;color:var(--bg);background:var(--acc);
+  width:23px;height:23px;border-radius:6px;display:flex;
+  align-items:center;justify-content:center;flex:0 0 auto;
+}
+.h2sub{font-size:13px;color:var(--txt3);margin-bottom:18px;padding-left:33px}
+h3{font-size:15px;font-weight:700;margin:22px 0 12px;color:var(--txt)}
+h3::before{content:"";display:inline-block;width:3px;height:14px;background:var(--acc);
+  border-radius:2px;margin-right:9px;vertical-align:-2px}
+
+p.body{font-size:14px;color:var(--txt2);margin-bottom:14px}
+p.body b{color:var(--txt)}
+p.body .up{color:var(--up);font-weight:700}
+p.body .dn{color:var(--dn);font-weight:700}
+
+/* ===== CARD ===== */
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:16px}
+.card.hl{border-color:rgba(255,77,79,.30);background:linear-gradient(135deg,rgba(255,77,79,.06),transparent 60%)}
+.card.hl2{border-color:rgba(0,185,107,.25);background:linear-gradient(135deg,rgba(0,185,107,.05),transparent 60%)}
+.card .ct{font-size:14px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.badge{font-size:11px;padding:2px 8px;border-radius:4px;font-weight:700}
+.bg-up{background:var(--upbg);color:var(--up);border:1px solid rgba(255,77,79,.3)}
+.bg-dn{background:var(--dnbg);color:var(--dn);border:1px solid rgba(0,185,107,.3)}
+.bg-ac{background:rgba(245,166,35,.12);color:var(--acc);border:1px solid rgba(245,166,35,.3)}
+.bg-bl{background:rgba(74,158,255,.12);color:var(--blue);border:1px solid rgba(74,158,255,.3)}
+.bg-gy{background:rgba(154,168,189,.1);color:var(--txt2);border:1px solid var(--line2)}
+
+/* ===== TABLE ===== */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{
+  text-align:left;font-size:11.5px;color:var(--txt3);font-weight:600;
+  padding:9px 10px;border-bottom:1px solid var(--line2);white-space:nowrap;
+  letter-spacing:.3px;
+}
+td{padding:10px;border-bottom:1px solid var(--line);color:var(--txt2);font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+td.nm{color:var(--txt);font-weight:600}
+td.num{text-align:right}
+th.num{text-align:right}
+.mono{font-variant-numeric:tabular-nums;font-weight:700}
+
+/* ===== BAR CHART ===== */
+.bars{display:flex;flex-direction:column;gap:9px;margin:6px 0 4px}
+.bar-row{display:grid;grid-template-columns:104px 1fr 74px;gap:12px;align-items:center}
+.bar-lb{font-size:12.5px;color:var(--txt2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:22px;background:rgba(255,255,255,.03);border-radius:4px;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;position:relative;transition:width .8s cubic-bezier(.2,.8,.3,1)}
+.bar-fill.up{background:linear-gradient(90deg,rgba(255,77,79,.55),var(--up))}
+.bar-fill.dn{background:linear-gradient(90deg,rgba(0,185,107,.55),var(--dn))}
+.bar-fill.mix{background:linear-gradient(90deg,rgba(74,158,255,.5),var(--blue))}
+.bar-vl{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+
+/* sparkline-ish heat row */
+.heat{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:14px}
+.hcell{border-radius:8px;padding:11px 8px;text-align:center;border:1px solid var(--line)}
+.hcell .d{font-size:11px;color:var(--txt3);margin-bottom:4px}
+.hcell .v{font-size:15px;font-weight:800;font-variant-numeric:tabular-nums}
+
+/* ===== LADDER ===== */
+.ladder{display:flex;flex-direction:column;gap:10px}
+.rung{
+  display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:stretch;
+}
+.rung-h{
+  background:linear-gradient(135deg,rgba(255,77,79,.18),rgba(255,77,79,.06));
+  border:1px solid rgba(255,77,79,.30); border-radius:8px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:10px 4px;
+}
+.rung-h .n{font-size:22px;font-weight:900;color:var(--up);line-height:1}
+.rung-h .t{font-size:10.5px;color:var(--txt3);margin-top:3px}
+.rung-h.low{background:linear-gradient(135deg,rgba(245,166,35,.15),rgba(245,166,35,.04));border-color:rgba(245,166,35,.28)}
+.rung-h.low .n{color:var(--acc)}
+.rung-b{
+  background:var(--card2);border:1px solid var(--line);border-radius:8px;
+  padding:11px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+}
+.stk{
+  font-size:12px;padding:4px 10px;border-radius:5px;
+  background:rgba(255,77,79,.10);color:var(--up2);
+  border:1px solid rgba(255,77,79,.20);white-space:nowrap;
+}
+.stk .s{color:var(--txt3);font-size:10.5px;margin-left:3px}
+.stk.g{background:rgba(154,168,189,.09);color:var(--txt2);border-color:var(--line2)}
+.stk.g .s{color:var(--txt3)}
+
+/* ===== GAUGE ===== */
+.gauge{margin:8px 0 18px}
+.gauge-track{
+  height:16px;border-radius:9px;position:relative;
+  background:linear-gradient(90deg,#1e5a3f 0%,#2d7a4f 18%,#8a7a1f 42%,#b5721f 66%,#a8392f 88%,#8c1f1f 100%);
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.4);
+}
+.gauge-mark{
+  position:absolute;top:-6px;width:4px;height:28px;border-radius:2px;
+  background:#fff;box-shadow:0 0 10px rgba(255,255,255,.85);
+  transform:translateX(-50%);
+}
+.gauge-mark::after{
+  content:attr(data-lb);position:absolute;top:-24px;left:50%;transform:translateX(-50%);
+  font-size:11.5px;font-weight:800;color:#fff;background:var(--acc);
+  padding:2px 8px;border-radius:4px;white-space:nowrap;color:var(--bg);
+}
+.gauge-scale{display:flex;justify-content:space-between;font-size:11px;color:var(--txt3);margin-top:9px}
+
+/* ===== METRIC GRID ===== */
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mbox{background:var(--card2);border:1px solid var(--line);border-radius:9px;padding:15px 13px;text-align:center}
+.mbox .mv{font-size:24px;font-weight:900;letter-spacing:-.5px;font-variant-numeric:tabular-nums;line-height:1.15}
+.mbox .ml{font-size:11.5px;color:var(--txt3);margin-top:6px;line-height:1.45}
+
+/* ===== FLOW ===== */
+.flow{display:flex;flex-direction:column;gap:8px}
+.frow{display:grid;grid-template-columns:118px 1fr 96px;gap:12px;align-items:center}
+.flb{font-size:12.5px;color:var(--txt2);text-align:right}
+.ftrack{height:20px;background:rgba(255,255,255,.03);border-radius:4px;position:relative}
+.ftrack .mid{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--line2)}
+.ffill{position:absolute;top:0;bottom:0;border-radius:3px}
+.ffill.p{background:linear-gradient(90deg,var(--up),var(--up2));left:50%}
+.ffill.n{background:linear-gradient(90deg,rgba(0,185,107,.6),var(--dn));right:50%}
+.fvl{font-size:12px;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+
+/* ===== WARN / RISK ===== */
+.warn{
+  background:linear-gradient(135deg,rgba(255,77,79,.08),rgba(255,77,79,.02));
+  border:1px solid rgba(255,77,79,.28); border-left:4px solid var(--up);
+  border-radius:9px; padding:16px 18px; margin-bottom:13px;
+}
+.warn .wt{font-size:13.5px;font-weight:800;color:var(--up);margin-bottom:6px}
+.warn p{font-size:13px;color:var(--txt2)}
+.ok{
+  background:linear-gradient(135deg,rgba(0,185,107,.07),transparent);
+  border:1px solid rgba(0,185,107,.25); border-left:4px solid var(--dn);
+  border-radius:9px; padding:16px 18px; margin-bottom:13px;
+}
+.ok .wt{font-size:13.5px;font-weight:800;color:var(--dn);margin-bottom:6px}
+.ok p{font-size:13px;color:var(--txt2)}
+
+/* ===== CHECKLIST ===== */
+.ck{list-style:none;display:flex;flex-direction:column;gap:11px}
+.ck li{
+  display:grid;grid-template-columns:22px 1fr;gap:11px;font-size:13.5px;
+  color:var(--txt2); align-items:start;
+}
+.ck li .ic{
+  width:20px;height:20px;border-radius:5px;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:800;margin-top:2px;
+}
+.ck li .ic.r{background:var(--upbg);color:var(--up);border:1px solid rgba(255,77,79,.3)}
+.ck li .ic.g{background:var(--dnbg);color:var(--dn);border:1px solid rgba(0,185,107,.3)}
+.ck li .ic.a{background:rgba(245,166,35,.12);color:var(--acc);border:1px solid rgba(245,166,35,.3)}
+.ck li b{color:var(--txt)}
+
+/* ===== DONUT ===== */
+.donut-wrap{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.legend{display:flex;flex-direction:column;gap:9px;font-size:12.5px;color:var(--txt2)}
+.legend div{display:flex;align-items:center;gap:8px}
+.dot{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+
+/* ===== FOOTER ===== */
+footer{
+  border-top:1px solid var(--line);margin-top:44px;padding-top:22px;
+  font-size:12px;color:var(--txt3);line-height:1.85;
+}
+footer b{color:var(--txt2)}
+.disc{
+  background:rgba(255,255,255,.02);border:1px solid var(--line);
+  border-radius:8px;padding:15px 17px;margin-top:14px;font-size:11.5px;color:var(--txt3);
+}
+
+@media (max-width:760px){
+  h1{font-size:23px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .mgrid{grid-template-columns:repeat(2,1fr)}
+  .heat{grid-template-columns:repeat(3,1fr)}
+  .bar-row{grid-template-columns:78px 1fr 62px}
+  .frow{grid-template-columns:88px 1fr 74px}
+  .rung{grid-template-columns:64px 1fr}
+  .wrap{padding:0 14px}
+  table{font-size:12px}
+  td,th{padding:8px 6px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="tag">A股 · 主线与情绪复盘</div>
+    <h1>指数在退，<span class="em">主线在进</span><br>资金正从"权重"切向"电子材料"</h1>
+    <div class="sub">
+      数据截至 <b>2026-09-15（周二）收盘</b> ｜ 上证 <b class="c-dn">3864.28&nbsp;-0.54%</b>
+      ｜ 两市成交 <b>1.61 万亿</b> ｜ 报告生成于 2026-09-16
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- KPI -->
+  <div class="kpis">
+    <div class="kpi up">
+      <div class="lb">覆铜板（最强概念）</div>
+      <div class="vl c-up">+4.51%</div>
+      <div class="nt">20日 +23.01% ｜ 主升中</div>
+    </div>
+    <div class="kpi up">
+      <div class="lb">科创50（最强指数）</div>
+      <div class="vl c-up">+1.55%</div>
+      <div class="nt">上证 -0.54% ｜ 剪刀差 2.1pct</div>
+    </div>
+    <div class="kpi dn">
+      <div class="lb">创业板指（最弱）</div>
+      <div class="vl c-dn">-1.15%</div>
+      <div class="nt">连续 5 日走弱</div>
+    </div>
+    <div class="kpi ac">
+      <div class="lb">半导体主力净流入</div>
+      <div class="vl c-ac s">+43.6 亿</div>
+      <div class="nt">全市场最强合力</div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <div class="t">档位判断：结构性进攻 · 情绪中性偏冷</div>
+    <p>
+      指数层面是"缩量退潮"——上证 -0.54%、深成指 -0.72%、创业板 -1.15%，<b>成交 1.61 万亿，较前日继续萎缩</b>。
+      但结构层面资金并未离场，而是<b>高度集中到一条链上</b>：<b>覆铜板 / 电子布 / 电子树脂 / 玻璃玻纤 / 半导体</b>，
+      本质是 <b>AI 算力 → 高速覆铜板（CCL）→ 电子布 / 低介电树脂 / 玻纤</b> 的上游材料逻辑。
+      <b>赚钱效应极窄但极深</b>：只有踩住这条链才有收益，踩不中就陪着指数阴跌。
+      情绪温度 <b>2.8 / 10（中性偏冷）</b>——不是沸腾，是<b>抱团</b>。抱团行情的特征是"主线不熄火，其余全失血"。
+    </p>
+  </div>
+
+  <!-- 1 市场广度 -->
+  <section>
+    <h2><span class="n">1</span>市场温度：指数退潮，量能缩，广度差</h2>
+    <div class="h2sub">先看"水位"——今天赚钱的人多不多</div>
+
+    <div class="heat">
+      <div class="hcell" style="background:rgba(0,185,107,.08);border-color:rgba(0,185,107,.25)">
+        <div class="d">上证指数</div><div class="v c-dn">-0.54%</div>
+      </div>
+      <div class="hcell" style="background:rgba(0,185,107,.08);border-color:rgba(0,185,107,.25)">
+        <div class="d">深证成指</div><div class="v c-dn">-0.72%</div>
+      </div>
+      <div class="hcell" style="background:rgba(0,185,107,.10);border-color:rgba(0,185,107,.3)">
+        <div class="d">创业板指</div><div class="v c-dn">-1.15%</div>
+      </div>
+      <div class="hcell" style="background:rgba(255,77,79,.08);border-color:rgba(255,77,79,.25)">
+        <div class="d">科创50</div><div class="v c-up">+1.55%</div>
+      </div>
+      <div class="hcell" style="background:rgba(0,185,107,.07);border-color:rgba(0,185,107,.22)">
+        <div class="d">中证500</div><div class="v c-dn">-0.13%</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="ct">主要指数当日涨跌 <span class="badge bg-ac">涨红跌绿</span></div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-lb">科创50</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:76%"></div></div>
+          <div class="bar-vl c-up">+1.55%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">中证500</div>
+          <div class="bar-track"><div class="bar-fill dn" style="width:9%"></div></div>
+          <div class="bar-vl c-dn">-0.13%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">上证50</div>
+          <div class="bar-track"><div class="bar-fill dn" style="width:36%"></div></div>
+          <div class="bar-vl c-dn">-0.52%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">上证指数</div>
+          <div class="bar-track"><div class="bar-fill dn" style="width:37%"></div></div>
+          <div class="bar-vl c-dn">-0.54%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">深证成指</div>
+          <div class="bar-track"><div class="bar-fill dn" style="width:50%"></div></div>
+          <div class="bar-vl c-dn">-0.72%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">创业板指</div>
+          <div class="bar-track"><div class="bar-fill dn" style="width:79%"></div></div>
+          <div class="bar-vl c-dn">-1.15%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="ct">近 6 个交易日成交额（亿元）</div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-lb">09-08 周一</div>
+          <div class="bar-track"><div class="bar-fill mix" style="width:100%"></div></div>
+          <div class="bar-vl" style="color:var(--blue)">1.96 万亿</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">09-09 周二</div>
+          <div class="bar-track"><div class="bar-fill mix" style="width:87%"></div></div>
+          <div class="bar-vl" style="color:var(--blue)">1.71 万亿</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">09-10 周三</div>
+          <div class="bar-track"><div class="bar-fill mix" style="width:82%"></div></div>
+          <div class="bar-vl" style="color:var(--blue)">1.61 万亿</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">09-11 周四</div>
+          <div class="bar-track"><div class="bar-fill mix" style="width:98%"></div></div>
+          <div class="bar-vl" style="color:var(--blue)">1.92 万亿</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">09-14 周一</div>
+          <div class="bar-track"><div class="bar-fill mix" style="width:83%"></div></div>
+          <div class="bar-vl" style="color:var(--blue)">1.63 万亿</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">09-15 周二</div>
+          <div class="bar-track"><div class="bar-fill mix" style="width:82%"></div></div>
+          <div class="bar-vl" style="color:var(--blue)">1.61 万亿</div>
+        </div>
+      </div>
+      <p class="body" style="margin-top:14px;margin-bottom:0">
+        量能从 9-08 的 1.96 万亿一路缩到 <b>1.61 万亿</b>（-18%），
+        且 <b>指数越跌越缩量</b>——这不是"恐慌杀跌"，而是<b>资金不愿在指数上花钱、只在个别链上花钱</b>的典型缩量抱团形态。
+        <b>缩量 + 主线独强</b>，意味着一旦主线也转弱，市场没有承接。
+      </p>
+    </div>
+  </section>
+
+  <!-- 2 板块强弱 -->
+  <section>
+    <h2><span class="n">2</span>板块强弱：一条"电子材料链"贯穿全场</h2>
+    <div class="h2sub">按当日涨幅排序，看资金往哪个方向挤</div>
+
+    <h3>概念板块涨幅 TOP</h3>
+    <div class="card">
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-lb">覆铜板</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:100%"></div></div>
+          <div class="bar-vl c-up">+4.51%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">昨日连板</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:74%"></div></div>
+          <div class="bar-vl c-up">+3.35%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">黄酒概念</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:69%"></div></div>
+          <div class="bar-vl c-up">+3.12%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">PTFE概念</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:53%"></div></div>
+          <div class="bar-vl c-up">+2.41%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">电子布</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:44%"></div></div>
+          <div class="bar-vl c-up">+2.00%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lb">电子树脂</div>
+          <div class="bar-track"><div class="bar-fill up" style="width:43%"></div></div>
+          <div class="bar-vl c-up">+1.95%</div>
+        </div>
+      </div>
+      <p class="body" style="margin-top:14px;margin-bottom:0">
+        前六名里 <b>覆铜板、PTFE、电子布、电子树脂四个都属于同一条链</b>——AI 服务器高速 PCB 的
+        上游材料（铜箔基板 + 低介电玻纤布 + 特种树脂）。这不是概念乱炒，是<b>产业链协同上涨</b>，
+        是"真主线"的典型指纹。黄酒属独立小分支（消费防御 + 会稽山涨停带动），不构成主线。
+      </p>
+    </div>
+
+    <h3>行业板块涨幅 TOP</h3>
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>行业</th><th class="num">当日</th><th class="num">5日</th>
+            <th class="num">20日</th><th class="num">换手率</th><th>领涨股</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nm">玻璃玻纤</td>
+            <td class="num mono c-up">+2.39%</td>
+            <td class="num mono c-up">+10.55%</td>
+            <td class="num mono c-dn">-2.50%</td>
+            <td class="num">5.85%</td>
+            <td class="c-up">宏和科技 +5.79%</td>
+          </tr>
+          <tr>
+            <td class="nm">风电设备</td>
+            <td class="num mono c-up">+2.36%</td>
+            <td class="num mono c-up">+4.40%</td>
+            <td class="num mono c-dn">-7.18%</td>
+            <td class="num">4.39%</td>
+            <td class="c-up">海力风电 +12.84%</td>
+          </tr>
+          <tr>
+            <td class="nm">电子化学品Ⅱ</td>
+            <td class="num mono c-up">+1.63%</td>
+            <td class="num mono c-up">+2.17%</td>
+            <td class="num mono c-dn">-12.91%</td>
+            <td class="num">5.40%</td>
+            <td class="c-up">西陇科学 +10.01%</td>
+          </tr>
+          <tr>
+            <td class="nm">半导体</td>
+            <td class="num mono c-up">+1.55%</td>
+            <td class="num mono c-dn">-2.52%</td>
+            <td class="num mono c-dn">-13.67%</td>
+            <td class="num">2.71%</td>
+            <td class="c-up">气派科技 +15.93%</td>
+          </tr>
+          <tr>
+            <td class="nm">小金属</td>
+            <td class="num mono c-up">+1.47%</td>
+            <td class="num mono c-dn">-1.83%</td>
+            <td class="num mono c-dn">-12.98%</td>
+            <td class="num">2.50%</td>
+            <td class="c-up">翔鹭钨业 +9.06%</td>
+          </tr>
+          <tr>
+            <td class="nm">塑料</td>
+            <td class="num mono c-up">+1.17%</td>
+            <td class="num mono c-up">+0.85%</td>
+            <td class="num mono c-dn">-5.44%</td>
+            <td class="num">4.14%</td>
+            <td class="c-up">浙江众成 +10.04%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="body" style="margin-top:14px;margin-bottom:0">
+        注意 <b>20 日列几乎全为负</b>（半导体 -13.67%、电子化学品 -12.91%、小金属 -12.98%），
+        只有 <b>玻璃玻纤 5 日 +10.55%、覆铜板 20 日 +23.01%</b> 逆势走强。
+        含义很明确：<b>这不是全行业普涨，而是"全行业阴跌里的一个独立上行分支"</b>——
+        该分支的产业逻辑（AI 材料）被资金单独定价了。
+      </p>
+    </div>
+
+    <h3>5 日 / 20 日持续性对照</h3>
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>板块</th><th class="num">当日</th><th class="num">5日</th><th class="num">20日</th><th>持续性评级</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nm">覆铜板</td>
+            <td class="num mono c-up">+4.51%</td>
+            <td class="num mono c-up">+20.24%</td>
+            <td class="num mono c-up">+23.01%</td>
+            <td><span class="badge bg-up">强 · 主升</span></td>
+          </tr>
+          <tr>
+            <td class="nm">玻璃玻纤</td>
+            <td class="num mono c-up">+2.39%</td>
+            <td class="num mono c-up">+10.55%</td>
+            <td class="num mono c-dn">-2.50%</td>
+            <td><span class="badge bg-ac">中 · 反转初期</span></td>
+          </tr>
+          <tr>
+            <td class="nm">电子布</td>
+            <td class="num mono c-up">+2.00%</td>
+            <td class="num mono c-up">+9.44%</td>
+            <td class="num mono c-dn">-4.47%</td>
+            <td><span class="badge bg-ac">中 · 反转初期</span></td>
+          </tr>
+          <tr>
+            <td class="nm">半导体</td>
+            <td class="num mono c-up">+1.55%</td>
+            <td class="num mono c-dn">-2.52%</td>
+            <td class="num mono c-dn">-13.67%</td>
+            <td><span class="badge bg-gy">弱 · 超跌反抽</span></td>
+          </tr>
+          <tr>
+            <td class="nm">风电设备</td>
+            <td class="num mono c-up">+2.36%</td>
+            <td class="num mono c-up">+4.40%</td>
+            <td class="num mono c-dn">-7.18%</td>
+            <td><span class="badge bg-gy">弱 · 待观察</span></td>
+          </tr>
+          <tr>
+            <td class="nm">小金属</td>
+            <td class="num mono c-up">+1.47%</td>
+            <td class="num mono c-dn">-1.83%</td>
+            <td class="num mono c-dn">-12.98%</td>
+            <td><span class="badge bg-gy">弱 · 脉冲</span></td>
+          </tr>
+          <tr>
+            <td class="nm">电池</td>
+            <td class="num mono c-dn">-2.91%</td>
+            <td class="num mono c-dn">—</td>
+            <td class="num mono c-dn">—</td>
+            <td><span class="badge bg-dn">弱 · 失血</span></td>
+          </tr>
+          <tr>
+            <td class="nm">汽车零部件</td>
+            <td class="num mono c-dn">-1.29%</td>
+            <td class="num mono c-dn">—</td>
+            <td class="num mono c-dn">—</td>
+            <td><span class="badge bg-dn">弱 · 失血</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3 主线识别 -->
+  <section>
+    <h2><span class="n">3</span>主线识别：真主线 vs 诱多</h2>
+    <div class="h2sub">不是所有上涨都叫主线——用"持续性 + 扩散度 + 资金"三条筛</div>
+
+    <div class="card hl">
+      <div class="ct">
+        <span class="badge bg-up">真主线</span>
+        AI 算力材料链：覆铜板 → 电子布 → 电子树脂 → 玻璃玻纤
+      </div>
+      <p class="body">
+        <b>为什么判定为真主线：</b>
+      </p>
+      <ul class="ck">
+        <li><span class="ic g">1</span><div><b>持续性够长</b>：覆铜板 5 日 +20.24%、20 日 +23.01%，连续创新高，不是一日行情。</div></li>
+        <li><span class="ic g">2</span><div><b>扩散链条完整</b>：上游玻纤（宏和科技）、中游覆铜板（华正新材）、树脂（呈和科技）、PTFE 同步上涨——产业链多点开花。</div></li>
+        <li><span class="ic g">3</span><div><b>资金真金白银</b>：华正新材主力净流入 7.36 亿、5 日 14.42 亿；通鼎互联单日主力净流入 19.57 亿（全市场前列）；中国巨石单日 6.23 亿。</div></li>
+        <li><span class="ic g">4</span><div><b>有基本面锚</b>：AI 服务器放量 → 高速多层 PCB 需求 → 低介电电子布 / 特种树脂供给紧。海外（英伟达、美光、SK海力士）同步在热搜榜前列。</div></li>
+      </ul>
+      <p class="body" style="margin-top:14px">
+        <b>龙头梯队：</b>华正新材（覆铜板龙头，连续 3 日涨幅偏离累计 20%+）、宏和科技（电子布）、
+        中国巨石（玻纤权重）、通鼎互联（光纤 + 材料，单日主力流入 19.57 亿居前）、呈和科技（电子树脂）。
+      </p>
+    </div>
+
+    <div class="card hl2">
+      <div class="ct">
+        <span class="badge bg-ac">次主线 / 待验证</span>
+        半导体（自主可控）
+      </div>
+      <p class="body" style="margin-bottom:0">
+        半导体当日 <b>+1.55%</b>、主力净流入 <b>+43.6 亿（全市场第一）</b>、板块内 <b>118 涨 / 180 跌</b>。
+        但注意两个矛盾信号：<b>5 日 -2.52%、20 日 -13.67%</b>，说明这是<b>超跌后的资金回流第一天</b>，
+        板块内也是跌多涨少（118:180），只有龙头强、多数票在跌。
+        <b>判定：资金已进场，但趋势未确认</b>——属于"左侧试探"，需要看 9-16 能否连续第二天净流入。
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="ct">
+        <span class="badge bg-gy">疑似诱多 / 需警惕</span>
+        昨日连板（+3.35%）与黄酒概念（+3.12%）
+      </div>
+      <table>
+        <thead>
+          <tr><th>板块</th><th class="num">当日</th><th class="num">5日</th><th class="num">20日</th><th class="num">换手率</th><th>性质判断</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nm">昨日连板</td>
+            <td class="num mono c-up">+3.35%</td>
+            <td class="num mono c-up">+7.59%</td>
+            <td class="num mono c-up">+63.41%</td>
+            <td class="num c-up" style="font-weight:700">20.70%</td>
+            <td class="c-ac">高温 · 换手极高，接力风险大</td>
+          </tr>
+          <tr>
+            <td class="nm">黄酒概念</td>
+            <td class="num mono c-up">+3.12%</td>
+            <td class="num mono c-up">+1.12%</td>
+            <td class="num mono c-up">+11.63%</td>
+            <td class="num">3.27%</td>
+            <td class="c-ac">单点 · 靠会稽山一只票撑起</td>
+          </tr>
+          <tr>
+            <td class="nm">PTFE概念</td>
+            <td class="num mono c-up">+2.41%</td>
+            <td class="num mono c-up">+1.81%</td>
+            <td class="num mono c-dn">-1.87%</td>
+            <td class="num">2.84%</td>
+            <td class="c-up">真主线分支（同属电子材料）</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="body" style="margin-top:14px;margin-bottom:0">
+        <b>「昨日连板」换手率 20.70% 是本表最高</b>，20 日累计 +63.41%——这是情绪最亢奋、也最拥挤的位置。
+        高换手意味着<b>筹码在高速易手</b>，不是沉淀。这类位置"看起来最强"，实则是<b>接力盈亏比最差</b>的区间。
+        <b>黄酒</b>只有 3.27% 换手、靠单只涨停股带动，缺乏板块合力，属典型<b>单点诱多</b>。
+      </p>
+    </div>
+
+    <h3>资金流向：真金白银在说什么</h3>
+    <div class="card">
+      <div class="ct">行业主力净流入 Top（万元）</div>
+      <div class="flow">
+        <div class="frow">
+          <div class="flb">半导体</div>
+          <div class="ftrack"><div class="mid"></div><div class="ffill p" style="width:47%"></div></div>
+          <div class="fvl c-up">+43.56 亿</div>
+        </div>
+        <div class="frow">
+          <div class="flb">玻璃玻纤</div>
+          <div class="ftrack"><div class="mid"></div><div class="ffill p" style="width:17%"></div></div>
+          <div class="fvl c-up">+15.43 亿</div>
+        </div>
+        <div class="frow">
+          <div class="flb">小金属</div>
+          <div class="ftrack"><div class="mid"></div><div class="ffill p" style="width:14%"></div></div>
+          <div class="fvl c-up">+13.16 亿</div>
+        </div>
+      </div>
+      <p class="body" style="margin-top:14px">
+        <b>关键矛盾：</b>半导体单日净流入 43.56 亿全市场第一，但 <b>5 日净流入 -215.27 亿</b>；
+        小金属单日 +13.16 亿，5 日 -8.11 亿。只有 <b>玻璃玻纤是"单日 +5 日双正"</b>（+15.43 亿 / +64.88 亿）——
+        <b>这才是资金真正在持续加仓的方向</b>，也印证了它才是真主线核心。
+      </p>
+      <div class="ct" style="margin-top:18px">重点个股主力净流入（当日）</div>
+      <table>
+        <thead>
+          <tr><th>个股</th><th class="num">涨跌</th><th class="num">主力净流入</th><th class="num">5日累计</th><th>看点</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nm">通鼎互联</td><td class="num mono c-up">+10.00%</td>
+            <td class="num mono c-up">+19.57 亿</td><td class="num mono c-dn">-5.19 亿</td>
+            <td class="c-ac">单日巨量流入，5日未持续</td>
+          </tr>
+          <tr>
+            <td class="nm">华正新材</td><td class="num mono c-up">+10.00%</td>
+            <td class="num mono c-up">+7.36 亿</td><td class="num mono c-up">+14.42 亿</td>
+            <td class="c-up">单日+5日双强，覆铜板核心</td>
+          </tr>
+          <tr>
+            <td class="nm">中国巨石</td><td class="num mono c-up">+3.97%</td>
+            <td class="num mono c-up">+6.23 亿</td><td class="num mono c-up">+15.07 亿</td>
+            <td class="c-up">玻纤权重，资金持续加仓</td>
+          </tr>
+          <tr>
+            <td class="nm">诺德股份</td><td class="num mono c-up">+9.97%</td>
+            <td class="num mono c-up">+9.67 亿</td><td class="num mono c-dn">-1.33 亿</td>
+            <td class="c-ac">铜箔，一日脉冲待验证</td>
+          </tr>
+          <tr>
+            <td class="nm">双星新材</td><td class="num mono c-up">+10.04%</td>
+            <td class="num mono c-up">+2.81 亿</td><td class="num mono c-up">+6.51 亿</td>
+            <td class="c-up">新材料，稳步流入</td>
+          </tr>
+          <tr>
+            <td class="nm">大金重工</td><td class="num mono c-up">+10.01%</td>
+            <td class="num mono c-up">+6.17 亿</td><td class="num mono c-up">+5.79 亿</td>
+            <td class="c-up">风电，独立于电子链</td>
+          </tr>
+          <tr>
+            <td class="nm">厦门钨业</td><td class="num mono c-up">+3.56%</td>
+            <td class="num mono c-up">+2.12 亿</td><td class="num mono c-dn">-1.54 亿</td>
+            <td class="c-ac">小金属，短线资金</td>
+          </tr>
+          <tr>
+            <td class="nm">超声电子</td><td class="num mono c-up">+5.61%</td>
+            <td class="num mono c-dn">-4.08 亿</td><td class="num mono c-up">+10.98 亿</td>
+            <td class="c-dn">涨但主力净流出，需警惕</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="body" style="margin-top:14px;margin-bottom:0">
+        <b>警示信号：超声电子涨 5.61% 但主力净流出 4.08 亿</b>——这是典型的"散户抬轿、机构派发"形态。
+        同理 <b>通鼎互联</b>单日 +19.57 亿但 5 日累计 -5.19 亿，说明流入是"今天才来的"，<b>属于追高型资金而非布局型资金</b>。
+      </p>
+    </div>
+  </section>
+
+  <!-- 4 情绪温度计 -->
+  <section>
+    <h2><span class="n">4</span>情绪温度计：2.8 / 10（中性偏冷）</h2>
+    <div class="h2sub">涨停家数、封板率、连板高度、晋级率——四个维度定位情绪位置</div>
+
+    <div class="gauge">
+      <div class="gauge-track">
+        <div class="gauge-mark" style="left:28%" data-lb="当前 2.8"></div>
+      </div>
+      <div class="gauge-scale">
+        <span>0 冰点</span><span>3 冷</span><span>5 中性</span><span>7 热</span><span>10 沸腾</span>
+      </div>
+    </div>
+
+    <div class="mgrid">
+      <div class="mbox">
+        <div class="mv c-ac">偏中</div>
+        <div class="ml">涨停家数<br>（结构集中于材料链）</div>
+      </div>
+      <div class="mbox">
+        <div class="mv c-up">较高</div>
+        <div class="ml">封板率<br>（主线股封板坚决）</div>
+      </div>
+      <div class="mbox">
+        <div class="mv c-ac">3 板</div>
+        <div class="ml">连板高度<br>（无高标空间）</div>
+      </div>
+      <div class="mbox">
+        <div class="mv c-dn">低</div>
+        <div class="ml">连板晋级率<br>（高位接力意愿弱）</div>
+      </div>
+    </div>
+
+    <h3>涨停梯队（按连板高度分层）</h3>
+    <div class="card">
+      <div class="ladder">
+        <div class="rung">
+          <div class="rung-h low">
+            <div class="n">3</div><div class="t">板</div>
+          </div>
+          <div class="rung-b">
+            <span class="stk">双星新材<span class="s">新材料</span></span>
+            <span class="stk">华正新材<span class="s">覆铜板</span></span>
+            <span class="stk">通鼎互联<span class="s">光纤/材料</span></span>
+          </div>
+        </div>
+        <div class="rung">
+          <div class="rung-h low">
+            <div class="n">2</div><div class="t">板</div>
+          </div>
+          <div class="rung-b">
+            <span class="stk">大金重工<span class="s">风电</span></span>
+            <span class="stk">天顺风能<span class="s">风电</span></span>
+            <span class="stk">诺德股份<span class="s">铜箔</span></span>
+            <span class="stk">吉鑫科技<span class="s">风电铸件</span></span>
+            <span class="stk">闽东电力<span class="s">电力</span></span>
+          </div>
+        </div>
+        <div class="rung">
+          <div class="rung-h">
+            <div class="n">1</div><div class="t">板</div>
+          </div>
+          <div class="rung-b">
+            <span class="stk">中国巨石<span class="s">玻纤</span></span>
+            <span class="stk">翔鹭钨业<span class="s">钨</span></span>
+            <span class="stk">中钨高新<span class="s">钨</span></span>
+            <span class="stk">中新赛克<span class="s">安防</span></span>
+            <span class="stk">风华高科<span class="s">被动元件</span></span>
+            <span class="stk g">山子高科<span class="s">+5.96%</span></span>
+            <span class="stk g">超声电子<span class="s">+5.61%</span></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="body" style="margin-top:16px">
+        <b>梯队解读：</b>最高高度 <b>仅 3 板</b>（双星新材 / 华正新材 / 通鼎互联），
+        且这三只<b>全部落在"新材料 + 电子材料"这条主线上</b>——说明<b>连板资金也认同主线，没有跑去别的方向</b>。
+        这是"抱团健康度尚可"的信号：情绪不高，但主线有承接。
+      </p>
+      <p class="body" style="margin-bottom:0">
+        <b>但高度只有 3 板本身就是警报</b>：没有 4 板、5 板以上个股，
+        说明<b>高标（空间板）已断档</b>，赚钱效应的"天花板"被压得很低。
+        2 板梯队里风电占 3 席（大金重工 / 天顺风能 / 吉鑫科技），是当日的<b>第二条独立支线</b>，
+        但其 20 日 -7.18% 说明是反转初期，尚未成主线。
+      </p>
+    </div>
+
+    <h3>情绪结构诊断</h3>
+    <div class="card">
+      <div class="donut-wrap">
+        <svg width="190" height="190" viewBox="0 0 190 190">
+          <circle cx="95" cy="95" r="70" fill="none" stroke="#25303f" stroke-width="22"/>
+          <!-- 主线相关：约55% -->
+          <circle cx="95" cy="95" r="70" fill="none" stroke="#ff4d4f" stroke-width="22"
+                  stroke-dasharray="242 198" stroke-dashoffset="0"
+                  transform="rotate(-90 95 95)" stroke-linecap="butt"/>
+          <!-- 风电支线 约20% -->
+          <circle cx="95" cy="95" r="70" fill="none" stroke="#4a9eff" stroke-width="22"
+                  stroke-dasharray="88 352" stroke-dashoffset="-242"
+                  transform="rotate(-90 95 95)" stroke-linecap="butt"/>
+          <!-- 其他/散乱 约25% -->
+          <circle cx="95" cy="95" r="70" fill="none" stroke="#6b7a90" stroke-width="22"
+                  stroke-dasharray="110 330" stroke-dashoffset="-330"
+                  transform="rotate(-90 95 95)" stroke-linecap="butt"/>
+          <text x="95" y="88" text-anchor="middle" fill="#e8edf5" font-size="26" font-weight="800">55%</text>
+          <text x="95" y="110" text-anchor="middle" fill="#6b7a90" font-size="11">涨停归属主线</text>
+        </svg>
+        <div class="legend">
+          <div><span class="dot" style="background:#ff4d4f"></span>
+            电子材料链（覆铜板/电子布/玻纤） · <b style="color:#e8edf5">约 55%</b></div>
+          <div><span class="dot" style="background:#4a9eff"></span>
+            风电设备支线 · <b style="color:#e8edf5">约 20%</b></div>
+          <div><span class="dot" style="background:#6b7a90"></span>
+            其余散乱（黄酒/钨/安防等） · <b style="color:#e8edf5">约 25%</b></div>
+          <div style="margin-top:8px;padding-top:9px;border-top:1px solid #25303f;color:#9aa8bd">
+            涨停高度集中——<b style="color:#f5a623">55% 集中在一条链</b>，
+            是"抱团"而非"扩散"。扩散型行情涨停分布更均匀。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 隔夜判断 -->
+  <section>
+    <h2><span class="n">5</span>延续性预警 · 隔夜判断</h2>
+    <div class="h2sub">主线能不能续、情绪往哪走（非投资建议）</div>
+
+    <div class="warn">
+      <div class="wt">⚠️ 预警一：量能持续萎缩，市场"没有安全垫"</div>
+      <p>
+        成交额从 1.96 万亿缩至 <b>1.61 万亿</b>，指数在缩量中阴跌。
+        主线之外几乎无承接——一旦电子材料链出现放量阴线或龙头跌停，
+        <b>由于没有宽度保护，指数回撤速度会快于普涨市场</b>。这是当前最大的结构脆弱点。
+      </p>
+    </div>
+
+    <div class="warn">
+      <div class="wt">⚠️ 预警二：连板高度只有 3 板，天花板被压低</div>
+      <p>
+        无 4 板以上高标，说明<b>资金不愿意在高度上做接力</b>。
+        "昨日连板"概念换手率高达 <b>20.70%</b>、20 日累计 +63.41%——属于<b>高换手、高拥挤、低沉淀</b>结构。
+        在这种情况下追高连板，盈亏比很差。情绪若要升温，必须先看到高度回补到 4 板以上。
+      </p>
+    </div>
+
+    <div class="warn">
+      <div class="wt">⚠️ 预警三：半导体的"资金流入"与"趋势下跌"背离</div>
+      <p>
+        半导体单日主力净流入 43.56 亿（全市场第一），但 5 日净流出 215.27 亿、20 日 -13.67%，
+        板块内 118 涨 / 180 跌——<b>资金在买龙头，多数票仍在阴跌</b>。
+        这种"流入但不涨"的组合，历史上更多是<b>左侧试探而非趋势反转</b>。
+        若 9-16 无法连续第二天净流入，今天的流入更可能是<b>一日反抽</b>。
+      </p>
+    </div>
+
+    <div class="ok">
+      <div class="wt">✓ 支撑一：主线产业逻辑扎实，资金持续加仓</div>
+      <p>
+        玻璃玻纤是唯一"单日 +15.43 亿 / 5 日 +64.88 亿"双正流入的行业；覆铜板 5 日 +20.24%、20 日 +23.01% 趋势完好；
+        华正新材、中国巨石均实现"单日 + 5 日"资金双正。<b>产业逻辑（AI 算力 → 高速 PCB → 上游材料）清晰、可跟踪、可验证</b>，
+        不是纯情绪炒作，这是主线能延续的核心底气。
+      </p>
+    </div>
+
+    <div class="ok">
+      <div class="wt">✓ 支撑二：连板资金与主线方向一致，未出现分歧</div>
+      <p>
+        3 板梯队（双星新材 / 华正新材 / 通鼎互联）<b>全部落在电子材料链上</b>，
+        说明游资与机构<b>在方向上达成共识</b>。共识未破裂前，主线不易突然熄火。
+      </p>
+    </div>
+
+    <h3>明日（9-16）观察清单</h3>
+    <div class="card">
+      <ul class="ck">
+        <li><span class="ic a">1</span><div><b>成交额能否回到 1.7 万亿以上</b>——缩量持续 = 主线独木难支；放量 = 增量资金认可主线。</div></li>
+        <li><span class="ic a">2</span><div><b>华正新材 / 双星新材能否走出 4 板</b>——连板高度是否回补，直接决定短线情绪升温还是退潮。</div></li>
+        <li><span class="ic a">3</span><div><b>半导体能否连续第二天净流入</b>——验证今天是"反转第一天"还是"一日反抽"。</div></li>
+        <li><span class="ic a">4</span><div><b>覆铜板 / 玻璃玻纤是否继续放量新高</b>——主线趋势行情是否延续的直接信号。</div></li>
+        <li><span class="ic a">5</span><div><b>超声电子、通鼎互联的资金动向</b>——今日均出现"涨但资金质量存疑"，若继续净流出则是派发确认。</div></li>
+        <li><span class="ic a">6</span><div><b>风电支线（大金重工 / 天顺风能）能否晋级 3 板</b>——决定是否成长为第二条主线，分散资金。</div></li>
+      </ul>
+    </div>
+
+    <h3>操作含义（非投资建议）</h3>
+    <div class="card">
+      <p class="body" style="margin-bottom:11px">
+        <b>结构定性：局部抱团 · 主线可跟踪，情绪不可亢奋。</b>
+      </p>
+      <ul class="ck">
+        <li><span class="ic g">宜</span><div>在<b>电子材料链</b>内关注资金"单日 + 5 日双正"的品种（华正新材、中国巨石系），沿趋势跟随，回踩低吸优于追涨。</div></li>
+        <li><span class="ic a">慎</span><div><b>半导体</b>可跟踪但不宜重仓押注——等"连续两天净流入 + 板块内涨跌家数转正"再确认。</div></li>
+        <li><span class="ic r">忌</span><div>追高<b>高位连板（换手 20.70%）</b>与<b>单点诱多（黄酒等靠单票撑起的板块）</b>，盈亏比差。</div></li>
+        <li><span class="ic r">避</span><div>仍在失血的方向——<b>电池（-2.91%）、汽车零部件（-1.29%）</b>，无企稳信号前不参与。</div></li>
+        <li><span class="ic a">仓</span><div>总仓位不宜满仓。主线是唯一的利润来源，但也是唯一风险来源——<b>见主线放量阴线即减</b>。</div></li>
+      </ul>
+    </div>
+
+    <div class="card hl2" style="margin-top:16px">
+      <div class="ct"><span class="badge bg-ac">反向声音</span></div>
+      <p class="body" style="margin-bottom:0">
+        今天最顺理成章的解读是"AI 材料主线强者恒强"。但需要警惕另一种可能：
+        <b>缩量到 1.61 万亿的情况下，"主线独强"有时是资金无处可去的结果，而不是主动选择的结果</b>。
+        如果是后者，那么主线一旦出现任何负面催化（如海外 AI 资本开支预期变化、材料端扩产消息），
+        <b>在没有宽度支撑的市场里，这条链的回撤会比它上涨时更快</b>。
+        别把"只有它涨"误读为"它一定还会涨"——<b>抱团越极致，破团越剧烈</b>。
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <b>数据来源：</b>腾讯自选股行情接口（指数 K 线 / 板块行情 / 资金流向 / 龙虎榜 / 热搜榜）｜
+    数据截至 <b>2026-09-15 收盘</b>｜报告生成时间 2026-09-16
+    <div class="disc">
+      <b>免责声明：</b>本页面为公开市场数据的客观整理与结构化呈现，
+      所有"情绪温度""主线判定""延续性预警""操作含义"均为基于历史数据的<b>框架化推演</b>，
+      不构成任何证券投资咨询或投资建议，亦不构成买卖要约。
+      涨跌统计口径为当日收盘价对前一交易日收盘价的涨跌幅，部分板块涨跌幅为板块指数口径，与个股简单平均可能存在差异。
+      市场数据可能存在延迟，请以交易所官方披露为准。
+      <b>投资有风险，决策须谨慎。</b>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
