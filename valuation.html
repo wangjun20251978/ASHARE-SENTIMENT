@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>指数估值分位看板 · 2026年09月16日</title>
+<style>/* ============================================================
+   A股主线与情绪复盘 — 白底·黑字·红涨配色
+   涨 = 红 ｜ 跌 = 灰（不使用绿色）
+   ============================================================ */
+
+:root{
+  /* 基础：白 */
+  --bg:#ffffff;
+  --bg2:#f6f6f6;
+  --card:#ffffff;
+  --card2:#f7f7f7;
+  --line:#e6e6e6;
+  --line2:#d4d4d4;
+
+  /* 文字：黑 / 灰阶 */
+  --txt:#141414;
+  --txt2:#5a5a5a;
+  --txt3:#8c8c8c;
+
+  /* 涨 = 红 */
+  --up:#e01515;
+  --up2:#ff3b3b;
+  --upbg:rgba(224,21,21,.07);
+
+  /* 跌 = 灰（去绿） */
+  --dn:#888888;
+  --dn2:#5f5f5f;
+  --dnbg:rgba(136,136,136,.10);
+
+  /* 强调 = 红 */
+  --acc:#e01515;
+  --acc2:#ff3b3b;
+  --accbg:rgba(224,21,21,.06);
+
+  /* 中性替代色（原蓝/紫/青统一归灰） */
+  --blue:#8c8c8c;
+  --purple:#8c8c8c;
+  --cyan:#8c8c8c;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased;
+  padding:0 0 60px;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ---------------- HEADER ---------------- */
+header{
+  background:linear-gradient(170deg,#ffffff 0%,#f4f4f4 65%);
+  border-bottom:1px solid var(--line);
+  padding:44px 0 36px; margin-bottom:34px;
+  position:relative; overflow:hidden;
+}
+header::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background:linear-gradient(180deg,var(--up),transparent);
+}
+header::after{
+  content:""; position:absolute; top:-140px; right:-100px;
+  width:420px; height:420px; border-radius:50%;
+  background:radial-gradient(circle,rgba(224,21,21,.06),transparent 70%);
+}
+.tag{
+  display:inline-block; font-size:11.5px; letter-spacing:2.5px;
+  color:var(--up); border:1px solid rgba(224,21,21,.40);
+  background:rgba(224,21,21,.05);
+  padding:4px 13px; border-radius:2px; margin-bottom:18px;
+  font-weight:600;
+}
+h1{font-size:32px;font-weight:800;letter-spacing:-.5px;line-height:1.38;margin-bottom:13px;color:var(--txt)}
+h1 .em{color:var(--up)}
+.sub{color:var(--txt2);font-size:13.5px}
+.sub b{color:var(--txt)}
+
+/* ---------------- KPI ---------------- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:26px 0 8px}
+.kpi{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:4px; padding:18px 16px; position:relative; overflow:hidden;
+}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--line2)}
+.kpi.up::before{background:var(--up)}
+.kpi.dn::before{background:var(--dn)}
+.kpi.ac::before{background:var(--acc)}
+.kpi.bl::before{background:var(--blue)}
+.kpi .lb{font-size:11.5px;color:var(--txt3);margin-bottom:8px;letter-spacing:.6px}
+.kpi .vl{font-size:27px;font-weight:800;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+.kpi .nt{font-size:11px;color:var(--txt3);margin-top:6px}
+
+/* 色彩工具类：涨红 跌灰 */
+.c-up{color:var(--up)}
+.c-dn{color:var(--dn)}
+.c-ac{color:var(--acc)}
+.c-bl{color:var(--blue)}
+.c-cy{color:var(--cyan)}
+.c-pu{color:var(--purple)}
+
+/* ---------------- VERDICT ---------------- */
+.verdict{
+  background:linear-gradient(135deg,rgba(224,21,21,.06),rgba(224,21,21,.015));
+  border:1px solid rgba(224,21,21,.28); border-left:3px solid var(--up);
+  border-radius:4px; padding:21px 23px; margin:26px 0;
+}
+.verdict .t{font-size:15.5px;font-weight:800;color:var(--up);margin-bottom:10px;letter-spacing:.3px}
+.verdict p{font-size:13.5px;color:var(--txt2)}
+.verdict p b{color:var(--txt)}
+
+/* ---------------- SECTION ---------------- */
+section{margin-bottom:42px}
+h2{font-size:20px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:10px;color:var(--txt)}
+h2 .n{
+  font-size:12px;font-weight:800;color:#fff;background:var(--up);
+  width:23px;height:23px;border-radius:3px;display:flex;
+  align-items:center;justify-content:center;flex:0 0 auto;
+}
+.h2sub{font-size:12.5px;color:var(--txt3);margin-bottom:20px;padding-left:33px}
+h3{font-size:15px;font-weight:700;margin:24px 0 12px;color:var(--txt)}
+h3::before{content:"";display:inline-block;width:3px;height:14px;background:var(--up);
+  border-radius:1px;margin-right:9px;vertical-align:-2px}
+
+p.body{font-size:13.5px;color:var(--txt2);margin-bottom:14px}
+p.body b{color:var(--txt)}
+p.body .up{color:var(--up);font-weight:700}
+p.body .dn{color:var(--dn);font-weight:700}
+
+/* ---------------- CARD ---------------- */
+.card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:4px;padding:20px;margin-bottom:14px;
+}
+.card.hl{border-color:rgba(224,21,21,.28);background:linear-gradient(135deg,rgba(224,21,21,.04),transparent 60%)}
+.card.hl2{border-color:var(--line2);background:linear-gradient(135deg,rgba(20,20,20,.02),transparent 60%)}
+.card .ct{font-size:13.5px;font-weight:700;margin-bottom:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--txt)}
+
+/* 徽标 */
+.badge{font-size:11px;padding:2.5px 8px;border-radius:2px;font-weight:700;letter-spacing:.3px}
+.bg-up{background:var(--upbg);color:var(--up);border:1px solid rgba(224,21,21,.34)}
+.bg-dn{background:var(--dnbg);color:var(--dn2);border:1px solid rgba(136,136,136,.30)}
+.bg-ac{background:var(--accbg);color:var(--up);border:1px solid rgba(224,21,21,.34)}
+.bg-bl{background:rgba(140,140,140,.12);color:var(--dn2);border:1px solid var(--line2)}
+.bg-gy{background:rgba(140,140,140,.10);color:var(--txt2);border:1px solid var(--line2)}
+
+/* ---------------- TABLE ---------------- */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{
+  text-align:left;font-size:11px;color:var(--txt3);font-weight:700;
+  padding:10px;border-bottom:1px solid var(--line2);white-space:nowrap;letter-spacing:.5px;
+}
+td{padding:10px;border-bottom:1px solid var(--line);color:var(--txt2);font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(20,20,20,.035)}
+td.nm{color:var(--txt);font-weight:600}
+td.num{text-align:right}
+th.num{text-align:right}
+.mono{font-variant-numeric:tabular-nums;font-weight:700}
+
+/* ---------------- 条形图 ---------------- */
+.bars{display:flex;flex-direction:column;gap:9px;margin:6px 0 4px}
+.bar-row{display:grid;grid-template-columns:104px 1fr 82px;gap:12px;align-items:center}
+.bar-lb{font-size:12.5px;color:var(--txt2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:22px;background:rgba(20,20,20,.045);border-radius:2px;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;position:relative;transition:width .8s cubic-bezier(.2,.8,.3,1)}
+.bar-fill.up{background:linear-gradient(90deg,rgba(224,21,21,.42),var(--up))}
+.bar-fill.dn{background:linear-gradient(90deg,rgba(136,136,136,.28),var(--dn))}
+.bar-fill.mix{background:linear-gradient(90deg,rgba(20,20,20,.10),rgba(20,20,20,.40))}
+.bar-vl{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+
+/* ---------------- 涨停梯队 ---------------- */
+.ladder{display:flex;flex-direction:column;gap:10px}
+.rung{display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:stretch}
+.rung-h{
+  background:linear-gradient(135deg,rgba(224,21,21,.12),rgba(224,21,21,.03));
+  border:1px solid rgba(224,21,21,.26); border-radius:3px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 4px;
+}
+.rung-h .n{font-size:22px;font-weight:900;color:var(--up);line-height:1}
+.rung-h .t{font-size:10.5px;color:var(--txt3);margin-top:3px}
+.rung-h.low{
+  background:linear-gradient(135deg,rgba(20,20,20,.04),rgba(20,20,20,.01));
+  border-color:rgba(20,20,20,.18);
+}
+.rung-h.low .n{color:var(--txt)}
+.rung-b{
+  background:var(--card2);border:1px solid var(--line);border-radius:3px;
+  padding:11px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+}
+.stk{
+  font-size:12px;padding:4px 10px;border-radius:2px;
+  background:rgba(224,21,21,.08);color:var(--up);
+  border:1px solid rgba(224,21,21,.20);white-space:nowrap;
+}
+.stk .s{color:var(--txt3);font-size:10.5px;margin-left:3px}
+.stk.g{background:rgba(20,20,20,.03);color:var(--txt2);border-color:var(--line2)}
+.stk.g .s{color:var(--txt3)}
+
+/* ---------------- 温度计 ---------------- */
+.gauge{margin:10px 0 20px}
+.gauge-track{
+  height:16px;border-radius:2px;position:relative;
+  /* 冷 → 热：浅灰 → 中灰 → 暗红 → 亮红 */
+  background:linear-gradient(90deg,#eaeaea 0%,#c9c9c9 22%,#a3a3a3 42%,#c0392b 62%,#e01515 82%,#ff3b3b 100%);
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.06);
+}
+.gauge-mark{
+  position:absolute;top:-6px;width:3px;height:28px;border-radius:1px;
+  background:var(--txt);box-shadow:0 0 8px rgba(20,20,20,.4);
+  transform:translateX(-50%);
+}
+.gauge-mark::after{
+  content:attr(data-lb);position:absolute;top:-25px;left:50%;transform:translateX(-50%);
+  font-size:11.5px;font-weight:800;background:var(--up);
+  padding:2px 8px;border-radius:2px;white-space:nowrap;color:#fff;
+}
+.gauge-scale{display:flex;justify-content:space-between;font-size:11px;color:var(--txt3);margin-top:9px}
+
+/* ---------------- 四指标 ---------------- */
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mbox{background:var(--card2);border:1px solid var(--line);border-radius:4px;padding:16px 13px;text-align:center}
+.mbox .mv{font-size:24px;font-weight:900;letter-spacing:-.5px;font-variant-numeric:tabular-nums;line-height:1.15}
+.mbox .ml{font-size:11px;color:var(--txt3);margin-top:7px;line-height:1.5}
+
+/* ---------------- 预警 / 支撑 ---------------- */
+.warn{
+  background:linear-gradient(135deg,rgba(224,21,21,.06),rgba(224,21,21,.01));
+  border:1px solid rgba(224,21,21,.26); border-left:3px solid var(--up);
+  border-radius:3px; padding:16px 18px; margin-bottom:12px;
+}
+.warn .wt{font-size:13.5px;font-weight:800;color:var(--up);margin-bottom:6px}
+.warn p{font-size:13px;color:var(--txt2)}
+.warn p b{color:var(--txt)}
+
+.ok{
+  background:linear-gradient(135deg,rgba(20,20,20,.025),transparent);
+  border:1px solid var(--line2); border-left:3px solid var(--txt);
+  border-radius:3px; padding:16px 18px; margin-bottom:12px;
+}
+.ok .wt{font-size:13.5px;font-weight:800;color:var(--txt);margin-bottom:6px}
+.ok p{font-size:13px;color:var(--txt2)}
+.ok p b{color:var(--txt)}
+
+/* ---------------- 清单 ---------------- */
+.ck{list-style:none;display:flex;flex-direction:column;gap:11px}
+.ck li{display:grid;grid-template-columns:24px 1fr;gap:11px;font-size:13.5px;
+  color:var(--txt2); align-items:start;list-style:none}
+.ck li .ic{
+  width:21px;height:21px;border-radius:2px;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:800;margin-top:1px;
+  border:1px solid var(--line2);background:rgba(20,20,20,.03);color:var(--txt2);
+}
+.ck li .ic.r{background:var(--upbg);color:var(--up);border-color:rgba(224,21,21,.38)}
+.ck li .ic.g{background:rgba(20,20,20,.05);color:var(--txt);border-color:rgba(20,20,20,.22)}
+.ck li .ic.a{background:rgba(20,20,20,.03);color:var(--txt2);border-color:var(--line2)}
+.ck li b{color:var(--txt)}
+
+/* ---------------- 图例 ---------------- */
+.legend{display:flex;flex-direction:column;gap:9px;font-size:12.5px;color:var(--txt2)}
+.legend div{display:flex;align-items:center;gap:8px}
+.dot{width:11px;height:11px;border-radius:2px;flex:0 0 auto}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+  border-top:1px solid var(--line);margin-top:46px;padding-top:22px;
+  font-size:12px;color:var(--txt3);line-height:1.85;
+}
+footer b{color:var(--txt2)}
+.disc{
+  background:rgba(20,20,20,.02);border:1px solid var(--line);
+  border-radius:3px;padding:15px 17px;margin-top:14px;font-size:11.5px;color:var(--txt3);
+}
+
+/* ---------------- 响应式 ---------------- */
+@media (max-width:760px){
+  h1{font-size:23px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .mgrid{grid-template-columns:repeat(2,1fr)}
+  .bar-row{grid-template-columns:78px 1fr 70px}
+  .rung{grid-template-columns:64px 1fr}
+  .wrap{padding:0 14px}
+  table{font-size:12px}
+  td,th{padding:8px 6px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="tag">估值 · 日更</span>
+    <h1>指数估值分位看板 <span class="em">· 抄底参考</span></h1>
+    <div class="sub">主要宽基指数 点位 / 强弱 / 定性估值带 ｜ <b>2026年09月16日</b></div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="kpis"><div class="kpi dn"><div class="lb">上证指数</div><div class="vl c-dn">3864.28</div><div class="nt c-dn">-0.54%</div></div><div class="kpi dn"><div class="lb">沪深300</div><div class="vl c-dn">4450.04</div><div class="nt c-dn">-0.67%</div></div><div class="kpi dn"><div class="lb">创业板指</div><div class="vl c-dn">3247.92</div><div class="nt c-dn">-1.15%</div></div><div class="kpi up"><div class="lb">科创50</div><div class="vl c-up">1551.96</div><div class="nt c-up">1.55%</div></div></div>
+  <div class="verdict"><div class="t">估值结论</div><p>主要宽基指数中，<b>沪深300 / 上证50 / 中证500 / 上证指数</b>处于<b class='c-up'>合理偏低</b>区间，中长期配置性价比相对占优；<b>科创50</b>估值仍<b>偏高</b>，需业绩兑现消化。涨跌幅为每日真实更新，估值带为近期 PE 参考区间的定性结论（非实时历史分位）。</p></div>
+
+  <section>
+    <h2><span class="n">1</span>主要指数估值带</h2>
+    <div class="h2sub">点位 / 涨跌幅每日更新；估值带为近期 PE 参考区间定性结论</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>指数</th><th class="num">收盘点位</th><th class="num">今日</th><th class="num">参考PE区间</th><th>估值结论</th></tr></thead>
+        <tbody><tr><td class="nm">上证指数</td><td class="num mono c-dn">3864.28</td><td class="num mono c-dn">-0.54%</td><td class="num">13~15</td><td><span class="badge bg-up">合理偏低</span></td></tr><tr><td class="nm">沪深300</td><td class="num mono c-dn">4450.04</td><td class="num mono c-dn">-0.67%</td><td class="num">12~14</td><td><span class="badge bg-up">合理偏低</span></td></tr><tr><td class="nm">创业板指</td><td class="num mono c-dn">3247.92</td><td class="num mono c-dn">-1.15%</td><td class="num">32~45</td><td><span class="badge bg-gy">合理</span></td></tr><tr><td class="nm">中证500</td><td class="num mono c-dn">7561.59</td><td class="num mono c-dn">-0.13%</td><td class="num">22~28</td><td><span class="badge bg-up">合理偏低</span></td></tr><tr><td class="nm">科创50</td><td class="num mono c-up">1551.96</td><td class="num mono c-up">1.55%</td><td class="num">45~60</td><td><span class="badge bg-bl">偏高</span></td></tr><tr><td class="nm">上证50</td><td class="num mono c-dn">2846.31</td><td class="num mono c-dn">-0.52%</td><td class="num">10~12</td><td><span class="badge bg-up">合理偏低</span></td></tr><tr><td class="nm">中证1000</td><td class="num mono c-dn">7437.70</td><td class="num mono c-dn">-0.41%</td><td class="num">30~40</td><td><span class="badge bg-gy">合理</span></td></tr><tr><td class="nm">深证成指</td><td class="num mono c-dn">13287.97</td><td class="num mono c-dn">-0.72%</td><td class="num">24~30</td><td><span class="badge bg-gy">合理</span></td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <b>数据来源：</b>东方财富公开行情接口（指数行情 + 近期 PE 参考区间）｜数据截至 <b>2026年09月16日</b> 收盘｜报告生成 2026-09-16 05:44
+    <div class="disc"><b>方法论与免责：</b>指数实时 PE/PB 历史分位接口在本环境不稳定，故以「近期 PE 参考区间 + 定性结论」呈现，
+    涨跌幅为每日真实更新。<b>估值带为定性参考，非精确历史分位</b>，不构成任何投资建议。如需精确分位，可后续接入估值数据中心。</div>
+  </footer>
+</div>
+</body>
+</html>
