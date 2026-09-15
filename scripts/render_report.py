@@ -459,8 +459,8 @@ def render_breadth(d):
 <div class="card">
   <div class="ct">市场广度（沪深两市涨跌家数）</div>
   <div class="bar-track" style="height:26px;display:flex;border-radius:4px;overflow:hidden">
-    <div style="width:%.1f%%;background:linear-gradient(90deg,rgba(255,43,43,.5),var(--up))"></div>
-    <div style="width:%.1f%%;background:linear-gradient(90deg,var(--dn),rgba(158,158,158,.35))"></div>
+    <div style="width:%.1f%%;background:linear-gradient(90deg,rgba(224,21,21,.42),var(--up))"></div>
+    <div style="width:%.1f%%;background:linear-gradient(90deg,var(--dn),rgba(136,136,136,.28))"></div>
   </div>
   <div style="display:flex;justify-content:space-between;margin-top:9px;font-size:12.5px">
     <span class="c-up">上涨 <b>%d</b> 家（%.1f%%）</span>
@@ -580,12 +580,12 @@ def render_mainlines(d, concept_lines, industry_lines, fake_lines, zt_map):
     top_hy = hy.most_common(6)
     dist = ""
     if top_hy:
-        palette = ["#ff2b2b", "#ffffff", "#8f8f8f", "#d9d9d9", "#5a5a5a", "#ff6b6b"]
+        palette = ["#e01515", "#2b2b2b", "#7a7a7a", "#b6b6b6", "#4a4a4a", "#ff3b3b"]
         segs = "".join('<div style="width:%.2f%%;background:%s" title="%s %d家"></div>'
                        % (c / total_zt * 100, palette[i % len(palette)], esc(nm), c)
                        for i, (nm, c) in enumerate(top_hy))
         legend = "".join(
-            '<div><span class="dot" style="background:%s"></span>%s · <b style="color:#e8edf5">%d 家</b></div>'
+            '<div><span class="dot" style="background:%s"></span>%s · <b style="color:#141414">%d 家</b></div>'
             % (palette[i % len(palette)], esc(nm), c) for i, (nm, c) in enumerate(top_hy))
         share = top_hy[0][1] / total_zt * 100
         dist = """
