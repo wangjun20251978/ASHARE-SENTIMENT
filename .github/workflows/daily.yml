@@ -1,4 +1,4 @@
-name: 每日A股主线情绪复盘
+name: 每日A股复盘矩阵
 
 on:
   schedule:
@@ -21,7 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
       - name: 检出仓库
@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 抓取行情数据
+      - name: 抓取行情数据（8 个报告）
         id: fetch
         run: |
           if [ -n "${{ github.event.inputs.date }}" ]; then
@@ -40,28 +40,46 @@ jobs:
           else
             python scripts/fetch_data.py
           fi
+          python scripts/flow_fetch.py     # 资金榜
+          python scripts/lhb_fetch.py      # 龙虎榜（数据源不稳，失败则空态）
+          python scripts/global_fetch.py   # 大类资产
+          python scripts/val_fetch.py      # 估值分位
+          python scripts/ipo_fetch.py      # 新股/次新
+          python scripts/bond_fetch.py     # 转债
+          python scripts/fund_fetch.py     # 基金
 
-      - name: 生成报告页面
-        run: python scripts/render_report.py
+      - name: 生成报告页面（8 个）
+        run: |
+          python scripts/render_report.py
+          python scripts/flow_render.py
+          python scripts/lhb_render.py
+          python scripts/global_render.py
+          python scripts/val_render.py
+          python scripts/ipo_render.py
+          python scripts/bond_render.py
+          python scripts/fund_render.py
 
       - name: 校验产出
         run: |
-          test -f index.html || { echo "index.html 未生成"; exit 1; }
-          size=$(stat -c%s index.html)
-          echo "index.html 大小: $size 字节"
-          if [ "$size" -lt 15000 ]; then
-            echo "index.html 过小，疑似生成异常"
-            exit 1
-          fi
+          for f in index.html fundflow.html lhb.html global.html valuation.html ipo.html bond.html fund.html; do
+            test -f "$f" || { echo "$f 未生成"; exit 1; }
+            size=$(stat -c%s "$f")
+            echo "$f 大小: $size 字节"
+            if [ "$size" -lt 10000 ]; then
+              echo "$f 过小，疑似生成异常"
+              exit 1
+            fi
+          done
 
       - name: 提交更新
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data.json
+          git add index.html fundflow.html lhb.html global.html valuation.html ipo.html bond.html fund.html hub.html \
+                  data.json data_flow.json data_lhb.json data_global.json data_val.json data_ipo.json data_bond.json data_fund.json
           if git diff --staged --quiet; then
             echo "内容无变化，跳过提交"
           else
-            git commit -m "复盘更新 $(TZ=Asia/Shanghai date +%Y-%m-%d)"
+            git commit -m "复盘矩阵更新 $(TZ=Asia/Shanghai date +%Y-%m-%d)"
             git push
           fi
