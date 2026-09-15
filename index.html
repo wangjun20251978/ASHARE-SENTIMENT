@@ -5,43 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A股主线与情绪温度 · 2026-09-15 收盘复盘</title>
 <style>/* ============================================================
-   A股主线与情绪复盘 — 黑白红配色
+   A股主线与情绪复盘 — 白底·黑字·红涨配色
    涨 = 红 ｜ 跌 = 灰（不使用绿色）
    ============================================================ */
 
 :root{
-  /* 基础：黑 */
-  --bg:#060606;
-  --bg2:#0b0b0b;
-  --card:#101010;
-  --card2:#161616;
-  --line:#242424;
-  --line2:#3a3a3a;
+  /* 基础：白 */
+  --bg:#ffffff;
+  --bg2:#f6f6f6;
+  --card:#ffffff;
+  --card2:#f7f7f7;
+  --line:#e6e6e6;
+  --line2:#d4d4d4;
 
-  /* 文字：白 / 灰阶 */
-  --txt:#ffffff;
-  --txt2:#a6a6a6;
-  --txt3:#6b6b6b;
+  /* 文字：黑 / 灰阶 */
+  --txt:#141414;
+  --txt2:#5a5a5a;
+  --txt3:#8c8c8c;
 
   /* 涨 = 红 */
-  --up:#ff2b2b;
-  --up2:#ff6b6b;
-  --upbg:rgba(255,43,43,.13);
+  --up:#e01515;
+  --up2:#ff3b3b;
+  --upbg:rgba(224,21,21,.07);
 
   /* 跌 = 灰（去绿） */
-  --dn:#9e9e9e;
-  --dn2:#cfcfcf;
-  --dnbg:rgba(158,158,158,.10);
+  --dn:#888888;
+  --dn2:#5f5f5f;
+  --dnbg:rgba(136,136,136,.10);
 
   /* 强调 = 红 */
-  --acc:#ff2b2b;
-  --acc2:#ff6b6b;
-  --accbg:rgba(255,43,43,.10);
+  --acc:#e01515;
+  --acc2:#ff3b3b;
+  --accbg:rgba(224,21,21,.06);
 
   /* 中性替代色（原蓝/紫/青统一归灰） */
-  --blue:#8f8f8f;
-  --purple:#8f8f8f;
-  --cyan:#8f8f8f;
+  --blue:#8c8c8c;
+  --purple:#8c8c8c;
+  --cyan:#8c8c8c;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -56,7 +56,7 @@ body{
 
 /* ---------------- HEADER ---------------- */
 header{
-  background:linear-gradient(170deg,#131313 0%,#060606 65%);
+  background:linear-gradient(170deg,#ffffff 0%,#f4f4f4 65%);
   border-bottom:1px solid var(--line);
   padding:44px 0 36px; margin-bottom:34px;
   position:relative; overflow:hidden;
@@ -68,19 +68,19 @@ header::before{
 header::after{
   content:""; position:absolute; top:-140px; right:-100px;
   width:420px; height:420px; border-radius:50%;
-  background:radial-gradient(circle,rgba(255,43,43,.13),transparent 70%);
+  background:radial-gradient(circle,rgba(224,21,21,.06),transparent 70%);
 }
 .tag{
   display:inline-block; font-size:11.5px; letter-spacing:2.5px;
-  color:var(--up); border:1px solid rgba(255,43,43,.45);
-  background:rgba(255,43,43,.07);
+  color:var(--up); border:1px solid rgba(224,21,21,.40);
+  background:rgba(224,21,21,.05);
   padding:4px 13px; border-radius:2px; margin-bottom:18px;
   font-weight:600;
 }
-h1{font-size:32px;font-weight:800;letter-spacing:-.5px;line-height:1.38;margin-bottom:13px;color:#fff}
+h1{font-size:32px;font-weight:800;letter-spacing:-.5px;line-height:1.38;margin-bottom:13px;color:var(--txt)}
 h1 .em{color:var(--up)}
 .sub{color:var(--txt2);font-size:13.5px}
-.sub b{color:#fff}
+.sub b{color:var(--txt)}
 
 /* ---------------- KPI ---------------- */
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:26px 0 8px}
@@ -107,29 +107,29 @@ h1 .em{color:var(--up)}
 
 /* ---------------- VERDICT ---------------- */
 .verdict{
-  background:linear-gradient(135deg,rgba(255,43,43,.09),rgba(255,43,43,.02));
-  border:1px solid rgba(255,43,43,.32); border-left:3px solid var(--up);
+  background:linear-gradient(135deg,rgba(224,21,21,.06),rgba(224,21,21,.015));
+  border:1px solid rgba(224,21,21,.28); border-left:3px solid var(--up);
   border-radius:4px; padding:21px 23px; margin:26px 0;
 }
 .verdict .t{font-size:15.5px;font-weight:800;color:var(--up);margin-bottom:10px;letter-spacing:.3px}
 .verdict p{font-size:13.5px;color:var(--txt2)}
-.verdict p b{color:#fff}
+.verdict p b{color:var(--txt)}
 
 /* ---------------- SECTION ---------------- */
 section{margin-bottom:42px}
-h2{font-size:20px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:10px;color:#fff}
+h2{font-size:20px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:10px;color:var(--txt)}
 h2 .n{
-  font-size:12px;font-weight:800;color:#000;background:var(--up);
+  font-size:12px;font-weight:800;color:#fff;background:var(--up);
   width:23px;height:23px;border-radius:3px;display:flex;
   align-items:center;justify-content:center;flex:0 0 auto;
 }
 .h2sub{font-size:12.5px;color:var(--txt3);margin-bottom:20px;padding-left:33px}
-h3{font-size:15px;font-weight:700;margin:24px 0 12px;color:#fff}
+h3{font-size:15px;font-weight:700;margin:24px 0 12px;color:var(--txt)}
 h3::before{content:"";display:inline-block;width:3px;height:14px;background:var(--up);
   border-radius:1px;margin-right:9px;vertical-align:-2px}
 
 p.body{font-size:13.5px;color:var(--txt2);margin-bottom:14px}
-p.body b{color:#fff}
+p.body b{color:var(--txt)}
 p.body .up{color:var(--up);font-weight:700}
 p.body .dn{color:var(--dn);font-weight:700}
 
@@ -138,17 +138,17 @@ p.body .dn{color:var(--dn);font-weight:700}
   background:var(--card);border:1px solid var(--line);
   border-radius:4px;padding:20px;margin-bottom:14px;
 }
-.card.hl{border-color:rgba(255,43,43,.30);background:linear-gradient(135deg,rgba(255,43,43,.055),transparent 60%)}
-.card.hl2{border-color:var(--line2);background:linear-gradient(135deg,rgba(255,255,255,.028),transparent 60%)}
-.card .ct{font-size:13.5px;font-weight:700;margin-bottom:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:#fff}
+.card.hl{border-color:rgba(224,21,21,.28);background:linear-gradient(135deg,rgba(224,21,21,.04),transparent 60%)}
+.card.hl2{border-color:var(--line2);background:linear-gradient(135deg,rgba(20,20,20,.02),transparent 60%)}
+.card .ct{font-size:13.5px;font-weight:700;margin-bottom:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--txt)}
 
 /* 徽标 */
 .badge{font-size:11px;padding:2.5px 8px;border-radius:2px;font-weight:700;letter-spacing:.3px}
-.bg-up{background:var(--upbg);color:var(--up);border:1px solid rgba(255,43,43,.38)}
-.bg-dn{background:var(--dnbg);color:var(--dn2);border:1px solid rgba(158,158,158,.32)}
-.bg-ac{background:var(--accbg);color:var(--up);border:1px solid rgba(255,43,43,.38)}
-.bg-bl{background:rgba(143,143,143,.12);color:var(--dn2);border:1px solid var(--line2)}
-.bg-gy{background:rgba(143,143,143,.10);color:var(--txt2);border:1px solid var(--line2)}
+.bg-up{background:var(--upbg);color:var(--up);border:1px solid rgba(224,21,21,.34)}
+.bg-dn{background:var(--dnbg);color:var(--dn2);border:1px solid rgba(136,136,136,.30)}
+.bg-ac{background:var(--accbg);color:var(--up);border:1px solid rgba(224,21,21,.34)}
+.bg-bl{background:rgba(140,140,140,.12);color:var(--dn2);border:1px solid var(--line2)}
+.bg-gy{background:rgba(140,140,140,.10);color:var(--txt2);border:1px solid var(--line2)}
 
 /* ---------------- TABLE ---------------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
@@ -158,8 +158,8 @@ th{
 }
 td{padding:10px;border-bottom:1px solid var(--line);color:var(--txt2);font-variant-numeric:tabular-nums}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:rgba(255,255,255,.022)}
-td.nm{color:#fff;font-weight:600}
+tbody tr:hover{background:rgba(20,20,20,.035)}
+td.nm{color:var(--txt);font-weight:600}
 td.num{text-align:right}
 th.num{text-align:right}
 .mono{font-variant-numeric:tabular-nums;font-weight:700}
@@ -168,52 +168,52 @@ th.num{text-align:right}
 .bars{display:flex;flex-direction:column;gap:9px;margin:6px 0 4px}
 .bar-row{display:grid;grid-template-columns:104px 1fr 82px;gap:12px;align-items:center}
 .bar-lb{font-size:12.5px;color:var(--txt2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bar-track{height:22px;background:rgba(255,255,255,.035);border-radius:2px;position:relative;overflow:hidden}
+.bar-track{height:22px;background:rgba(20,20,20,.045);border-radius:2px;position:relative;overflow:hidden}
 .bar-fill{height:100%;border-radius:2px;position:relative;transition:width .8s cubic-bezier(.2,.8,.3,1)}
-.bar-fill.up{background:linear-gradient(90deg,rgba(255,43,43,.5),var(--up))}
-.bar-fill.dn{background:linear-gradient(90deg,rgba(158,158,158,.35),var(--dn))}
-.bar-fill.mix{background:linear-gradient(90deg,rgba(255,255,255,.16),rgba(255,255,255,.62))}
+.bar-fill.up{background:linear-gradient(90deg,rgba(224,21,21,.42),var(--up))}
+.bar-fill.dn{background:linear-gradient(90deg,rgba(136,136,136,.28),var(--dn))}
+.bar-fill.mix{background:linear-gradient(90deg,rgba(20,20,20,.10),rgba(20,20,20,.40))}
 .bar-vl{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
 
 /* ---------------- 涨停梯队 ---------------- */
 .ladder{display:flex;flex-direction:column;gap:10px}
 .rung{display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:stretch}
 .rung-h{
-  background:linear-gradient(135deg,rgba(255,43,43,.16),rgba(255,43,43,.04));
-  border:1px solid rgba(255,43,43,.30); border-radius:3px;
+  background:linear-gradient(135deg,rgba(224,21,21,.12),rgba(224,21,21,.03));
+  border:1px solid rgba(224,21,21,.26); border-radius:3px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 4px;
 }
 .rung-h .n{font-size:22px;font-weight:900;color:var(--up);line-height:1}
 .rung-h .t{font-size:10.5px;color:var(--txt3);margin-top:3px}
 .rung-h.low{
-  background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.025));
-  border-color:rgba(255,255,255,.28);
+  background:linear-gradient(135deg,rgba(20,20,20,.04),rgba(20,20,20,.01));
+  border-color:rgba(20,20,20,.18);
 }
-.rung-h.low .n{color:#fff}
+.rung-h.low .n{color:var(--txt)}
 .rung-b{
   background:var(--card2);border:1px solid var(--line);border-radius:3px;
   padding:11px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
 }
 .stk{
   font-size:12px;padding:4px 10px;border-radius:2px;
-  background:rgba(255,43,43,.10);color:var(--up2);
-  border:1px solid rgba(255,43,43,.22);white-space:nowrap;
+  background:rgba(224,21,21,.08);color:var(--up);
+  border:1px solid rgba(224,21,21,.20);white-space:nowrap;
 }
 .stk .s{color:var(--txt3);font-size:10.5px;margin-left:3px}
-.stk.g{background:rgba(255,255,255,.05);color:var(--txt2);border-color:var(--line2)}
+.stk.g{background:rgba(20,20,20,.03);color:var(--txt2);border-color:var(--line2)}
 .stk.g .s{color:var(--txt3)}
 
 /* ---------------- 温度计 ---------------- */
 .gauge{margin:10px 0 20px}
 .gauge-track{
   height:16px;border-radius:2px;position:relative;
-  /* 冷 → 热：深灰 → 灰 → 暗红 → 亮红 */
-  background:linear-gradient(90deg,#1f1f1f 0%,#3d3d3d 22%,#6e6e6e 42%,#9c2a2a 62%,#d81f1f 80%,#ff2b2b 100%);
-  box-shadow:inset 0 1px 4px rgba(0,0,0,.6);
+  /* 冷 → 热：浅灰 → 中灰 → 暗红 → 亮红 */
+  background:linear-gradient(90deg,#eaeaea 0%,#c9c9c9 22%,#a3a3a3 42%,#c0392b 62%,#e01515 82%,#ff3b3b 100%);
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.06);
 }
 .gauge-mark{
   position:absolute;top:-6px;width:3px;height:28px;border-radius:1px;
-  background:#fff;box-shadow:0 0 10px rgba(255,255,255,.9);
+  background:var(--txt);box-shadow:0 0 8px rgba(20,20,20,.4);
   transform:translateX(-50%);
 }
 .gauge-mark::after{
@@ -231,22 +231,22 @@ th.num{text-align:right}
 
 /* ---------------- 预警 / 支撑 ---------------- */
 .warn{
-  background:linear-gradient(135deg,rgba(255,43,43,.085),rgba(255,43,43,.015));
-  border:1px solid rgba(255,43,43,.30); border-left:3px solid var(--up);
+  background:linear-gradient(135deg,rgba(224,21,21,.06),rgba(224,21,21,.01));
+  border:1px solid rgba(224,21,21,.26); border-left:3px solid var(--up);
   border-radius:3px; padding:16px 18px; margin-bottom:12px;
 }
 .warn .wt{font-size:13.5px;font-weight:800;color:var(--up);margin-bottom:6px}
 .warn p{font-size:13px;color:var(--txt2)}
-.warn p b{color:#fff}
+.warn p b{color:var(--txt)}
 
 .ok{
-  background:linear-gradient(135deg,rgba(255,255,255,.045),transparent);
-  border:1px solid var(--line2); border-left:3px solid #fff;
+  background:linear-gradient(135deg,rgba(20,20,20,.025),transparent);
+  border:1px solid var(--line2); border-left:3px solid var(--txt);
   border-radius:3px; padding:16px 18px; margin-bottom:12px;
 }
-.ok .wt{font-size:13.5px;font-weight:800;color:#fff;margin-bottom:6px}
+.ok .wt{font-size:13.5px;font-weight:800;color:var(--txt);margin-bottom:6px}
 .ok p{font-size:13px;color:var(--txt2)}
-.ok p b{color:#fff}
+.ok p b{color:var(--txt)}
 
 /* ---------------- 清单 ---------------- */
 .ck{list-style:none;display:flex;flex-direction:column;gap:11px}
@@ -255,12 +255,12 @@ th.num{text-align:right}
 .ck li .ic{
   width:21px;height:21px;border-radius:2px;display:flex;align-items:center;
   justify-content:center;font-size:11px;font-weight:800;margin-top:1px;
-  border:1px solid var(--line2);background:rgba(255,255,255,.05);color:var(--txt2);
+  border:1px solid var(--line2);background:rgba(20,20,20,.03);color:var(--txt2);
 }
-.ck li .ic.r{background:var(--upbg);color:var(--up);border-color:rgba(255,43,43,.4)}
-.ck li .ic.g{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.35)}
-.ck li .ic.a{background:rgba(255,255,255,.05);color:var(--txt2);border-color:var(--line2)}
-.ck li b{color:#fff}
+.ck li .ic.r{background:var(--upbg);color:var(--up);border-color:rgba(224,21,21,.38)}
+.ck li .ic.g{background:rgba(20,20,20,.05);color:var(--txt);border-color:rgba(20,20,20,.22)}
+.ck li .ic.a{background:rgba(20,20,20,.03);color:var(--txt2);border-color:var(--line2)}
+.ck li b{color:var(--txt)}
 
 /* ---------------- 图例 ---------------- */
 .legend{display:flex;flex-direction:column;gap:9px;font-size:12.5px;color:var(--txt2)}
@@ -274,7 +274,7 @@ footer{
 }
 footer b{color:var(--txt2)}
 .disc{
-  background:rgba(255,255,255,.02);border:1px solid var(--line);
+  background:rgba(20,20,20,.02);border:1px solid var(--line);
   border-radius:3px;padding:15px 17px;margin-top:14px;font-size:11.5px;color:var(--txt3);
 }
 
@@ -333,8 +333,8 @@ footer b{color:var(--txt2)}
 <div class="card">
   <div class="ct">市场广度（沪深两市涨跌家数）</div>
   <div class="bar-track" style="height:26px;display:flex;border-radius:4px;overflow:hidden">
-    <div style="width:20.4%;background:linear-gradient(90deg,rgba(255,43,43,.5),var(--up))"></div>
-    <div style="width:79.6%;background:linear-gradient(90deg,var(--dn),rgba(158,158,158,.35))"></div>
+    <div style="width:20.4%;background:linear-gradient(90deg,rgba(224,21,21,.42),var(--up))"></div>
+    <div style="width:79.6%;background:linear-gradient(90deg,var(--dn),rgba(136,136,136,.28))"></div>
   </div>
   <div style="display:flex;justify-content:space-between;margin-top:9px;font-size:12.5px">
     <span class="c-up">上涨 <b>1063</b> 家（20.4%）</span>
@@ -388,8 +388,8 @@ footer b{color:var(--txt2)}
     
 <div class="card">
   <div class="ct">涨停归属分布（按所属行业）</div>
-  <div style="display:flex;height:26px;border-radius:6px;overflow:hidden;margin-bottom:14px"><div style="width:12.50%;background:#ff2b2b" title="风电设备 4家"></div><div style="width:9.38%;background:#ffffff" title="电力 3家"></div><div style="width:6.25%;background:#8f8f8f" title="IT服务Ⅱ 2家"></div><div style="width:6.25%;background:#d9d9d9" title="家居用品 2家"></div><div style="width:6.25%;background:#5a5a5a" title="元件 2家"></div><div style="width:6.25%;background:#ff6b6b" title="塑料 2家"></div></div>
-  <div class="legend"><div><span class="dot" style="background:#ff2b2b"></span>风电设备 · <b style="color:#e8edf5">4 家</b></div><div><span class="dot" style="background:#ffffff"></span>电力 · <b style="color:#e8edf5">3 家</b></div><div><span class="dot" style="background:#8f8f8f"></span>IT服务Ⅱ · <b style="color:#e8edf5">2 家</b></div><div><span class="dot" style="background:#d9d9d9"></span>家居用品 · <b style="color:#e8edf5">2 家</b></div><div><span class="dot" style="background:#5a5a5a"></span>元件 · <b style="color:#e8edf5">2 家</b></div><div><span class="dot" style="background:#ff6b6b"></span>塑料 · <b style="color:#e8edf5">2 家</b></div></div>
+  <div style="display:flex;height:26px;border-radius:6px;overflow:hidden;margin-bottom:14px"><div style="width:12.50%;background:#e01515" title="风电设备 4家"></div><div style="width:9.38%;background:#2b2b2b" title="电力 3家"></div><div style="width:6.25%;background:#7a7a7a" title="IT服务Ⅱ 2家"></div><div style="width:6.25%;background:#b6b6b6" title="家居用品 2家"></div><div style="width:6.25%;background:#4a4a4a" title="元件 2家"></div><div style="width:6.25%;background:#ff3b3b" title="塑料 2家"></div></div>
+  <div class="legend"><div><span class="dot" style="background:#e01515"></span>风电设备 · <b style="color:#141414">4 家</b></div><div><span class="dot" style="background:#2b2b2b"></span>电力 · <b style="color:#141414">3 家</b></div><div><span class="dot" style="background:#7a7a7a"></span>IT服务Ⅱ · <b style="color:#141414">2 家</b></div><div><span class="dot" style="background:#b6b6b6"></span>家居用品 · <b style="color:#141414">2 家</b></div><div><span class="dot" style="background:#4a4a4a"></span>元件 · <b style="color:#141414">2 家</b></div><div><span class="dot" style="background:#ff3b3b"></span>塑料 · <b style="color:#141414">2 家</b></div></div>
   <p class="body" style="margin-top:14px;margin-bottom:0">
     最大集中方向为 <b>风电设备</b>，占全部涨停的 <b>12.5%</b>。占比未过半，涨停分布相对分散，属偏扩散的结构。
   </p>
