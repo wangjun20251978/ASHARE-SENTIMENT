@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 A股主线与情绪复盘 — HTML 渲染器
-读 data.json → 生成 index.html（单文件、离线可看、涨红跌绿）
+读 data.json → 生成 index.html（单文件、离线可看、涨红跌灰）
 
 用法: python scripts/render_report.py [--data data.json] [--out index.html]
 """
@@ -425,7 +425,7 @@ def render_index_bars(d):
                     '<div class="bar-vl %s">%s</div></div>'
                     % (esc(i["name"]), tone, bar_w(p, vmax), cls(p), pct(p)))
     return ('<div class="card"><div class="ct">主要指数当日涨跌 '
-            '<span class="badge bg-ac">涨红跌绿</span></div><div class="bars">%s</div></div>'
+            '<span class="badge bg-ac">涨红跌灰</span></div><div class="bars">%s</div></div>'
             % "".join(rows))
 
 
@@ -459,8 +459,8 @@ def render_breadth(d):
 <div class="card">
   <div class="ct">市场广度（沪深两市涨跌家数）</div>
   <div class="bar-track" style="height:26px;display:flex;border-radius:4px;overflow:hidden">
-    <div style="width:%.1f%%;background:linear-gradient(90deg,rgba(255,77,79,.5),var(--up))"></div>
-    <div style="width:%.1f%%;background:linear-gradient(90deg,var(--dn),rgba(0,185,107,.5))"></div>
+    <div style="width:%.1f%%;background:linear-gradient(90deg,rgba(255,43,43,.5),var(--up))"></div>
+    <div style="width:%.1f%%;background:linear-gradient(90deg,var(--dn),rgba(158,158,158,.35))"></div>
   </div>
   <div style="display:flex;justify-content:space-between;margin-top:9px;font-size:12.5px">
     <span class="c-up">上涨 <b>%d</b> 家（%.1f%%）</span>
@@ -580,7 +580,7 @@ def render_mainlines(d, concept_lines, industry_lines, fake_lines, zt_map):
     top_hy = hy.most_common(6)
     dist = ""
     if top_hy:
-        palette = ["#ff4d4f", "#4a9eff", "#f5a623", "#a78bfa", "#22d3ee", "#6b7a90"]
+        palette = ["#ff2b2b", "#ffffff", "#8f8f8f", "#d9d9d9", "#5a5a5a", "#ff6b6b"]
         segs = "".join('<div style="width:%.2f%%;background:%s" title="%s %d家"></div>'
                        % (c / total_zt * 100, palette[i % len(palette)], esc(nm), c)
                        for i, (nm, c) in enumerate(top_hy))
