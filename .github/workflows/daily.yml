@@ -61,7 +61,7 @@ jobs:
 
       - name: 校验产出
         run: |
-          for f in index.html fundflow.html lhb.html global.html valuation.html ipo.html bond.html fund.html; do
+          for f in sentiment.html fundflow.html lhb.html global.html valuation.html ipo.html bond.html fund.html; do
             test -f "$f" || { echo "$f 未生成"; exit 1; }
             size=$(stat -c%s "$f")
             echo "$f 大小: $size 字节"
@@ -75,7 +75,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html fundflow.html lhb.html global.html valuation.html ipo.html bond.html fund.html hub.html \
+          git add sentiment.html fundflow.html lhb.html global.html valuation.html ipo.html bond.html fund.html index.html \
                   data.json data_flow.json data_lhb.json data_global.json data_val.json data_ipo.json data_bond.json data_fund.json
           if git diff --staged --quiet; then
             echo "内容无变化，跳过提交"
