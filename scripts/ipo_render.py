@@ -103,6 +103,7 @@ def main():
     a = ap.parse_args()
     d = json.load(open(a.data, encoding="utf-8"))
     html = render(d)
+    html = html.replace("</body>", '<div class="wrap" style="margin-top:26px"><a href="index.html" style="color:var(--up);font-weight:700;text-decoration:none">← 返回总览</a></div>' + "</body>", 1)
     open(a.out, "w", encoding="utf-8").write(html)
     print("已生成: %s (%d bytes)" % (a.out, len(html.encode("utf-8"))))
 
