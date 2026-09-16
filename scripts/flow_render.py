@@ -66,6 +66,32 @@ def render(d):
     sin_html = stock_rows(d["stock_in"])
     sout_html = stock_rows(d["stock_out"])
 
+    # —— 聪明钱观察名单（具体标的，规则化筛选）——
+    def focus_rows():
+        rows = []
+        for r in d.get("industry_in", [])[:3]:
+            rows.append('<tr><td class="nm">%s <span class="badge bg-up">行业</span></td>'
+                        '<td class="num mono %s">%s</td><td class="num mono %s">%s</td><td>%s</td></tr>'
+                        % (esc(r["name"]), cls(r["pct"]), pct(r["pct"]), cls(r["mainflow"]), yi(r["mainflow"]),
+                           '<span class="badge bg-up">进攻方向</span>' if r["pct"] > 0 else '<span class="badge bg-gy">仅资金流入</span>'))
+        for r in d.get("concept_in", [])[:3]:
+            rows.append('<tr><td class="nm">%s <span class="badge bg-gy">概念</span></td>'
+                        '<td class="num mono %s">%s</td><td class="num mono %s">%s</td><td>%s</td></tr>'
+                        % (esc(r["name"]), cls(r["pct"]), pct(r["pct"]), cls(r["mainflow"]), yi(r["mainflow"]),
+                           '<span class="badge bg-up">题材主线</span>' if r["pct"] > 0 else '<span class="badge bg-gy">仅资金流入</span>'))
+        for r in d.get("stock_in", [])[:5]:
+            strong = r.get("mainflow_pct", 0) >= 10
+            rows.append('<tr><td class="nm">%s <span class="badge bg-gy">%s</span></td>'
+                        '<td class="num mono %s">%s</td><td class="num mono %s">%s</td><td>%s</td></tr>'
+                        % (esc(r["name"]), esc(r["code"]), cls(r["pct"]), pct(r["pct"]),
+                           cls(r["mainflow"]), yi(r["mainflow"]),
+                           '<span class="badge bg-up">强吸筹(占比≥10%)</span>' if strong else '<span class="badge bg-gy">观察</span>'))
+        return "".join(rows)
+
+    ind_names = "、".join("<b>%s</b>" % esc(r["name"]) for r in d.get("industry_in", [])[:3]) or "暂无"
+    stk_names = "、".join("<b>%s</b>(%s)" % (esc(r["name"]), esc(r["code"]))
+                          for r in d.get("stock_in", [])[:3] if r.get("mainflow_pct", 0) >= 10) or "今日无主力占比≥10%的个股"
+
     top_in = d["industry_in"][0] if d["industry_in"] else {}
     verdict = ("今日主力资金最集中的行业为 <b class='c-up'>%s</b>（净流入 %s），"
                "概念方向最强 <b class='c-up'>%s</b>（净流入 %s）。"
@@ -103,7 +129,20 @@ def render(d):
   </div>
 
   <section>
-    <h2><span class="n">1</span>行业资金净流入 Top 12</h2>
+    <h2><span class="n">1</span>聪明钱观察名单 · 今天具体看哪些</h2>
+    <div class="h2sub">按"行业 Top3 + 概念 Top3 + 个股 Top5"规则化筛出，仅观察池整理，非买卖建议</div>
+    <div class="card hl">
+      <table>
+        <thead><tr><th>标的 / 方向</th><th class="num">当日</th><th class="num">主力净流入</th><th>信号</th></tr></thead>
+        <tbody>@@FOCUS@@</tbody>
+      </table>
+      <p class="body" style="margin-top:13px"><b>用法：</b>进攻方向（行业+概念 + 当日同涨）列入中线观察池，<b>等回踩 5/10 日线再介入，不追单日脉冲</b>；
+      标 <span class="badge bg-up">强吸筹(占比≥10%)</span> 的个股是主力净流入占成交额比例高的"真金白银"标的。当前行业观察池：@@IND_NAMES@@；强吸筹个股：@@STK_NAMES@@。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>行业资金净流入 Top 15</h2>
     <div class="h2sub">按主力净流入排序（单位：元）</div>
     <div class="card">
       <table>
@@ -114,7 +153,7 @@ def render(d):
   </section>
 
   <section>
-    <h2><span class="n">2</span>概念资金净流入 Top 12</h2>
+    <h2><span class="n">3</span>概念资金净流入 Top 15</h2>
     <div class="h2sub">按主力净流入排序</div>
     <div class="card">
       <table>
@@ -125,7 +164,7 @@ def render(d):
   </section>
 
   <section>
-    <h2><span class="n">3</span>个股主力净流入 Top 20</h2>
+    <h2><span class="n">4</span>个股主力净流入 Top 20</h2>
     <div class="h2sub">沪A + 深A 主板，按主力净流入排序</div>
     <div class="card">
       <table>
@@ -136,7 +175,7 @@ def render(d):
   </section>
 
   <section>
-    <h2><span class="n">4</span>个股主力净流出 Top 20</h2>
+    <h2><span class="n">5</span>个股主力净流出 Top 20</h2>
     <div class="h2sub">资金出逃方向，规避参考</div>
     <div class="card">
       <table>
@@ -147,7 +186,7 @@ def render(d):
   </section>
 
   <section>
-    <h2><span class="n">5</span>这张表怎么读</h2>
+    <h2><span class="n">6</span>这张表怎么读</h2>
     <div class="h2sub">主力资金流是"谁在买 / 卖"的第一信号</div>
     <p class="body">主力净流入 = 超大单 + 大单<b>主动买入</b>的净额估算，反映机构与大户动向；散户小单不计入，所以它比"成交额"更能看出<b>钱往哪去</b>。注意：这是基于逐笔成交的<b>推演口径</b>，不同平台算法略有差异。</p>
     <p class="body">读这张表看三点：① <b>行业榜与概念榜是否共振</b>——同方向才更可信；② <b>持续性比单日金额重要</b>——连续多日流入的方向才有趋势意义；③ <b>净流出榜 = 资金出逃方向</b>，常是高位股派发的前兆。</p>
@@ -160,7 +199,7 @@ def render(d):
   </section>
 
   <section>
-    <h2><span class="n">6</span>经典策略参考</h2>
+    <h2><span class="n">7</span>经典策略参考</h2>
     <div class="h2sub">公开经典方法的科普，非个股建议，须结合自身风险承受力</div>
     <div class="card hl">
       <div class="ct">策略一 · 跟随聪明钱（Follow the Smart Money）</div>
@@ -194,6 +233,9 @@ def render(d):
             .replace("@@CSS@@", load_css())
             .replace("@@DATE_CN@@", date_cn(d.get("date", "")))
             .replace("@@VERDICT@@", verdict)
+            .replace("@@FOCUS@@", focus_rows())
+            .replace("@@IND_NAMES@@", ind_names)
+            .replace("@@STK_NAMES@@", stk_names)
             .replace("@@IND@@", ind_html)
             .replace("@@CON@@", con_html)
             .replace("@@SIN@@", sin_html)
