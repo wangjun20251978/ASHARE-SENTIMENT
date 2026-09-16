@@ -90,6 +90,34 @@ def render(d):
     </div>
   </section>
 
+  <section>
+    <h2><span class="n">2</span>这张表怎么读</h2>
+    <div class="h2sub">龙虎榜是"聪明钱"动向的高频窗口</div>
+    <p class="body">龙虎榜 = 当日异动股（涨跌停 / 振幅 / 换手达标）的<b>席位买卖明细</b>。关键看买卖方结构：<b>"机构专用"</b>多为公募 / 保险等中长线资金；<b>营业部</b>多为游资 / 短线资金。</p>
+    <p class="body">净买入额大 ≠ 一定涨。要看两点：① <b>买方结构</b>（机构多 = 偏中线，游资多 = 偏短线情绪）；② <b>卖方是否集中出货</b>（卖方全是机构 = 派发信号）。</p>
+    <ul class="ck">
+      <li><span class="ic g">→</span><b>机构专用席位净买</b>：中期加分项，可信度最高</li>
+      <li><span class="ic g">→</span><b>多家一线游资同买</b>：情绪高标，但波动与一日游风险大</li>
+      <li><span class="ic g">→</span><b>卖方全为机构</b>：警惕高位派发</li>
+      <li><span class="ic g">→</span><b>上榜原因 "机构买入"</b>：比"游资接力"更稳健</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>经典策略参考</h2>
+    <div class="h2sub">公开经典方法的科普，非个股建议</div>
+    <div class="card hl">
+      <div class="ct">策略一 · 机构溢价跟随（Institutional Premium）</div>
+      <p class="body">研究统计显示，<b>机构专用席位大额净买</b>的个股，其后 20 日往往有显著超额收益。可把"机构净买 Top"列为观察池，<b>不追高</b>，等缩量回踩关键支撑再跟，止损设于上榜日最低价。</p>
+    </div>
+    <div class="card">
+      <div class="ct">策略二 · 游资情绪跟随（Momentum / 打板）</div>
+      <p class="body">一线游资上榜且换手健康的个股，次日溢价概率较高。可顺势参与，但必须<b>严格止损</b>——游资"一日游"是常态，次日不连板即撤。</p>
+    </div>
+    <div class="warn"><div class="wt">风险警示</div><p>对敲拉抬、席位伪装、利好兑现即出货，是龙虎榜常见陷阱。<b>龙虎榜是"结果"不是"原因"</b>，看到大佬买入不等于能跟赚，切勿盲从。</p></div>
+    <div class="disc"><b>策略免责：</b>以上为公开经典交易方法的科普性介绍，<b>不构成任何具体买卖建议</b>。龙虎榜波动大、风险高，参与须有成熟交易体系与止损纪律。</div>
+  </section>
+
   <footer>
     <b>数据来源：</b>东方财富数据中心（龙虎榜明细）｜数据截至 <b>@@DATE_CN@@</b>｜报告生成 @@GEN@@
     <div class="disc"><b>免责声明：</b>龙虎榜为公开披露数据，仅反映当日上榜个股的席位买卖汇总，不代表后续走势。
