@@ -2,8 +2,9 @@
 
 单文件 HTML · 白底黑字红涨（涨=红 / 跌=灰，不使用绿色）· 工作日 16:30 自动更新
 
-**总览导航：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/hub.html
-**情绪复盘（原页）：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/
+**总览导航（默认首页）：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/
+**情绪复盘页：** https://wangjun20251978.github.io/ASHARE-SENTIMENT/sentiment.html
+**产品手册（5 部分）：** 见仓库 `docs/` 目录（01-总览与导航 / 02-情绪与主线复盘 / 03-资金面 / 04-资产估值转债 / 05-标的研究打新运维）
 
 ---
 
@@ -17,7 +18,7 @@
 
 | # | 报告 | 页面 | 数据源 | 看点 |
 |---|---|---|---|---|
-| 0 | A股主线与情绪复盘 | index.html | 东财行情 | 板块强弱 / 涨停梯队 / 情绪温度 / 主线识别 |
+| 0 | A股主线与情绪复盘 | sentiment.html | 东财行情 | 板块强弱 / 涨停梯队 / 情绪温度 / 主线识别 |
 | 2 | 主力资金净流入榜 | fundflow.html | 东财板块+个股资金流 | 行业 / 概念 / 个股 主力净流入与净流出 |
 | 3 | 龙虎榜席位动向 | lhb.html | 东财数据中心 | 机构 / 游资 主动买卖方向 |
 | 4 | 大类资产夜盘温度计 | global.html | 东财外盘 | 美股 / 港股 / 日经 / 商品 / 外汇 / 债券 |
