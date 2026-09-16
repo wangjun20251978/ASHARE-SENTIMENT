@@ -62,7 +62,7 @@ def render(d):
   <div class="wrap">
     <span class="tag">外盘 · 日更</span>
     <h1>大类资产夜盘温度计 <span class="em">· 睡前一眼</span></h1>
-    <div class="sub">美股 / 港股 / 日经 / 商品 / 外汇 / 债券 ｜ <b>@@DATE_CN@@</b></div>
+    <div class="sub">美股 / 亚太（港股·日经）/ 外汇 ｜ <b>@@DATE_CN@@</b></div>
   </div>
 </header>
 <div class="wrap">
@@ -91,7 +91,7 @@ def render(d):
 
   <footer>
     <b>数据来源：</b>东方财富公开行情接口（外盘延迟镜像）｜数据截至 <b>@@DATE_CN@@</b> 最近收盘｜报告生成 @@GEN@@
-    <div class="disc"><b>免责声明：</b>本页为公开市场数据的客观整理，仅供观察外盘情绪参考，不构成任何投资建议。</div>
+    <div class="disc"><b>口径说明：</b>黄金 / 原油 / 美债等商品与债券，因历史接口在本环境被限流暂缺，将于海外日更环境补全；当前以美股、亚太、外汇为主。<b>免责声明：</b>本页为公开市场数据的客观整理，仅供观察外盘情绪参考，不构成任何投资建议。</div>
   </footer>
 </div>
 </body>
@@ -108,6 +108,7 @@ def main():
     a = ap.parse_args()
     d = json.load(open(a.data, encoding="utf-8"))
     html = render(d)
+    html = html.replace("</body>", '<div class="wrap" style="margin-top:26px"><a href="index.html" style="color:var(--up);font-weight:700;text-decoration:none">← 返回总览</a></div>' + "</body>", 1)
     open(a.out, "w", encoding="utf-8").write(html)
     print("已生成: %s (%d bytes)" % (a.out, len(html.encode("utf-8"))))
 
