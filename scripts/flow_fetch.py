@@ -23,7 +23,7 @@ def clist(fs, pz, po, fields="f12,f14,f3,f62,f184"):
 def grab_board(kind):
     # 行业 m:90+t:2 ；概念 m:90+t:3
     fs = "m:90+t:2" if kind == "industry" else "m:90+t:3"
-    rows = clist(fs, 12, 1)
+    rows = clist(fs, 15, 1)
     out = []
     for it in rows:
         out.append({
