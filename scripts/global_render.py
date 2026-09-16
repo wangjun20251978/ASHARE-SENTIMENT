@@ -89,6 +89,38 @@ def render(d):
     </div>
   </section>
 
+  <section>
+    <h2><span class="n">3</span>这张表怎么读</h2>
+    <div class="h2sub">外盘是全球风险偏好的"锚"</div>
+    <p class="body"><b>美股（道指 / 标普 / 纳指）</b>是全球风险偏好的锚；A 股次日开盘，尤其创业板 / 科技成长，常受牵连——纳指强则成长风格占优，纳指弱则防守为主。</p>
+    <p class="body"><b>美元走强</b>→ 大宗商品与新兴市场承压；<b>黄金走强</b>→ 避险情绪升温；汇率与商品常联动。看懂外盘，等于提前知道次日 A 股情绪的"底色"。</p>
+    <ul class="ck">
+      <li><span class="ic g">→</span><b>美股三指齐涨</b>：风险偏好回升，A 股易高开</li>
+      <li><span class="ic g">→</span><b>纳指单独强</b>：科技 / 成长风格占优</li>
+      <li><span class="ic g">→</span><b>美元 + 黄金同涨</b>：避险模式，降低风险仓位</li>
+      <li><span class="ic g">→</span><b>外盘大跌</b>：A 股低开概率高，控制仓位</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>经典策略参考</h2>
+    <div class="h2sub">公开经典方法的科普，非投资建议</div>
+    <div class="card hl">
+      <div class="ct">策略一 · 海龟交易法则（Turtle / Donchian 通道突破）</div>
+      <p class="body">以 <b>N 日（如 20 / 55 日）高点突破为买点、跌破为卖点</b>，配 <b>ATR 头寸管理</b>。适合商品 / 指数 ETF 的趋势市——不预测方向，只跟随已发生的突破。</p>
+    </div>
+    <div class="card">
+      <div class="ct">策略二 · 全天候 / 风险平价（Ray Dalio All Weather）</div>
+      <p class="body">按<b>风险</b>而非金额配置（股 / 债 / 商品 / 黄金），使任一宏观环境都有资产对冲。适合作为底仓，降低单一市场波动。</p>
+    </div>
+    <div class="card">
+      <div class="ct">策略三 · Larry Connors RSI(2) 用于美股 / ETF</div>
+      <p class="body">标普 ETF（SPY）在 <b>RSI(2) &lt; 10 且创新低</b>时买入，反弹至 <b>RSI(2) &gt; 50</b> 卖出。历史胜率高，但须严格止损，避免在单边崩盘中死扛。</p>
+    </div>
+    <div class="warn"><div class="wt">逆向提示</div><p>黄金急涨 + 美股急跌 = 恐惧极值，常是中期买点（别人恐惧我贪婪）。但极值可能持续，须分批而非一把梭。</p></div>
+    <div class="disc"><b>策略免责：</b>以上为公开经典交易方法的科普性介绍，<b>不构成任何具体买卖建议</b>。跨境 / 商品交易涉及汇率与隔夜风险，须审慎。</div>
+  </section>
+
   <footer>
     <b>数据来源：</b>东方财富公开行情接口（外盘延迟镜像）｜数据截至 <b>@@DATE_CN@@</b> 最近收盘｜报告生成 @@GEN@@
     <div class="disc"><b>口径说明：</b>黄金 / 原油 / 美债等商品与债券，因历史接口在本环境被限流暂缺，将于海外日更环境补全；当前以美股、亚太、外汇为主。<b>免责声明：</b>本页为公开市场数据的客观整理，仅供观察外盘情绪参考，不构成任何投资建议。</div>
