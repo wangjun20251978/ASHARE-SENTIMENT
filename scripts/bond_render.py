@@ -105,6 +105,38 @@ def render(d):
     </div>
   </section>
 
+  <section>
+    <h2><span class="n">4</span>这张表怎么读</h2>
+    <div class="h2sub">双低是转债"攻守兼备"的核心指标</div>
+    <p class="body"><b>双低 = 价格 + 转股溢价率</b>，越低越"攻守兼备"：<b>价格低</b> = 有债底保护（跌不动），<b>溢价低</b> = 跟涨弹性大。平均 / 中位溢价率高，代表整体偏贵（债性强）。</p>
+    <p class="body">温度计映射股性 / 债性：偏暖 = 股性强、弹性大但贵；偏冷 = 债性强、安全但弹性弱。下表双低 Top15 是常规观察池，涨幅榜反映当日弹性。</p>
+    <ul class="ck">
+      <li><span class="ic g">→</span><b>双低 &lt; 120</b>：常规配置区，稳健优先</li>
+      <li><span class="ic g">→</span><b>价格 &lt; 110 且溢价 &lt; 20%</b>：攻守兼备的"黄金区"</li>
+      <li><span class="ic g">→</span><b>溢价 &gt; 50%</b>：偏债性，弹性弱</li>
+      <li><span class="ic g">→</span><b>强赎倒计时</b>：高价转债注意及时卖出</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>经典策略参考</h2>
+    <div class="h2sub">公开经典方法的科普，非投资建议</div>
+    <div class="card hl">
+      <div class="ct">策略一 · 双低轮动（Double-Low Rotation）</div>
+      <p class="body">按"<b>双低值</b>"排序，买入最低的 N 只（如 10~15 只）分散持有，<b>定期（周 / 月）轮动</b>换入更低的。这是转债圈最经典、回撤可控的稳健策略。</p>
+    </div>
+    <div class="card">
+      <div class="ct">策略二 · 网格交易（Grid，你已在用）</div>
+      <p class="body">在价格区间内设档位<b>低买高卖</b>吃波动，适合溢价低、债底厚的中低价转债。配合双低选标的，波动中累积收益。</p>
+    </div>
+    <div class="card">
+      <div class="ct">策略三 · 下修博弈（Put-back / 转股价下修）</div>
+      <p class="body">公司下修转股价 → 溢价大降 → 转债上涨。可提前埋伏"<b>高溢价 + 有下修动机</b>"的转债，赚条款博弈的钱。</p>
+    </div>
+    <div class="warn"><div class="wt">风险提示</div><p><b>强赎</b>（高价转债收益瞬间归零）、<b>信用违约</b>、<b>流动性差</b>是转债三大风险。双低≠无风险，须看正股质地与剩余年限。</p></div>
+    <div class="disc"><b>策略免责：</b>以上为公开经典交易方法的科普性介绍，<b>不构成任何具体买卖建议</b>。转债投资须关注强赎与信用风险。</div>
+  </section>
+
   <footer>
     <b>数据来源：</b>东方财富公开行情接口（可转债板块）｜数据截至 <b>@@DATE_CN@@</b> 收盘｜报告生成 @@GEN@@
     <div class="disc"><b>免责声明：</b>本页为公开市场数据的客观整理，转债有信用风险与强赎风险，双低仅为量化观察维度，
