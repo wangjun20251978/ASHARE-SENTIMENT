@@ -250,10 +250,11 @@ th.num{text-align:right}
 
 /* ---------------- 清单 ---------------- */
 .ck{list-style:none;display:flex;flex-direction:column;gap:11px}
-.ck li{display:grid;grid-template-columns:24px 1fr;gap:11px;font-size:13.5px;
-  color:var(--txt2); align-items:start;list-style:none}
+/* 用 flex 而非 grid：li 里的裸文本节点才能跟随 <b> 正常换行（grid 会把裸文本塞进 24px 窄列导致竖排） */
+.ck li{display:flex;gap:10px;font-size:13.5px;
+  color:var(--txt2); align-items:flex-start;list-style:none}
 .ck li .ic{
-  width:21px;height:21px;border-radius:2px;display:flex;align-items:center;
+  flex:0 0 21px;width:21px;height:21px;border-radius:2px;display:flex;align-items:center;
   justify-content:center;font-size:11px;font-weight:800;margin-top:1px;
   border:1px solid var(--line2);background:rgba(20,20,20,.03);color:var(--txt2);
 }
