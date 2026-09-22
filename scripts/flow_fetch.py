@@ -8,9 +8,8 @@ OUT = os.path.abspath(os.path.join(HERE, "..", "data_flow.json"))
 
 
 def fetch(url, timeout=20):
-    req = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0", "Referer": "https://quote.eastmoney.com/"})
-    return json.loads(urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore"))
+    import _em
+    return _em.fetch_json(url, timeout=timeout)
 
 
 def clist(fs, pz, po, fields="f12,f14,f3,f62,f184"):
