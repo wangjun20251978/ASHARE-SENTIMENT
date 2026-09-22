@@ -19,16 +19,8 @@ def sf(v):
 
 
 def fetch(url, timeout=20):
-    last = None
-    for _ in range(3):
-        try:
-            req = urllib.request.Request(url, headers={
-                "User-Agent": "Mozilla/5.0", "Referer": "https://quote.eastmoney.com/"})
-            return json.loads(urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore"))
-        except Exception as e:
-            last = e
-            time.sleep(1.6)
-    raise last
+    import _em
+    return _em.fetch_json(url, timeout=timeout)
 
 
 def clist_all(fs, fields="f12,f14,f2,f3,f238,f239", page=100, max_pages=12):
