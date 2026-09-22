@@ -32,21 +32,19 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 抓取行情数据（8 个报告）
+      - name: 抓取行情数据（8 个报告，单源失败不中断）
         id: fetch
         run: |
-          if [ -n "${{ github.event.inputs.date }}" ]; then
-            python scripts/fetch_data.py --date "${{ github.event.inputs.date }}"
-          else
-            python scripts/fetch_data.py
-          fi
-          python scripts/flow_fetch.py     # 资金榜
-          python scripts/lhb_fetch.py      # 龙虎榜（数据源不稳，失败则空态）
-          python scripts/global_fetch.py   # 大类资产
-          python scripts/val_fetch.py      # 估值分位
-          python scripts/ipo_fetch.py      # 新股/次新
-          python scripts/bond_fetch.py     # 转债
-          python scripts/fund_fetch.py     # 基金
+          set +e
+          python scripts/fetch_data.py   || echo "⚠️ fetch_data 失败，沿用旧数据"
+          python scripts/flow_fetch.py   || echo "⚠️ flow_fetch 失败"
+          python scripts/lhb_fetch.py    || echo "⚠️ lhb_fetch 失败"
+          python scripts/global_fetch.py || echo "⚠️ global_fetch 失败"
+          python scripts/val_fetch.py    || echo "⚠️ val_fetch 失败"
+          python scripts/ipo_fetch.py    || echo "⚠️ ipo_fetch 失败"
+          python scripts/bond_fetch.py   || echo "⚠️ bond_fetch 失败"
+          python scripts/fund_fetch.py   || echo "⚠️ fund_fetch 失败"
+          set -e
 
       - name: 生成报告页面（8 个）
         run: |
@@ -70,6 +68,36 @@ jobs:
               exit 1
             fi
           done
+
+      - name: 数据新鲜度自检
+        id: check
+        continue-on-error: true
+        run: |
+          python - <<'PY'
+          import json, datetime
+          tz = datetime.timezone(datetime.timedelta(hours=8))
+          today = datetime.datetime.now(tz).strftime('%Y-%m-%d')
+          files = {
+            'data.json':'情绪','data_flow.json':'资金流','data_lhb.json':'龙虎榜',
+            'data_global.json':'大类资产','data_val.json':'估值','data_ipo.json':'次新',
+            'data_bond.json':'转债','data_fund.json':'基金'
+          }
+          stale=[]
+          for f,label in files.items():
+            try:
+              d=json.load(open(f,encoding='utf-8'))
+              gen=d.get('generated','') or d.get('date','')
+              ok = today in str(gen)
+              print(f"{label:6} {f:18} generated={gen} -> {'OK' if ok else 'STALE'}")
+              if not ok: stale.append(label)
+            except Exception as e:
+              print(f"{label:6} {f:18} 读取失败: {e}")
+              stale.append(label)
+          if stale:
+            print("⚠️ 以下看板数据非今日（可能为旧数据）:", ','.join(stale))
+          else:
+            print("✅ 全部 8 个看板数据均为今日")
+          PY
 
       - name: 提交更新
         run: |
