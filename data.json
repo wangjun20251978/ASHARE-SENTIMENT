@@ -1,75 +1,8 @@
 {
   "date": "20260924",
   "prev_date": "20260923",
-  "generated": "2026-09-24 21:44",
-  "indexes": [
-    {
-      "code": "000001",
-      "name": "上证指数",
-      "price": 3888.37,
-      "pct": -1.22,
-      "chg": -48.15,
-      "amount": 783613001376.2,
-      "up": 498,
-      "down": 1795,
-      "flat": 62
-    },
-    {
-      "code": "399001",
-      "name": "深证成指",
-      "price": 13316.97,
-      "pct": -2.34,
-      "chg": -319.1,
-      "amount": 869744360964.3094,
-      "up": 600,
-      "down": 2252,
-      "flat": 80
-    },
-    {
-      "code": "399006",
-      "name": "创业板指",
-      "price": 3288.95,
-      "pct": -2.68,
-      "chg": -90.66,
-      "amount": 414217590040.08,
-      "up": 252,
-      "down": 1129,
-      "flat": 24
-    },
-    {
-      "code": "000688",
-      "name": "科创50",
-      "price": 1621.87,
-      "pct": -2.35,
-      "chg": -38.98,
-      "amount": 69988049488.7,
-      "up": 2,
-      "down": 48,
-      "flat": 0
-    },
-    {
-      "code": "399905",
-      "name": "中证 500",
-      "price": 7624.07,
-      "pct": -2.15,
-      "chg": -167.75,
-      "amount": 269922500703.9,
-      "up": 54,
-      "down": 434,
-      "flat": 11
-    },
-    {
-      "code": "000016",
-      "name": "上证50",
-      "price": 2842.74,
-      "pct": -1.42,
-      "chg": -41.03,
-      "amount": 102730522836.8,
-      "up": 12,
-      "down": 38,
-      "flat": 0
-    }
-  ],
+  "generated": "2026-09-25 22:07",
+  "indexes": [],
   "amount_hist": [
     [
       "2026-09-17",
@@ -96,7 +29,7 @@
       964783077.0
     ]
   ],
-  "turnover_today": 1653357362340.5093,
+  "turnover_today": null,
   "zt_count": 52,
   "zb_count": 10,
   "dt_count": 13,
@@ -128,8 +61,8 @@
   "top_boards": [],
   "top_concepts": [],
   "breadth": {
-    "up": 1098,
-    "down": 4047
+    "up": 0,
+    "down": 0
   },
   "zt_pool": [
     {
@@ -1645,17 +1578,17 @@
   "log": [
     "交易日序列 30 个（腾讯），最新 20260924",
     "复盘日期 20260924，前一交易日 20260923",
-    "指数 6 个",
     "涨停 52 / 炸板 10 / 跌停 13",
     "昨日(20260923)涨停 51 家",
     "行业板块 0 个",
     "概念板块 0 个",
-    "市场广度 涨 1098 / 跌 4047 / 平 142",
     "板块多周期涨幅：成功 0 / 尝试 0",
     "量能序列 6 日"
   ],
   "errors": [
+    "指数快照失败: mirror-exhausted api/qt/ulist.np/get?fltt=2&secids=1.000001,0.399001,0.399006,1.000688,0.3",
     "板块分页 1 失败: mirror-exhausted api/qt/clist/get?pn=1&pz=90&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m",
-    "板块分页 1 失败: mirror-exhausted api/qt/clist/get?pn=1&pz=40&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m"
+    "板块分页 1 失败: mirror-exhausted api/qt/clist/get?pn=1&pz=40&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m",
+    "广度字段为空"
   ]
 }
