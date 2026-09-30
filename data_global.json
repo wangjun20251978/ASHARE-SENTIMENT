@@ -1,49 +1,49 @@
 {
- "date": "20260918",
- "generated": "2026-09-18 13:08",
+ "date": "20260930",
+ "generated": "2026-09-30 15:12",
  "assets": [
   {
    "code": "DJIA",
    "name": "道琼斯",
    "group": "美股",
-   "price": 51778.04,
-   "chg": 0.61
+   "price": 51371.07,
+   "chg": 0.04
   },
   {
    "code": "SPX",
    "name": "标普500",
    "group": "美股",
-   "price": 7637.76,
-   "chg": 1.14
+   "price": 7711.24,
+   "chg": 0.53
   },
   {
    "code": "NDX",
    "name": "纳斯达克",
    "group": "美股",
-   "price": 26418.3,
-   "chg": 1.69
+   "price": 27050.94,
+   "chg": 0.95
   },
   {
    "code": "UDI",
    "name": "美元指数",
    "group": "外汇",
-   "price": 100.47,
-   "chg": 0.24
+   "price": 101.28,
+   "chg": -0.11
   },
   {
    "code": "HSI",
    "name": "恒生指数",
    "group": "亚太",
-   "price": 24750.78,
-   "chg": 0.6
+   "price": 24613.27,
+   "chg": 0.37
   },
   {
    "code": "N225",
    "name": "日经225",
    "group": "亚太",
-   "price": 65018.95,
-   "chg": 1.38
+   "price": 66753.72,
+   "chg": 1.94
   }
  ],
- "us_avg": 1.15
+ "us_avg": 0.51
 }
