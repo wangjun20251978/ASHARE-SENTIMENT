@@ -1,7 +1,7 @@
 {
   "date": "20260930",
   "prev_date": "20260929",
-  "generated": "2026-10-07 20:38",
+  "generated": "2026-10-07 23:46",
   "indexes": [
     {
       "code": "000001",
@@ -4173,9 +4173,784 @@
       "up": 1,
       "down": 7,
       "netrate": -0.48
+    },
+    {
+      "code": "BK1295",
+      "name": "其他数字媒体",
+      "pct": -1.5,
+      "netflow": -20600757.0,
+      "up": 1,
+      "down": 1,
+      "netrate": -4.33
+    },
+    {
+      "code": "BK1297",
+      "name": "图片媒体",
+      "pct": -1.51,
+      "netflow": -24955304.0,
+      "up": 0,
+      "down": 1,
+      "netrate": -13.95
+    },
+    {
+      "code": "BK1291",
+      "name": "电视广播Ⅲ",
+      "pct": -1.53,
+      "netflow": -91629735.0,
+      "up": 1,
+      "down": 11,
+      "netrate": -4.91
+    },
+    {
+      "code": "BK1219",
+      "name": "电视广播Ⅱ",
+      "pct": -1.53,
+      "netflow": -91629735.0,
+      "up": 1,
+      "down": 11,
+      "netrate": -4.91
+    },
+    {
+      "code": "BK1409",
+      "name": "激光设备",
+      "pct": -1.53,
+      "netflow": -398951072.0,
+      "up": 1,
+      "down": 10,
+      "netrate": -5.35
+    },
+    {
+      "code": "BK1322",
+      "name": "其他电源设备Ⅲ",
+      "pct": -1.65,
+      "netflow": -265920672.0,
+      "up": 6,
+      "down": 23,
+      "netrate": -3.84
+    },
+    {
+      "code": "BK1288",
+      "name": "金属新材料",
+      "pct": -1.67,
+      "netflow": -398479424.0,
+      "up": 4,
+      "down": 32,
+      "netrate": -6.79
+    },
+    {
+      "code": "BK1220",
+      "name": "广告营销",
+      "pct": -1.67,
+      "netflow": -860952064.0,
+      "up": 5,
+      "down": 24,
+      "netrate": -10.08
+    },
+    {
+      "code": "BK1336",
+      "name": "其他电子Ⅲ",
+      "pct": -1.68,
+      "netflow": -288252432.0,
+      "up": 5,
+      "down": 28,
+      "netrate": -2.51
+    },
+    {
+      "code": "BK1223",
+      "name": "其他电子Ⅱ",
+      "pct": -1.68,
+      "netflow": -288252432.0,
+      "up": 5,
+      "down": 28,
+      "netrate": -2.51
+    },
+    {
+      "code": "BK1268",
+      "name": "互联网电商",
+      "pct": -1.68,
+      "netflow": -6133548.0,
+      "up": 2,
+      "down": 16,
+      "netrate": -0.17
+    },
+    {
+      "code": "BK1387",
+      "name": "环保设备Ⅲ",
+      "pct": -1.68,
+      "netflow": -73391796.0,
+      "up": 9,
+      "down": 17,
+      "netrate": -3.65
+    },
+    {
+      "code": "BK1234",
+      "name": "环保设备Ⅱ",
+      "pct": -1.68,
+      "netflow": -73391796.0,
+      "up": 9,
+      "down": 17,
+      "netrate": -3.65
+    },
+    {
+      "code": "BK1456",
+      "name": "其他家电Ⅲ",
+      "pct": -1.7,
+      "netflow": 2026430.0,
+      "up": 0,
+      "down": 3,
+      "netrate": 0.25
+    },
+    {
+      "code": "BK1243",
+      "name": "其他家电Ⅱ",
+      "pct": -1.7,
+      "netflow": 2026430.0,
+      "up": 0,
+      "down": 3,
+      "netrate": 0.25
+    },
+    {
+      "code": "BK1437",
+      "name": "改性塑料",
+      "pct": -1.71,
+      "netflow": -153675985.0,
+      "up": 5,
+      "down": 18,
+      "netrate": -4.71
+    },
+    {
+      "code": "BK0458",
+      "name": "仪器仪表",
+      "pct": -1.73,
+      "netflow": -541093392.0,
+      "up": 10,
+      "down": 52,
+      "netrate": -3.65
+    },
+    {
+      "code": "BK1293",
+      "name": "营销代理",
+      "pct": -1.74,
+      "netflow": -902817504.0,
+      "up": 4,
+      "down": 22,
+      "netrate": -11.83
+    },
+    {
+      "code": "BK0736",
+      "name": "通信服务",
+      "pct": -1.82,
+      "netflow": -355617952.0,
+      "up": 5,
+      "down": 34,
+      "netrate": -4.57
+    },
+    {
+      "code": "BK1439",
+      "name": "膜材料",
+      "pct": -1.86,
+      "netflow": -229805008.0,
+      "up": 2,
+      "down": 19,
+      "netrate": -4.06
+    },
+    {
+      "code": "BK1300",
+      "name": "院线",
+      "pct": -1.87,
+      "netflow": -51399796.0,
+      "up": 0,
+      "down": 4,
+      "netrate": -10.04
+    },
+    {
+      "code": "BK1588",
+      "name": "通信工程及服务",
+      "pct": -1.88,
+      "netflow": -59638284.0,
+      "up": 1,
+      "down": 18,
+      "netrate": -3.07
+    },
+    {
+      "code": "BK1425",
+      "name": "胶黏剂及胶带",
+      "pct": -1.89,
+      "netflow": -32949712.0,
+      "up": 0,
+      "down": 5,
+      "netrate": -4.14
+    },
+    {
+      "code": "BK1619",
+      "name": "其他金属新材料",
+      "pct": -1.96,
+      "netflow": -337983728.0,
+      "up": 1,
+      "down": 20,
+      "netrate": -8.79
+    },
+    {
+      "code": "BK1567",
+      "name": "其他专业服务",
+      "pct": -2.04,
+      "netflow": 11185910.0,
+      "up": 0,
+      "down": 3,
+      "netrate": 3.17
+    },
+    {
+      "code": "BK1354",
+      "name": "鞋帽及其他",
+      "pct": -2.2,
+      "netflow": -10628366.0,
+      "up": 1,
+      "down": 9,
+      "netrate": -1.18
+    },
+    {
+      "code": "BK1589",
+      "name": "通信应用增值服务",
+      "pct": -2.23,
+      "netflow": -336466731.0,
+      "up": 1,
+      "down": 16,
+      "netrate": -8.09
+    },
+    {
+      "code": "BK1201",
+      "name": "电子",
+      "pct": -2.29,
+      "netflow": -15022330112.0,
+      "up": 61,
+      "down": 454,
+      "netrate": -4.23
+    },
+    {
+      "code": "BK1547",
+      "name": "跨境电商",
+      "pct": -2.33,
+      "netflow": 2888789.0,
+      "up": 0,
+      "down": 8,
+      "netrate": 0.11
+    },
+    {
+      "code": "BK1462",
+      "name": "玻纤制造",
+      "pct": -2.35,
+      "netflow": -703234192.0,
+      "up": 0,
+      "down": 8,
+      "netrate": -7.0
+    },
+    {
+      "code": "BK1397",
+      "name": "磨具磨料",
+      "pct": -2.37,
+      "netflow": -684278464.0,
+      "up": 1,
+      "down": 13,
+      "netrate": -10.56
+    },
+    {
+      "code": "BK1332",
+      "name": "电子化学品Ⅲ",
+      "pct": -2.42,
+      "netflow": -633389808.0,
+      "up": 3,
+      "down": 34,
+      "netrate": -3.17
+    },
+    {
+      "code": "BK1039",
+      "name": "电子化学品Ⅱ",
+      "pct": -2.42,
+      "netflow": -633389808.0,
+      "up": 3,
+      "down": 34,
+      "netrate": -3.17
+    },
+    {
+      "code": "BK1331",
+      "name": "数字芯片设计",
+      "pct": -2.43,
+      "netflow": -5174259968.0,
+      "up": 6,
+      "down": 49,
+      "netrate": -6.85
+    },
+    {
+      "code": "BK1341",
+      "name": "房产租赁经纪",
+      "pct": -2.44,
+      "netflow": -112512544.0,
+      "up": 1,
+      "down": 2,
+      "netrate": -3.02
+    },
+    {
+      "code": "BK1339",
+      "name": "被动元件",
+      "pct": -2.6,
+      "netflow": -771107968.0,
+      "up": 0,
+      "down": 19,
+      "netrate": -6.69
+    },
+    {
+      "code": "BK1327",
+      "name": "分立器件",
+      "pct": -2.7,
+      "netflow": -311468464.0,
+      "up": 0,
+      "down": 18,
+      "netrate": -2.88
+    },
+    {
+      "code": "BK1355",
+      "name": "运动服装",
+      "pct": -2.83,
+      "netflow": -101745980.0,
+      "up": 1,
+      "down": 3,
+      "netrate": -14.34
+    },
+    {
+      "code": "BK1330",
+      "name": "模拟芯片设计",
+      "pct": -2.85,
+      "netflow": -224502240.0,
+      "up": 1,
+      "down": 35,
+      "netrate": -2.07
+    },
+    {
+      "code": "BK1036",
+      "name": "半导体",
+      "pct": -2.97,
+      "netflow": -10191719424.0,
+      "up": 9,
+      "down": 178,
+      "netrate": -5.73
+    },
+    {
+      "code": "BK1326",
+      "name": "半导体设备",
+      "pct": -3.17,
+      "netflow": -833181296.0,
+      "up": 1,
+      "down": 24,
+      "netrate": -2.88
+    },
+    {
+      "code": "BK1325",
+      "name": "半导体材料",
+      "pct": -3.38,
+      "netflow": -1224060688.0,
+      "up": 1,
+      "down": 31,
+      "netrate": -4.89
+    },
+    {
+      "code": "BK1329",
+      "name": "集成电路制造",
+      "pct": -3.58,
+      "netflow": -718572320.0,
+      "up": 0,
+      "down": 8,
+      "netrate": -5.67
+    },
+    {
+      "code": "BK0459",
+      "name": "元件",
+      "pct": -4.01,
+      "netflow": -3932953088.0,
+      "up": 3,
+      "down": 64,
+      "netrate": -5.3
+    },
+    {
+      "code": "BK1328",
+      "name": "集成电路封测",
+      "pct": -4.1,
+      "netflow": -1705674224.0,
+      "up": 0,
+      "down": 13,
+      "netrate": -12.08
+    },
+    {
+      "code": "BK1340",
+      "name": "印制电路板",
+      "pct": -4.56,
+      "netflow": -3161845248.0,
+      "up": 3,
+      "down": 45,
+      "netrate": -5.05
     }
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "code": "BK1063",
+      "name": "重组蛋白",
+      "pct": 4.33,
+      "netflow": 1166119264.0,
+      "up": 33,
+      "down": 2,
+      "netrate": 5.62
+    },
+    {
+      "code": "BK1051",
+      "name": "昨日连板_含一字",
+      "pct": 4.25,
+      "netflow": 211543568.0,
+      "up": 6,
+      "down": 4,
+      "netrate": 2.94
+    },
+    {
+      "code": "BK0899",
+      "name": "CRO",
+      "pct": 3.8,
+      "netflow": 2726605376.0,
+      "up": 45,
+      "down": 5,
+      "netrate": 7.16
+    },
+    {
+      "code": "BK0816",
+      "name": "昨日连板",
+      "pct": 3.75,
+      "netflow": -49680480.0,
+      "up": 3,
+      "down": 3,
+      "netrate": -0.93
+    },
+    {
+      "code": "BK1716",
+      "name": "反转股",
+      "pct": 3.63,
+      "netflow": 143147024.0,
+      "up": 3,
+      "down": 1,
+      "netrate": 1.49
+    },
+    {
+      "code": "BK1645",
+      "name": "昨日打二板以上表现",
+      "pct": 3.33,
+      "netflow": 252453687.0,
+      "up": 2,
+      "down": 1,
+      "netrate": 14.26
+    },
+    {
+      "code": "BK0907",
+      "name": "转基因",
+      "pct": 3.3,
+      "netflow": 248647165.0,
+      "up": 18,
+      "down": 1,
+      "netrate": 5.5
+    },
+    {
+      "code": "BK0986",
+      "name": "CAR-T细胞疗法",
+      "pct": 3.27,
+      "netflow": 1355826048.0,
+      "up": 30,
+      "down": 0,
+      "netrate": 6.82
+    },
+    {
+      "code": "BK0870",
+      "name": "单抗概念",
+      "pct": 3.02,
+      "netflow": 1049766624.0,
+      "up": 47,
+      "down": 2,
+      "netrate": 4.58
+    },
+    {
+      "code": "BK1712",
+      "name": "医药医疗风格",
+      "pct": 2.92,
+      "netflow": 3789874944.0,
+      "up": 93,
+      "down": 6,
+      "netrate": 5.44
+    },
+    {
+      "code": "BK1146",
+      "name": "减肥药",
+      "pct": 2.87,
+      "netflow": 1540015888.0,
+      "up": 41,
+      "down": 2,
+      "netrate": 6.18
+    },
+    {
+      "code": "BK1106",
+      "name": "创新药",
+      "pct": 2.74,
+      "netflow": 4150709248.0,
+      "up": 195,
+      "down": 14,
+      "netrate": 4.65
+    },
+    {
+      "code": "BK1657",
+      "name": "病原体防治",
+      "pct": 2.63,
+      "netflow": 2349904768.0,
+      "up": 146,
+      "down": 19,
+      "netrate": 4.4
+    },
+    {
+      "code": "BK0548",
+      "name": "生物疫苗",
+      "pct": 2.49,
+      "netflow": 974397840.0,
+      "up": 67,
+      "down": 4,
+      "netrate": 4.7
+    },
+    {
+      "code": "BK1675",
+      "name": "历史新高",
+      "pct": 2.47,
+      "netflow": 79453392.0,
+      "up": 3,
+      "down": 2,
+      "netrate": 1.99
+    },
+    {
+      "code": "BK0944",
+      "name": "肝素概念",
+      "pct": 2.45,
+      "netflow": 28864605.0,
+      "up": 13,
+      "down": 0,
+      "netrate": 1.06
+    },
+    {
+      "code": "BK1086",
+      "name": "粮食概念",
+      "pct": 2.43,
+      "netflow": 468951952.0,
+      "up": 32,
+      "down": 3,
+      "netrate": 4.41
+    },
+    {
+      "code": "BK1056",
+      "name": "幽门螺杆菌概念",
+      "pct": 2.43,
+      "netflow": 29919632.0,
+      "up": 51,
+      "down": 8,
+      "netrate": 0.21
+    },
+    {
+      "code": "BK0895",
+      "name": "维生素",
+      "pct": 2.4,
+      "netflow": 39821920.0,
+      "up": 33,
+      "down": 1,
+      "netrate": 0.5
+    },
+    {
+      "code": "BK1078",
+      "name": "肝炎概念",
+      "pct": 2.33,
+      "netflow": 983580000.0,
+      "up": 54,
+      "down": 4,
+      "netrate": 4.34
+    },
+    {
+      "code": "BK0698",
+      "name": "免疫治疗",
+      "pct": 2.26,
+      "netflow": 341952064.0,
+      "up": 42,
+      "down": 3,
+      "netrate": 3.25
+    },
+    {
+      "code": "BK0675",
+      "name": "病毒防治",
+      "pct": 2.23,
+      "netflow": 995970000.0,
+      "up": 92,
+      "down": 13,
+      "netrate": 3.99
+    },
+    {
+      "code": "BK0477",
+      "name": "酿酒概念",
+      "pct": 2.21,
+      "netflow": 1295499088.0,
+      "up": 32,
+      "down": 2,
+      "netrate": 8.59
+    },
+    {
+      "code": "BK0806",
+      "name": "精准医疗",
+      "pct": 2.21,
+      "netflow": 232920976.0,
+      "up": 38,
+      "down": 6,
+      "netrate": 1.54
+    },
+    {
+      "code": "BK0939",
+      "name": "辅助生殖",
+      "pct": 2.2,
+      "netflow": 512921376.0,
+      "up": 47,
+      "down": 6,
+      "netrate": 2.84
+    },
+    {
+      "code": "BK0894",
+      "name": "阿兹海默",
+      "pct": 2.2,
+      "netflow": 106185280.0,
+      "up": 18,
+      "down": 3,
+      "netrate": 1.54
+    },
+    {
+      "code": "BK1659",
+      "name": "精准诊断",
+      "pct": 2.11,
+      "netflow": 515569344.0,
+      "up": 53,
+      "down": 9,
+      "netrate": 3.42
+    },
+    {
+      "code": "BK0896",
+      "name": "白酒",
+      "pct": 2.1,
+      "netflow": 1251735616.0,
+      "up": 33,
+      "down": 6,
+      "netrate": 6.98
+    },
+    {
+      "code": "BK0938",
+      "name": "代糖概念",
+      "pct": 2.06,
+      "netflow": 149435184.0,
+      "up": 18,
+      "down": 5,
+      "netrate": 3.11
+    },
+    {
+      "code": "BK0872",
+      "name": "青蒿素",
+      "pct": 1.99,
+      "netflow": 49486320.0,
+      "up": 10,
+      "down": 1,
+      "netrate": 1.11
+    },
+    {
+      "code": "BK0693",
+      "name": "基因测序",
+      "pct": 1.95,
+      "netflow": 181815216.0,
+      "up": 38,
+      "down": 7,
+      "netrate": 1.55
+    },
+    {
+      "code": "BK1676",
+      "name": "百日新高",
+      "pct": 1.9,
+      "netflow": 152001552.0,
+      "up": 27,
+      "down": 11,
+      "netrate": 0.74
+    },
+    {
+      "code": "BK1656",
+      "name": "特色药",
+      "pct": 1.86,
+      "netflow": -24961664.0,
+      "up": 41,
+      "down": 2,
+      "netrate": -0.37
+    },
+    {
+      "code": "BK1073",
+      "name": "啤酒概念",
+      "pct": 1.85,
+      "netflow": 255778192.0,
+      "up": 16,
+      "down": 3,
+      "netrate": 5.93
+    },
+    {
+      "code": "BK0841",
+      "name": "体外诊断概念",
+      "pct": 1.85,
+      "netflow": 376737040.0,
+      "up": 56,
+      "down": 12,
+      "netrate": 2.58
+    },
+    {
+      "code": "BK0906",
+      "name": "流感",
+      "pct": 1.84,
+      "netflow": 635566432.0,
+      "up": 110,
+      "down": 18,
+      "netrate": 1.8
+    },
+    {
+      "code": "BK1000",
+      "name": "宁组合",
+      "pct": 1.81,
+      "netflow": 1549405440.0,
+      "up": 18,
+      "down": 6,
+      "netrate": 3.69
+    },
+    {
+      "code": "BK0892",
+      "name": "乳业",
+      "pct": 1.78,
+      "netflow": 45308272.0,
+      "up": 28,
+      "down": 4,
+      "netrate": 0.71
+    },
+    {
+      "code": "BK0676",
+      "name": "独家药品",
+      "pct": 1.75,
+      "netflow": -58830384.0,
+      "up": 39,
+      "down": 4,
+      "netrate": -0.74
+    },
+    {
+      "code": "BK1174",
+      "name": "合成生物",
+      "pct": 1.75,
+      "netflow": 1287328304.0,
+      "up": 94,
+      "down": 30,
+      "netrate": 3.29
+    }
+  ],
   "top_boards": [
     {
       "code": "BK1296",
@@ -4268,7 +5043,80 @@
       "netrate": 6.89
     }
   ],
-  "top_concepts": [],
+  "top_concepts": [
+    {
+      "code": "BK1063",
+      "name": "重组蛋白",
+      "pct": 4.33,
+      "netflow": 1166119264.0,
+      "up": 33,
+      "down": 2,
+      "netrate": 5.62
+    },
+    {
+      "code": "BK1051",
+      "name": "昨日连板_含一字",
+      "pct": 4.25,
+      "netflow": 211543568.0,
+      "up": 6,
+      "down": 4,
+      "netrate": 2.94
+    },
+    {
+      "code": "BK0899",
+      "name": "CRO",
+      "pct": 3.8,
+      "netflow": 2726605376.0,
+      "up": 45,
+      "down": 5,
+      "netrate": 7.16
+    },
+    {
+      "code": "BK0816",
+      "name": "昨日连板",
+      "pct": 3.75,
+      "netflow": -49680480.0,
+      "up": 3,
+      "down": 3,
+      "netrate": -0.93
+    },
+    {
+      "code": "BK1716",
+      "name": "反转股",
+      "pct": 3.63,
+      "netflow": 143147024.0,
+      "up": 3,
+      "down": 1,
+      "netrate": 1.49
+    },
+    {
+      "code": "BK1645",
+      "name": "昨日打二板以上表现",
+      "pct": 3.33,
+      "netflow": 252453687.0,
+      "up": 2,
+      "down": 1,
+      "netrate": 14.26
+    },
+    {
+      "code": "BK0907",
+      "name": "转基因",
+      "pct": 3.3,
+      "netflow": 248647165.0,
+      "up": 18,
+      "down": 1,
+      "netrate": 5.5
+    },
+    {
+      "code": "BK0986",
+      "name": "CAR-T细胞疗法",
+      "pct": 3.27,
+      "netflow": 1355826048.0,
+      "up": 30,
+      "down": 0,
+      "netrate": 6.82
+    }
+  ],
   "breadth": {
     "up": 2393,
     "down": 2730
@@ -5832,15 +6680,13 @@
     "指数 6 个",
     "涨停 52 / 炸板 12 / 跌停 9",
     "昨日(20260929)涨停 57 家",
-    "行业板块 450 个",
-    "概念板块 0 个",
+    "行业板块 496 个",
+    "概念板块 40 个",
     "市场广度 涨 2393 / 跌 2730 / 平 167",
-    "板块多周期涨幅：成功 0 / 尝试 6",
+    "板块多周期涨幅：成功 0 / 尝试 10",
     "量能序列 6 日"
   ],
   "errors": [
-    "板块分页 6 失败: mirror-exhausted api/qt/clist/get?pn=6&pz=90&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m",
-    "板块分页 1 失败: mirror-exhausted api/qt/clist/get?pn=1&pz=40&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m",
-    "板块多周期数据源不可用，跳过 5日/20日"
+    "板块分页 2 失败: mirror-exhausted api/qt/clist/get?pn=2&pz=40&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m"
   ]
 }
