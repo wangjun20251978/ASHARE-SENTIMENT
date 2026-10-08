@@ -1,80 +1,76 @@
 {
-  "date": "20260930",
-  "prev_date": "20260929",
-  "generated": "2026-10-07 23:46",
+  "date": "20261008",
+  "prev_date": "20260930",
+  "generated": "2026-10-08 23:49",
   "indexes": [
     {
       "code": "000001",
       "name": "上证指数",
-      "price": 3842.19,
-      "pct": 0.31,
-      "chg": 11.74,
-      "amount": 679398992444.8,
-      "up": 1223,
-      "down": 1065,
-      "flat": 68
+      "price": 3811.9,
+      "pct": -0.79,
+      "chg": -30.29,
+      "amount": 811183096365.3,
+      "up": 762,
+      "down": 1543,
+      "flat": 51
     },
     {
       "code": "399001",
       "name": "深证成指",
-      "price": 12887.62,
-      "pct": -0.11,
-      "chg": -14.33,
-      "amount": 758619097498.627,
-      "up": 1170,
-      "down": 1665,
-      "flat": 99
+      "price": 12620.9,
+      "pct": -2.07,
+      "chg": -266.72,
+      "amount": 870943814467.835,
+      "up": 892,
+      "down": 1973,
+      "flat": 65
     },
     {
       "code": "399006",
       "name": "创业板指",
-      "price": 3135.28,
-      "pct": -0.23,
-      "chg": -7.28,
-      "amount": 368971648170.82,
-      "up": 423,
-      "down": 961,
-      "flat": 24
+      "price": 3036.66,
+      "pct": -3.15,
+      "chg": -98.62,
+      "amount": 425271860796.43,
+      "up": 331,
+      "down": 1053,
+      "flat": 23
     },
     {
       "code": "000688",
       "name": "科创50",
-      "price": 1530.01,
-      "pct": -2.51,
-      "chg": -39.33,
-      "amount": 71878699989.0,
-      "up": 18,
-      "down": 32,
+      "price": 1456.32,
+      "pct": -4.82,
+      "chg": -73.69,
+      "amount": 82397685330.0,
+      "up": 5,
+      "down": 45,
       "flat": 0
     },
     {
       "code": "399905",
       "name": "中证 500",
-      "price": 7435.16,
-      "pct": -0.06,
-      "chg": -4.47,
-      "amount": 238617529232.2,
-      "up": 325,
-      "down": 162,
-      "flat": 12
+      "price": 7248.43,
+      "pct": -2.51,
+      "chg": -186.73,
+      "amount": 292217164833.6,
+      "up": 162,
+      "down": 325,
+      "flat": 11
     },
     {
       "code": "000016",
       "name": "上证50",
-      "price": 2823.28,
-      "pct": 0.47,
-      "chg": 13.16,
-      "amount": 107019777014.5,
-      "up": 40,
-      "down": 10,
+      "price": 2805.12,
+      "pct": -0.64,
+      "chg": -18.16,
+      "amount": 127447925184.7,
+      "up": 24,
+      "down": 26,
       "flat": 0
     }
   ],
   "amount_hist": [
-    [
-      "2026-09-22",
-      1151943343.0
-    ],
     [
       "2026-09-23",
       1052152852.0
@@ -94,5910 +90,105 @@
     [
       "2026-09-30",
       909275448.0
+    ],
+    [
+      "2026-10-08",
+      1015369990.0
     ]
   ],
-  "turnover_today": 1438018089943.427,
-  "zt_count": 52,
-  "zb_count": 12,
-  "dt_count": 9,
-  "zt_prev_count": 57,
+  "turnover_today": 1682126910833.135,
+  "zt_count": 43,
+  "zb_count": 32,
+  "dt_count": 13,
+  "zt_prev_count": 52,
   "lb_counter": {
-    "2": 6,
     "3": 4,
-    "7": 1,
-    "1": 40,
-    "4": 1
+    "4": 2,
+    "1": 33,
+    "8": 1,
+    "2": 3
   },
-  "max_lb": 7,
-  "promote_count": 12,
-  "promote_rate": 21.1,
+  "max_lb": 8,
+  "promote_count": 10,
+  "promote_rate": 19.2,
   "sentiment": {
-    "temp": 6.2,
-    "label": "热",
-    "tone": "hot",
-    "seal_rate": 81.2,
+    "temp": 5.1,
+    "label": "中性",
+    "tone": "mid",
+    "seal_rate": 57.3,
     "detail": {
-      "zt": 15.6,
-      "seal": 20.6,
-      "lb": 20.8,
-      "prom": 4.9
+      "zt": 12.9,
+      "seal": 8.7,
+      "lb": 25.0,
+      "prom": 4.1
     }
   },
-  "industries": [
-    {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 6.06,
-      "netflow": 261217114.0,
-      "up": 1,
-      "down": 0,
-      "netrate": 11.51
-    },
-    {
-      "code": "BK1500",
-      "name": "医美耗材",
-      "pct": 5.23,
-      "netflow": 72505887.0,
-      "up": 3,
-      "down": 0,
-      "netrate": 7.36
-    },
-    {
-      "code": "BK1596",
-      "name": "其他生物制品",
-      "pct": 4.72,
-      "netflow": 908747312.0,
-      "up": 36,
-      "down": 2,
-      "netrate": 5.46
-    },
-    {
-      "code": "BK1598",
-      "name": "疫苗",
-      "pct": 4.64,
-      "netflow": 422557520.0,
-      "up": 13,
-      "down": 0,
-      "netrate": 7.21
-    },
-    {
-      "code": "BK1044",
-      "name": "生物制品",
-      "pct": 4.53,
-      "netflow": 1351955984.0,
-      "up": 55,
-      "down": 2,
-      "netrate": 5.74
-    },
-    {
-      "code": "BK1518",
-      "name": "种子",
-      "pct": 4.43,
-      "netflow": 247869226.0,
-      "up": 10,
-      "down": 0,
-      "netrate": 6.47
-    },
-    {
-      "code": "BK1469",
-      "name": "涂料",
-      "pct": 4.25,
-      "netflow": 16902217.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 3.48
-    },
-    {
-      "code": "BK1600",
-      "name": "医疗研发外包",
-      "pct": 4.22,
-      "netflow": 2228100720.0,
-      "up": 28,
-      "down": 1,
-      "netrate": 7.39
-    },
-    {
-      "code": "BK1602",
-      "name": "诊断服务",
-      "pct": 4.08,
-      "netflow": 192757965.0,
-      "up": 5,
-      "down": 0,
-      "netrate": 9.0
-    },
-    {
-      "code": "BK1318",
-      "name": "光伏主材",
-      "pct": 3.5,
-      "netflow": 111097524.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 6.89
-    },
-    {
-      "code": "BK1261",
-      "name": "种植业",
-      "pct": 3.21,
-      "netflow": 499528640.0,
-      "up": 18,
-      "down": 3,
-      "netrate": 8.1
-    },
-    {
-      "code": "BK0727",
-      "name": "医疗服务",
-      "pct": 3.09,
-      "netflow": 2603071648.0,
-      "up": 47,
-      "down": 7,
-      "netrate": 6.95
-    },
-    {
-      "code": "BK1597",
-      "name": "血液制品",
-      "pct": 3.05,
-      "netflow": 20651110.0,
-      "up": 6,
-      "down": 0,
-      "netrate": 1.99
-    },
-    {
-      "code": "BK1466",
-      "name": "管材",
-      "pct": 2.86,
-      "netflow": 52787895.0,
-      "up": 6,
-      "down": 0,
-      "netrate": 6.61
-    },
-    {
-      "code": "BK1622",
-      "name": "镍",
-      "pct": 2.85,
-      "netflow": 1565337557.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 16.12
-    },
-    {
-      "code": "BK1253",
-      "name": "医疗美容",
-      "pct": 2.84,
-      "netflow": 68019148.0,
-      "up": 4,
-      "down": 1,
-      "netrate": 5.86
-    },
-    {
-      "code": "BK1575",
-      "name": "白酒Ⅲ",
-      "pct": 2.79,
-      "netflow": 960362736.0,
-      "up": 20,
-      "down": 0,
-      "netrate": 8.93
-    },
-    {
-      "code": "BK1277",
-      "name": "白酒Ⅱ",
-      "pct": 2.79,
-      "netflow": 960362736.0,
-      "up": 20,
-      "down": 0,
-      "netrate": 8.93
-    },
-    {
-      "code": "BK1599",
-      "name": "其他医疗服务",
-      "pct": 2.74,
-      "netflow": 179482914.0,
-      "up": 3,
-      "down": 2,
-      "netrate": 8.41
-    },
-    {
-      "code": "BK1412",
-      "name": "氨纶",
-      "pct": 2.66,
-      "netflow": 32065560.0,
-      "up": 1,
-      "down": 0,
-      "netrate": 10.2
-    },
-    {
-      "code": "BK1585",
-      "name": "乳品",
-      "pct": 2.53,
-      "netflow": 84906128.0,
-      "up": 18,
-      "down": 1,
-      "netrate": 3.38
-    },
-    {
-      "code": "BK1305",
-      "name": "燃料电池",
-      "pct": 2.51,
-      "netflow": 11518864.0,
-      "up": 1,
-      "down": 0,
-      "netrate": 5.88
-    },
-    {
-      "code": "BK1516",
-      "name": "其他种植业",
-      "pct": 2.39,
-      "netflow": 230689923.0,
-      "up": 3,
-      "down": 2,
-      "netrate": 13.66
-    },
-    {
-      "code": "BK1515",
-      "name": "粮食种植",
-      "pct": 2.28,
-      "netflow": 7553487.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 2.19
-    },
-    {
-      "code": "BK1594",
-      "name": "化学制剂",
-      "pct": 2.25,
-      "netflow": 1356723936.0,
-      "up": 103,
-      "down": 8,
-      "netrate": 3.59
-    },
-    {
-      "code": "BK1423",
-      "name": "纺织化学制品",
-      "pct": 2.18,
-      "netflow": 89693896.0,
-      "up": 10,
-      "down": 2,
-      "netrate": 2.92
-    },
-    {
-      "code": "BK1420",
-      "name": "其他化学原料",
-      "pct": 2.16,
-      "netflow": 45832160.0,
-      "up": 13,
-      "down": 2,
-      "netrate": 1.78
-    },
-    {
-      "code": "BK1282",
-      "name": "饮料乳品",
-      "pct": 2.11,
-      "netflow": 145235286.0,
-      "up": 23,
-      "down": 4,
-      "netrate": 3.67
-    },
-    {
-      "code": "BK1603",
-      "name": "体外诊断",
-      "pct": 2.11,
-      "netflow": 58909694.0,
-      "up": 34,
-      "down": 5,
-      "netrate": 1.31
-    },
-    {
-      "code": "BK0465",
-      "name": "化学制药",
-      "pct": 2.1,
-      "netflow": 1945034624.0,
-      "up": 139,
-      "down": 17,
-      "netrate": 4.03
-    },
-    {
-      "code": "BK1505",
-      "name": "其他农产品加工",
-      "pct": 2.07,
-      "netflow": 55286376.0,
-      "up": 10,
-      "down": 3,
-      "netrate": 3.27
-    },
-    {
-      "code": "BK1216",
-      "name": "医药生物",
-      "pct": 2.03,
-      "netflow": 6190539776.0,
-      "up": 429,
-      "down": 70,
-      "netrate": 4.44
-    },
-    {
-      "code": "BK1429",
-      "name": "食品及饲料添加剂",
-      "pct": 2.03,
-      "netflow": -143528449.0,
-      "up": 18,
-      "down": 7,
-      "netrate": -3.92
-    },
-    {
-      "code": "BK1479",
-      "name": "航空运输",
-      "pct": 1.94,
-      "netflow": 140896736.0,
-      "up": 9,
-      "down": 0,
-      "netrate": 6.77
-    },
-    {
-      "code": "BK1578",
-      "name": "其他酒类",
-      "pct": 1.89,
-      "netflow": 314034720.0,
-      "up": 6,
-      "down": 1,
-      "netrate": 8.34
-    },
-    {
-      "code": "BK1530",
-      "name": "商用载货车",
-      "pct": 1.87,
-      "netflow": 261284128.0,
-      "up": 9,
-      "down": 0,
-      "netrate": 3.05
-    },
-    {
-      "code": "BK1369",
-      "name": "长材",
-      "pct": 1.81,
-      "netflow": -5821950.0,
-      "up": 3,
-      "down": 0,
-      "netrate": -3.37
-    },
-    {
-      "code": "BK1606",
-      "name": "线下药店",
-      "pct": 1.73,
-      "netflow": -4889830.0,
-      "up": 7,
-      "down": 1,
-      "netrate": -0.43
-    },
-    {
-      "code": "BK1595",
-      "name": "原料药",
-      "pct": 1.73,
-      "netflow": 588310704.0,
-      "up": 36,
-      "down": 9,
-      "netrate": 5.65
-    },
-    {
-      "code": "BK1609",
-      "name": "城商行Ⅲ",
-      "pct": 1.72,
-      "netflow": -26591936.0,
-      "up": 17,
-      "down": 0,
-      "netrate": -0.4
-    },
-    {
-      "code": "BK1290",
-      "name": "教育出版",
-      "pct": 1.71,
-      "netflow": 140318497.0,
-      "up": 9,
-      "down": 1,
-      "netrate": 6.97
-    },
-    {
-      "code": "BK0420",
-      "name": "航空机场",
-      "pct": 1.7,
-      "netflow": 157837200.0,
-      "up": 14,
-      "down": 0,
-      "netrate": 5.8
-    },
-    {
-      "code": "BK1517",
-      "name": "食用菌",
-      "pct": 1.67,
-      "netflow": 13416023.0,
-      "up": 3,
-      "down": 1,
-      "netrate": 4.42
-    },
-    {
-      "code": "BK1464",
-      "name": "水泥制造",
-      "pct": 1.59,
-      "netflow": -26693432.0,
-      "up": 11,
-      "down": 1,
-      "netrate": -1.1
-    },
-    {
-      "code": "BK1579",
-      "name": "保健品",
-      "pct": 1.59,
-      "netflow": -5455967.0,
-      "up": 7,
-      "down": 2,
-      "netrate": -1.76
-    },
-    {
-      "code": "BK1417",
-      "name": "纯碱",
-      "pct": 1.57,
-      "netflow": 45971662.0,
-      "up": 5,
-      "down": 0,
-      "netrate": 9.11
-    },
-    {
-      "code": "BK1279",
-      "name": "非白酒",
-      "pct": 1.57,
-      "netflow": 335136320.0,
-      "up": 12,
-      "down": 2,
-      "netrate": 7.75
-    },
-    {
-      "code": "BK1519",
-      "name": "电动乘用车",
-      "pct": 1.56,
-      "netflow": 6029552.0,
-      "up": 3,
-      "down": 0,
-      "netrate": 0.14
-    },
-    {
-      "code": "BK1367",
-      "name": "板材",
-      "pct": 1.55,
-      "netflow": -74836528.0,
-      "up": 17,
-      "down": 1,
-      "netrate": -2.84
-    },
-    {
-      "code": "BK1496",
-      "name": "洗护用品",
-      "pct": 1.53,
-      "netflow": 6508943.0,
-      "up": 3,
-      "down": 1,
-      "netrate": 3.82
-    },
-    {
-      "code": "BK1415",
-      "name": "其他化学纤维",
-      "pct": 1.52,
-      "netflow": 87918736.0,
-      "up": 5,
-      "down": 3,
-      "netrate": 7.42
-    },
-    {
-      "code": "BK0438",
-      "name": "食品饮料",
-      "pct": 1.51,
-      "netflow": 1420744880.0,
-      "up": 107,
-      "down": 15,
-      "netrate": 5.57
-    },
-    {
-      "code": "BK1470",
-      "name": "房屋建设Ⅲ",
-      "pct": 1.48,
-      "netflow": 64163888.0,
-      "up": 7,
-      "down": 1,
-      "netrate": 2.74
-    },
-    {
-      "code": "BK1246",
-      "name": "房屋建设Ⅱ",
-      "pct": 1.48,
-      "netflow": 64163888.0,
-      "up": 7,
-      "down": 1,
-      "netrate": 2.74
-    },
-    {
-      "code": "BK1035",
-      "name": "美容护理",
-      "pct": 1.47,
-      "netflow": 377260661.0,
-      "up": 25,
-      "down": 9,
-      "netrate": 7.39
-    },
-    {
-      "code": "BK1498",
-      "name": "品牌化妆品",
-      "pct": 1.47,
-      "netflow": 18450211.0,
-      "up": 7,
-      "down": 1,
-      "netrate": 1.09
-    },
-    {
-      "code": "BK1256",
-      "name": "农产品加工",
-      "pct": 1.46,
-      "netflow": 105951536.0,
-      "up": 20,
-      "down": 7,
-      "netrate": 1.77
-    },
-    {
-      "code": "BK1262",
-      "name": "乘用车",
-      "pct": 1.46,
-      "netflow": -6545920.0,
-      "up": 9,
-      "down": 0,
-      "netrate": -0.09
-    },
-    {
-      "code": "BK1283",
-      "name": "银行",
-      "pct": 1.46,
-      "netflow": -86997760.0,
-      "up": 42,
-      "down": 0,
-      "netrate": -0.33
-    },
-    {
-      "code": "BK0475",
-      "name": "银行Ⅱ",
-      "pct": 1.46,
-      "netflow": -86997760.0,
-      "up": 42,
-      "down": 0,
-      "netrate": -0.33
-    },
-    {
-      "code": "BK1302",
-      "name": "电池化学品",
-      "pct": 1.44,
-      "netflow": 406988272.0,
-      "up": 33,
-      "down": 11,
-      "netrate": 2.98
-    },
-    {
-      "code": "BK1226",
-      "name": "普钢",
-      "pct": 1.43,
-      "netflow": -79896480.0,
-      "up": 22,
-      "down": 2,
-      "netrate": -2.68
-    },
-    {
-      "code": "BK1610",
-      "name": "股份制银行Ⅲ",
-      "pct": 1.43,
-      "netflow": -2555536.0,
-      "up": 9,
-      "down": 0,
-      "netrate": -0.03
-    },
-    {
-      "code": "BK1436",
-      "name": "农药",
-      "pct": 1.43,
-      "netflow": 60978195.0,
-      "up": 27,
-      "down": 6,
-      "netrate": 2.25
-    },
-    {
-      "code": "BK1363",
-      "name": "信托",
-      "pct": 1.42,
-      "netflow": -4252640.0,
-      "up": 3,
-      "down": 0,
-      "netrate": -1.62
-    },
-    {
-      "code": "BK1380",
-      "name": "水力发电",
-      "pct": 1.41,
-      "netflow": -33782064.0,
-      "up": 10,
-      "down": 1,
-      "netrate": -0.69
-    },
-    {
-      "code": "BK1520",
-      "name": "综合乘用车",
-      "pct": 1.41,
-      "netflow": -12575466.0,
-      "up": 6,
-      "down": 0,
-      "netrate": -0.43
-    },
-    {
-      "code": "BK1251",
-      "name": "个护用品",
-      "pct": 1.41,
-      "netflow": 290630975.0,
-      "up": 9,
-      "down": 4,
-      "netrate": 14.54
-    },
-    {
-      "code": "BK1617",
-      "name": "黄金",
-      "pct": 1.39,
-      "netflow": 135817424.0,
-      "up": 10,
-      "down": 0,
-      "netrate": 1.67
-    },
-    {
-      "code": "BK1434",
-      "name": "钾肥",
-      "pct": 1.39,
-      "netflow": 105321152.0,
-      "up": 4,
-      "down": 0,
-      "netrate": 4.93
-    },
-    {
-      "code": "BK1264",
-      "name": "商用车",
-      "pct": 1.37,
-      "netflow": 267693872.0,
-      "up": 11,
-      "down": 2,
-      "netrate": 2.71
-    },
-    {
-      "code": "BK1495",
-      "name": "生活用纸",
-      "pct": 1.36,
-      "netflow": 284122033.0,
-      "up": 6,
-      "down": 3,
-      "netrate": 15.54
-    },
-    {
-      "code": "BK1381",
-      "name": "燃气Ⅲ",
-      "pct": 1.36,
-      "netflow": 50046866.0,
-      "up": 29,
-      "down": 2,
-      "netrate": 1.88
-    },
-    {
-      "code": "BK1028",
-      "name": "燃气Ⅱ",
-      "pct": 1.36,
-      "netflow": 50046866.0,
-      "up": 29,
-      "down": 2,
-      "netrate": 1.88
-    },
-    {
-      "code": "BK1612",
-      "name": "农商行Ⅲ",
-      "pct": 1.33,
-      "netflow": -45738789.0,
-      "up": 10,
-      "down": 0,
-      "netrate": -2.47
-    },
-    {
-      "code": "BK1319",
-      "name": "硅料硅片",
-      "pct": 1.29,
-      "netflow": 75936370.0,
-      "up": 4,
-      "down": 1,
-      "netrate": 6.6
-    },
-    {
-      "code": "BK1372",
-      "name": "冶钢辅料",
-      "pct": 1.29,
-      "netflow": 43893106.0,
-      "up": 4,
-      "down": 0,
-      "netrate": 10.2
-    },
-    {
-      "code": "BK1475",
-      "name": "国际工程",
-      "pct": 1.28,
-      "netflow": -37983507.0,
-      "up": 4,
-      "down": 0,
-      "netrate": -8.89
-    },
-    {
-      "code": "BK1480",
-      "name": "机场",
-      "pct": 1.28,
-      "netflow": 16940459.0,
-      "up": 5,
-      "down": 0,
-      "netrate": 2.64
-    },
-    {
-      "code": "BK1583",
-      "name": "零食",
-      "pct": 1.27,
-      "netflow": 35578026.0,
-      "up": 9,
-      "down": 1,
-      "netrate": 3.66
-    },
-    {
-      "code": "BK1457",
-      "name": "厨房小家电",
-      "pct": 1.26,
-      "netflow": 5406062.0,
-      "up": 6,
-      "down": 5,
-      "netrate": 0.44
-    },
-    {
-      "code": "BK1584",
-      "name": "熟食",
-      "pct": 1.23,
-      "netflow": 31162.0,
-      "up": 3,
-      "down": 0,
-      "netrate": 0.02
-    },
-    {
-      "code": "BK1627",
-      "name": "综合Ⅲ",
-      "pct": 1.21,
-      "netflow": 208547051.0,
-      "up": 14,
-      "down": 6,
-      "netrate": 6.71
-    },
-    {
-      "code": "BK1217",
-      "name": "综合",
-      "pct": 1.21,
-      "netflow": 208547051.0,
-      "up": 14,
-      "down": 6,
-      "netrate": 6.71
-    },
-    {
-      "code": "BK0539",
-      "name": "综合Ⅱ",
-      "pct": 1.21,
-      "netflow": 208547051.0,
-      "up": 14,
-      "down": 6,
-      "netrate": 6.71
-    },
-    {
-      "code": "BK1608",
-      "name": "中药Ⅲ",
-      "pct": 1.2,
-      "netflow": -29457968.0,
-      "up": 53,
-      "down": 11,
-      "netrate": -0.33
-    },
-    {
-      "code": "BK1040",
-      "name": "中药Ⅱ",
-      "pct": 1.2,
-      "netflow": -29457968.0,
-      "up": 53,
-      "down": 11,
-      "netrate": -0.33
-    },
-    {
-      "code": "BK0433",
-      "name": "农林牧渔",
-      "pct": 1.2,
-      "netflow": 485959584.0,
-      "up": 81,
-      "down": 29,
-      "netrate": 2.33
-    },
-    {
-      "code": "BK0479",
-      "name": "钢铁",
-      "pct": 1.19,
-      "netflow": -7955360.0,
-      "up": 39,
-      "down": 7,
-      "netrate": -0.15
-    },
-    {
-      "code": "BK1228",
-      "name": "冶钢原料",
-      "pct": 1.19,
-      "netflow": 64311045.0,
-      "up": 9,
-      "down": 1,
-      "netrate": 5.03
-    },
-    {
-      "code": "BK1373",
-      "name": "电能综合服务",
-      "pct": 1.17,
-      "netflow": -21177181.0,
-      "up": 13,
-      "down": 2,
-      "netrate": -1.51
-    },
-    {
-      "code": "BK1042",
-      "name": "医药商业",
-      "pct": 1.15,
-      "netflow": -106833636.0,
-      "up": 27,
-      "down": 3,
-      "netrate": -3.18
-    },
-    {
-      "code": "BK1544",
-      "name": "大宗用纸",
-      "pct": 1.14,
-      "netflow": 12255064.0,
-      "up": 9,
-      "down": 2,
-      "netrate": 1.54
-    },
-    {
-      "code": "BK1041",
-      "name": "医疗器械",
-      "pct": 1.12,
-      "netflow": 426769056.0,
-      "up": 108,
-      "down": 30,
-      "netrate": 2.42
-    },
-    {
-      "code": "BK1371",
-      "name": "铁矿石",
-      "pct": 1.12,
-      "netflow": 20417939.0,
-      "up": 5,
-      "down": 1,
-      "netrate": 2.41
-    },
-    {
-      "code": "BK1345",
-      "name": "商业地产",
-      "pct": 1.12,
-      "netflow": 335350096.0,
-      "up": 7,
-      "down": 4,
-      "netrate": 7.1
-    },
-    {
-      "code": "BK1586",
-      "name": "软饮料",
-      "pct": 1.11,
-      "netflow": 60329154.0,
-      "up": 5,
-      "down": 3,
-      "netrate": 4.18
-    },
-    {
-      "code": "BK1478",
-      "name": "装修装饰Ⅲ",
-      "pct": 1.1,
-      "netflow": 70645319.0,
-      "up": 11,
-      "down": 10,
-      "netrate": 2.42
-    },
-    {
-      "code": "BK0725",
-      "name": "装修装饰Ⅱ",
-      "pct": 1.1,
-      "netflow": 70645319.0,
-      "up": 11,
-      "down": 10,
-      "netrate": 2.42
-    },
-    {
-      "code": "BK1252",
-      "name": "化妆品",
-      "pct": 1.09,
-      "netflow": 18610524.0,
-      "up": 12,
-      "down": 4,
-      "netrate": 0.96
-    },
-    {
-      "code": "BK1356",
-      "name": "其他饰品",
-      "pct": 1.07,
-      "netflow": 1357025.0,
-      "up": 1,
-      "down": 0,
-      "netrate": 3.31
-    },
-    {
-      "code": "BK1576",
-      "name": "调味发酵品Ⅲ",
-      "pct": 1.07,
-      "netflow": -28286768.0,
-      "up": 12,
-      "down": 2,
-      "netrate": -0.91
-    },
-    {
-      "code": "BK1278",
-      "name": "调味发酵品Ⅱ",
-      "pct": 1.07,
-      "netflow": -28286768.0,
-      "up": 12,
-      "down": 2,
-      "netrate": -0.91
-    },
-    {
-      "code": "BK1577",
-      "name": "啤酒",
-      "pct": 1.06,
-      "netflow": 21101593.0,
-      "up": 6,
-      "down": 1,
-      "netrate": 3.78
-    },
-    {
-      "code": "BK1465",
-      "name": "防水材料",
-      "pct": 1.05,
-      "netflow": 91773727.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 10.99
-    },
-    {
-      "code": "BK0732",
-      "name": "贵金属",
-      "pct": 1.04,
-      "netflow": 54909104.0,
-      "up": 11,
-      "down": 2,
-      "netrate": 0.56
-    },
-    {
-      "code": "BK1501",
-      "name": "动物保健Ⅲ",
-      "pct": 1.04,
-      "netflow": 9659104.0,
-      "up": 11,
-      "down": 1,
-      "netrate": 2.39
-    },
-    {
-      "code": "BK1254",
-      "name": "动物保健Ⅱ",
-      "pct": 1.04,
-      "netflow": 9659104.0,
-      "up": 11,
-      "down": 1,
-      "netrate": 2.39
-    },
-    {
-      "code": "BK0731",
-      "name": "农化制品",
-      "pct": 1.03,
-      "netflow": 107352400.0,
-      "up": 47,
-      "down": 12,
-      "netrate": 1.32
-    },
-    {
-      "code": "BK1482",
-      "name": "航运",
-      "pct": 1.01,
-      "netflow": -25573328.0,
-      "up": 18,
-      "down": 1,
-      "netrate": -0.46
-    },
-    {
-      "code": "BK1611",
-      "name": "国有大型银行Ⅲ",
-      "pct": 1.0,
-      "netflow": -12111408.0,
-      "up": 6,
-      "down": 0,
-      "netrate": -0.13
-    },
-    {
-      "code": "BK1346",
-      "name": "住宅开发",
-      "pct": 1.0,
-      "netflow": -666593792.0,
-      "up": 39,
-      "down": 19,
-      "netrate": -2.6
-    },
-    {
-      "code": "BK1507",
-      "name": "宠物食品",
-      "pct": 0.98,
-      "netflow": 587391.0,
-      "up": 4,
-      "down": 0,
-      "netrate": 0.23
-    },
-    {
-      "code": "BK1315",
-      "name": "光伏电池组件",
-      "pct": 0.98,
-      "netflow": 213165648.0,
-      "up": 13,
-      "down": 8,
-      "netrate": 6.02
-    },
-    {
-      "code": "BK1267",
-      "name": "造纸",
-      "pct": 0.98,
-      "netflow": 15143631.0,
-      "up": 16,
-      "down": 8,
-      "netrate": 0.79
-    },
-    {
-      "code": "BK1504",
-      "name": "粮油加工",
-      "pct": 0.96,
-      "netflow": 10366208.0,
-      "up": 6,
-      "down": 2,
-      "netrate": 0.28
-    },
-    {
-      "code": "BK1607",
-      "name": "医药流通",
-      "pct": 0.95,
-      "netflow": -101943822.0,
-      "up": 20,
-      "down": 2,
-      "netrate": -4.62
-    },
-    {
-      "code": "BK1620",
-      "name": "钴",
-      "pct": 0.94,
-      "netflow": 2327617.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 1.12
-    },
-    {
-      "code": "BK1033",
-      "name": "电池",
-      "pct": 0.94,
-      "netflow": 998072832.0,
-      "up": 71,
-      "down": 35,
-      "netrate": 1.91
-    },
-    {
-      "code": "BK1513",
-      "name": "海洋捕捞",
-      "pct": 0.94,
-      "netflow": -533352.0,
-      "up": 2,
-      "down": 1,
-      "netrate": -0.42
-    },
-    {
-      "code": "BK1525",
-      "name": "车身附件及饰件",
-      "pct": 0.93,
-      "netflow": 234906080.0,
-      "up": 27,
-      "down": 14,
-      "netrate": 4.32
-    },
-    {
-      "code": "BK1281",
-      "name": "休闲食品",
-      "pct": 0.93,
-      "netflow": 35037747.0,
-      "up": 20,
-      "down": 2,
-      "netrate": 2.28
-    },
-    {
-      "code": "BK1537",
-      "name": "成品家居",
-      "pct": 0.92,
-      "netflow": 43568400.0,
-      "up": 8,
-      "down": 7,
-      "netrate": 3.48
-    },
-    {
-      "code": "BK1552",
-      "name": "超市",
-      "pct": 0.92,
-      "netflow": 56162208.0,
-      "up": 6,
-      "down": 1,
-      "netrate": 6.16
-    },
-    {
-      "code": "BK1503",
-      "name": "果蔬加工",
-      "pct": 0.91,
-      "netflow": 40298953.0,
-      "up": 4,
-      "down": 2,
-      "netrate": 6.57
-    },
-    {
-      "code": "BK0451",
-      "name": "房地产开发",
-      "pct": 0.91,
-      "netflow": -336482080.0,
-      "up": 56,
-      "down": 27,
-      "netrate": -1.06
-    },
-    {
-      "code": "BK1553",
-      "name": "多业态零售",
-      "pct": 0.9,
-      "netflow": 60653872.0,
-      "up": 13,
-      "down": 3,
-      "netrate": 6.58
-    },
-    {
-      "code": "BK1472",
-      "name": "基建市政工程",
-      "pct": 0.9,
-      "netflow": 149763350.0,
-      "up": 21,
-      "down": 6,
-      "netrate": 5.07
-    },
-    {
-      "code": "BK1483",
-      "name": "高速公路",
-      "pct": 0.89,
-      "netflow": 5170475.0,
-      "up": 19,
-      "down": 1,
-      "netrate": 0.49
-    },
-    {
-      "code": "BK1019",
-      "name": "化学原料",
-      "pct": 0.88,
-      "netflow": -18803472.0,
-      "up": 45,
-      "down": 17,
-      "netrate": -0.18
-    },
-    {
-      "code": "BK1568",
-      "name": "人力资源服务",
-      "pct": 0.88,
-      "netflow": 2542200.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 3.27
-    },
-    {
-      "code": "BK1377",
-      "name": "火力发电",
-      "pct": 0.87,
-      "netflow": 115294624.0,
-      "up": 28,
-      "down": 3,
-      "netrate": 1.72
-    },
-    {
-      "code": "BK1587",
-      "name": "电信运营商",
-      "pct": 0.87,
-      "netflow": 40487058.0,
-      "up": 3,
-      "down": 0,
-      "netrate": 2.41
-    },
-    {
-      "code": "BK1604",
-      "name": "医疗耗材",
-      "pct": 0.86,
-      "netflow": 95771200.0,
-      "up": 39,
-      "down": 15,
-      "netrate": 1.48
-    },
-    {
-      "code": "BK1569",
-      "name": "炼油化工",
-      "pct": 0.86,
-      "netflow": -330964416.0,
-      "up": 9,
-      "down": 1,
-      "netrate": -6.76
-    },
-    {
-      "code": "BK1494",
-      "name": "焦煤",
-      "pct": 0.84,
-      "netflow": -1697287.0,
-      "up": 8,
-      "down": 2,
-      "netrate": -0.11
-    },
-    {
-      "code": "BK1545",
-      "name": "特种纸",
-      "pct": 0.84,
-      "netflow": 2888566.0,
-      "up": 7,
-      "down": 6,
-      "netrate": 0.25
-    },
-    {
-      "code": "BK0427",
-      "name": "公用事业",
-      "pct": 0.82,
-      "netflow": 74699680.0,
-      "up": 110,
-      "down": 27,
-      "netrate": 0.29
-    },
-    {
-      "code": "BK1419",
-      "name": "煤化工",
-      "pct": 0.82,
-      "netflow": -23077607.0,
-      "up": 9,
-      "down": 1,
-      "netrate": -1.04
-    },
-    {
-      "code": "BK1549",
-      "name": "旅游零售Ⅲ",
-      "pct": 0.82,
-      "netflow": -10427024.0,
-      "up": 2,
-      "down": 0,
-      "netrate": -1.25
-    },
-    {
-      "code": "BK1269",
-      "name": "旅游零售Ⅱ",
-      "pct": 0.82,
-      "netflow": -10427024.0,
-      "up": 2,
-      "down": 0,
-      "netrate": -1.25
-    },
-    {
-      "code": "BK0450",
-      "name": "航运港口",
-      "pct": 0.81,
-      "netflow": -112245872.0,
-      "up": 30,
-      "down": 5,
-      "netrate": -1.48
-    },
-    {
-      "code": "BK1260",
-      "name": "渔业",
-      "pct": 0.81,
-      "netflow": -5580604.0,
-      "up": 5,
-      "down": 2,
-      "netrate": -1.52
-    },
-    {
-      "code": "BK1388",
-      "name": "大气治理",
-      "pct": 0.8,
-      "netflow": -8220685.0,
-      "up": 4,
-      "down": 2,
-      "netrate": -2.92
-    },
-    {
-      "code": "BK0482",
-      "name": "一般零售",
-      "pct": 0.79,
-      "netflow": 246457264.0,
-      "up": 44,
-      "down": 13,
-      "netrate": 3.73
-    },
-    {
-      "code": "BK1379",
-      "name": "热力服务",
-      "pct": 0.79,
-      "netflow": 4662096.0,
-      "up": 9,
-      "down": 9,
-      "netrate": 0.13
-    },
-    {
-      "code": "BK1365",
-      "name": "租赁",
-      "pct": 0.78,
-      "netflow": -11922333.0,
-      "up": 2,
-      "down": 1,
-      "netrate": -3.17
-    },
-    {
-      "code": "BK1202",
-      "name": "房地产",
-      "pct": 0.78,
-      "netflow": -441415168.0,
-      "up": 63,
-      "down": 34,
-      "netrate": -1.16
-    },
-    {
-      "code": "BK1427",
-      "name": "民爆制品",
-      "pct": 0.78,
-      "netflow": -6876560.0,
-      "up": 7,
-      "down": 6,
-      "netrate": -0.22
-    },
-    {
-      "code": "BK1476",
-      "name": "化学工程",
-      "pct": 0.77,
-      "netflow": 3711603.0,
-      "up": 5,
-      "down": 1,
-      "netrate": 0.8
-    },
-    {
-      "code": "BK0476",
-      "name": "装修建材",
-      "pct": 0.77,
-      "netflow": 225654144.0,
-      "up": 20,
-      "down": 14,
-      "netrate": 5.06
-    },
-    {
-      "code": "BK1554",
-      "name": "商业物业经营",
-      "pct": 0.77,
-      "netflow": 45225709.0,
-      "up": 12,
-      "down": 4,
-      "netrate": 2.23
-    },
-    {
-      "code": "BK1304",
-      "name": "锂电专用设备",
-      "pct": 0.76,
-      "netflow": 344423984.0,
-      "up": 12,
-      "down": 7,
-      "netrate": 4.32
-    },
-    {
-      "code": "BK1343",
-      "name": "物业管理",
-      "pct": 0.76,
-      "netflow": 7839794.0,
-      "up": 6,
-      "down": 4,
-      "netrate": 0.32
-    },
-    {
-      "code": "BK1303",
-      "name": "锂电池",
-      "pct": 0.76,
-      "netflow": 180000688.0,
-      "up": 20,
-      "down": 12,
-      "netrate": 0.64
-    },
-    {
-      "code": "BK1581",
-      "name": "预加工食品",
-      "pct": 0.75,
-      "netflow": 18081960.0,
-      "up": 9,
-      "down": 1,
-      "netrate": 2.44
-    },
-    {
-      "code": "BK1393",
-      "name": "工程机械整机",
-      "pct": 0.73,
-      "netflow": 262780624.0,
-      "up": 17,
-      "down": 5,
-      "netrate": 6.47
-    },
-    {
-      "code": "BK1358",
-      "name": "保险Ⅲ",
-      "pct": 0.73,
-      "netflow": 301932352.0,
-      "up": 4,
-      "down": 1,
-      "netrate": 5.72
-    },
-    {
-      "code": "BK0474",
-      "name": "保险Ⅱ",
-      "pct": 0.73,
-      "netflow": 301932352.0,
-      "up": 4,
-      "down": 1,
-      "netrate": 5.72
-    },
-    {
-      "code": "BK1485",
-      "name": "铁路运输",
-      "pct": 0.73,
-      "netflow": 100511376.0,
-      "up": 6,
-      "down": 1,
-      "netrate": 4.49
-    },
-    {
-      "code": "BK1451",
-      "name": "厨房电器",
-      "pct": 0.72,
-      "netflow": 9447326.0,
-      "up": 4,
-      "down": 2,
-      "netrate": 1.43
-    },
-    {
-      "code": "BK1514",
-      "name": "水产养殖",
-      "pct": 0.71,
-      "netflow": -5047252.0,
-      "up": 3,
-      "down": 1,
-      "netrate": -2.11
-    },
-    {
-      "code": "BK1497",
-      "name": "化妆品制造及其他",
-      "pct": 0.71,
-      "netflow": 160317.0,
-      "up": 5,
-      "down": 3,
-      "netrate": 0.06
-    },
-    {
-      "code": "BK1370",
-      "name": "特钢Ⅲ",
-      "pct": 0.7,
-      "netflow": 7630063.0,
-      "up": 8,
-      "down": 4,
-      "netrate": 0.72
-    },
-    {
-      "code": "BK1227",
-      "name": "特钢Ⅱ",
-      "pct": 0.7,
-      "netflow": 7630063.0,
-      "up": 8,
-      "down": 4,
-      "netrate": 0.72
-    },
-    {
-      "code": "BK0424",
-      "name": "水泥",
-      "pct": 0.7,
-      "netflow": -20863733.0,
-      "up": 14,
-      "down": 5,
-      "netrate": -0.68
-    },
-    {
-      "code": "BK1313",
-      "name": "风电零部件",
-      "pct": 0.7,
-      "netflow": 282513808.0,
-      "up": 12,
-      "down": 14,
-      "netrate": 2.27
-    },
-    {
-      "code": "BK1551",
-      "name": "百货",
-      "pct": 0.69,
-      "netflow": 84415473.0,
-      "up": 13,
-      "down": 5,
-      "netrate": 3.07
-    },
-    {
-      "code": "BK1601",
-      "name": "医院",
-      "pct": 0.68,
-      "netflow": 2730172.0,
-      "up": 11,
-      "down": 4,
-      "netrate": 0.09
-    },
-    {
-      "code": "BK1559",
-      "name": "餐饮",
-      "pct": 0.68,
-      "netflow": -8888877.0,
-      "up": 2,
-      "down": 1,
-      "netrate": -5.28
-    },
-    {
-      "code": "BK1402",
-      "name": "楼宇设备",
-      "pct": 0.67,
-      "netflow": 37638599.0,
-      "up": 9,
-      "down": 7,
-      "netrate": 3.39
-    },
-    {
-      "code": "BK1032",
-      "name": "风电设备",
-      "pct": 0.67,
-      "netflow": 279049824.0,
-      "up": 15,
-      "down": 16,
-      "netrate": 1.97
-    },
-    {
-      "code": "BK0428",
-      "name": "电力",
-      "pct": 0.67,
-      "netflow": 24652848.0,
-      "up": 81,
-      "down": 25,
-      "netrate": 0.11
-    },
-    {
-      "code": "BK1280",
-      "name": "食品加工",
-      "pct": 0.66,
-      "netflow": -26740238.0,
-      "up": 20,
-      "down": 5,
-      "netrate": -1.46
-    },
-    {
-      "code": "BK1250",
-      "name": "煤炭开采",
-      "pct": 0.65,
-      "netflow": -45638048.0,
-      "up": 19,
-      "down": 8,
-      "netrate": -0.56
-    },
-    {
-      "code": "BK1244",
-      "name": "小家电",
-      "pct": 0.65,
-      "netflow": 14614189.0,
-      "up": 12,
-      "down": 12,
-      "netrate": 0.59
-    },
-    {
-      "code": "BK1247",
-      "name": "基础建设",
-      "pct": 0.63,
-      "netflow": 187712416.0,
-      "up": 29,
-      "down": 14,
-      "netrate": 5.14
-    },
-    {
-      "code": "BK1418",
-      "name": "氯碱",
-      "pct": 0.61,
-      "netflow": 18827586.0,
-      "up": 12,
-      "down": 3,
-      "netrate": 1.46
-    },
-    {
-      "code": "BK1574",
-      "name": "油气开采Ⅲ",
-      "pct": 0.61,
-      "netflow": -96730618.0,
-      "up": 4,
-      "down": 0,
-      "netrate": -7.52
-    },
-    {
-      "code": "BK1276",
-      "name": "油气开采Ⅱ",
-      "pct": 0.61,
-      "netflow": -96730618.0,
-      "up": 4,
-      "down": 0,
-      "netrate": -7.52
-    },
-    {
-      "code": "BK0437",
-      "name": "煤炭",
-      "pct": 0.6,
-      "netflow": -103432432.0,
-      "up": 24,
-      "down": 9,
-      "netrate": -1.13
-    },
-    {
-      "code": "BK1539",
-      "name": "定制家居",
-      "pct": 0.59,
-      "netflow": 61180441.0,
-      "up": 11,
-      "down": 5,
-      "netrate": 4.1
-    },
-    {
-      "code": "BK0421",
-      "name": "铁路公路",
-      "pct": 0.59,
-      "netflow": 101168464.0,
-      "up": 27,
-      "down": 7,
-      "netrate": 2.86
-    },
-    {
-      "code": "BK1433",
-      "name": "复合肥",
-      "pct": 0.59,
-      "netflow": -25151057.0,
-      "up": 7,
-      "down": 2,
-      "netrate": -3.41
-    },
-    {
-      "code": "BK1481",
-      "name": "港口",
-      "pct": 0.58,
-      "netflow": -86672544.0,
-      "up": 12,
-      "down": 4,
-      "netrate": -4.22
-    },
-    {
-      "code": "BK1533",
-      "name": "塑料包装",
-      "pct": 0.58,
-      "netflow": -3526100.0,
-      "up": 7,
-      "down": 2,
-      "netrate": -0.51
-    },
-    {
-      "code": "BK1605",
-      "name": "医疗设备",
-      "pct": 0.56,
-      "netflow": 272088128.0,
-      "up": 35,
-      "down": 10,
-      "netrate": 4.06
-    },
-    {
-      "code": "BK1502",
-      "name": "林业Ⅲ",
-      "pct": 0.56,
-      "netflow": -72715394.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -2.34
-    },
-    {
-      "code": "BK1255",
-      "name": "林业Ⅱ",
-      "pct": 0.56,
-      "netflow": -72715394.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -2.34
-    },
-    {
-      "code": "BK1493",
-      "name": "动力煤",
-      "pct": 0.55,
-      "netflow": -43940768.0,
-      "up": 11,
-      "down": 6,
-      "netrate": -0.67
-    },
-    {
-      "code": "BK1314",
-      "name": "风电整机",
-      "pct": 0.54,
-      "netflow": -3463997.0,
-      "up": 3,
-      "down": 2,
-      "netrate": -0.2
-    },
-    {
-      "code": "BK1210",
-      "name": "交通运输",
-      "pct": 0.53,
-      "netflow": 108480400.0,
-      "up": 92,
-      "down": 37,
-      "netrate": 0.63
-    },
-    {
-      "code": "BK0734",
-      "name": "饰品",
-      "pct": 0.5,
-      "netflow": -24676089.0,
-      "up": 11,
-      "down": 5,
-      "netrate": -2.82
-    },
-    {
-      "code": "BK1376",
-      "name": "核力发电",
-      "pct": 0.48,
-      "netflow": -7899465.0,
-      "up": 3,
-      "down": 0,
-      "netrate": -0.67
-    },
-    {
-      "code": "BK1570",
-      "name": "其他石化",
-      "pct": 0.47,
-      "netflow": 10964652.0,
-      "up": 7,
-      "down": 6,
-      "netrate": 1.02
-    },
-    {
-      "code": "BK1531",
-      "name": "商用载客车",
-      "pct": 0.45,
-      "netflow": 6409758.0,
-      "up": 2,
-      "down": 2,
-      "netrate": 0.49
-    },
-    {
-      "code": "BK1474",
-      "name": "钢结构",
-      "pct": 0.45,
-      "netflow": -7490568.0,
-      "up": 5,
-      "down": 4,
-      "netrate": -1.31
-    },
-    {
-      "code": "BK1555",
-      "name": "专业连锁Ⅲ",
-      "pct": 0.45,
-      "netflow": -28037976.0,
-      "up": 4,
-      "down": 3,
-      "netrate": -5.11
-    },
-    {
-      "code": "BK1270",
-      "name": "专业连锁Ⅱ",
-      "pct": 0.45,
-      "netflow": -28037976.0,
-      "up": 4,
-      "down": 3,
-      "netrate": -5.11
-    },
-    {
-      "code": "BK1432",
-      "name": "氮肥",
-      "pct": 0.44,
-      "netflow": -16235015.0,
-      "up": 3,
-      "down": 1,
-      "netrate": -1.51
-    },
-    {
-      "code": "BK1258",
-      "name": "饲料",
-      "pct": 0.44,
-      "netflow": -29142775.0,
-      "up": 12,
-      "down": 4,
-      "netrate": -2.23
-    },
-    {
-      "code": "BK0471",
-      "name": "化学纤维",
-      "pct": 0.44,
-      "netflow": 76561117.0,
-      "up": 14,
-      "down": 12,
-      "netrate": 2.79
-    },
-    {
-      "code": "BK1357",
-      "name": "钟表珠宝",
-      "pct": 0.43,
-      "netflow": -26033114.0,
-      "up": 10,
-      "down": 5,
-      "netrate": -3.12
-    },
-    {
-      "code": "BK1414",
-      "name": "锦纶",
-      "pct": 0.42,
-      "netflow": -2031504.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -1.02
-    },
-    {
-      "code": "BK1378",
-      "name": "其他能源发电",
-      "pct": 0.42,
-      "netflow": 4642636.0,
-      "up": 1,
-      "down": 0,
-      "netrate": 7.03
-    },
-    {
-      "code": "BK1359",
-      "name": "金融控股",
-      "pct": 0.42,
-      "netflow": -22556456.0,
-      "up": 7,
-      "down": 1,
-      "netrate": -2.5
-    },
-    {
-      "code": "BK1562",
-      "name": "人工景区",
-      "pct": 0.41,
-      "netflow": -11451116.0,
-      "up": 4,
-      "down": 0,
-      "netrate": -1.28
-    },
-    {
-      "code": "BK1492",
-      "name": "焦炭Ⅲ",
-      "pct": 0.4,
-      "netflow": -57794369.0,
-      "up": 5,
-      "down": 1,
-      "netrate": -5.74
-    },
-    {
-      "code": "BK1249",
-      "name": "焦炭Ⅱ",
-      "pct": 0.4,
-      "netflow": -57794369.0,
-      "up": 5,
-      "down": 1,
-      "netrate": -5.74
-    },
-    {
-      "code": "BK1582",
-      "name": "烘焙食品",
-      "pct": 0.4,
-      "netflow": -571442.0,
-      "up": 8,
-      "down": 1,
-      "netrate": -0.15
-    },
-    {
-      "code": "BK1271",
-      "name": "酒店餐饮",
-      "pct": 0.39,
-      "netflow": -28851953.0,
-      "up": 4,
-      "down": 3,
-      "netrate": -4.79
-    },
-    {
-      "code": "BK1323",
-      "name": "综合电力设备商",
-      "pct": 0.39,
-      "netflow": -23992041.0,
-      "up": 2,
-      "down": 0,
-      "netrate": -4.64
-    },
-    {
-      "code": "BK1208",
-      "name": "建筑材料",
-      "pct": 0.37,
-      "netflow": -476755168.0,
-      "up": 38,
-      "down": 29,
-      "netrate": -2.64
-    },
-    {
-      "code": "BK1508",
-      "name": "畜禽饲料",
-      "pct": 0.36,
-      "netflow": -1569659.0,
-      "up": 7,
-      "down": 2,
-      "netrate": -0.28
-    },
-    {
-      "code": "BK1368",
-      "name": "钢铁管材",
-      "pct": 0.35,
-      "netflow": 761990.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 0.44
-    },
-    {
-      "code": "BK1348",
-      "name": "辅料",
-      "pct": 0.35,
-      "netflow": 8933798.0,
-      "up": 2,
-      "down": 2,
-      "netrate": 3.2
-    },
-    {
-      "code": "BK1240",
-      "name": "厨卫电器",
-      "pct": 0.34,
-      "netflow": -4571729.0,
-      "up": 6,
-      "down": 3,
-      "netrate": -0.56
-    },
-    {
-      "code": "BK1320",
-      "name": "逆变器",
-      "pct": 0.34,
-      "netflow": -98999216.0,
-      "up": 7,
-      "down": 3,
-      "netrate": -2.57
-    },
-    {
-      "code": "BK0739",
-      "name": "工程机械",
-      "pct": 0.34,
-      "netflow": 289091424.0,
-      "up": 23,
-      "down": 11,
-      "netrate": 5.47
-    },
-    {
-      "code": "BK1532",
-      "name": "金属包装",
-      "pct": 0.33,
-      "netflow": 31150536.0,
-      "up": 5,
-      "down": 2,
-      "netrate": 3.12
-    },
-    {
-      "code": "BK0738",
-      "name": "多元金融",
-      "pct": 0.33,
-      "netflow": -71563743.0,
-      "up": 16,
-      "down": 8,
-      "netrate": -2.39
-    },
-    {
-      "code": "BK1615",
-      "name": "铜",
-      "pct": 0.33,
-      "netflow": 25749360.0,
-      "up": 10,
-      "down": 7,
-      "netrate": 0.27
-    },
-    {
-      "code": "BK1312",
-      "name": "线缆部件及其他",
-      "pct": 0.32,
-      "netflow": -226846272.0,
-      "up": 22,
-      "down": 16,
-      "netrate": -2.65
-    },
-    {
-      "code": "BK1344",
-      "name": "产业地产",
-      "pct": 0.32,
-      "netflow": -5238472.0,
-      "up": 10,
-      "down": 4,
-      "netrate": -0.38
-    },
-    {
-      "code": "BK0538",
-      "name": "化学制品",
-      "pct": 0.31,
-      "netflow": -406358096.0,
-      "up": 91,
-      "down": 90,
-      "netrate": -1.41
-    },
-    {
-      "code": "BK1203",
-      "name": "非银金融",
-      "pct": 0.3,
-      "netflow": -209973088.0,
-      "up": 48,
-      "down": 19,
-      "netrate": -1.05
-    },
-    {
-      "code": "BK1274",
-      "name": "炼化及贸易",
-      "pct": 0.3,
-      "netflow": -375247104.0,
-      "up": 17,
-      "down": 10,
-      "netrate": -5.84
-    },
-    {
-      "code": "BK1461",
-      "name": "玻璃制造",
-      "pct": 0.3,
-      "netflow": 21688631.0,
-      "up": 4,
-      "down": 2,
-      "netrate": 4.34
-    },
-    {
-      "code": "BK1521",
-      "name": "摩托车",
-      "pct": 0.3,
-      "netflow": 37108680.0,
-      "up": 4,
-      "down": 5,
-      "netrate": 3.4
-    },
-    {
-      "code": "BK1435",
-      "name": "磷肥及磷化工",
-      "pct": 0.29,
-      "netflow": -17560895.0,
-      "up": 6,
-      "down": 3,
-      "netrate": -1.18
-    },
-    {
-      "code": "BK1511",
-      "name": "肉鸡养殖",
-      "pct": 0.27,
-      "netflow": -17890253.0,
-      "up": 5,
-      "down": 3,
-      "netrate": -3.9
-    },
-    {
-      "code": "BK1309",
-      "name": "电网自动化设备",
-      "pct": 0.27,
-      "netflow": 168837216.0,
-      "up": 15,
-      "down": 13,
-      "netrate": 3.86
-    },
-    {
-      "code": "BK1374",
-      "name": "风力发电",
-      "pct": 0.26,
-      "netflow": 21709835.0,
-      "up": 11,
-      "down": 3,
-      "netrate": 0.92
-    },
-    {
-      "code": "BK1506",
-      "name": "农业综合Ⅲ",
-      "pct": 0.26,
-      "netflow": 3365177.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 3.95
-    },
-    {
-      "code": "BK1257",
-      "name": "农业综合Ⅱ",
-      "pct": 0.26,
-      "netflow": 3365177.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 3.95
-    },
-    {
-      "code": "BK1366",
-      "name": "证券Ⅲ",
-      "pct": 0.24,
-      "netflow": -440341600.0,
-      "up": 28,
-      "down": 10,
-      "netrate": -3.72
-    },
-    {
-      "code": "BK0473",
-      "name": "证券Ⅱ",
-      "pct": 0.24,
-      "netflow": -440341600.0,
-      "up": 28,
-      "down": 10,
-      "netrate": -3.72
-    },
-    {
-      "code": "BK1213",
-      "name": "商贸零售",
-      "pct": 0.24,
-      "netflow": 198851872.0,
-      "up": 59,
-      "down": 37,
-      "netrate": 1.6
-    },
-    {
-      "code": "BK1458",
-      "name": "个护小家电",
-      "pct": 0.22,
-      "netflow": -2526667.0,
-      "up": 3,
-      "down": 1,
-      "netrate": -1.74
-    },
-    {
-      "code": "BK1560",
-      "name": "酒店",
-      "pct": 0.2,
-      "netflow": -19963076.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -4.61
-    },
-    {
-      "code": "BK1548",
-      "name": "综合电商",
-      "pct": 0.2,
-      "netflow": -4368816.0,
-      "up": 1,
-      "down": 1,
-      "netrate": -2.46
-    },
-    {
-      "code": "BK0464",
-      "name": "石油石化",
-      "pct": 0.19,
-      "netflow": -510312736.0,
-      "up": 27,
-      "down": 18,
-      "netrate": -5.38
-    },
-    {
-      "code": "BK1015",
-      "name": "能源金属",
-      "pct": 0.19,
-      "netflow": 1570977520.0,
-      "up": 7,
-      "down": 5,
-      "netrate": 11.27
-    },
-    {
-      "code": "BK1200",
-      "name": "电力设备",
-      "pct": 0.18,
-      "netflow": 957833216.0,
-      "up": 207,
-      "down": 192,
-      "netrate": 0.82
-    },
-    {
-      "code": "BK1206",
-      "name": "基础化工",
-      "pct": 0.16,
-      "netflow": -1001243648.0,
-      "up": 230,
-      "down": 211,
-      "netrate": -1.39
-    },
-    {
-      "code": "BK1209",
-      "name": "建筑装饰",
-      "pct": 0.15,
-      "netflow": -125573664.0,
-      "up": 82,
-      "down": 72,
-      "netrate": -0.68
-    },
-    {
-      "code": "BK1550",
-      "name": "贸易Ⅲ",
-      "pct": 0.15,
-      "netflow": -3006849.0,
-      "up": 7,
-      "down": 5,
-      "netrate": -0.4
-    },
-    {
-      "code": "BK0484",
-      "name": "贸易Ⅱ",
-      "pct": 0.15,
-      "netflow": -3006849.0,
-      "up": 7,
-      "down": 5,
-      "netrate": -0.4
-    },
-    {
-      "code": "BK1473",
-      "name": "园林工程",
-      "pct": 0.15,
-      "netflow": 37949077.0,
-      "up": 8,
-      "down": 8,
-      "netrate": 5.45
-    },
-    {
-      "code": "BK1364",
-      "name": "资产管理",
-      "pct": 0.13,
-      "netflow": -18737935.0,
-      "up": 2,
-      "down": 1,
-      "netrate": -5.24
-    },
-    {
-      "code": "BK1311",
-      "name": "输变电设备",
-      "pct": 0.12,
-      "netflow": -103195328.0,
-      "up": 15,
-      "down": 12,
-      "netrate": -2.03
-    },
-    {
-      "code": "BK1218",
-      "name": "出版",
-      "pct": 0.12,
-      "netflow": 13260064.0,
-      "up": 13,
-      "down": 15,
-      "netrate": 0.23
-    },
-    {
-      "code": "BK1459",
-      "name": "清洁小家电",
-      "pct": 0.11,
-      "netflow": 11734794.0,
-      "up": 3,
-      "down": 6,
-      "netrate": 1.07
-    },
-    {
-      "code": "BK1211",
-      "name": "汽车",
-      "pct": 0.1,
-      "netflow": 1031911680.0,
-      "up": 162,
-      "down": 157,
-      "netrate": 1.79
-    },
-    {
-      "code": "BK1488",
-      "name": "跨境物流",
-      "pct": 0.1,
-      "netflow": -7068664.0,
-      "up": 7,
-      "down": 7,
-      "netrate": -1.15
-    },
-    {
-      "code": "BK1031",
-      "name": "光伏设备",
-      "pct": 0.1,
-      "netflow": 98079856.0,
-      "up": 36,
-      "down": 32,
-      "netrate": 0.57
-    },
-    {
-      "code": "BK1541",
-      "name": "卫浴制品",
-      "pct": 0.09,
-      "netflow": -43250330.0,
-      "up": 2,
-      "down": 5,
-      "netrate": -7.17
-    },
-    {
-      "code": "BK1421",
-      "name": "钛白粉",
-      "pct": 0.09,
-      "netflow": 2303608.0,
-      "up": 2,
-      "down": 4,
-      "netrate": 0.49
-    },
-    {
-      "code": "BK1428",
-      "name": "其他化学制品",
-      "pct": 0.09,
-      "netflow": 44305776.0,
-      "up": 40,
-      "down": 40,
-      "netrate": 0.47
-    },
-    {
-      "code": "BK1467",
-      "name": "耐火材料",
-      "pct": 0.08,
-      "netflow": -9486850.0,
-      "up": 5,
-      "down": 3,
-      "netrate": -5.04
-    },
-    {
-      "code": "BK1556",
-      "name": "教育运营及其他",
-      "pct": 0.08,
-      "netflow": -13921849.0,
-      "up": 1,
-      "down": 1,
-      "netrate": -2.64
-    },
-    {
-      "code": "BK1045",
-      "name": "房地产服务",
-      "pct": 0.08,
-      "netflow": -104932912.0,
-      "up": 7,
-      "down": 7,
-      "netrate": -1.68
-    },
-    {
-      "code": "BK1509",
-      "name": "水产饲料",
-      "pct": 0.07,
-      "netflow": -28160505.0,
-      "up": 1,
-      "down": 2,
-      "netrate": -5.59
-    },
-    {
-      "code": "BK0457",
-      "name": "电网设备",
-      "pct": 0.05,
-      "netflow": -222328976.0,
-      "up": 66,
-      "down": 67,
-      "netrate": -1.02
-    },
-    {
-      "code": "BK1442",
-      "name": "炭黑",
-      "pct": 0.04,
-      "netflow": -29714394.0,
-      "up": 3,
-      "down": 2,
-      "netrate": -5.17
-    },
-    {
-      "code": "BK1263",
-      "name": "摩托车及其他",
-      "pct": 0.02,
-      "netflow": 35468809.0,
-      "up": 9,
-      "down": 11,
-      "netrate": 1.82
-    },
-    {
-      "code": "BK1487",
-      "name": "公路货运",
-      "pct": 0.01,
-      "netflow": 7641527.0,
-      "up": 3,
-      "down": 1,
-      "netrate": 5.43
-    },
-    {
-      "code": "BK0481",
-      "name": "汽车零部件",
-      "pct": 0.01,
-      "netflow": 743171232.0,
-      "up": 131,
-      "down": 140,
-      "netrate": 1.95
-    },
-    {
-      "code": "BK1360",
-      "name": "金融信息服务",
-      "pct": 0.0,
-      "netflow": 11429862.0,
-      "up": 1,
-      "down": 2,
-      "netrate": 1.69
-    },
-    {
-      "code": "BK1449",
-      "name": "冰洗",
-      "pct": 0.0,
-      "netflow": 4082565.0,
-      "up": 3,
-      "down": 4,
-      "netrate": 0.62
-    },
-    {
-      "code": "BK1527",
-      "name": "轮胎轮毂",
-      "pct": 0.0,
-      "netflow": 7844426.0,
-      "up": 12,
-      "down": 9,
-      "netrate": 0.63
-    },
-    {
-      "code": "BK1523",
-      "name": "汽车经销商",
-      "pct": -0.01,
-      "netflow": -6347927.0,
-      "up": 2,
-      "down": 3,
-      "netrate": -2.29
-    },
-    {
-      "code": "BK1259",
-      "name": "养殖业",
-      "pct": -0.01,
-      "netflow": -25106002.0,
-      "up": 11,
-      "down": 9,
-      "netrate": -0.73
-    },
-    {
-      "code": "BK1353",
-      "name": "家纺",
-      "pct": -0.01,
-      "netflow": 7562948.0,
-      "up": 4,
-      "down": 3,
-      "netrate": 3.41
-    },
-    {
-      "code": "BK1490",
-      "name": "原材料供应链服务",
-      "pct": -0.04,
-      "netflow": -10499054.0,
-      "up": 6,
-      "down": 6,
-      "netrate": -1.1
-    },
-    {
-      "code": "BK1408",
-      "name": "机器人",
-      "pct": -0.05,
-      "netflow": -35728976.0,
-      "up": 8,
-      "down": 14,
-      "netrate": -0.81
-    },
-    {
-      "code": "BK1351",
-      "name": "印染",
-      "pct": -0.06,
-      "netflow": -3269788.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -1.09
-    },
-    {
-      "code": "BK1614",
-      "name": "铅锌",
-      "pct": -0.06,
-      "netflow": 3466414.0,
-      "up": 6,
-      "down": 5,
-      "netrate": 0.21
-    },
-    {
-      "code": "BK1384",
-      "name": "航空装备Ⅲ",
-      "pct": -0.07,
-      "netflow": 180423264.0,
-      "up": 22,
-      "down": 26,
-      "netrate": 1.69
-    },
-    {
-      "code": "BK1231",
-      "name": "航空装备Ⅱ",
-      "pct": -0.07,
-      "netflow": 180423264.0,
-      "up": 22,
-      "down": 26,
-      "netrate": 1.69
-    },
-    {
-      "code": "BK1572",
-      "name": "油气及炼化工程",
-      "pct": -0.07,
-      "netflow": -43530069.0,
-      "up": 2,
-      "down": 4,
-      "netrate": -4.18
-    },
-    {
-      "code": "BK1265",
-      "name": "包装印刷",
-      "pct": -0.07,
-      "netflow": 189388224.0,
-      "up": 20,
-      "down": 24,
-      "netrate": 3.29
-    },
-    {
-      "code": "BK1212",
-      "name": "轻工制造",
-      "pct": -0.07,
-      "netflow": 125246192.0,
-      "up": 70,
-      "down": 92,
-      "netrate": 0.77
-    },
-    {
-      "code": "BK1426",
-      "name": "聚氨酯",
-      "pct": -0.08,
-      "netflow": -25035703.0,
-      "up": 4,
-      "down": 5,
-      "netrate": -1.28
-    },
-    {
-      "code": "BK1512",
-      "name": "生猪养殖",
-      "pct": -0.08,
-      "netflow": -7970991.0,
-      "up": 5,
-      "down": 4,
-      "netrate": -0.31
-    },
-    {
-      "code": "BK0422",
-      "name": "物流",
-      "pct": -0.09,
-      "netflow": -38279383.0,
-      "up": 21,
-      "down": 25,
-      "netrate": -1.13
-    },
-    {
-      "code": "BK1239",
-      "name": "白色家电",
-      "pct": -0.09,
-      "netflow": -110908736.0,
-      "up": 5,
-      "down": 6,
-      "netrate": -2.34
-    },
-    {
-      "code": "BK1390",
-      "name": "水务及水治理",
-      "pct": -0.09,
-      "netflow": 192534309.0,
-      "up": 23,
-      "down": 25,
-      "netrate": 5.31
-    },
-    {
-      "code": "BK1536",
-      "name": "综合包装",
-      "pct": -0.09,
-      "netflow": 10741211.0,
-      "up": 3,
-      "down": 3,
-      "netrate": 2.65
-    },
-    {
-      "code": "BK1528",
-      "name": "其他汽车零部件",
-      "pct": -0.1,
-      "netflow": -36708937.0,
-      "up": 28,
-      "down": 28,
-      "netrate": -0.79
-    },
-    {
-      "code": "BK1287",
-      "name": "工业金属",
-      "pct": -0.11,
-      "netflow": -138958432.0,
-      "up": 28,
-      "down": 30,
-      "netrate": -0.79
-    },
-    {
-      "code": "BK1272",
-      "name": "旅游及景区",
-      "pct": -0.11,
-      "netflow": -101240558.0,
-      "up": 14,
-      "down": 12,
-      "netrate": -3.87
-    },
-    {
-      "code": "BK1616",
-      "name": "白银",
-      "pct": -0.11,
-      "netflow": -80908330.0,
-      "up": 1,
-      "down": 2,
-      "netrate": -4.94
-    },
-    {
-      "code": "BK1248",
-      "name": "专业工程",
-      "pct": -0.12,
-      "netflow": -184854124.0,
-      "up": 19,
-      "down": 18,
-      "netrate": -4.15
-    },
-    {
-      "code": "BK1443",
-      "name": "橡胶助剂",
-      "pct": -0.13,
-      "netflow": -64485434.0,
-      "up": 1,
-      "down": 1,
-      "netrate": -6.59
-    },
-    {
-      "code": "BK1352",
-      "name": "非运动服装",
-      "pct": -0.15,
-      "netflow": 25434008.0,
-      "up": 16,
-      "down": 21,
-      "netrate": 0.96
-    },
-    {
-      "code": "BK1561",
-      "name": "旅游综合",
-      "pct": -0.15,
-      "netflow": -14751090.0,
-      "up": 6,
-      "down": 3,
-      "netrate": -3.11
-    },
-    {
-      "code": "BK1526",
-      "name": "底盘与发动机系统",
-      "pct": -0.15,
-      "netflow": 377412912.0,
-      "up": 49,
-      "down": 63,
-      "netrate": 2.01
-    },
-    {
-      "code": "BK1454",
-      "name": "其他黑色家电",
-      "pct": -0.15,
-      "netflow": 36461518.0,
-      "up": 1,
-      "down": 3,
-      "netrate": 8.78
-    },
-    {
-      "code": "BK1424",
-      "name": "氟化工",
-      "pct": -0.15,
-      "netflow": -194652639.0,
-      "up": 4,
-      "down": 6,
-      "netrate": -6.48
-    },
-    {
-      "code": "BK1407",
-      "name": "工控设备",
-      "pct": -0.17,
-      "netflow": 166036928.0,
-      "up": 8,
-      "down": 24,
-      "netrate": 2.88
-    },
-    {
-      "code": "BK1486",
-      "name": "仓储物流",
-      "pct": -0.18,
-      "netflow": -16705221.0,
-      "up": 2,
-      "down": 3,
-      "netrate": -4.92
-    },
-    {
-      "code": "BK1468",
-      "name": "其他建材Ⅲ",
-      "pct": -0.19,
-      "netflow": 73677153.0,
-      "up": 5,
-      "down": 10,
-      "netrate": 3.42
-    },
-    {
-      "code": "BK1522",
-      "name": "其他运输设备",
-      "pct": -0.2,
-      "netflow": -1639879.0,
-      "up": 5,
-      "down": 6,
-      "netrate": -0.19
-    },
-    {
-      "code": "BK1235",
-      "name": "环境治理",
-      "pct": -0.21,
-      "netflow": 153542416.0,
-      "up": 46,
-      "down": 56,
-      "netrate": 1.83
-    },
-    {
-      "code": "BK1275",
-      "name": "油服工程",
-      "pct": -0.22,
-      "netflow": -38335011.0,
-      "up": 6,
-      "down": 8,
-      "netrate": -2.17
-    },
-    {
-      "code": "BK0440",
-      "name": "家居用品",
-      "pct": -0.22,
-      "netflow": -30259424.0,
-      "up": 31,
-      "down": 42,
-      "netrate": -0.44
-    },
-    {
-      "code": "BK1016",
-      "name": "汽车服务",
-      "pct": -0.23,
-      "netflow": -7876229.0,
-      "up": 2,
-      "down": 4,
-      "netrate": -1.6
-    },
-    {
-      "code": "BK1489",
-      "name": "快递",
-      "pct": -0.24,
-      "netflow": -7298360.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -0.89
-    },
-    {
-      "code": "BK1383",
-      "name": "航海装备Ⅲ",
-      "pct": -0.24,
-      "netflow": 66494688.0,
-      "up": 4,
-      "down": 6,
-      "netrate": 1.17
-    },
-    {
-      "code": "BK1230",
-      "name": "航海装备Ⅱ",
-      "pct": -0.24,
-      "netflow": 66494688.0,
-      "up": 4,
-      "down": 6,
-      "netrate": 1.17
-    },
-    {
-      "code": "BK0456",
-      "name": "家用电器",
-      "pct": -0.25,
-      "netflow": -62135648.0,
-      "up": 41,
-      "down": 62,
-      "netrate": -0.38
-    },
-    {
-      "code": "BK1450",
-      "name": "空调",
-      "pct": -0.25,
-      "netflow": -114991312.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -2.82
-    },
-    {
-      "code": "BK1308",
-      "name": "电工仪器仪表",
-      "pct": -0.26,
-      "netflow": 18877861.0,
-      "up": 5,
-      "down": 8,
-      "netrate": 1.61
-    },
-    {
-      "code": "BK1565",
-      "name": "会展服务",
-      "pct": -0.27,
-      "netflow": 5430796.0,
-      "up": 1,
-      "down": 2,
-      "netrate": 1.9
-    },
-    {
-      "code": "BK1389",
-      "name": "固废治理",
-      "pct": -0.28,
-      "netflow": 3112694.0,
-      "up": 16,
-      "down": 18,
-      "netrate": 0.11
-    },
-    {
-      "code": "BK1563",
-      "name": "自然景区",
-      "pct": -0.28,
-      "netflow": -75038355.0,
-      "up": 4,
-      "down": 9,
-      "netrate": -6.05
-    },
-    {
-      "code": "BK1484",
-      "name": "公交",
-      "pct": -0.32,
-      "netflow": -4513392.0,
-      "up": 2,
-      "down": 5,
-      "netrate": -1.94
-    },
-    {
-      "code": "BK1573",
-      "name": "油田服务",
-      "pct": -0.33,
-      "netflow": 5195054.0,
-      "up": 4,
-      "down": 4,
-      "netrate": 0.71
-    },
-    {
-      "code": "BK1337",
-      "name": "品牌消费电子",
-      "pct": -0.33,
-      "netflow": -41520450.0,
-      "up": 4,
-      "down": 7,
-      "netrate": -2.26
-    },
-    {
-      "code": "BK1392",
-      "name": "工程机械器件",
-      "pct": -0.33,
-      "netflow": 26310802.0,
-      "up": 6,
-      "down": 6,
-      "netrate": 2.15
-    },
-    {
-      "code": "BK1621",
-      "name": "锂",
-      "pct": -0.34,
-      "netflow": 3312352.0,
-      "up": 3,
-      "down": 5,
-      "netrate": 0.08
-    },
-    {
-      "code": "BK1382",
-      "name": "地面兵装Ⅲ",
-      "pct": -0.34,
-      "netflow": -91252535.0,
-      "up": 5,
-      "down": 7,
-      "netrate": -3.89
-    },
-    {
-      "code": "BK1229",
-      "name": "地面兵装Ⅱ",
-      "pct": -0.34,
-      "netflow": -91252535.0,
-      "up": 5,
-      "down": 7,
-      "netrate": -3.89
-    },
-    {
-      "code": "BK1529",
-      "name": "汽车电子电气系统",
-      "pct": -0.34,
-      "netflow": 159716640.0,
-      "up": 15,
-      "down": 26,
-      "netrate": 2.0
-    },
-    {
-      "code": "BK1413",
-      "name": "涤纶",
-      "pct": -0.35,
-      "netflow": -20577457.0,
-      "up": 5,
-      "down": 5,
-      "netrate": -2.84
-    },
-    {
-      "code": "BK1535",
-      "name": "纸包装",
-      "pct": -0.37,
-      "netflow": 165376954.0,
-      "up": 5,
-      "down": 13,
-      "netrate": 4.66
-    },
-    {
-      "code": "BK1613",
-      "name": "铝",
-      "pct": -0.38,
-      "netflow": -168174240.0,
-      "up": 12,
-      "down": 18,
-      "netrate": -2.62
-    },
-    {
-      "code": "BK1214",
-      "name": "社会服务",
-      "pct": -0.38,
-      "netflow": -84391824.0,
-      "up": 31,
-      "down": 51,
-      "netrate": -0.94
-    },
-    {
-      "code": "BK1403",
-      "name": "能源及重型设备",
-      "pct": -0.38,
-      "netflow": -141738592.0,
-      "up": 30,
-      "down": 32,
-      "netrate": -1.85
-    },
-    {
-      "code": "BK1404",
-      "name": "农用机械",
-      "pct": -0.4,
-      "netflow": -5389037.0,
-      "up": 2,
-      "down": 8,
-      "netrate": -1.45
-    },
-    {
-      "code": "BK1452",
-      "name": "卫浴电器",
-      "pct": -0.41,
-      "netflow": -14019056.0,
-      "up": 2,
-      "down": 1,
-      "netrate": -8.88
-    },
-    {
-      "code": "BK1301",
-      "name": "游戏Ⅲ",
-      "pct": -0.43,
-      "netflow": -94434960.0,
-      "up": 8,
-      "down": 16,
-      "netrate": -2.05
-    },
-    {
-      "code": "BK1046",
-      "name": "游戏Ⅱ",
-      "pct": -0.43,
-      "netflow": -94434960.0,
-      "up": 8,
-      "down": 16,
-      "netrate": -2.05
-    },
-    {
-      "code": "BK1491",
-      "name": "端到端供应链服务",
-      "pct": -0.44,
-      "netflow": -4349600.0,
-      "up": 1,
-      "down": 6,
-      "netrate": -0.83
-    },
-    {
-      "code": "BK1299",
-      "name": "影视动漫制作",
-      "pct": -0.45,
-      "netflow": -116744448.0,
-      "up": 4,
-      "down": 9,
-      "netrate": -2.23
-    },
-    {
-      "code": "BK0478",
-      "name": "有色金属",
-      "pct": -0.47,
-      "netflow": 829379328.0,
-      "up": 57,
-      "down": 88,
-      "netrate": 1.43
-    },
-    {
-      "code": "BK1310",
-      "name": "配电设备",
-      "pct": -0.48,
-      "netflow": -80002323.0,
-      "up": 9,
-      "down": 18,
-      "netrate": -3.13
-    },
-    {
-      "code": "BK0728",
-      "name": "环保",
-      "pct": -0.5,
-      "netflow": 80150624.0,
-      "up": 55,
-      "down": 73,
-      "netrate": 0.77
-    },
-    {
-      "code": "BK1306",
-      "name": "蓄电池及其他电池",
-      "pct": -0.5,
-      "netflow": 55140928.0,
-      "up": 5,
-      "down": 5,
-      "netrate": 2.52
-    },
-    {
-      "code": "BK1416",
-      "name": "粘胶",
-      "pct": -0.51,
-      "netflow": -20814212.0,
-      "up": 1,
-      "down": 2,
-      "netrate": -6.45
-    },
-    {
-      "code": "BK1510",
-      "name": "其他养殖",
-      "pct": -0.52,
-      "netflow": 755240.0,
-      "up": 1,
-      "down": 2,
-      "netrate": 0.21
-    },
-    {
-      "code": "BK1018",
-      "name": "橡胶",
-      "pct": -0.52,
-      "netflow": -171189302.0,
-      "up": 10,
-      "down": 12,
-      "netrate": -7.67
-    },
-    {
-      "code": "BK1440",
-      "name": "其他塑料制品",
-      "pct": -0.53,
-      "netflow": -124766417.0,
-      "up": 9,
-      "down": 10,
-      "netrate": -4.45
-    },
-    {
-      "code": "BK1394",
-      "name": "轨交设备Ⅲ",
-      "pct": -0.53,
-      "netflow": -69849376.0,
-      "up": 11,
-      "down": 18,
-      "netrate": -2.71
-    },
-    {
-      "code": "BK1236",
-      "name": "轨交设备Ⅱ",
-      "pct": -0.53,
-      "netflow": -69849376.0,
-      "up": 11,
-      "down": 18,
-      "netrate": -2.71
-    },
-    {
-      "code": "BK1307",
-      "name": "电机Ⅲ",
-      "pct": -0.53,
-      "netflow": 120863672.0,
-      "up": 10,
-      "down": 17,
-      "netrate": 3.92
-    },
-    {
-      "code": "BK1030",
-      "name": "电机Ⅱ",
-      "pct": -0.53,
-      "netflow": 120863672.0,
-      "up": 10,
-      "down": 17,
-      "netrate": 3.92
-    },
-    {
-      "code": "BK1422",
-      "name": "无机盐",
-      "pct": -0.54,
-      "netflow": -108660848.0,
-      "up": 4,
-      "down": 7,
-      "netrate": -3.46
-    },
-    {
-      "code": "BK0436",
-      "name": "纺织服饰",
-      "pct": -0.54,
-      "netflow": -214523456.0,
-      "up": 46,
-      "down": 60,
-      "netrate": -2.61
-    },
-    {
-      "code": "BK1342",
-      "name": "房地产综合服务",
-      "pct": -0.55,
-      "netflow": -260169.0,
-      "up": 0,
-      "down": 1,
-      "netrate": -0.27
-    },
-    {
-      "code": "BK1321",
-      "name": "火电设备",
-      "pct": -0.55,
-      "netflow": -25991510.0,
-      "up": 1,
-      "down": 2,
-      "netrate": -8.5
-    },
-    {
-      "code": "BK1361",
-      "name": "期货",
-      "pct": -0.56,
-      "netflow": -25524238.0,
-      "up": 1,
-      "down": 3,
-      "netrate": -6.16
-    },
-    {
-      "code": "BK1564",
-      "name": "体育Ⅲ",
-      "pct": -0.58,
-      "netflow": -7268615.0,
-      "up": 0,
-      "down": 3,
-      "netrate": -3.52
-    },
-    {
-      "code": "BK1273",
-      "name": "体育Ⅱ",
-      "pct": -0.58,
-      "netflow": -7268615.0,
-      "up": 0,
-      "down": 3,
-      "netrate": -3.52
-    },
-    {
-      "code": "BK1626",
-      "name": "稀土",
-      "pct": -0.59,
-      "netflow": -126370291.0,
-      "up": 0,
-      "down": 4,
-      "netrate": -6.15
-    },
-    {
-      "code": "BK1204",
-      "name": "国防军工",
-      "pct": -0.6,
-      "netflow": -432266592.0,
-      "up": 47,
-      "down": 92,
-      "netrate": -1.33
-    },
-    {
-      "code": "BK1624",
-      "name": "其他小金属",
-      "pct": -0.6,
-      "netflow": 59199712.0,
-      "up": 4,
-      "down": 11,
-      "netrate": 1.08
-    },
-    {
-      "code": "BK1241",
-      "name": "黑色家电",
-      "pct": -0.62,
-      "netflow": 11689049.0,
-      "up": 3,
-      "down": 5,
-      "netrate": 1.03
-    },
-    {
-      "code": "BK1455",
-      "name": "家电零部件Ⅲ",
-      "pct": -0.62,
-      "netflow": 29340528.0,
-      "up": 10,
-      "down": 24,
-      "netrate": 0.58
-    },
-    {
-      "code": "BK1242",
-      "name": "家电零部件Ⅱ",
-      "pct": -0.62,
-      "netflow": 29340528.0,
-      "up": 10,
-      "down": 24,
-      "netrate": 0.58
-    },
-    {
-      "code": "BK1411",
-      "name": "非金属材料Ⅲ",
-      "pct": -0.63,
-      "netflow": -55533040.0,
-      "up": 5,
-      "down": 10,
-      "netrate": -0.88
-    },
-    {
-      "code": "BK1020",
-      "name": "非金属材料Ⅱ",
-      "pct": -0.63,
-      "netflow": -55533040.0,
-      "up": 5,
-      "down": 10,
-      "netrate": -0.88
-    },
-    {
-      "code": "BK1237",
-      "name": "自动化设备",
-      "pct": -0.63,
-      "netflow": 212777136.0,
-      "up": 25,
-      "down": 70,
-      "netrate": 0.91
-    },
-    {
-      "code": "BK1625",
-      "name": "钨",
-      "pct": -0.64,
-      "netflow": -207882086.0,
-      "up": 1,
-      "down": 3,
-      "netrate": -7.69
-    },
-    {
-      "code": "BK1534",
-      "name": "印刷",
-      "pct": -0.64,
-      "netflow": -14354371.0,
-      "up": 0,
-      "down": 4,
-      "netrate": -13.89
-    },
-    {
-      "code": "BK1333",
-      "name": "LED",
-      "pct": -0.65,
-      "netflow": -70544784.0,
-      "up": 7,
-      "down": 21,
-      "netrate": -1.44
-    },
-    {
-      "code": "BK1027",
-      "name": "小金属",
-      "pct": -0.65,
-      "netflow": -259069248.0,
-      "up": 7,
-      "down": 19,
-      "netrate": -2.37
-    },
-    {
-      "code": "BK1590",
-      "name": "其他通信设备",
-      "pct": -0.65,
-      "netflow": 4109036.0,
-      "up": 4,
-      "down": 9,
-      "netrate": 0.33
-    },
-    {
-      "code": "BK1375",
-      "name": "光伏发电",
-      "pct": -0.65,
-      "netflow": -58797729.0,
-      "up": 6,
-      "down": 7,
-      "netrate": -2.01
-    },
-    {
-      "code": "BK1445",
-      "name": "安防设备",
-      "pct": -0.66,
-      "netflow": 38326550.0,
-      "up": 8,
-      "down": 18,
-      "netrate": 1.11
-    },
-    {
-      "code": "BK1043",
-      "name": "专业服务",
-      "pct": -0.66,
-      "netflow": -25343351.0,
-      "up": 8,
-      "down": 21,
-      "netrate": -1.0
-    },
-    {
-      "code": "BK1385",
-      "name": "航天装备Ⅲ",
-      "pct": -0.66,
-      "netflow": -201114054.0,
-      "up": 1,
-      "down": 8,
-      "netrate": -11.65
-    },
-    {
-      "code": "BK1232",
-      "name": "航天装备Ⅱ",
-      "pct": -0.66,
-      "netflow": -201114054.0,
-      "up": 1,
-      "down": 8,
-      "netrate": -11.65
-    },
-    {
-      "code": "BK1396",
-      "name": "金属制品",
-      "pct": -0.67,
-      "netflow": 4719968.0,
-      "up": 28,
-      "down": 52,
-      "netrate": 0.03
-    },
-    {
-      "code": "BK1524",
-      "name": "汽车综合服务",
-      "pct": -0.67,
-      "netflow": -1528302.0,
-      "up": 0,
-      "down": 1,
-      "netrate": -0.71
-    },
-    {
-      "code": "BK1580",
-      "name": "肉制品",
-      "pct": -0.67,
-      "netflow": -39366238.0,
-      "up": 4,
-      "down": 2,
-      "netrate": -5.05
-    },
-    {
-      "code": "BK1566",
-      "name": "检测服务",
-      "pct": -0.67,
-      "netflow": -44502273.0,
-      "up": 5,
-      "down": 15,
-      "netrate": -2.45
-    },
-    {
-      "code": "BK1557",
-      "name": "培训教育",
-      "pct": -0.68,
-      "netflow": 116776805.0,
-      "up": 4,
-      "down": 8,
-      "netrate": 5.43
-    },
-    {
-      "code": "BK1225",
-      "name": "服装家纺",
-      "pct": -0.69,
-      "netflow": -79377392.0,
-      "up": 22,
-      "down": 36,
-      "netrate": -1.77
-    },
-    {
-      "code": "BK0740",
-      "name": "教育",
-      "pct": -0.69,
-      "netflow": 78312651.0,
-      "up": 5,
-      "down": 12,
-      "netrate": 2.61
-    },
-    {
-      "code": "BK1463",
-      "name": "水泥制品",
-      "pct": -0.69,
-      "netflow": 5829680.0,
-      "up": 3,
-      "down": 4,
-      "netrate": 0.94
-    },
-    {
-      "code": "BK1438",
-      "name": "合成树脂",
-      "pct": -0.71,
-      "netflow": -25025800.0,
-      "up": 2,
-      "down": 11,
-      "netrate": -1.16
-    },
-    {
-      "code": "BK1400",
-      "name": "制冷空调设备",
-      "pct": -0.71,
-      "netflow": -159854639.0,
-      "up": 5,
-      "down": 15,
-      "netrate": -4.5
-    },
-    {
-      "code": "BK1221",
-      "name": "数字媒体",
-      "pct": -0.71,
-      "netflow": -183236144.0,
-      "up": 4,
-      "down": 11,
-      "netrate": -2.37
-    },
-    {
-      "code": "BK1542",
-      "name": "文化用品",
-      "pct": -0.72,
-      "netflow": -32137920.0,
-      "up": 1,
-      "down": 4,
-      "netrate": -8.27
-    },
-    {
-      "code": "BK1471",
-      "name": "工程咨询服务Ⅲ",
-      "pct": -0.73,
-      "netflow": -263241162.0,
-      "up": 16,
-      "down": 29,
-      "netrate": -5.07
-    },
-    {
-      "code": "BK0726",
-      "name": "工程咨询服务Ⅱ",
-      "pct": -0.73,
-      "netflow": -263241162.0,
-      "up": 16,
-      "down": 29,
-      "netrate": -5.07
-    },
-    {
-      "code": "BK1499",
-      "name": "医美服务",
-      "pct": -0.73,
-      "netflow": -4486741.0,
-      "up": 1,
-      "down": 1,
-      "netrate": -2.56
-    },
-    {
-      "code": "BK0910",
-      "name": "专用设备",
-      "pct": -0.74,
-      "netflow": -850271616.0,
-      "up": 70,
-      "down": 134,
-      "netrate": -3.32
-    },
-    {
-      "code": "BK1298",
-      "name": "文字媒体",
-      "pct": -0.75,
-      "netflow": -76055634.0,
-      "up": 1,
-      "down": 1,
-      "netrate": -3.53
-    },
-    {
-      "code": "BK1430",
-      "name": "涂料油墨",
-      "pct": -0.75,
-      "netflow": -14087794.0,
-      "up": 7,
-      "down": 11,
-      "netrate": -0.65
-    },
-    {
-      "code": "BK1289",
-      "name": "大众出版",
-      "pct": -0.76,
-      "netflow": -127058432.0,
-      "up": 4,
-      "down": 14,
-      "netrate": -3.33
-    },
-    {
-      "code": "BK1222",
-      "name": "影视院线",
-      "pct": -0.77,
-      "netflow": -168144240.0,
-      "up": 4,
-      "down": 13,
-      "netrate": -2.93
-    },
-    {
-      "code": "BK0486",
-      "name": "传媒",
-      "pct": -0.79,
-      "netflow": -1385137008.0,
-      "up": 35,
-      "down": 90,
-      "netrate": -4.03
-    },
-    {
-      "code": "BK1205",
-      "name": "机械设备",
-      "pct": -0.8,
-      "netflow": -1876355072.0,
-      "up": 193,
-      "down": 417,
-      "netrate": -1.79
-    },
-    {
-      "code": "BK1441",
-      "name": "其他橡胶制品",
-      "pct": -0.8,
-      "netflow": -76989464.0,
-      "up": 6,
-      "down": 9,
-      "netrate": -11.38
-    },
-    {
-      "code": "BK1224",
-      "name": "纺织制造",
-      "pct": -0.81,
-      "netflow": -110469973.0,
-      "up": 13,
-      "down": 19,
-      "netrate": -3.84
-    },
-    {
-      "code": "BK1460",
-      "name": "照明设备Ⅲ",
-      "pct": -0.82,
-      "netflow": -4325363.0,
-      "up": 5,
-      "down": 9,
-      "netrate": -0.38
-    },
-    {
-      "code": "BK1245",
-      "name": "照明设备Ⅱ",
-      "pct": -0.82,
-      "netflow": -4325363.0,
-      "up": 5,
-      "down": 9,
-      "netrate": -0.38
-    },
-    {
-      "code": "BK1316",
-      "name": "光伏辅材",
-      "pct": -0.82,
-      "netflow": -101390586.0,
-      "up": 7,
-      "down": 12,
-      "netrate": -4.67
-    },
-    {
-      "code": "BK1266",
-      "name": "文娱用品",
-      "pct": -0.83,
-      "netflow": -49026243.0,
-      "up": 3,
-      "down": 18,
-      "netrate": -2.74
-    },
-    {
-      "code": "BK1593",
-      "name": "通信终端及配件",
-      "pct": -0.86,
-      "netflow": 656885184.0,
-      "up": 9,
-      "down": 18,
-      "netrate": 6.38
-    },
-    {
-      "code": "BK1543",
-      "name": "娱乐用品",
-      "pct": -0.86,
-      "netflow": -16888324.0,
-      "up": 2,
-      "down": 14,
-      "netrate": -1.2
-    },
-    {
-      "code": "BK1398",
-      "name": "其他通用设备",
-      "pct": -0.87,
-      "netflow": -76929296.0,
-      "up": 17,
-      "down": 36,
-      "netrate": -1.09
-    },
-    {
-      "code": "BK1334",
-      "name": "光学元件",
-      "pct": -0.88,
-      "netflow": 465549232.0,
-      "up": 6,
-      "down": 21,
-      "netrate": 3.47
-    },
-    {
-      "code": "BK1395",
-      "name": "机床工具",
-      "pct": -0.92,
-      "netflow": -666939.0,
-      "up": 3,
-      "down": 16,
-      "netrate": -0.05
-    },
-    {
-      "code": "BK1350",
-      "name": "其他纺织",
-      "pct": -0.93,
-      "netflow": -62055193.0,
-      "up": 6,
-      "down": 9,
-      "netrate": -6.11
-    },
-    {
-      "code": "BK1444",
-      "name": "IT服务Ⅲ",
-      "pct": -0.94,
-      "netflow": -1045523888.0,
-      "up": 28,
-      "down": 107,
-      "netrate": -4.14
-    },
-    {
-      "code": "BK1238",
-      "name": "IT服务Ⅱ",
-      "pct": -0.94,
-      "netflow": -1045523888.0,
-      "up": 28,
-      "down": 107,
-      "netrate": -4.14
-    },
-    {
-      "code": "BK1538",
-      "name": "瓷砖地板",
-      "pct": -0.95,
-      "netflow": -17683237.0,
-      "up": 3,
-      "down": 9,
-      "netrate": -1.23
-    },
-    {
-      "code": "BK1391",
-      "name": "综合环境治理",
-      "pct": -0.96,
-      "netflow": -33883885.0,
-      "up": 3,
-      "down": 11,
-      "netrate": -2.15
-    },
-    {
-      "code": "BK1406",
-      "name": "印刷包装机械",
-      "pct": -0.96,
-      "netflow": -40377716.0,
-      "up": 1,
-      "down": 10,
-      "netrate": -6.91
-    },
-    {
-      "code": "BK0448",
-      "name": "通信设备",
-      "pct": -0.97,
-      "netflow": -370401792.0,
-      "up": 25,
-      "down": 65,
-      "netrate": -0.41
-    },
-    {
-      "code": "BK1038",
-      "name": "光学光电子",
-      "pct": -0.97,
-      "netflow": 749126912.0,
-      "up": 23,
-      "down": 72,
-      "netrate": 2.05
-    },
-    {
-      "code": "BK1477",
-      "name": "其他专业工程",
-      "pct": -0.99,
-      "netflow": -143091641.0,
-      "up": 5,
-      "down": 13,
-      "netrate": -4.79
-    },
-    {
-      "code": "BK1623",
-      "name": "钼",
-      "pct": -0.99,
-      "netflow": 15983389.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 2.35
-    },
-    {
-      "code": "BK1571",
-      "name": "油品石化贸易",
-      "pct": -1.0,
-      "netflow": -55247340.0,
-      "up": 1,
-      "down": 3,
-      "netrate": -12.15
-    },
-    {
-      "code": "BK0546",
-      "name": "玻璃玻纤",
-      "pct": -1.03,
-      "netflow": -681545552.0,
-      "up": 4,
-      "down": 10,
-      "netrate": -6.46
-    },
-    {
-      "code": "BK1591",
-      "name": "通信网络设备及器件",
-      "pct": -1.05,
-      "netflow": 337323520.0,
-      "up": 8,
-      "down": 29,
-      "netrate": 0.6
-    },
-    {
-      "code": "BK0735",
-      "name": "计算机设备",
-      "pct": -1.08,
-      "netflow": -858236944.0,
-      "up": 20,
-      "down": 68,
-      "netrate": -5.52
-    },
-    {
-      "code": "BK1292",
-      "name": "广告媒体",
-      "pct": -1.08,
-      "netflow": 41865439.0,
-      "up": 1,
-      "down": 2,
-      "netrate": 4.62
-    },
-    {
-      "code": "BK1207",
-      "name": "计算机",
-      "pct": -1.08,
-      "netflow": -2932669952.0,
-      "up": 69,
-      "down": 285,
-      "netrate": -4.47
-    },
-    {
-      "code": "BK0545",
-      "name": "通用设备",
-      "pct": -1.1,
-      "netflow": -1458102832.0,
-      "up": 64,
-      "down": 184,
-      "netrate": -3.03
-    },
-    {
-      "code": "BK1386",
-      "name": "军工电子Ⅲ",
-      "pct": -1.12,
-      "netflow": -386818064.0,
-      "up": 15,
-      "down": 45,
-      "netrate": -3.22
-    },
-    {
-      "code": "BK1233",
-      "name": "军工电子Ⅱ",
-      "pct": -1.12,
-      "netflow": -386818064.0,
-      "up": 15,
-      "down": 45,
-      "netrate": -3.22
-    },
-    {
-      "code": "BK1405",
-      "name": "其他专用设备",
-      "pct": -1.17,
-      "netflow": -616539344.0,
-      "up": 26,
-      "down": 66,
-      "netrate": -4.27
-    },
-    {
-      "code": "BK1294",
-      "name": "门户网站",
-      "pct": -1.19,
-      "netflow": -322841562.0,
-      "up": 1,
-      "down": 8,
-      "netrate": -12.12
-    },
-    {
-      "code": "BK1453",
-      "name": "彩电",
-      "pct": -1.21,
-      "netflow": -24772469.0,
-      "up": 2,
-      "down": 2,
-      "netrate": -3.45
-    },
-    {
-      "code": "BK1215",
-      "name": "通信",
-      "pct": -1.22,
-      "netflow": -726019840.0,
-      "up": 30,
-      "down": 99,
-      "netrate": -0.73
-    },
-    {
-      "code": "BK1401",
-      "name": "纺织服装设备",
-      "pct": -1.22,
-      "netflow": -83865322.0,
-      "up": 2,
-      "down": 11,
-      "netrate": -5.76
-    },
-    {
-      "code": "BK1448",
-      "name": "横向通用软件",
-      "pct": -1.23,
-      "netflow": -519948512.0,
-      "up": 7,
-      "down": 27,
-      "netrate": -4.77
-    },
-    {
-      "code": "BK1410",
-      "name": "其他自动化设备",
-      "pct": -1.23,
-      "netflow": 481420256.0,
-      "up": 8,
-      "down": 22,
-      "netrate": 8.41
-    },
-    {
-      "code": "BK1558",
-      "name": "学历教育",
-      "pct": -1.23,
-      "netflow": -24542293.0,
-      "up": 0,
-      "down": 3,
-      "netrate": -7.57
-    },
-    {
-      "code": "BK1347",
-      "name": "纺织鞋类制造",
-      "pct": -1.24,
-      "netflow": -5729857.0,
-      "up": 0,
-      "down": 1,
-      "netrate": -7.71
-    },
-    {
-      "code": "BK0737",
-      "name": "软件开发",
-      "pct": -1.24,
-      "netflow": -1028909456.0,
-      "up": 21,
-      "down": 110,
-      "netrate": -4.16
-    },
-    {
-      "code": "BK1447",
-      "name": "垂直应用软件",
-      "pct": -1.25,
-      "netflow": -508960896.0,
-      "up": 14,
-      "down": 83,
-      "netrate": -3.68
-    },
-    {
-      "code": "BK1446",
-      "name": "其他计算机设备",
-      "pct": -1.25,
-      "netflow": -896563472.0,
-      "up": 12,
-      "down": 50,
-      "netrate": -7.42
-    },
-    {
-      "code": "BK1618",
-      "name": "磁性材料",
-      "pct": -1.26,
-      "netflow": -60495685.0,
-      "up": 3,
-      "down": 12,
-      "netrate": -2.99
-    },
-    {
-      "code": "BK1335",
-      "name": "面板",
-      "pct": -1.26,
-      "netflow": 354122480.0,
-      "up": 10,
-      "down": 30,
-      "netrate": 1.94
-    },
-    {
-      "code": "BK0454",
-      "name": "塑料",
-      "pct": -1.26,
-      "netflow": -533273216.0,
-      "up": 18,
-      "down": 58,
-      "netrate": -3.84
-    },
-    {
-      "code": "BK1037",
-      "name": "消费电子",
-      "pct": -1.29,
-      "netflow": -725143184.0,
-      "up": 18,
-      "down": 78,
-      "netrate": -2.09
-    },
-    {
-      "code": "BK1540",
-      "name": "其他家居用品",
-      "pct": -1.3,
-      "netflow": -74074711.0,
-      "up": 7,
-      "down": 16,
-      "netrate": -3.53
-    },
-    {
-      "code": "BK1592",
-      "name": "通信线缆及配套",
-      "pct": -1.31,
-      "netflow": -1368719344.0,
-      "up": 4,
-      "down": 9,
-      "netrate": -5.84
-    },
-    {
-      "code": "BK1431",
-      "name": "有机硅",
-      "pct": -1.34,
-      "netflow": -123226897.0,
-      "up": 1,
-      "down": 8,
-      "netrate": -8.19
-    },
-    {
-      "code": "BK1034",
-      "name": "其他电源设备Ⅱ",
-      "pct": -1.4,
-      "netflow": -315904224.0,
-      "up": 9,
-      "down": 25,
-      "netrate": -4.07
-    },
-    {
-      "code": "BK1349",
-      "name": "棉纺",
-      "pct": -1.41,
-      "netflow": -48348941.0,
-      "up": 3,
-      "down": 5,
-      "netrate": -4.01
-    },
-    {
-      "code": "BK1338",
-      "name": "消费电子零部件及组装",
-      "pct": -1.41,
-      "netflow": -683622880.0,
-      "up": 14,
-      "down": 71,
-      "netrate": -2.08
-    },
-    {
-      "code": "BK1317",
-      "name": "光伏加工设备",
-      "pct": -1.46,
-      "netflow": -101729888.0,
-      "up": 3,
-      "down": 8,
-      "netrate": -2.09
-    },
-    {
-      "code": "BK1546",
-      "name": "电商服务",
-      "pct": -1.5,
-      "netflow": -4653522.0,
-      "up": 1,
-      "down": 7,
-      "netrate": -0.48
-    },
-    {
-      "code": "BK1295",
-      "name": "其他数字媒体",
-      "pct": -1.5,
-      "netflow": -20600757.0,
-      "up": 1,
-      "down": 1,
-      "netrate": -4.33
-    },
-    {
-      "code": "BK1297",
-      "name": "图片媒体",
-      "pct": -1.51,
-      "netflow": -24955304.0,
-      "up": 0,
-      "down": 1,
-      "netrate": -13.95
-    },
-    {
-      "code": "BK1291",
-      "name": "电视广播Ⅲ",
-      "pct": -1.53,
-      "netflow": -91629735.0,
-      "up": 1,
-      "down": 11,
-      "netrate": -4.91
-    },
-    {
-      "code": "BK1219",
-      "name": "电视广播Ⅱ",
-      "pct": -1.53,
-      "netflow": -91629735.0,
-      "up": 1,
-      "down": 11,
-      "netrate": -4.91
-    },
-    {
-      "code": "BK1409",
-      "name": "激光设备",
-      "pct": -1.53,
-      "netflow": -398951072.0,
-      "up": 1,
-      "down": 10,
-      "netrate": -5.35
-    },
-    {
-      "code": "BK1322",
-      "name": "其他电源设备Ⅲ",
-      "pct": -1.65,
-      "netflow": -265920672.0,
-      "up": 6,
-      "down": 23,
-      "netrate": -3.84
-    },
-    {
-      "code": "BK1288",
-      "name": "金属新材料",
-      "pct": -1.67,
-      "netflow": -398479424.0,
-      "up": 4,
-      "down": 32,
-      "netrate": -6.79
-    },
-    {
-      "code": "BK1220",
-      "name": "广告营销",
-      "pct": -1.67,
-      "netflow": -860952064.0,
-      "up": 5,
-      "down": 24,
-      "netrate": -10.08
-    },
-    {
-      "code": "BK1336",
-      "name": "其他电子Ⅲ",
-      "pct": -1.68,
-      "netflow": -288252432.0,
-      "up": 5,
-      "down": 28,
-      "netrate": -2.51
-    },
-    {
-      "code": "BK1223",
-      "name": "其他电子Ⅱ",
-      "pct": -1.68,
-      "netflow": -288252432.0,
-      "up": 5,
-      "down": 28,
-      "netrate": -2.51
-    },
-    {
-      "code": "BK1268",
-      "name": "互联网电商",
-      "pct": -1.68,
-      "netflow": -6133548.0,
-      "up": 2,
-      "down": 16,
-      "netrate": -0.17
-    },
-    {
-      "code": "BK1387",
-      "name": "环保设备Ⅲ",
-      "pct": -1.68,
-      "netflow": -73391796.0,
-      "up": 9,
-      "down": 17,
-      "netrate": -3.65
-    },
-    {
-      "code": "BK1234",
-      "name": "环保设备Ⅱ",
-      "pct": -1.68,
-      "netflow": -73391796.0,
-      "up": 9,
-      "down": 17,
-      "netrate": -3.65
-    },
-    {
-      "code": "BK1456",
-      "name": "其他家电Ⅲ",
-      "pct": -1.7,
-      "netflow": 2026430.0,
-      "up": 0,
-      "down": 3,
-      "netrate": 0.25
-    },
-    {
-      "code": "BK1243",
-      "name": "其他家电Ⅱ",
-      "pct": -1.7,
-      "netflow": 2026430.0,
-      "up": 0,
-      "down": 3,
-      "netrate": 0.25
-    },
-    {
-      "code": "BK1437",
-      "name": "改性塑料",
-      "pct": -1.71,
-      "netflow": -153675985.0,
-      "up": 5,
-      "down": 18,
-      "netrate": -4.71
-    },
-    {
-      "code": "BK0458",
-      "name": "仪器仪表",
-      "pct": -1.73,
-      "netflow": -541093392.0,
-      "up": 10,
-      "down": 52,
-      "netrate": -3.65
-    },
-    {
-      "code": "BK1293",
-      "name": "营销代理",
-      "pct": -1.74,
-      "netflow": -902817504.0,
-      "up": 4,
-      "down": 22,
-      "netrate": -11.83
-    },
-    {
-      "code": "BK0736",
-      "name": "通信服务",
-      "pct": -1.82,
-      "netflow": -355617952.0,
-      "up": 5,
-      "down": 34,
-      "netrate": -4.57
-    },
-    {
-      "code": "BK1439",
-      "name": "膜材料",
-      "pct": -1.86,
-      "netflow": -229805008.0,
-      "up": 2,
-      "down": 19,
-      "netrate": -4.06
-    },
-    {
-      "code": "BK1300",
-      "name": "院线",
-      "pct": -1.87,
-      "netflow": -51399796.0,
-      "up": 0,
-      "down": 4,
-      "netrate": -10.04
-    },
-    {
-      "code": "BK1588",
-      "name": "通信工程及服务",
-      "pct": -1.88,
-      "netflow": -59638284.0,
-      "up": 1,
-      "down": 18,
-      "netrate": -3.07
-    },
-    {
-      "code": "BK1425",
-      "name": "胶黏剂及胶带",
-      "pct": -1.89,
-      "netflow": -32949712.0,
-      "up": 0,
-      "down": 5,
-      "netrate": -4.14
-    },
-    {
-      "code": "BK1619",
-      "name": "其他金属新材料",
-      "pct": -1.96,
-      "netflow": -337983728.0,
-      "up": 1,
-      "down": 20,
-      "netrate": -8.79
-    },
-    {
-      "code": "BK1567",
-      "name": "其他专业服务",
-      "pct": -2.04,
-      "netflow": 11185910.0,
-      "up": 0,
-      "down": 3,
-      "netrate": 3.17
-    },
-    {
-      "code": "BK1354",
-      "name": "鞋帽及其他",
-      "pct": -2.2,
-      "netflow": -10628366.0,
-      "up": 1,
-      "down": 9,
-      "netrate": -1.18
-    },
-    {
-      "code": "BK1589",
-      "name": "通信应用增值服务",
-      "pct": -2.23,
-      "netflow": -336466731.0,
-      "up": 1,
-      "down": 16,
-      "netrate": -8.09
-    },
-    {
-      "code": "BK1201",
-      "name": "电子",
-      "pct": -2.29,
-      "netflow": -15022330112.0,
-      "up": 61,
-      "down": 454,
-      "netrate": -4.23
-    },
-    {
-      "code": "BK1547",
-      "name": "跨境电商",
-      "pct": -2.33,
-      "netflow": 2888789.0,
-      "up": 0,
-      "down": 8,
-      "netrate": 0.11
-    },
-    {
-      "code": "BK1462",
-      "name": "玻纤制造",
-      "pct": -2.35,
-      "netflow": -703234192.0,
-      "up": 0,
-      "down": 8,
-      "netrate": -7.0
-    },
-    {
-      "code": "BK1397",
-      "name": "磨具磨料",
-      "pct": -2.37,
-      "netflow": -684278464.0,
-      "up": 1,
-      "down": 13,
-      "netrate": -10.56
-    },
-    {
-      "code": "BK1332",
-      "name": "电子化学品Ⅲ",
-      "pct": -2.42,
-      "netflow": -633389808.0,
-      "up": 3,
-      "down": 34,
-      "netrate": -3.17
-    },
-    {
-      "code": "BK1039",
-      "name": "电子化学品Ⅱ",
-      "pct": -2.42,
-      "netflow": -633389808.0,
-      "up": 3,
-      "down": 34,
-      "netrate": -3.17
-    },
-    {
-      "code": "BK1331",
-      "name": "数字芯片设计",
-      "pct": -2.43,
-      "netflow": -5174259968.0,
-      "up": 6,
-      "down": 49,
-      "netrate": -6.85
-    },
-    {
-      "code": "BK1341",
-      "name": "房产租赁经纪",
-      "pct": -2.44,
-      "netflow": -112512544.0,
-      "up": 1,
-      "down": 2,
-      "netrate": -3.02
-    },
-    {
-      "code": "BK1339",
-      "name": "被动元件",
-      "pct": -2.6,
-      "netflow": -771107968.0,
-      "up": 0,
-      "down": 19,
-      "netrate": -6.69
-    },
-    {
-      "code": "BK1327",
-      "name": "分立器件",
-      "pct": -2.7,
-      "netflow": -311468464.0,
-      "up": 0,
-      "down": 18,
-      "netrate": -2.88
-    },
-    {
-      "code": "BK1355",
-      "name": "运动服装",
-      "pct": -2.83,
-      "netflow": -101745980.0,
-      "up": 1,
-      "down": 3,
-      "netrate": -14.34
-    },
-    {
-      "code": "BK1330",
-      "name": "模拟芯片设计",
-      "pct": -2.85,
-      "netflow": -224502240.0,
-      "up": 1,
-      "down": 35,
-      "netrate": -2.07
-    },
-    {
-      "code": "BK1036",
-      "name": "半导体",
-      "pct": -2.97,
-      "netflow": -10191719424.0,
-      "up": 9,
-      "down": 178,
-      "netrate": -5.73
-    },
-    {
-      "code": "BK1326",
-      "name": "半导体设备",
-      "pct": -3.17,
-      "netflow": -833181296.0,
-      "up": 1,
-      "down": 24,
-      "netrate": -2.88
-    },
-    {
-      "code": "BK1325",
-      "name": "半导体材料",
-      "pct": -3.38,
-      "netflow": -1224060688.0,
-      "up": 1,
-      "down": 31,
-      "netrate": -4.89
-    },
-    {
-      "code": "BK1329",
-      "name": "集成电路制造",
-      "pct": -3.58,
-      "netflow": -718572320.0,
-      "up": 0,
-      "down": 8,
-      "netrate": -5.67
-    },
-    {
-      "code": "BK0459",
-      "name": "元件",
-      "pct": -4.01,
-      "netflow": -3932953088.0,
-      "up": 3,
-      "down": 64,
-      "netrate": -5.3
-    },
-    {
-      "code": "BK1328",
-      "name": "集成电路封测",
-      "pct": -4.1,
-      "netflow": -1705674224.0,
-      "up": 0,
-      "down": 13,
-      "netrate": -12.08
-    },
-    {
-      "code": "BK1340",
-      "name": "印制电路板",
-      "pct": -4.56,
-      "netflow": -3161845248.0,
-      "up": 3,
-      "down": 45,
-      "netrate": -5.05
-    }
-  ],
-  "concepts": [
-    {
-      "code": "BK1063",
-      "name": "重组蛋白",
-      "pct": 4.33,
-      "netflow": 1166119264.0,
-      "up": 33,
-      "down": 2,
-      "netrate": 5.62
-    },
-    {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 4.25,
-      "netflow": 211543568.0,
-      "up": 6,
-      "down": 4,
-      "netrate": 2.94
-    },
-    {
-      "code": "BK0899",
-      "name": "CRO",
-      "pct": 3.8,
-      "netflow": 2726605376.0,
-      "up": 45,
-      "down": 5,
-      "netrate": 7.16
-    },
-    {
-      "code": "BK0816",
-      "name": "昨日连板",
-      "pct": 3.75,
-      "netflow": -49680480.0,
-      "up": 3,
-      "down": 3,
-      "netrate": -0.93
-    },
-    {
-      "code": "BK1716",
-      "name": "反转股",
-      "pct": 3.63,
-      "netflow": 143147024.0,
-      "up": 3,
-      "down": 1,
-      "netrate": 1.49
-    },
-    {
-      "code": "BK1645",
-      "name": "昨日打二板以上表现",
-      "pct": 3.33,
-      "netflow": 252453687.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 14.26
-    },
-    {
-      "code": "BK0907",
-      "name": "转基因",
-      "pct": 3.3,
-      "netflow": 248647165.0,
-      "up": 18,
-      "down": 1,
-      "netrate": 5.5
-    },
-    {
-      "code": "BK0986",
-      "name": "CAR-T细胞疗法",
-      "pct": 3.27,
-      "netflow": 1355826048.0,
-      "up": 30,
-      "down": 0,
-      "netrate": 6.82
-    },
-    {
-      "code": "BK0870",
-      "name": "单抗概念",
-      "pct": 3.02,
-      "netflow": 1049766624.0,
-      "up": 47,
-      "down": 2,
-      "netrate": 4.58
-    },
-    {
-      "code": "BK1712",
-      "name": "医药医疗风格",
-      "pct": 2.92,
-      "netflow": 3789874944.0,
-      "up": 93,
-      "down": 6,
-      "netrate": 5.44
-    },
-    {
-      "code": "BK1146",
-      "name": "减肥药",
-      "pct": 2.87,
-      "netflow": 1540015888.0,
-      "up": 41,
-      "down": 2,
-      "netrate": 6.18
-    },
-    {
-      "code": "BK1106",
-      "name": "创新药",
-      "pct": 2.74,
-      "netflow": 4150709248.0,
-      "up": 195,
-      "down": 14,
-      "netrate": 4.65
-    },
-    {
-      "code": "BK1657",
-      "name": "病原体防治",
-      "pct": 2.63,
-      "netflow": 2349904768.0,
-      "up": 146,
-      "down": 19,
-      "netrate": 4.4
-    },
-    {
-      "code": "BK0548",
-      "name": "生物疫苗",
-      "pct": 2.49,
-      "netflow": 974397840.0,
-      "up": 67,
-      "down": 4,
-      "netrate": 4.7
-    },
-    {
-      "code": "BK1675",
-      "name": "历史新高",
-      "pct": 2.47,
-      "netflow": 79453392.0,
-      "up": 3,
-      "down": 2,
-      "netrate": 1.99
-    },
-    {
-      "code": "BK0944",
-      "name": "肝素概念",
-      "pct": 2.45,
-      "netflow": 28864605.0,
-      "up": 13,
-      "down": 0,
-      "netrate": 1.06
-    },
-    {
-      "code": "BK1086",
-      "name": "粮食概念",
-      "pct": 2.43,
-      "netflow": 468951952.0,
-      "up": 32,
-      "down": 3,
-      "netrate": 4.41
-    },
-    {
-      "code": "BK1056",
-      "name": "幽门螺杆菌概念",
-      "pct": 2.43,
-      "netflow": 29919632.0,
-      "up": 51,
-      "down": 8,
-      "netrate": 0.21
-    },
-    {
-      "code": "BK0895",
-      "name": "维生素",
-      "pct": 2.4,
-      "netflow": 39821920.0,
-      "up": 33,
-      "down": 1,
-      "netrate": 0.5
-    },
-    {
-      "code": "BK1078",
-      "name": "肝炎概念",
-      "pct": 2.33,
-      "netflow": 983580000.0,
-      "up": 54,
-      "down": 4,
-      "netrate": 4.34
-    },
-    {
-      "code": "BK0698",
-      "name": "免疫治疗",
-      "pct": 2.26,
-      "netflow": 341952064.0,
-      "up": 42,
-      "down": 3,
-      "netrate": 3.25
-    },
-    {
-      "code": "BK0675",
-      "name": "病毒防治",
-      "pct": 2.23,
-      "netflow": 995970000.0,
-      "up": 92,
-      "down": 13,
-      "netrate": 3.99
-    },
-    {
-      "code": "BK0477",
-      "name": "酿酒概念",
-      "pct": 2.21,
-      "netflow": 1295499088.0,
-      "up": 32,
-      "down": 2,
-      "netrate": 8.59
-    },
-    {
-      "code": "BK0806",
-      "name": "精准医疗",
-      "pct": 2.21,
-      "netflow": 232920976.0,
-      "up": 38,
-      "down": 6,
-      "netrate": 1.54
-    },
-    {
-      "code": "BK0939",
-      "name": "辅助生殖",
-      "pct": 2.2,
-      "netflow": 512921376.0,
-      "up": 47,
-      "down": 6,
-      "netrate": 2.84
-    },
-    {
-      "code": "BK0894",
-      "name": "阿兹海默",
-      "pct": 2.2,
-      "netflow": 106185280.0,
-      "up": 18,
-      "down": 3,
-      "netrate": 1.54
-    },
-    {
-      "code": "BK1659",
-      "name": "精准诊断",
-      "pct": 2.11,
-      "netflow": 515569344.0,
-      "up": 53,
-      "down": 9,
-      "netrate": 3.42
-    },
-    {
-      "code": "BK0896",
-      "name": "白酒",
-      "pct": 2.1,
-      "netflow": 1251735616.0,
-      "up": 33,
-      "down": 6,
-      "netrate": 6.98
-    },
-    {
-      "code": "BK0938",
-      "name": "代糖概念",
-      "pct": 2.06,
-      "netflow": 149435184.0,
-      "up": 18,
-      "down": 5,
-      "netrate": 3.11
-    },
-    {
-      "code": "BK0872",
-      "name": "青蒿素",
-      "pct": 1.99,
-      "netflow": 49486320.0,
-      "up": 10,
-      "down": 1,
-      "netrate": 1.11
-    },
-    {
-      "code": "BK0693",
-      "name": "基因测序",
-      "pct": 1.95,
-      "netflow": 181815216.0,
-      "up": 38,
-      "down": 7,
-      "netrate": 1.55
-    },
-    {
-      "code": "BK1676",
-      "name": "百日新高",
-      "pct": 1.9,
-      "netflow": 152001552.0,
-      "up": 27,
-      "down": 11,
-      "netrate": 0.74
-    },
-    {
-      "code": "BK1656",
-      "name": "特色药",
-      "pct": 1.86,
-      "netflow": -24961664.0,
-      "up": 41,
-      "down": 2,
-      "netrate": -0.37
-    },
-    {
-      "code": "BK1073",
-      "name": "啤酒概念",
-      "pct": 1.85,
-      "netflow": 255778192.0,
-      "up": 16,
-      "down": 3,
-      "netrate": 5.93
-    },
-    {
-      "code": "BK0841",
-      "name": "体外诊断概念",
-      "pct": 1.85,
-      "netflow": 376737040.0,
-      "up": 56,
-      "down": 12,
-      "netrate": 2.58
-    },
-    {
-      "code": "BK0906",
-      "name": "流感",
-      "pct": 1.84,
-      "netflow": 635566432.0,
-      "up": 110,
-      "down": 18,
-      "netrate": 1.8
-    },
-    {
-      "code": "BK1000",
-      "name": "宁组合",
-      "pct": 1.81,
-      "netflow": 1549405440.0,
-      "up": 18,
-      "down": 6,
-      "netrate": 3.69
-    },
-    {
-      "code": "BK0892",
-      "name": "乳业",
-      "pct": 1.78,
-      "netflow": 45308272.0,
-      "up": 28,
-      "down": 4,
-      "netrate": 0.71
-    },
-    {
-      "code": "BK0676",
-      "name": "独家药品",
-      "pct": 1.75,
-      "netflow": -58830384.0,
-      "up": 39,
-      "down": 4,
-      "netrate": -0.74
-    },
-    {
-      "code": "BK1174",
-      "name": "合成生物",
-      "pct": 1.75,
-      "netflow": 1287328304.0,
-      "up": 94,
-      "down": 30,
-      "netrate": 3.29
-    }
-  ],
-  "top_boards": [
-    {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 6.06,
-      "netflow": 261217114.0,
-      "up": 1,
-      "down": 0,
-      "netrate": 11.51
-    },
-    {
-      "code": "BK1500",
-      "name": "医美耗材",
-      "pct": 5.23,
-      "netflow": 72505887.0,
-      "up": 3,
-      "down": 0,
-      "netrate": 7.36
-    },
-    {
-      "code": "BK1596",
-      "name": "其他生物制品",
-      "pct": 4.72,
-      "netflow": 908747312.0,
-      "up": 36,
-      "down": 2,
-      "netrate": 5.46
-    },
-    {
-      "code": "BK1598",
-      "name": "疫苗",
-      "pct": 4.64,
-      "netflow": 422557520.0,
-      "up": 13,
-      "down": 0,
-      "netrate": 7.21
-    },
-    {
-      "code": "BK1044",
-      "name": "生物制品",
-      "pct": 4.53,
-      "netflow": 1351955984.0,
-      "up": 55,
-      "down": 2,
-      "netrate": 5.74
-    },
-    {
-      "code": "BK1518",
-      "name": "种子",
-      "pct": 4.43,
-      "netflow": 247869226.0,
-      "up": 10,
-      "down": 0,
-      "netrate": 6.47
-    },
-    {
-      "code": "BK1469",
-      "name": "涂料",
-      "pct": 4.25,
-      "netflow": 16902217.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 3.48
-    },
-    {
-      "code": "BK1600",
-      "name": "医疗研发外包",
-      "pct": 4.22,
-      "netflow": 2228100720.0,
-      "up": 28,
-      "down": 1,
-      "netrate": 7.39
-    },
-    {
-      "code": "BK1602",
-      "name": "诊断服务",
-      "pct": 4.08,
-      "netflow": 192757965.0,
-      "up": 5,
-      "down": 0,
-      "netrate": 9.0
-    },
-    {
-      "code": "BK1318",
-      "name": "光伏主材",
-      "pct": 3.5,
-      "netflow": 111097524.0,
-      "up": 2,
-      "down": 0,
-      "netrate": 6.89
-    }
-  ],
-  "top_concepts": [
-    {
-      "code": "BK1063",
-      "name": "重组蛋白",
-      "pct": 4.33,
-      "netflow": 1166119264.0,
-      "up": 33,
-      "down": 2,
-      "netrate": 5.62
-    },
-    {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 4.25,
-      "netflow": 211543568.0,
-      "up": 6,
-      "down": 4,
-      "netrate": 2.94
-    },
-    {
-      "code": "BK0899",
-      "name": "CRO",
-      "pct": 3.8,
-      "netflow": 2726605376.0,
-      "up": 45,
-      "down": 5,
-      "netrate": 7.16
-    },
-    {
-      "code": "BK0816",
-      "name": "昨日连板",
-      "pct": 3.75,
-      "netflow": -49680480.0,
-      "up": 3,
-      "down": 3,
-      "netrate": -0.93
-    },
-    {
-      "code": "BK1716",
-      "name": "反转股",
-      "pct": 3.63,
-      "netflow": 143147024.0,
-      "up": 3,
-      "down": 1,
-      "netrate": 1.49
-    },
-    {
-      "code": "BK1645",
-      "name": "昨日打二板以上表现",
-      "pct": 3.33,
-      "netflow": 252453687.0,
-      "up": 2,
-      "down": 1,
-      "netrate": 14.26
-    },
-    {
-      "code": "BK0907",
-      "name": "转基因",
-      "pct": 3.3,
-      "netflow": 248647165.0,
-      "up": 18,
-      "down": 1,
-      "netrate": 5.5
-    },
-    {
-      "code": "BK0986",
-      "name": "CAR-T细胞疗法",
-      "pct": 3.27,
-      "netflow": 1355826048.0,
-      "up": 30,
-      "down": 0,
-      "netrate": 6.82
-    }
-  ],
+  "industries": [],
+  "concepts": [],
+  "top_boards": [],
+  "top_concepts": [],
   "breadth": {
-    "up": 2393,
-    "down": 2730
+    "up": 1654,
+    "down": 3516
   },
   "zt_pool": [
     {
       "c": "002058",
       "m": 0,
       "n": "紫竹高科",
-      "p": 20200,
-      "zdp": 10.0217866897583,
-      "amount": 51136320,
-      "ltsz": 2895989806.4,
-      "tshare": 2897656306.4,
-      "hs": 1.7657631635665894,
-      "lbc": 2,
+      "p": 22220,
+      "zdp": 10.0,
+      "amount": 104419028,
+      "ltsz": 3185588787.04,
+      "tshare": 3187421937.04,
+      "hs": 3.2953457832336426,
+      "lbc": 3,
       "fbt": 92500,
-      "lbt": 92500,
-      "fund": 69384959,
-      "zbc": 0,
+      "lbt": 93042,
+      "fund": 142263550,
+      "zbc": 1,
       "hybk": "电池",
       "zttj": {
-        "days": 2,
-        "ct": 2
+        "days": 3,
+        "ct": 3
       }
     },
     {
       "c": "002242",
       "m": 0,
       "n": "九阳股份",
-      "p": 12500,
-      "zdp": 10.035211563110352,
-      "amount": 436662832,
-      "ltsz": 9522070312.5,
-      "tshare": 9537712600.0,
-      "hs": 4.589446067810059,
-      "lbc": 3,
-      "fbt": 92500,
-      "lbt": 94930,
-      "fund": 164830000,
-      "zbc": 1,
-      "hybk": "小家电",
-      "zttj": {
-        "days": 3,
-        "ct": 3
-      }
-    },
-    {
-      "c": "600241",
-      "m": 1,
-      "n": "时代万恒",
-      "p": 9720,
-      "zdp": 9.954751014709473,
-      "amount": 74661264,
-      "ltsz": 2860616557.8,
-      "tshare": 2860616528.6400003,
-      "hs": 2.609971046447754,
-      "lbc": 3,
-      "fbt": 92500,
-      "lbt": 92500,
-      "fund": 141936300,
-      "zbc": 0,
-      "hybk": "电池",
-      "zttj": {
-        "days": 3,
-        "ct": 3
-      }
-    },
-    {
-      "c": "600825",
-      "m": 1,
-      "n": "新华传媒",
-      "p": 10350,
-      "zdp": 9.989372253417969,
-      "amount": 144750256,
-      "ltsz": 10814589247.5,
-      "tshare": 10814589309.6,
-      "hs": 1.3384720087051392,
-      "lbc": 7,
-      "fbt": 92500,
-      "lbt": 92500,
-      "fund": 1988381638,
-      "zbc": 0,
-      "hybk": "出版",
-      "zttj": {
-        "days": 7,
-        "ct": 7
-      }
-    },
-    {
-      "c": "605303",
-      "m": 1,
-      "n": "园林股份",
-      "p": 28660,
-      "zdp": 10.019193649291992,
-      "amount": 4940984,
-      "ltsz": 4621064113.28,
-      "tshare": 4621064113.28,
-      "hs": 0.10692308098077774,
-      "lbc": 2,
-      "fbt": 92500,
-      "lbt": 92500,
-      "fund": 174751484,
-      "zbc": 0,
-      "hybk": "基础建设",
-      "zttj": {
-        "days": 2,
-        "ct": 2
-      }
-    },
-    {
-      "c": "605388",
-      "m": 1,
-      "n": "均瑶健康",
-      "p": 7390,
-      "zdp": 9.970237731933594,
-      "amount": 84984113,
-      "ltsz": 4437576760.0,
-      "tshare": 4437576760.0,
-      "hs": 1.9151017665863037,
-      "lbc": 2,
-      "fbt": 92500,
-      "lbt": 92500,
-      "fund": 77280333,
-      "zbc": 0,
-      "hybk": "饮料乳品",
-      "zttj": {
-        "days": 2,
-        "ct": 2
-      }
-    },
-    {
-      "c": "001206",
-      "m": 0,
-      "n": "依依股份",
-      "p": 18620,
-      "zdp": 9.982279777526855,
-      "amount": 86373023,
-      "ltsz": 1989816207.96,
-      "tshare": 3442722704.96,
-      "hs": 4.346381664276123,
-      "lbc": 1,
-      "fbt": 93000,
-      "lbt": 93000,
-      "fund": 24210319,
-      "zbc": 0,
-      "hybk": "个护用品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "002866",
-      "m": 0,
-      "n": "传艺科技",
-      "p": 16900,
-      "zdp": 10.026041030883789,
-      "amount": 577077488,
-      "ltsz": 3105694308.6,
-      "tshare": 4892926126.4,
-      "hs": 18.652318954467773,
-      "lbc": 2,
-      "fbt": 93006,
-      "lbt": 93954,
-      "fund": 34927230,
-      "zbc": 2,
-      "hybk": "消费电子",
-      "zttj": {
-        "days": 2,
-        "ct": 2
-      }
-    },
-    {
-      "c": "601118",
-      "m": 1,
-      "n": "海南橡胶",
-      "p": 6370,
-      "zdp": 10.017271041870117,
-      "amount": 401066384,
-      "ltsz": 27259955066.89,
-      "tshare": 27259955035.04,
-      "hs": 1.4745324850082397,
-      "lbc": 1,
-      "fbt": 93008,
-      "lbt": 93008,
-      "fund": 79271465,
-      "zbc": 0,
-      "hybk": "种植业",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "605577",
-      "m": 1,
-      "n": "龙版传媒",
-      "p": 16280,
+      "p": 13750,
       "zdp": 10.0,
-      "amount": 165526362,
-      "ltsz": 7235555564.6,
-      "tshare": 7235555613.440001,
-      "hs": 2.3121225833892822,
-      "lbc": 1,
-      "fbt": 93012,
-      "lbt": 93012,
-      "fund": 159267240,
-      "zbc": 0,
-      "hybk": "出版",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "600059",
-      "m": 1,
-      "n": "古越龙山",
-      "p": 12270,
-      "zdp": 10.044842720031738,
-      "amount": 1093331568,
-      "ltsz": 11184625407.51,
-      "tshare": 11184625444.32,
-      "hs": 9.87020206451416,
-      "lbc": 1,
-      "fbt": 93114,
-      "lbt": 101853,
-      "fund": 64352456,
-      "zbc": 4,
-      "hybk": "非白酒",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "301190",
-      "m": 0,
-      "n": "善水科技",
-      "p": 35930,
-      "zdp": 20.00667953491211,
-      "amount": 510373312,
-      "ltsz": 6534014220.0,
-      "tshare": 7711889445.0,
-      "hs": 7.954790115356445,
-      "lbc": 3,
-      "fbt": 93115,
-      "lbt": 93124,
-      "fund": 106419018,
-      "zbc": 1,
-      "hybk": "化学原料",
-      "zttj": {
-        "days": 3,
-        "ct": 3
-      }
-    },
-    {
-      "c": "002388",
-      "m": 0,
-      "n": "新亚制程",
-      "p": 9100,
-      "zdp": 10.036275863647461,
-      "amount": 320868352,
-      "ltsz": 4606633804.5,
-      "tshare": 4609461438.4,
-      "hs": 7.049755573272705,
-      "lbc": 1,
-      "fbt": 93136,
-      "lbt": 93251,
-      "fund": 63476868,
-      "zbc": 1,
-      "hybk": "其他电子",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "000011",
-      "m": 0,
-      "n": "深物业A",
-      "p": 12240,
-      "zdp": 9.97304630279541,
-      "amount": 971267920,
-      "ltsz": 6444060646.32,
-      "tshare": 7294784037.12,
-      "hs": 17.071428298950195,
-      "lbc": 3,
-      "fbt": 93145,
-      "lbt": 131124,
-      "fund": 40166967,
-      "zbc": 2,
-      "hybk": "房地产开",
-      "zttj": {
-        "days": 3,
-        "ct": 3
-      }
-    },
-    {
-      "c": "603188",
-      "m": 1,
-      "n": "亚邦股份",
-      "p": 5400,
-      "zdp": 9.979633331298828,
-      "amount": 171759296,
-      "ltsz": 3078918000.0,
-      "tshare": 3078918000.0,
-      "hs": 5.7642107009887695,
-      "lbc": 2,
-      "fbt": 93206,
-      "lbt": 93206,
-      "fund": 26412480,
-      "zbc": 0,
-      "hybk": "化学制品",
-      "zttj": {
-        "days": 2,
-        "ct": 2
-      }
-    },
-    {
-      "c": "600356",
-      "m": 1,
-      "n": "恒丰纸业",
-      "p": 11460,
-      "zdp": 9.980806350708008,
-      "amount": 173476365,
-      "ltsz": 3423461591.88,
-      "tshare": 3776488427.5200005,
-      "hs": 5.147555828094482,
-      "lbc": 1,
-      "fbt": 93223,
-      "lbt": 93223,
-      "fund": 57930701,
-      "zbc": 0,
-      "hybk": "造纸",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "002316",
-      "m": 0,
-      "n": "亚联发展",
-      "p": 4950,
-      "zdp": 10.0,
-      "amount": 145182371,
-      "ltsz": 1686638250.0,
-      "tshare": 1945944000.0,
-      "hs": 8.703655242919922,
-      "lbc": 1,
-      "fbt": 93303,
-      "lbt": 93303,
-      "fund": 40009860,
-      "zbc": 0,
-      "hybk": "综合Ⅱ",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "000710",
-      "m": 0,
-      "n": "贝瑞基因",
-      "p": 10870,
-      "zdp": 10.020242691040039,
-      "amount": 268548896,
-      "ltsz": 3647182381.4599996,
-      "tshare": 3842778400.64,
-      "hs": 7.521285057067871,
-      "lbc": 1,
-      "fbt": 93306,
-      "lbt": 93306,
-      "fund": 135318456,
-      "zbc": 0,
-      "hybk": "医疗服务",
-      "zttj": {
-        "days": 4,
-        "ct": 2
-      }
-    },
-    {
-      "c": "603948",
-      "m": 1,
-      "n": "建业股份",
-      "p": 21360,
-      "zdp": 9.989701271057129,
-      "amount": 42141574,
-      "ltsz": 3470768607.12,
-      "tshare": 3470768607.12,
-      "hs": 1.2316519021987915,
-      "lbc": 1,
-      "fbt": 93333,
-      "lbt": 93333,
-      "fund": 23284514,
-      "zbc": 0,
-      "hybk": "化学制品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "600072",
-      "m": 1,
-      "n": "中船科技",
-      "p": 9700,
-      "zdp": 9.977324485778809,
-      "amount": 424853136,
-      "ltsz": 10508371965.199999,
-      "tshare": 14556302206.4,
-      "hs": 4.0919671058654785,
-      "lbc": 1,
-      "fbt": 93633,
-      "lbt": 93633,
-      "fund": 33820020,
-      "zbc": 0,
-      "hybk": "风电设备",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "688185",
-      "m": 1,
-      "n": "康希诺",
-      "p": 102640,
-      "zdp": 20.004676818847656,
-      "amount": 1065144352,
-      "ltsz": 11739234558.64,
-      "tshare": 25356575734.64,
-      "hs": 9.321914672851562,
-      "lbc": 1,
-      "fbt": 93800,
-      "lbt": 94324,
-      "fund": 181976717,
-      "zbc": 1,
-      "hybk": "生物制品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "600081",
-      "m": 1,
-      "n": "东风科技",
-      "p": 11890,
-      "zdp": 9.99074935913086,
-      "amount": 195515214,
-      "ltsz": 6575481161.3,
-      "tshare": 6575481232.64,
-      "hs": 3.0031533241271973,
-      "lbc": 1,
-      "fbt": 93815,
-      "lbt": 95017,
-      "fund": 32680616,
-      "zbc": 1,
-      "hybk": "汽车零部",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "605011",
-      "m": 1,
-      "n": "杭州热电",
-      "p": 19210,
-      "zdp": 10.022909164428711,
-      "amount": 231188954,
-      "ltsz": 7685921000.0,
-      "tshare": 7685921000.0,
-      "hs": 3.0565237998962402,
-      "lbc": 1,
-      "fbt": 94036,
-      "lbt": 131524,
-      "fund": 36707947,
-      "zbc": 2,
-      "hybk": "电力",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "603928",
-      "m": 1,
-      "n": "兴业股份",
-      "p": 13070,
-      "zdp": 10.016834259033203,
-      "amount": 131911733,
-      "ltsz": 4453001280.0,
-      "tshare": 4453001280.0,
-      "hs": 3.0060503482818604,
-      "lbc": 1,
-      "fbt": 94100,
-      "lbt": 94130,
-      "fund": 52047680,
-      "zbc": 1,
-      "hybk": "塑料",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "000692",
-      "m": 0,
-      "n": "惠天热电",
-      "p": 4590,
-      "zdp": 10.071942329406738,
-      "amount": 170711391,
-      "ltsz": 2445703359.84,
-      "tshare": 2445703359.84,
-      "hs": 7.079366207122803,
-      "lbc": 1,
-      "fbt": 94227,
-      "lbt": 103221,
-      "fund": 38930557,
-      "zbc": 4,
-      "hybk": "电力",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "603538",
-      "m": 1,
-      "n": "美诺华",
-      "p": 28590,
-      "zdp": 10.0038480758667,
-      "amount": 1324164480,
-      "ltsz": 9632541399.09,
-      "tshare": 9718547009.28,
-      "hs": 14.113715171813965,
-      "lbc": 1,
-      "fbt": 94835,
-      "lbt": 94835,
-      "fund": 187204060,
-      "zbc": 0,
-      "hybk": "化学制药",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "603739",
-      "m": 1,
-      "n": "蔚蓝生物",
-      "p": 14040,
-      "zdp": 10.031347274780273,
-      "amount": 127913740,
-      "ltsz": 3552525278.64,
-      "tshare": 3552525278.64,
-      "hs": 3.642637014389038,
-      "lbc": 1,
-      "fbt": 94857,
-      "lbt": 94857,
-      "fund": 17764812,
-      "zbc": 0,
-      "hybk": "化学制品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "002962",
-      "m": 0,
-      "n": "五方光电",
-      "p": 16170,
-      "zdp": 10.0,
-      "amount": 557837360,
-      "ltsz": 3383018354.1000004,
-      "tshare": 4716228871.200001,
-      "hs": 17.05689811706543,
-      "lbc": 1,
-      "fbt": 94921,
-      "lbt": 102024,
-      "fund": 51090473,
-      "zbc": 1,
-      "hybk": "光学光电",
-      "zttj": {
-        "days": 3,
-        "ct": 2
-      }
-    },
-    {
-      "c": "603590",
-      "m": 1,
-      "n": "康辰药业",
-      "p": 32110,
-      "zdp": 10.003425598144531,
-      "amount": 193482072,
-      "ltsz": 5105396142.47,
-      "tshare": 5178876666.47,
-      "hs": 3.85661244392395,
-      "lbc": 1,
-      "fbt": 95533,
-      "lbt": 95533,
-      "fund": 19000450,
-      "zbc": 0,
-      "hybk": "生物制品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "688806",
-      "m": 1,
-      "n": "泰诺麦博-U",
-      "p": 30670,
-      "zdp": 19.992176055908203,
-      "amount": 350550256,
-      "ltsz": 1564956992.2,
-      "tshare": 14124951708.640001,
-      "hs": 23.591079711914062,
-      "lbc": 1,
-      "fbt": 95753,
-      "lbt": 95753,
-      "fund": 35585204,
-      "zbc": 0,
-      "hybk": "生物制品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "605288",
-      "m": 1,
-      "n": "凯迪股份",
-      "p": 71830,
-      "zdp": 10.0,
-      "amount": 208051963,
-      "ltsz": 7059343002.91,
-      "tshare": 7087647183.43,
-      "hs": 3.004589796066284,
-      "lbc": 1,
-      "fbt": 100028,
-      "lbt": 101213,
-      "fund": 26416200,
-      "zbc": 1,
-      "hybk": "自动化设",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "600592",
-      "m": 1,
-      "n": "龙溪股份",
-      "p": 16200,
-      "zdp": 9.979633331298828,
-      "amount": 297115600,
-      "ltsz": 6472767850.2,
-      "tshare": 6472767801.599999,
-      "hs": 4.719627380371094,
-      "lbc": 1,
-      "fbt": 100044,
-      "lbt": 100044,
-      "fund": 64484683,
-      "zbc": 0,
-      "hybk": "通用设备",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "002164",
-      "m": 0,
-      "n": "宁波东力",
-      "p": 13260,
-      "zdp": 10.041494369506836,
-      "amount": 648830912,
-      "ltsz": 6361818396.18,
-      "tshare": 7056623208.96,
-      "hs": 10.411203384399414,
-      "lbc": 1,
-      "fbt": 100112,
-      "lbt": 104957,
-      "fund": 60687307,
-      "zbc": 1,
-      "hybk": "通用设备",
-      "zttj": {
-        "days": 4,
-        "ct": 2
-      }
-    },
-    {
-      "c": "000678",
-      "m": 0,
-      "n": "襄阳轴承",
-      "p": 12890,
-      "zdp": 9.982934951782227,
-      "amount": 1074985696,
-      "ltsz": 5924396063.33,
-      "tshare": 5924395998.88,
-      "hs": 19.650896072387695,
+      "amount": 151183588,
+      "ltsz": 10474277343.75,
+      "tshare": 10491483860.0,
+      "hs": 1.4433796405792236,
       "lbc": 4,
-      "fbt": 100300,
-      "lbt": 100300,
-      "fund": 67104051,
+      "fbt": 92500,
+      "lbt": 92500,
+      "fund": 240453537,
       "zbc": 0,
-      "hybk": "汽车零部",
+      "hybk": "小家电",
       "zttj": {
         "days": 4,
         "ct": 4
       }
     },
     {
-      "c": "002226",
-      "m": 0,
-      "n": "江南化工",
-      "p": 5340,
-      "zdp": 10.103093147277832,
-      "amount": 411668720,
-      "ltsz": 14145223134.6,
-      "tshare": 14145248008.32,
-      "hs": 2.960158348083496,
-      "lbc": 1,
-      "fbt": 100548,
-      "lbt": 103930,
-      "fund": 62458028,
-      "zbc": 2,
-      "hybk": "化学制品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "002454",
-      "m": 0,
-      "n": "松芝股份",
-      "p": 5610,
-      "zdp": 10.0,
-      "amount": 121091923,
-      "ltsz": 4921955019.96,
-      "tshare": 4931603344.8,
-      "hs": 2.518289804458618,
-      "lbc": 1,
-      "fbt": 100721,
-      "lbt": 100721,
-      "fund": 34133321,
-      "zbc": 0,
-      "hybk": "汽车零部",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "603200",
+      "c": "600812",
       "m": 1,
-      "n": "上海洗霸",
-      "p": 44740,
-      "zdp": 10.007376670837402,
-      "amount": 1063767248,
-      "ltsz": 7850979808.22,
-      "tshare": 7850979808.22,
-      "hs": 13.873533248901367,
-      "lbc": 2,
-      "fbt": 101116,
-      "lbt": 103755,
-      "fund": 48320229,
+      "n": "华北制药",
+      "p": 5480,
+      "zdp": 10.0401611328125,
+      "amount": 494359008,
+      "ltsz": 9402202427.6,
+      "tshare": 9402202416.640001,
+      "hs": 5.265223026275635,
+      "lbc": 1,
+      "fbt": 92500,
+      "lbt": 94839,
+      "fund": 20936707,
       "zbc": 2,
-      "hybk": "环境治理",
-      "zttj": {
-        "days": 2,
-        "ct": 2
-      }
-    },
-    {
-      "c": "603906",
-      "m": 1,
-      "n": "龙蟠科技",
-      "p": 19040,
-      "zdp": 9.994222640991211,
-      "amount": 687707888,
-      "ltsz": 10719453417.119999,
-      "tshare": 15062770652.16,
-      "hs": 6.570748805999756,
-      "lbc": 1,
-      "fbt": 101123,
-      "lbt": 101720,
-      "fund": 41772465,
-      "zbc": 2,
-      "hybk": "电池",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "300893",
-      "m": 0,
-      "n": "松原安全",
-      "p": 15130,
-      "zdp": 19.984140396118164,
-      "amount": 323471632,
-      "ltsz": 3808115755.7200003,
-      "tshare": 7171031019.360001,
-      "hs": 8.948458671569824,
-      "lbc": 1,
-      "fbt": 101442,
-      "lbt": 105030,
-      "fund": 23202445,
-      "zbc": 1,
-      "hybk": "汽车零部",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "605287",
-      "m": 1,
-      "n": "德才股份",
-      "p": 37390,
-      "zdp": 10.002942085266113,
-      "amount": 279963776,
-      "ltsz": 5234600000.0,
-      "tshare": 5234600000.0,
-      "hs": 5.474971294403076,
-      "lbc": 1,
-      "fbt": 102000,
-      "lbt": 111530,
-      "fund": 35008257,
-      "zbc": 3,
-      "hybk": "装修装饰",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "000504",
-      "m": 0,
-      "n": "南华生物",
-      "p": 12420,
-      "zdp": 10.008857727050781,
-      "amount": 860444304,
-      "ltsz": 4087700183.16,
-      "tshare": 4098886951.68,
-      "hs": 22.51202964782715,
-      "lbc": 1,
-      "fbt": 102242,
-      "lbt": 102242,
-      "fund": 61630536,
-      "zbc": 0,
-      "hybk": "医疗服务",
-      "zttj": {
-        "days": 9,
-        "ct": 5
-      }
-    },
-    {
-      "c": "002755",
-      "m": 0,
-      "n": "奥赛康",
-      "p": 13550,
-      "zdp": 9.983766555786133,
-      "amount": 248447517,
-      "ltsz": 12576453854.800001,
-      "tshare": 12576572769.6,
-      "hs": 2.030956506729126,
-      "lbc": 1,
-      "fbt": 102357,
-      "lbt": 102357,
-      "fund": 14917195,
-      "zbc": 0,
       "hybk": "化学制药",
       "zttj": {
         "days": 1,
@@ -6005,42 +196,63 @@
       }
     },
     {
-      "c": "603127",
+      "c": "600825",
       "m": 1,
-      "n": "昭衍新药",
-      "p": 49300,
-      "zdp": 9.995537757873535,
-      "amount": 2647331808,
-      "ltsz": 30946434000.199997,
-      "tshare": 36942867443.2,
-      "hs": 8.825923919677734,
-      "lbc": 1,
-      "fbt": 104910,
-      "lbt": 112525,
-      "fund": 221548382,
-      "zbc": 1,
-      "hybk": "医疗服务",
+      "n": "新华传媒",
+      "p": 11390,
+      "zdp": 10.048309326171875,
+      "amount": 64324547,
+      "ltsz": 11901272611.5,
+      "tshare": 11901272679.84,
+      "hs": 0.540484607219696,
+      "lbc": 8,
+      "fbt": 92500,
+      "lbt": 92500,
+      "fund": 1775758428,
+      "zbc": 0,
+      "hybk": "出版",
       "zttj": {
-        "days": 1,
-        "ct": 1
+        "days": 8,
+        "ct": 8
       }
     },
     {
-      "c": "002188",
-      "m": 0,
-      "n": "中天服务",
-      "p": 6400,
-      "zdp": 9.965636253356934,
-      "amount": 144707999,
-      "ltsz": 1647123244.8000002,
-      "tshare": 2093464780.8000002,
-      "hs": 9.132975578308105,
-      "lbc": 1,
-      "fbt": 110900,
-      "lbt": 110900,
-      "fund": 23670400,
+      "c": "605303",
+      "m": 1,
+      "n": "园林股份",
+      "p": 31530,
+      "zdp": 10.013957023620605,
+      "amount": 10140048,
+      "ltsz": 5083815474.24,
+      "tshare": 5083815474.24,
+      "hs": 0.19945743680000305,
+      "lbc": 3,
+      "fbt": 92502,
+      "lbt": 92502,
+      "fund": 150949875,
       "zbc": 0,
-      "hybk": "房地产服",
+      "hybk": "基础建设",
+      "zttj": {
+        "days": 3,
+        "ct": 3
+      }
+    },
+    {
+      "c": "002687",
+      "m": 0,
+      "n": "乔治白",
+      "p": 6140,
+      "zdp": 10.035842895507812,
+      "amount": 128882316,
+      "ltsz": 2539605696.8199997,
+      "tshare": 3099346056.3199997,
+      "hs": 5.1141486167907715,
+      "lbc": 1,
+      "fbt": 93021,
+      "lbt": 93748,
+      "fund": 41328732,
+      "zbc": 1,
+      "hybk": "服装家纺",
       "zttj": {
         "days": 1,
         "ct": 1
@@ -6050,101 +262,269 @@
       "c": "600663",
       "m": 1,
       "n": "陆家嘴",
-      "p": 10110,
-      "zdp": 10.010881423950195,
-      "amount": 350853696,
-      "ltsz": 39776962734.689995,
-      "tshare": 50905403543.04,
-      "hs": 0.9280795454978943,
-      "lbc": 1,
-      "fbt": 111329,
-      "lbt": 111329,
-      "fund": 65383695,
-      "zbc": 0,
+      "p": 11120,
+      "zdp": 9.990108489990234,
+      "amount": 433492528,
+      "ltsz": 43750724590.479996,
+      "tshare": 55990908743.67999,
+      "hs": 0.997058629989624,
+      "lbc": 2,
+      "fbt": 93022,
+      "lbt": 94055,
+      "fund": 49243374,
+      "zbc": 3,
       "hybk": "房地产开",
       "zttj": {
-        "days": 1,
-        "ct": 1
+        "days": 2,
+        "ct": 2
       }
     },
     {
-      "c": "002419",
-      "m": 0,
-      "n": "天虹股份",
-      "p": 5090,
-      "zdp": 9.935205459594727,
-      "amount": 255385489,
-      "ltsz": 5808910057.73,
-      "tshare": 5808995971.84,
-      "hs": 4.506371974945068,
-      "lbc": 1,
-      "fbt": 130806,
-      "lbt": 130806,
-      "fund": 25165555,
-      "zbc": 0,
-      "hybk": "一般零售",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "001318",
-      "m": 0,
-      "n": "阳光乳业",
-      "p": 13040,
-      "zdp": 10.042194366455078,
-      "amount": 125868065,
-      "ltsz": 3685886399.9999995,
-      "tshare": 3685886399.9999995,
-      "hs": 3.5268521308898926,
-      "lbc": 1,
-      "fbt": 132024,
-      "lbt": 132024,
-      "fund": 62272520,
-      "zbc": 0,
-      "hybk": "饮料乳品",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "002041",
-      "m": 0,
-      "n": "登海种业",
-      "p": 10230,
-      "zdp": 10.0,
-      "amount": 339688416,
-      "ltsz": 9002400000.0,
-      "tshare": 9002400000.0,
-      "hs": 3.9202637672424316,
-      "lbc": 1,
-      "fbt": 132833,
-      "lbt": 132833,
-      "fund": 30225558,
-      "zbc": 0,
-      "hybk": "种植业",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "603185",
+      "c": "600513",
       "m": 1,
-      "n": "弘元绿能",
-      "p": 15150,
-      "zdp": 10.0217866897583,
-      "amount": 245142444,
-      "ltsz": 10287186360.300001,
-      "tshare": 10348613520.0,
-      "hs": 2.4759910106658936,
+      "n": "联环药业",
+      "p": 16600,
+      "zdp": 10.006627082824707,
+      "amount": 745954768,
+      "ltsz": 4738574082.0,
+      "tshare": 4738574115.200001,
+      "hs": 15.986211776733398,
       "lbc": 1,
-      "fbt": 133819,
-      "lbt": 133819,
-      "fund": 32962718,
+      "fbt": 93028,
+      "lbt": 141807,
+      "fund": 8640300,
+      "zbc": 2,
+      "hybk": "化学制药",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "002951",
+      "m": 0,
+      "n": "金时科技",
+      "p": 17170,
+      "zdp": 9.9935941696167,
+      "amount": 104156942,
+      "ltsz": 6887262919.9800005,
+      "tshare": 6920607231.68,
+      "hs": 1.52392578125,
+      "lbc": 1,
+      "fbt": 93106,
+      "lbt": 93554,
+      "fund": 82488114,
+      "zbc": 1,
+      "hybk": "其他电源",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600026",
+      "m": 1,
+      "n": "中远海能",
+      "p": 22620,
+      "zdp": 10.019454956054688,
+      "amount": 870079408,
+      "ltsz": 86590020051.6,
+      "tshare": 123758862489.6,
+      "hs": 1.0106638669967651,
+      "lbc": 1,
+      "fbt": 93129,
+      "lbt": 93129,
+      "fund": 180378779,
       "zbc": 0,
+      "hybk": "航运港口",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600617",
+      "m": 1,
+      "n": "国新能源",
+      "p": 3740,
+      "zdp": 10.0,
+      "amount": 193125212,
+      "ltsz": 6640529656.860001,
+      "tshare": 7215177242.240001,
+      "hs": 2.9471662044525146,
+      "lbc": 1,
+      "fbt": 93137,
+      "lbt": 101128,
+      "fund": 29720658,
+      "zbc": 1,
+      "hybk": "燃气Ⅱ",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600241",
+      "m": 1,
+      "n": "时代万恒",
+      "p": 10690,
+      "zdp": 9.979423522949219,
+      "amount": 326386704,
+      "ltsz": 3146089609.35,
+      "tshare": 3146089577.2799997,
+      "hs": 10.884220123291016,
+      "lbc": 4,
+      "fbt": 93142,
+      "lbt": 93142,
+      "fund": 126269307,
+      "zbc": 0,
+      "hybk": "电池",
+      "zttj": {
+        "days": 4,
+        "ct": 4
+      }
+    },
+    {
+      "c": "300522",
+      "m": 0,
+      "n": "世名科技",
+      "p": 16560,
+      "zdp": 20.0,
+      "amount": 419527376,
+      "ltsz": 4366789912.08,
+      "tshare": 5339796906.24,
+      "hs": 9.902962684631348,
+      "lbc": 1,
+      "fbt": 93351,
+      "lbt": 93424,
+      "fund": 35625395,
+      "zbc": 1,
+      "hybk": "化学制品",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "002733",
+      "m": 0,
+      "n": "雄韬股份",
+      "p": 18890,
+      "zdp": 10.017472267150879,
+      "amount": 304284352,
+      "ltsz": 6967817517.51,
+      "tshare": 7257819687.68,
+      "hs": 4.414939880371094,
+      "lbc": 1,
+      "fbt": 93403,
+      "lbt": 93627,
+      "fund": 107782203,
+      "zbc": 3,
+      "hybk": "电池",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "002866",
+      "m": 0,
+      "n": "传艺科技",
+      "p": 18590,
+      "zdp": 10.0,
+      "amount": 671544944,
+      "ltsz": 3416263739.46,
+      "tshare": 5382218739.04,
+      "hs": 20.56854820251465,
+      "lbc": 3,
+      "fbt": 93506,
+      "lbt": 93818,
+      "fund": 78655925,
+      "zbc": 1,
+      "hybk": "消费电子",
+      "zttj": {
+        "days": 3,
+        "ct": 3
+      }
+    },
+    {
+      "c": "002774",
+      "m": 0,
+      "n": "快意电梯",
+      "p": 19040,
+      "zdp": 9.994222640991211,
+      "amount": 134655120,
+      "ltsz": 5364937642.4,
+      "tshare": 6410537692.16,
+      "hs": 2.5677149295806885,
+      "lbc": 1,
+      "fbt": 93548,
+      "lbt": 93548,
+      "fund": 78545712,
+      "zbc": 0,
+      "hybk": "专用设备",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "603928",
+      "m": 1,
+      "n": "兴业股份",
+      "p": 14380,
+      "zdp": 10.022953033447266,
+      "amount": 363872128,
+      "ltsz": 4899323520.0,
+      "tshare": 4899323520.0,
+      "hs": 7.560290813446045,
+      "lbc": 2,
+      "fbt": 93627,
+      "lbt": 93627,
+      "fund": 76424623,
+      "zbc": 0,
+      "hybk": "塑料",
+      "zttj": {
+        "days": 2,
+        "ct": 2
+      }
+    },
+    {
+      "c": "603863",
+      "m": 1,
+      "n": "松炀资源",
+      "p": 13620,
+      "zdp": 10.016155242919922,
+      "amount": 114433836,
+      "ltsz": 2787333000.0,
+      "tshare": 2787333000.0,
+      "hs": 4.209638595581055,
+      "lbc": 1,
+      "fbt": 93705,
+      "lbt": 93705,
+      "fund": 18711156,
+      "zbc": 0,
+      "hybk": "造纸",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "301697",
+      "m": 0,
+      "n": "贝特利",
+      "p": 31510,
+      "zdp": 19.99238395690918,
+      "amount": 620816464,
+      "ltsz": 1386157481.3400002,
+      "tshare": 8277677000.0,
+      "hs": 46.22500991821289,
+      "lbc": 1,
+      "fbt": 93815,
+      "lbt": 131233,
+      "fund": 27429644,
+      "zbc": 6,
       "hybk": "光伏设备",
       "zttj": {
         "days": 1,
@@ -6152,63 +532,504 @@
       }
     },
     {
-      "c": "603919",
-      "m": 1,
-      "n": "金徽酒",
-      "p": 17400,
-      "zdp": 9.987358093261719,
-      "amount": 215843262,
-      "ltsz": 8826323947.8,
-      "tshare": 8826324000.0,
-      "hs": 2.514328956604004,
-      "lbc": 1,
-      "fbt": 133853,
-      "lbt": 133853,
-      "fund": 18473580,
-      "zbc": 0,
-      "hybk": "白酒Ⅱ",
-      "zttj": {
-        "days": 1,
-        "ct": 1
-      }
-    },
-    {
-      "c": "001266",
+      "c": "002565",
       "m": 0,
-      "n": "宏英智能",
-      "p": 39960,
-      "zdp": 9.991743087768555,
-      "amount": 309229664,
-      "ltsz": 2323579974.12,
-      "tshare": 4141920413.52,
-      "hs": 13.79068660736084,
+      "n": "顺灏股份",
+      "p": 9280,
+      "zdp": 9.952607154846191,
+      "amount": 1557861792,
+      "ltsz": 9836383996.16,
+      "tshare": 9836697251.84,
+      "hs": 16.09402084350586,
       "lbc": 1,
-      "fbt": 135945,
-      "lbt": 135945,
-      "fund": 38363198,
-      "zbc": 0,
-      "hybk": "自动化设",
+      "fbt": 94024,
+      "lbt": 105245,
+      "fund": 38095875,
+      "zbc": 3,
+      "hybk": "包装印刷",
       "zttj": {
         "days": 1,
         "ct": 1
       }
     },
     {
-      "c": "600131",
+      "c": "603137",
       "m": 1,
-      "n": "国网信通",
-      "p": 15390,
-      "zdp": 10.007147789001465,
-      "amount": 401873344,
-      "ltsz": 18404980243.11,
-      "tshare": 18421609368.96,
-      "hs": 2.250856876373291,
+      "n": "恒尚节能",
+      "p": 19560,
+      "zdp": 10.011248588562012,
+      "amount": 139451524,
+      "ltsz": 3578176013.04,
+      "tshare": 3578176013.04,
+      "hs": 3.990931987762451,
       "lbc": 1,
-      "fbt": 140849,
-      "lbt": 140849,
-      "fund": 26475540,
+      "fbt": 94045,
+      "lbt": 94045,
+      "fund": 61162965,
       "zbc": 0,
-      "hybk": "IT服务Ⅱ",
+      "hybk": "装修装饰",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "605378",
+      "m": 1,
+      "n": "野马电池",
+      "p": 17270,
+      "zdp": 10.0,
+      "amount": 271600144,
+      "ltsz": 4513452328.0,
+      "tshare": 4513452328.0,
+      "hs": 6.167089462280273,
+      "lbc": 1,
+      "fbt": 94115,
+      "lbt": 95321,
+      "fund": 17551846,
+      "zbc": 4,
+      "hybk": "电池",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "002805",
+      "m": 0,
+      "n": "丰元股份",
+      "p": 17670,
+      "zdp": 10.024907112121582,
+      "amount": 424878096,
+      "ltsz": 4926679921.56,
+      "tshare": 4948704587.040001,
+      "hs": 8.810263633728027,
+      "lbc": 1,
+      "fbt": 94118,
+      "lbt": 95509,
+      "fund": 64396901,
+      "zbc": 1,
+      "hybk": "电池",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "605298",
+      "m": 1,
+      "n": "必得科技",
+      "p": 44970,
+      "zdp": 10.004892349243164,
+      "amount": 38108927,
+      "ltsz": 8375707470.0,
+      "tshare": 8447614500.0,
+      "hs": 0.4640587270259857,
+      "lbc": 1,
+      "fbt": 94333,
+      "lbt": 94333,
+      "fund": 82676715,
+      "zbc": 0,
+      "hybk": "轨交设备",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "601975",
+      "m": 1,
+      "n": "招商南油",
+      "p": 4970,
+      "zdp": 9.955751419067383,
+      "amount": 1466802816,
+      "ltsz": 23261313049.66,
+      "tshare": 23261312542.719997,
+      "hs": 6.351592063903809,
+      "lbc": 1,
+      "fbt": 94401,
+      "lbt": 143928,
+      "fund": 27909581,
+      "zbc": 15,
+      "hybk": "航运港口",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "002869",
+      "m": 0,
+      "n": "金溢科技",
+      "p": 19140,
+      "zdp": 10.0,
+      "amount": 167174633,
+      "ltsz": 3032834040.06,
+      "tshare": 3386152927.7400002,
+      "hs": 5.591204643249512,
+      "lbc": 1,
+      "fbt": 94457,
+      "lbt": 94515,
+      "fund": 43839213,
+      "zbc": 1,
+      "hybk": "计算机设",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "001300",
+      "m": 0,
+      "n": "三柏硕",
+      "p": 13510,
+      "zdp": 10.016286849975586,
+      "amount": 113204255,
+      "ltsz": 3293412598.14,
+      "tshare": 3293412598.14,
+      "hs": 3.5171234607696533,
+      "lbc": 1,
+      "fbt": 94530,
+      "lbt": 94530,
+      "fund": 195062784,
+      "zbc": 0,
+      "hybk": "文娱用品",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600408",
+      "m": 1,
+      "n": "安泰集团",
+      "p": 3440,
+      "zdp": 9.904153823852539,
+      "amount": 217813853,
+      "ltsz": 3463392000.0,
+      "tshare": 3463392000.0,
+      "hs": 6.4255781173706055,
+      "lbc": 1,
+      "fbt": 94607,
+      "lbt": 94607,
+      "fund": 20030432,
+      "zbc": 0,
+      "hybk": "焦炭Ⅱ",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600722",
+      "m": 1,
+      "n": "金牛化工",
+      "p": 16190,
+      "zdp": 9.98641300201416,
+      "amount": 1317375296,
+      "ltsz": 11014375554.44,
+      "tshare": 11014375619.2,
+      "hs": 12.120802879333496,
+      "lbc": 1,
+      "fbt": 94629,
+      "lbt": 135202,
+      "fund": 49257977,
+      "zbc": 1,
+      "hybk": "化学原料",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "601956",
+      "m": 1,
+      "n": "东贝集团",
+      "p": 5520,
+      "zdp": 9.960159301757812,
+      "amount": 65750575,
+      "ltsz": 3431323576.7999997,
+      "tshare": 3431323587.8399997,
+      "hs": 1.948075771331787,
+      "lbc": 1,
+      "fbt": 94937,
+      "lbt": 94937,
+      "fund": 33386825,
+      "zbc": 0,
+      "hybk": "家电零部",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "603073",
+      "m": 1,
+      "n": "彩蝶实业",
+      "p": 22970,
+      "zdp": 10.009578704833984,
+      "amount": 478817024,
+      "ltsz": 2664520000.0,
+      "tshare": 2664520000.0,
+      "hs": 18.625720977783203,
+      "lbc": 1,
+      "fbt": 95902,
+      "lbt": 145511,
+      "fund": 23641114,
+      "zbc": 3,
+      "hybk": "化学纤维",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "001336",
+      "m": 0,
+      "n": "楚环科技",
+      "p": 20650,
+      "zdp": 10.015983581542969,
+      "amount": 124843843,
+      "ltsz": 1327767390.9499998,
+      "tshare": 2157626607.5,
+      "hs": 9.520235061645508,
+      "lbc": 1,
+      "fbt": 100036,
+      "lbt": 100036,
+      "fund": 22864506,
+      "zbc": 0,
+      "hybk": "环保设备",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "603200",
+      "m": 1,
+      "n": "上海洗霸",
+      "p": 49210,
+      "zdp": 9.991059303283691,
+      "amount": 1534273456,
+      "ltsz": 8635375868.630001,
+      "tshare": 8635375868.630001,
+      "hs": 18.3226261138916,
+      "lbc": 3,
+      "fbt": 100556,
+      "lbt": 144511,
+      "fund": 14329952,
+      "zbc": 7,
+      "hybk": "环境治理",
+      "zttj": {
+        "days": 3,
+        "ct": 3
+      }
+    },
+    {
+      "c": "920627",
+      "m": 0,
+      "n": "力王股份",
+      "p": 17830,
+      "zdp": 29.956268310546875,
+      "amount": 213939187,
+      "ltsz": 875408424.9999999,
+      "tshare": 1684043499.9999998,
+      "hs": 25.690019607543945,
+      "lbc": 1,
+      "fbt": 100644,
+      "lbt": 141932,
+      "fund": 5563512,
+      "zbc": 3,
+      "hybk": "电池",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600310",
+      "m": 1,
+      "n": "广西能源",
+      "p": 4970,
+      "zdp": 9.955751419067383,
+      "amount": 400542608,
+      "ltsz": 7284582288.339999,
+      "tshare": 7284582278.4,
+      "hs": 5.652745723724365,
+      "lbc": 1,
+      "fbt": 101731,
+      "lbt": 101731,
+      "fund": 51693312,
+      "zbc": 0,
+      "hybk": "电力",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "600400",
+      "m": 1,
+      "n": "红豆股份",
+      "p": 3620,
+      "zdp": 10.030394554138184,
+      "amount": 391041920,
+      "ltsz": 8294766104.24,
+      "tshare": 8294766118.72,
+      "hs": 4.808931827545166,
+      "lbc": 1,
+      "fbt": 103839,
+      "lbt": 142257,
+      "fund": 7340274,
+      "zbc": 5,
+      "hybk": "服装家纺",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "000869",
+      "m": 0,
+      "n": "张  裕Ａ",
+      "p": 18760,
+      "zdp": 10.029325485229492,
+      "amount": 140803249,
+      "ltsz": 8536843431.200001,
+      "tshare": 12067935201.28,
+      "hs": 1.6902669668197632,
+      "lbc": 1,
+      "fbt": 104300,
+      "lbt": 104300,
+      "fund": 19521074,
+      "zbc": 0,
+      "hybk": "非白酒",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "300530",
+      "m": 0,
+      "n": "领湃科技",
+      "p": 24080,
+      "zdp": 19.980070114135742,
+      "amount": 400319984,
+      "ltsz": 4140588604.3199997,
+      "tshare": 4140588604.3199997,
+      "hs": 10.308650016784668,
+      "lbc": 1,
+      "fbt": 110015,
+      "lbt": 142500,
+      "fund": 34157480,
+      "zbc": 1,
+      "hybk": "电池",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "688196",
+      "m": 1,
+      "n": "卓越新能",
+      "p": 36120,
+      "zdp": 20.0,
+      "amount": 217545128,
+      "ltsz": 4594131515.4,
+      "tshare": 4594131515.4,
+      "hs": 5.031372547149658,
+      "lbc": 1,
+      "fbt": 110046,
+      "lbt": 110046,
+      "fund": 29655350,
+      "zbc": 0,
+      "hybk": "化学制品",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "603788",
+      "m": 1,
+      "n": "宁波高发",
+      "p": 15000,
+      "zdp": 9.970674514770508,
+      "amount": 161968396,
+      "ltsz": 3345976020.0,
+      "tshare": 3345976020.0,
+      "hs": 4.908871650695801,
+      "lbc": 1,
+      "fbt": 130432,
+      "lbt": 140644,
+      "fund": 19959900,
+      "zbc": 4,
+      "hybk": "汽车零部",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "603906",
+      "m": 1,
+      "n": "龙蟠科技",
+      "p": 20940,
+      "zdp": 9.978991508483887,
+      "amount": 1705973712,
+      "ltsz": 11789146772.820002,
+      "tshare": 16565883269.76,
+      "hs": 14.886748313903809,
+      "lbc": 2,
+      "fbt": 131309,
+      "lbt": 143542,
+      "fund": 12226154,
+      "zbc": 8,
+      "hybk": "电池",
+      "zttj": {
+        "days": 2,
+        "ct": 2
+      }
+    },
+    {
+      "c": "002702",
+      "m": 0,
+      "n": "海欣食品",
+      "p": 5920,
+      "zdp": 10.037175178527832,
+      "amount": 371309040,
+      "ltsz": 2715763000.0,
+      "tshare": 3290099200.0,
+      "hs": 14.392437934875488,
+      "lbc": 1,
+      "fbt": 133106,
+      "lbt": 133106,
+      "fund": 71758688,
+      "zbc": 0,
+      "hybk": "食品加工",
+      "zttj": {
+        "days": 1,
+        "ct": 1
+      }
+    },
+    {
+      "c": "002490",
+      "m": 0,
+      "n": "山东墨龙",
+      "p": 7600,
+      "zdp": 9.985527992248535,
+      "amount": 499360192,
+      "ltsz": 4117087200.0,
+      "tshare": 6514282240.0,
+      "hs": 12.496708869934082,
+      "lbc": 1,
+      "fbt": 142730,
+      "lbt": 142730,
+      "fund": 85658080,
+      "zbc": 0,
+      "hybk": "专用设备",
       "zttj": {
         "days": 1,
         "ct": 1
@@ -6217,208 +1038,82 @@
   ],
   "zb_pool": [
     {
-      "c": "002262",
+      "c": "000710",
       "m": 0,
-      "n": "恩华药业",
-      "p": 22730,
-      "ztp": 23650,
-      "zdp": 5.720930099487305,
-      "amount": 670320320,
-      "ltsz": 20088235412.65,
-      "tshare": 23024840467.52,
-      "hs": 3.2964255809783936,
+      "n": "贝瑞基因",
+      "p": 10270,
+      "ztp": 11960,
+      "zdp": -5.519779205322266,
+      "amount": 965448624,
+      "ltsz": 3445865966.66,
+      "tshare": 3630665517.44,
+      "hs": 26.117753982543945,
       "fbt": 92500,
       "zbc": 1,
-      "zf": 5.581395149230957,
-      "zs": 0.0,
-      "zttj": {
-        "days": 0,
-        "ct": 0
-      },
-      "hybk": "化学制药"
-    },
-    {
-      "c": "002799",
-      "m": 0,
-      "n": "环球印务",
-      "p": 7320,
-      "ztp": 8310,
-      "zdp": -3.0463576316833496,
-      "amount": 428972752,
-      "ltsz": 2342662056.0,
-      "tshare": 2342692800.0,
-      "hs": 17.42947006225586,
-      "fbt": 92500,
-      "zbc": 1,
-      "zf": 15.761590003967285,
+      "zf": 16.467342376708984,
       "zs": 0.0,
       "zttj": {
         "days": 2,
         "ct": 1
       },
-      "hybk": "包装印刷"
+      "hybk": "医疗服务"
     },
     {
-      "c": "603400",
-      "m": 1,
-      "n": "华之杰",
-      "p": 53000,
-      "ztp": 60140,
-      "zdp": -3.054691791534424,
-      "amount": 603957408,
-      "ltsz": 1920193975.0,
-      "tshare": 6880993975.0,
-      "hs": 29.357025146484375,
-      "fbt": 92502,
-      "zbc": 1,
-      "zf": 13.974757194519043,
-      "zs": 0.0,
-      "zttj": {
-        "days": 2,
-        "ct": 1
-      },
-      "hybk": "通用设备"
-    },
-    {
-      "c": "600719",
-      "m": 1,
-      "n": "大连热电",
-      "p": 8720,
-      "ztp": 9000,
-      "zdp": 6.601467132568359,
-      "amount": 585548800,
-      "ltsz": 3528108512.0000005,
-      "tshare": 3528108512.0000005,
-      "hs": 16.49753189086914,
-      "fbt": 93941,
-      "zbc": 4,
-      "zf": 10.39119815826416,
-      "zs": 0.0,
-      "zttj": {
-        "days": 0,
-        "ct": 0
-      },
-      "hybk": "电力"
-    },
-    {
-      "c": "002513",
+      "c": "002030",
       "m": 0,
-      "n": "蓝丰生化",
-      "p": 5860,
-      "ztp": 6020,
-      "zdp": 7.129798889160156,
-      "amount": 282455552,
-      "ltsz": 1729175843.72,
-      "tshare": 2200980746.2400002,
-      "hs": 16.29624366760254,
-      "fbt": 94342,
-      "zbc": 3,
-      "zf": 9.689213752746582,
+      "n": "达安基因",
+      "p": 5960,
+      "ztp": 6330,
+      "zdp": 3.6521739959716797,
+      "amount": 563622160,
+      "ltsz": 8364538350.72,
+      "tshare": 8364538350.72,
+      "hs": 6.682466506958008,
+      "fbt": 92500,
+      "zbc": 1,
+      "zf": 9.217391014099121,
       "zs": 0.0,
       "zttj": {
         "days": 0,
         "ct": 0
       },
-      "hybk": "农化制品"
+      "hybk": "医疗器械"
     },
     {
-      "c": "002273",
+      "c": "002316",
       "m": 0,
-      "n": "水晶光电",
-      "p": 24400,
-      "ztp": 25860,
-      "zdp": 3.78562331199646,
-      "amount": 2182442720,
-      "ltsz": 33332385598.8,
-      "tshare": 33931426265.6,
-      "hs": 6.399158000946045,
-      "fbt": 95145,
-      "zbc": 1,
-      "zf": 8.67715835571289,
-      "zs": 0.0,
-      "zttj": {
-        "days": 0,
-        "ct": 0
-      },
-      "hybk": "光学光电"
-    },
-    {
-      "c": "603396",
-      "m": 1,
-      "n": "金辰股份",
-      "p": 33500,
-      "ztp": 38810,
-      "zdp": -5.045351505279541,
-      "amount": 1171989600,
-      "ltsz": 4640670513.0,
-      "tshare": 4640670513.0,
-      "hs": 23.569185256958008,
-      "fbt": 95326,
-      "zbc": 1,
-      "zf": 15.334467887878418,
-      "zs": 0.0,
-      "zttj": {
-        "days": 5,
-        "ct": 3
-      },
-      "hybk": "光伏设备"
-    },
-    {
-      "c": "603982",
-      "m": 1,
-      "n": "泉峰汽车",
-      "p": 6770,
-      "ztp": 7130,
-      "zdp": 4.475308418273926,
-      "amount": 237141341,
-      "ltsz": 2298777519.96,
-      "tshare": 2471923275.8399997,
-      "hs": 10.080479621887207,
-      "fbt": 100843,
+      "n": "亚联发展",
+      "p": 4980,
+      "ztp": 5450,
+      "zdp": 0.6060605645179749,
+      "amount": 652297536,
+      "ltsz": 1696860300.0000002,
+      "tshare": 1957737600.0000002,
+      "hs": 37.19881820678711,
+      "fbt": 92500,
       "zbc": 2,
-      "zf": 11.265432357788086,
+      "zf": 16.363636016845703,
       "zs": 0.0,
       "zttj": {
-        "days": 0,
-        "ct": 0
+        "days": 2,
+        "ct": 1
       },
-      "hybk": "汽车零部"
+      "hybk": "综合Ⅱ"
     },
     {
-      "c": "600418",
-      "m": 1,
-      "n": "江淮汽车",
-      "p": 27470,
-      "ztp": 28640,
-      "zdp": 5.491551399230957,
-      "amount": 7492598016,
-      "ltsz": 61922275016.649994,
-      "tshare": 61922274934.24,
-      "hs": 12.188248634338379,
-      "fbt": 101134,
+      "c": "300683",
+      "m": 0,
+      "n": "海特生物",
+      "p": 27250,
+      "ztp": 30650,
+      "zdp": 6.695380210876465,
+      "amount": 696012864,
+      "ltsz": 3329939209.0,
+      "tshare": 3566872154.75,
+      "hs": 19.836292266845703,
+      "fbt": 92500,
       "zbc": 1,
-      "zf": 14.132104873657227,
-      "zs": 0.0,
-      "zttj": {
-        "days": 6,
-        "ct": 3
-      },
-      "hybk": "商用车"
-    },
-    {
-      "c": "688265",
-      "m": 1,
-      "n": "南模生物",
-      "p": 64980,
-      "ztp": 65050,
-      "zdp": 19.867183685302734,
-      "amount": 412269920,
-      "ltsz": 5066069074.740001,
-      "tshare": 5066069074.740001,
-      "hs": 8.608298301696777,
-      "fbt": 104529,
-      "zbc": 1,
-      "zf": 20.38369369506836,
+      "zf": 14.682849884033203,
       "zs": 0.0,
       "zttj": {
         "days": 0,
@@ -6427,204 +1122,749 @@
       "hybk": "医疗服务"
     },
     {
-      "c": "002043",
-      "m": 0,
-      "n": "兔 宝 宝",
-      "p": 12020,
-      "ztp": 12510,
-      "zdp": 5.716798305511475,
-      "amount": 458635712,
-      "ltsz": 9689388975.44,
-      "tshare": 9973648849.6,
-      "hs": 4.7455878257751465,
-      "fbt": 133803,
-      "zbc": 3,
-      "zf": 14.42392349243164,
+      "c": "603739",
+      "m": 1,
+      "n": "蔚蓝生物",
+      "p": 13710,
+      "ztp": 15440,
+      "zdp": -2.3504273891448975,
+      "amount": 467364800,
+      "ltsz": 3469025752.86,
+      "tshare": 3469025752.86,
+      "hs": 12.581011772155762,
+      "fbt": 92501,
+      "zbc": 1,
+      "zf": 13.105413436889648,
       "zs": 0.0,
       "zttj": {
-        "days": 0,
-        "ct": 0
+        "days": 2,
+        "ct": 1
       },
-      "hybk": "装修建材"
+      "hybk": "化学制品"
     },
     {
-      "c": "000668",
+      "c": "002923",
       "m": 0,
-      "n": "荣丰控股",
-      "p": 18690,
-      "ztp": 18700,
-      "zdp": 9.941176414489746,
-      "amount": 145724173,
-      "ltsz": 2744474924.1000004,
-      "tshare": 2808930734.61,
-      "hs": 5.649410247802734,
-      "fbt": 145015,
+      "n": "润都股份",
+      "p": 11500,
+      "ztp": 12130,
+      "zdp": 4.261106491088867,
+      "amount": 473545360,
+      "ltsz": 2967736954.5,
+      "tshare": 3851272720.0,
+      "hs": 15.652887344360352,
+      "fbt": 93000,
       "zbc": 1,
-      "zf": 12.352941513061523,
+      "zf": 9.519492149353027,
       "zs": 0.0,
       "zttj": {
         "days": 0,
         "ct": 0
       },
+      "hybk": "化学制药"
+    },
+    {
+      "c": "002454",
+      "m": 0,
+      "n": "松芝股份",
+      "p": 5700,
+      "ztp": 6170,
+      "zdp": 1.6042779684066772,
+      "amount": 448118224,
+      "ltsz": 5000916865.2,
+      "tshare": 5010719976.0,
+      "hs": 8.770495414733887,
+      "fbt": 93015,
+      "zbc": 1,
+      "zf": 11.0516939163208,
+      "zs": 0.0,
+      "zttj": {
+        "days": 2,
+        "ct": 1
+      },
+      "hybk": "汽车零部"
+    },
+    {
+      "c": "601208",
+      "m": 1,
+      "n": "东材科技",
+      "p": 50920,
+      "ztp": 53040,
+      "zdp": 5.59933614730835,
+      "amount": 5794652416,
+      "ltsz": 51438515457.560005,
+      "tshare": 51438515508.48,
+      "hs": 11.004534721374512,
+      "fbt": 93057,
+      "zbc": 4,
+      "zf": 6.988801002502441,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "塑料"
+    },
+    {
+      "c": "000011",
+      "m": 0,
+      "n": "深物业A",
+      "p": 12120,
+      "ztp": 13460,
+      "zdp": -0.9803922176361084,
+      "amount": 1513302208,
+      "ltsz": 6380883581.16,
+      "tshare": 7223266546.559999,
+      "hs": 22.1230525970459,
+      "fbt": 93103,
+      "zbc": 7,
+      "zf": 10.947712898254395,
+      "zs": 0.0,
+      "zttj": {
+        "days": 4,
+        "ct": 3
+      },
       "hybk": "房地产开"
+    },
+    {
+      "c": "603020",
+      "m": 1,
+      "n": "爱普股份",
+      "p": 12750,
+      "ztp": 13730,
+      "zdp": 2.163461685180664,
+      "amount": 433055984,
+      "ltsz": 4789381618.5,
+      "tshare": 4789381644.0,
+      "hs": 8.658031463623047,
+      "fbt": 93256,
+      "zbc": 4,
+      "zf": 8.333333969116211,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "化学制品"
+    },
+    {
+      "c": "605177",
+      "m": 1,
+      "n": "东亚药业",
+      "p": 25720,
+      "ztp": 26690,
+      "zdp": 6.018136978149414,
+      "amount": 347291152,
+      "ltsz": 2923141296.92,
+      "tshare": 2950236108.08,
+      "hs": 11.683160781860352,
+      "fbt": 93513,
+      "zbc": 3,
+      "zf": 9.851607322692871,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "化学制药"
+    },
+    {
+      "c": "000523",
+      "m": 0,
+      "n": "红棉股份",
+      "p": 3500,
+      "ztp": 3630,
+      "zdp": 6.060606002807617,
+      "amount": 1033652240,
+      "ltsz": 6281863189.0,
+      "tshare": 6424139624.0,
+      "hs": 16.208967208862305,
+      "fbt": 93521,
+      "zbc": 2,
+      "zf": 6.060606002807617,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "综合Ⅱ"
+    },
+    {
+      "c": "605069",
+      "m": 1,
+      "n": "正和生态",
+      "p": 12690,
+      "ztp": 13050,
+      "zdp": 6.998313903808594,
+      "amount": 288052528,
+      "ltsz": 2686444802.8199997,
+      "tshare": 2686444802.8199997,
+      "hs": 10.699442863464355,
+      "fbt": 93758,
+      "zbc": 1,
+      "zf": 11.888701438903809,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "环境治理"
+    },
+    {
+      "c": "601872",
+      "m": 1,
+      "n": "招商轮船",
+      "p": 22030,
+      "ztp": 22170,
+      "zdp": 9.330024719238281,
+      "amount": 5013475072,
+      "ltsz": 177882083199.06,
+      "tshare": 177882083066.88,
+      "hs": 2.8185508251190186,
+      "fbt": 93804,
+      "zbc": 36,
+      "zf": 5.062034606933594,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "航运港口"
+    },
+    {
+      "c": "002285",
+      "m": 0,
+      "n": "世联行",
+      "p": 3210,
+      "ztp": 3320,
+      "zdp": 6.291390895843506,
+      "amount": 1140776448,
+      "ltsz": 6352620113.01,
+      "tshare": 6396981218.4,
+      "hs": 17.89992332458496,
+      "fbt": 94215,
+      "zbc": 4,
+      "zf": 15.56291389465332,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "房地产服"
+    },
+    {
+      "c": "603269",
+      "m": 1,
+      "n": "海鸥股份",
+      "p": 24300,
+      "ztp": 25480,
+      "zdp": 4.9222798347473145,
+      "amount": 957203632,
+      "ltsz": 10496275407.0,
+      "tshare": 10496275358.4,
+      "hs": 8.878711700439453,
+      "fbt": 94301,
+      "zbc": 12,
+      "zf": 9.41278076171875,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "通用设备"
+    },
+    {
+      "c": "002669",
+      "m": 0,
+      "n": "康达新材",
+      "p": 14700,
+      "ztp": 15100,
+      "zdp": 7.064821720123291,
+      "amount": 800497968,
+      "ltsz": 4449951660.0,
+      "tshare": 4459980000.0,
+      "hs": 17.849807739257812,
+      "fbt": 94303,
+      "zbc": 2,
+      "zf": 10.560815811157227,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "化学制品"
+    },
+    {
+      "c": "603823",
+      "m": 1,
+      "n": "百合花",
+      "p": 46590,
+      "ztp": 46650,
+      "zdp": 9.856165885925293,
+      "amount": 1796497280,
+      "ltsz": 19398571329.36,
+      "tshare": 19398571702.08,
+      "hs": 9.434840202331543,
+      "fbt": 94418,
+      "zbc": 3,
+      "zf": 10.257014274597168,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "化学制品"
+    },
+    {
+      "c": "603727",
+      "m": 1,
+      "n": "博迈科",
+      "p": 20250,
+      "ztp": 20580,
+      "zdp": 8.230892181396484,
+      "amount": 280781648,
+      "ltsz": 5704815359.25,
+      "tshare": 5704815420.0,
+      "hs": 4.9673333168029785,
+      "fbt": 94639,
+      "zbc": 2,
+      "zf": 9.513628959655762,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "油服工程"
+    },
+    {
+      "c": "601579",
+      "m": 1,
+      "n": "会稽山",
+      "p": 39600,
+      "ztp": 41030,
+      "zdp": 6.166219711303711,
+      "amount": 2347559824,
+      "ltsz": 18986750996.4,
+      "tshare": 18986750956.8,
+      "hs": 12.300105094909668,
+      "fbt": 94719,
+      "zbc": 15,
+      "zf": 13.485254287719727,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "非白酒"
+    },
+    {
+      "c": "603002",
+      "m": 1,
+      "n": "宏昌电子",
+      "p": 18690,
+      "ztp": 19070,
+      "zdp": 7.785467147827148,
+      "amount": 2530765328,
+      "ltsz": 21195927333.210003,
+      "tshare": 21195927389.280003,
+      "hs": 11.905141830444336,
+      "fbt": 94727,
+      "zbc": 11,
+      "zf": 8.477508544921875,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "电子化学"
+    },
+    {
+      "c": "600127",
+      "m": 1,
+      "n": "金健米业",
+      "p": 13800,
+      "ztp": 14450,
+      "zdp": 5.022830963134766,
+      "amount": 3659491232,
+      "ltsz": 8856608408.4,
+      "tshare": 8856608380.800001,
+      "hs": 40.85200119018555,
+      "fbt": 95142,
+      "zbc": 2,
+      "zf": 11.03500747680664,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "农产品加"
+    },
+    {
+      "c": "001317",
+      "m": 0,
+      "n": "三羊马",
+      "p": 66280,
+      "ztp": 68040,
+      "zdp": 7.162489891052246,
+      "amount": 883168464,
+      "ltsz": 5667106826.76,
+      "tshare": 5671301091.440001,
+      "hs": 15.649531364440918,
+      "fbt": 95157,
+      "zbc": 1,
+      "zf": 8.13257884979248,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "铁路公路"
+    },
+    {
+      "c": "002496",
+      "m": 0,
+      "n": "辉丰股份",
+      "p": 2290,
+      "ztp": 2310,
+      "zdp": 9.047618865966797,
+      "amount": 277002064,
+      "ltsz": 2705175818.36,
+      "tshare": 3452380367.2000003,
+      "hs": 10.332254409790039,
+      "fbt": 95327,
+      "zbc": 2,
+      "zf": 10.0,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "农化制品"
+    },
+    {
+      "c": "002580",
+      "m": 0,
+      "n": "圣阳股份",
+      "p": 21360,
+      "ztp": 21470,
+      "zdp": 9.426229476928711,
+      "amount": 2546677488,
+      "ltsz": 9661956768.0,
+      "tshare": 9694641669.119999,
+      "hs": 26.888151168823242,
+      "fbt": 95721,
+      "zbc": 2,
+      "zf": 12.346311569213867,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "电池"
+    },
+    {
+      "c": "002361",
+      "m": 0,
+      "n": "神剑股份",
+      "p": 10100,
+      "ztp": 10540,
+      "zdp": 5.427974700927734,
+      "amount": 1825605392,
+      "ltsz": 8529682138.4,
+      "tshare": 9605453257.6,
+      "hs": 21.129247665405273,
+      "fbt": 100342,
+      "zbc": 1,
+      "zf": 9.916492462158203,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "塑料"
+    },
+    {
+      "c": "300619",
+      "m": 0,
+      "n": "金银河",
+      "p": 28170,
+      "ztp": 28750,
+      "zdp": 17.570951461791992,
+      "amount": 698192832,
+      "ltsz": 5364482003.820001,
+      "tshare": 6372041464.35,
+      "hs": 13.307068824768066,
+      "fbt": 100348,
+      "zbc": 1,
+      "zf": 19.532554626464844,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "电池"
+    },
+    {
+      "c": "002973",
+      "m": 0,
+      "n": "侨银股份",
+      "p": 12460,
+      "ztp": 12750,
+      "zdp": 7.506471157073975,
+      "amount": 178694630,
+      "ltsz": 3957750478.5000005,
+      "tshare": 5091974572.160001,
+      "hs": 4.5070390701293945,
+      "fbt": 100533,
+      "zbc": 1,
+      "zf": 9.1458158493042,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "环境治理"
+    },
+    {
+      "c": "002149",
+      "m": 0,
+      "n": "西部材料",
+      "p": 33620,
+      "ztp": 34100,
+      "zdp": 8.451613426208496,
+      "amount": 2007077248,
+      "ltsz": 16411237348.88,
+      "tshare": 16413763824.64,
+      "hs": 12.262619018554688,
+      "fbt": 102036,
+      "zbc": 9,
+      "zf": 10.064516067504883,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "小金属"
+    },
+    {
+      "c": "002182",
+      "m": 0,
+      "n": "宝武镁业",
+      "p": 11580,
+      "ztp": 12100,
+      "zdp": 5.272727012634277,
+      "amount": 465811216,
+      "ltsz": 10382752288.14,
+      "tshare": 11484946172.16,
+      "hs": 4.458261013031006,
+      "fbt": 102100,
+      "zbc": 1,
+      "zf": 10.454545021057129,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "小金属"
+    },
+    {
+      "c": "603937",
+      "m": 1,
+      "n": "丽岛新材",
+      "p": 13160,
+      "ztp": 13680,
+      "zdp": 5.787781238555908,
+      "amount": 263740771,
+      "ltsz": 2749019614.88,
+      "tshare": 2749018601.56,
+      "hs": 9.681364059448242,
+      "fbt": 132927,
+      "zbc": 1,
+      "zf": 10.852089881896973,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "工业金属"
+    },
+    {
+      "c": "601091",
+      "m": 1,
+      "n": "沈鼓集团",
+      "p": 24200,
+      "ztp": 25470,
+      "zdp": 4.535636901855469,
+      "amount": 1993050416,
+      "ltsz": 5110149004.4,
+      "tshare": 75262062726.4,
+      "hs": 38.81847381591797,
+      "fbt": 134158,
+      "zbc": 1,
+      "zf": 9.805615425109863,
+      "zs": 0.0,
+      "zttj": {
+        "days": 0,
+        "ct": 0
+      },
+      "hybk": "专用设备"
     }
   ],
   "dt_pool": [],
   "hy_counter": {
-    "电池": 3,
+    "电池": 8,
     "小家电": 1,
-    "出版": 2,
-    "基础建设": 1,
-    "饮料乳品": 2,
-    "个护用品": 1,
-    "消费电子": 1,
-    "种植业": 2,
-    "非白酒": 1,
-    "化学原料": 1,
-    "其他电子": 1,
-    "房地产开": 2,
-    "化学制品": 4,
-    "造纸": 1,
-    "综合Ⅱ": 1,
-    "医疗服务": 3,
-    "风电设备": 1,
-    "生物制品": 3,
-    "汽车零部": 4,
-    "电力": 2,
-    "塑料": 1,
     "化学制药": 2,
-    "光学光电": 1,
-    "自动化设": 2,
-    "通用设备": 2,
-    "环境治理": 1,
-    "装修装饰": 1,
-    "房地产服": 1,
-    "一般零售": 1,
+    "出版": 1,
+    "基础建设": 1,
+    "服装家纺": 2,
+    "房地产开": 1,
+    "其他电源": 1,
+    "航运港口": 2,
+    "燃气Ⅱ": 1,
+    "化学制品": 2,
+    "消费电子": 1,
+    "专用设备": 2,
+    "塑料": 1,
+    "造纸": 1,
     "光伏设备": 1,
-    "白酒Ⅱ": 1,
-    "IT服务Ⅱ": 1
+    "包装印刷": 1,
+    "装修装饰": 1,
+    "轨交设备": 1,
+    "计算机设": 1,
+    "文娱用品": 1,
+    "焦炭Ⅱ": 1,
+    "化学原料": 1,
+    "家电零部": 1,
+    "化学纤维": 1,
+    "环保设备": 1,
+    "环境治理": 1,
+    "电力": 1,
+    "非白酒": 1,
+    "汽车零部": 1,
+    "食品加工": 1
   },
   "leaders": [
     {
       "c": "600825",
       "m": 1,
       "n": "新华传媒",
-      "p": 10350,
-      "zdp": 9.989372253417969,
-      "amount": 144750256,
-      "ltsz": 10814589247.5,
-      "tshare": 10814589309.6,
-      "hs": 1.3384720087051392,
-      "lbc": 7,
+      "p": 11390,
+      "zdp": 10.048309326171875,
+      "amount": 64324547,
+      "ltsz": 11901272611.5,
+      "tshare": 11901272679.84,
+      "hs": 0.540484607219696,
+      "lbc": 8,
       "fbt": 92500,
       "lbt": 92500,
-      "fund": 1988381638,
+      "fund": 1775758428,
       "zbc": 0,
       "hybk": "出版",
       "zttj": {
-        "days": 7,
-        "ct": 7
-      }
-    },
-    {
-      "c": "000678",
-      "m": 0,
-      "n": "襄阳轴承",
-      "p": 12890,
-      "zdp": 9.982934951782227,
-      "amount": 1074985696,
-      "ltsz": 5924396063.33,
-      "tshare": 5924395998.88,
-      "hs": 19.650896072387695,
-      "lbc": 4,
-      "fbt": 100300,
-      "lbt": 100300,
-      "fund": 67104051,
-      "zbc": 0,
-      "hybk": "汽车零部",
-      "zttj": {
-        "days": 4,
-        "ct": 4
-      }
-    },
-    {
-      "c": "000011",
-      "m": 0,
-      "n": "深物业A",
-      "p": 12240,
-      "zdp": 9.97304630279541,
-      "amount": 971267920,
-      "ltsz": 6444060646.32,
-      "tshare": 7294784037.12,
-      "hs": 17.071428298950195,
-      "lbc": 3,
-      "fbt": 93145,
-      "lbt": 131124,
-      "fund": 40166967,
-      "zbc": 2,
-      "hybk": "房地产开",
-      "zttj": {
-        "days": 3,
-        "ct": 3
-      }
-    },
-    {
-      "c": "002242",
-      "m": 0,
-      "n": "九阳股份",
-      "p": 12500,
-      "zdp": 10.035211563110352,
-      "amount": 436662832,
-      "ltsz": 9522070312.5,
-      "tshare": 9537712600.0,
-      "hs": 4.589446067810059,
-      "lbc": 3,
-      "fbt": 92500,
-      "lbt": 94930,
-      "fund": 164830000,
-      "zbc": 1,
-      "hybk": "小家电",
-      "zttj": {
-        "days": 3,
-        "ct": 3
-      }
-    },
-    {
-      "c": "301190",
-      "m": 0,
-      "n": "善水科技",
-      "p": 35930,
-      "zdp": 20.00667953491211,
-      "amount": 510373312,
-      "ltsz": 6534014220.0,
-      "tshare": 7711889445.0,
-      "hs": 7.954790115356445,
-      "lbc": 3,
-      "fbt": 93115,
-      "lbt": 93124,
-      "fund": 106419018,
-      "zbc": 1,
-      "hybk": "化学原料",
-      "zttj": {
-        "days": 3,
-        "ct": 3
+        "days": 8,
+        "ct": 8
       }
     },
     {
       "c": "600241",
       "m": 1,
       "n": "时代万恒",
-      "p": 9720,
-      "zdp": 9.954751014709473,
-      "amount": 74661264,
-      "ltsz": 2860616557.8,
-      "tshare": 2860616528.6400003,
-      "hs": 2.609971046447754,
-      "lbc": 3,
+      "p": 10690,
+      "zdp": 9.979423522949219,
+      "amount": 326386704,
+      "ltsz": 3146089609.35,
+      "tshare": 3146089577.2799997,
+      "hs": 10.884220123291016,
+      "lbc": 4,
+      "fbt": 93142,
+      "lbt": 93142,
+      "fund": 126269307,
+      "zbc": 0,
+      "hybk": "电池",
+      "zttj": {
+        "days": 4,
+        "ct": 4
+      }
+    },
+    {
+      "c": "002242",
+      "m": 0,
+      "n": "九阳股份",
+      "p": 13750,
+      "zdp": 10.0,
+      "amount": 151183588,
+      "ltsz": 10474277343.75,
+      "tshare": 10491483860.0,
+      "hs": 1.4433796405792236,
+      "lbc": 4,
       "fbt": 92500,
       "lbt": 92500,
-      "fund": 141936300,
+      "fund": 240453537,
       "zbc": 0,
+      "hybk": "小家电",
+      "zttj": {
+        "days": 4,
+        "ct": 4
+      }
+    },
+    {
+      "c": "603200",
+      "m": 1,
+      "n": "上海洗霸",
+      "p": 49210,
+      "zdp": 9.991059303283691,
+      "amount": 1534273456,
+      "ltsz": 8635375868.630001,
+      "tshare": 8635375868.630001,
+      "hs": 18.3226261138916,
+      "lbc": 3,
+      "fbt": 100556,
+      "lbt": 144511,
+      "fund": 14329952,
+      "zbc": 7,
+      "hybk": "环境治理",
+      "zttj": {
+        "days": 3,
+        "ct": 3
+      }
+    },
+    {
+      "c": "002866",
+      "m": 0,
+      "n": "传艺科技",
+      "p": 18590,
+      "zdp": 10.0,
+      "amount": 671544944,
+      "ltsz": 3416263739.46,
+      "tshare": 5382218739.04,
+      "hs": 20.56854820251465,
+      "lbc": 3,
+      "fbt": 93506,
+      "lbt": 93818,
+      "fund": 78655925,
+      "zbc": 1,
+      "hybk": "消费电子",
+      "zttj": {
+        "days": 3,
+        "ct": 3
+      }
+    },
+    {
+      "c": "002058",
+      "m": 0,
+      "n": "紫竹高科",
+      "p": 22220,
+      "zdp": 10.0,
+      "amount": 104419028,
+      "ltsz": 3185588787.04,
+      "tshare": 3187421937.04,
+      "hs": 3.2953457832336426,
+      "lbc": 3,
+      "fbt": 92500,
+      "lbt": 93042,
+      "fund": 142263550,
+      "zbc": 1,
       "hybk": "电池",
       "zttj": {
         "days": 3,
@@ -6632,42 +1872,42 @@
       }
     },
     {
-      "c": "603200",
+      "c": "605303",
       "m": 1,
-      "n": "上海洗霸",
-      "p": 44740,
-      "zdp": 10.007376670837402,
-      "amount": 1063767248,
-      "ltsz": 7850979808.22,
-      "tshare": 7850979808.22,
-      "hs": 13.873533248901367,
-      "lbc": 2,
-      "fbt": 101116,
-      "lbt": 103755,
-      "fund": 48320229,
-      "zbc": 2,
-      "hybk": "环境治理",
+      "n": "园林股份",
+      "p": 31530,
+      "zdp": 10.013957023620605,
+      "amount": 10140048,
+      "ltsz": 5083815474.24,
+      "tshare": 5083815474.24,
+      "hs": 0.19945743680000305,
+      "lbc": 3,
+      "fbt": 92502,
+      "lbt": 92502,
+      "fund": 150949875,
+      "zbc": 0,
+      "hybk": "基础建设",
       "zttj": {
-        "days": 2,
-        "ct": 2
+        "days": 3,
+        "ct": 3
       }
     },
     {
-      "c": "002866",
-      "m": 0,
-      "n": "传艺科技",
-      "p": 16900,
-      "zdp": 10.026041030883789,
-      "amount": 577077488,
-      "ltsz": 3105694308.6,
-      "tshare": 4892926126.4,
-      "hs": 18.652318954467773,
+      "c": "603906",
+      "m": 1,
+      "n": "龙蟠科技",
+      "p": 20940,
+      "zdp": 9.978991508483887,
+      "amount": 1705973712,
+      "ltsz": 11789146772.820002,
+      "tshare": 16565883269.76,
+      "hs": 14.886748313903809,
       "lbc": 2,
-      "fbt": 93006,
-      "lbt": 93954,
-      "fund": 34927230,
-      "zbc": 2,
-      "hybk": "消费电子",
+      "fbt": 131309,
+      "lbt": 143542,
+      "fund": 12226154,
+      "zbc": 8,
+      "hybk": "电池",
       "zttj": {
         "days": 2,
         "ct": 2
@@ -6675,18 +1915,19 @@
     }
   ],
   "log": [
-    "交易日序列 30 个（腾讯），最新 20260930",
-    "复盘日期 20260930，前一交易日 20260929",
+    "交易日序列 30 个（腾讯），最新 20261008",
+    "复盘日期 20261008，前一交易日 20260930",
     "指数 6 个",
-    "涨停 52 / 炸板 12 / 跌停 9",
-    "昨日(20260929)涨停 57 家",
-    "行业板块 496 个",
-    "概念板块 40 个",
-    "市场广度 涨 2393 / 跌 2730 / 平 167",
-    "板块多周期涨幅：成功 0 / 尝试 10",
+    "涨停 43 / 炸板 32 / 跌停 13",
+    "昨日(20260930)涨停 52 家",
+    "行业板块 0 个",
+    "概念板块 0 个",
+    "市场广度 涨 1654 / 跌 3516 / 平 116",
+    "板块多周期涨幅：成功 0 / 尝试 0",
     "量能序列 6 日"
   ],
   "errors": [
-    "板块分页 2 失败: mirror-exhausted api/qt/clist/get?pn=2&pz=40&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m"
+    "板块分页 1 失败: mirror-exhausted api/qt/clist/get?pn=1&pz=90&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m",
+    "板块分页 1 失败: mirror-exhausted api/qt/clist/get?pn=1&pz=40&po=1&np=1&fltt=2&invt=2&fid=f3&fs=m"
   ]
 }
