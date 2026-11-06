@@ -1,472 +1,472 @@
 {
- "date": "20261105",
- "generated": "2026-11-05 16:43",
+ "date": "20261106",
+ "generated": "2026-11-06 16:10",
  "industry_in": [
   {
-   "name": "电力设备",
-   "pct": 3.79,
-   "mainflow": 6310020864.0,
-   "mainflow_pct": 3.02
+   "name": "公用事业",
+   "pct": 0.55,
+   "mainflow": 959415840.0,
+   "mainflow_pct": 2.54
   },
   {
-   "name": "半导体",
-   "pct": 2.78,
-   "mainflow": 6103750912.0,
-   "mainflow_pct": 2.05
+   "name": "电力",
+   "pct": 0.76,
+   "mainflow": 940243216.0,
+   "mainflow_pct": 2.69
+  },
+  {
+   "name": "银行",
+   "pct": 0.99,
+   "mainflow": 852760576.0,
+   "mainflow_pct": 2.41
+  },
+  {
+   "name": "银行Ⅱ",
+   "pct": 0.99,
+   "mainflow": 852760576.0,
+   "mainflow_pct": 2.41
   },
   {
    "name": "半导体设备",
-   "pct": 4.33,
-   "mainflow": 5432389888.0,
-   "mainflow_pct": 7.71
+   "pct": -2.33,
+   "mainflow": 740315648.0,
+   "mainflow_pct": 1.54
   },
   {
-   "name": "传媒",
-   "pct": 3.86,
-   "mainflow": 3492150016.0,
-   "mainflow_pct": 3.8
+   "name": "水力发电",
+   "pct": 1.46,
+   "mainflow": 633002032.0,
+   "mainflow_pct": 6.97
   },
   {
-   "name": "光伏设备",
-   "pct": 8.45,
-   "mainflow": 3235959808.0,
-   "mainflow_pct": 5.77
+   "name": "国有大型银行Ⅲ",
+   "pct": 1.04,
+   "mainflow": 508727424.0,
+   "mainflow_pct": 3.77
   },
   {
-   "name": "电池",
-   "pct": 3.86,
-   "mainflow": 2643242496.0,
-   "mainflow_pct": 3.1
+   "name": "集成电路制造",
+   "pct": -1.87,
+   "mainflow": 497312448.0,
+   "mainflow_pct": 3.27
   },
   {
-   "name": "半导体材料",
-   "pct": 3.28,
-   "mainflow": 2108764976.0,
-   "mainflow_pct": 5.99
+   "name": "铁路公路",
+   "pct": 0.7,
+   "mainflow": 480785328.0,
+   "mainflow_pct": 8.24
   },
   {
-   "name": "营销代理",
-   "pct": 5.93,
-   "mainflow": 2052126976.0,
-   "mainflow_pct": 9.21
+   "name": "电信运营商",
+   "pct": 2.87,
+   "mainflow": 404769136.0,
+   "mainflow_pct": 11.12
   },
   {
-   "name": "广告营销",
-   "pct": 5.65,
-   "mainflow": 2006990752.0,
-   "mainflow_pct": 8.53
+   "name": "高速公路",
+   "pct": 1.2,
+   "mainflow": 398803848.0,
+   "mainflow_pct": 14.53
   },
   {
-   "name": "有色金属",
-   "pct": 2.58,
-   "mainflow": 1861879040.0,
-   "mainflow_pct": 1.62
+   "name": "城商行Ⅲ",
+   "pct": 1.01,
+   "mainflow": 365281728.0,
+   "mainflow_pct": 4.27
   },
   {
-   "name": "机械设备",
-   "pct": 2.06,
-   "mainflow": 1835360000.0,
-   "mainflow_pct": 1.08
+   "name": "种植业",
+   "pct": 2.72,
+   "mainflow": 323068896.0,
+   "mainflow_pct": 4.07
   },
   {
-   "name": "IT服务Ⅲ",
-   "pct": 3.61,
-   "mainflow": 1675861504.0,
-   "mainflow_pct": 4.02
+   "name": "个护用品",
+   "pct": -1.48,
+   "mainflow": 318561539.0,
+   "mainflow_pct": 17.81
   },
   {
-   "name": "IT服务Ⅱ",
-   "pct": 3.61,
-   "mainflow": 1675861504.0,
-   "mainflow_pct": 4.02
-  },
-  {
-   "name": "锂电池",
-   "pct": 4.14,
-   "mainflow": 1544484352.0,
-   "mainflow_pct": 3.49
-  },
-  {
-   "name": "计算机",
-   "pct": 3.16,
-   "mainflow": 1398633216.0,
-   "mainflow_pct": 1.24
+   "name": "生活用纸",
+   "pct": -1.96,
+   "mainflow": 317392223.0,
+   "mainflow_pct": 20.28
   }
  ],
  "concept_in": [
   {
-   "name": "专精特新",
-   "pct": 2.68,
-   "mainflow": 8047462144.0,
-   "mainflow_pct": 2.14
+   "name": "红利破净股",
+   "pct": 0.29,
+   "mainflow": 986079232.0,
+   "mainflow_pct": 3.18
   },
   {
-   "name": "融资融券",
-   "pct": 2.25,
-   "mainflow": 7350226944.0,
-   "mainflow_pct": 0.39
+   "name": "长期破净",
+   "pct": -0.27,
+   "mainflow": 850620672.0,
+   "mainflow_pct": 1.88
   },
   {
-   "name": "小盘股",
-   "pct": 2.18,
-   "mainflow": 7009949696.0,
-   "mainflow_pct": 1.73
+   "name": "红利股",
+   "pct": 0.19,
+   "mainflow": 790612224.0,
+   "mainflow_pct": 1.59
   },
   {
-   "name": "中证500",
-   "pct": 1.66,
-   "mainflow": 6582695168.0,
-   "mainflow_pct": 1.69
+   "name": "绿色电力",
+   "pct": 0.09,
+   "mainflow": 690572032.0,
+   "mainflow_pct": 1.34
   },
   {
-   "name": "沪股通",
-   "pct": 2.0,
-   "mainflow": 6536761344.0,
-   "mainflow_pct": 0.76
+   "name": "保险重仓",
+   "pct": -0.24,
+   "mainflow": 688141312.0,
+   "mainflow_pct": 1.81
   },
   {
-   "name": "半导体概念",
-   "pct": 2.56,
-   "mainflow": 6492790784.0,
-   "mainflow_pct": 1.31
+   "name": "破净股",
+   "pct": -0.57,
+   "mainflow": 527797504.0,
+   "mainflow_pct": 0.55
   },
   {
-   "name": "中盘股",
-   "pct": 1.85,
-   "mainflow": 6071795712.0,
-   "mainflow_pct": 1.38
+   "name": "虚拟电厂",
+   "pct": -0.62,
+   "mainflow": 457087312.0,
+   "mainflow_pct": 2.09
   },
   {
-   "name": "中芯概念",
-   "pct": 2.89,
-   "mainflow": 5788445696.0,
-   "mainflow_pct": 4.75
+   "name": "低市净率",
+   "pct": -0.66,
+   "mainflow": 368796416.0,
+   "mainflow_pct": 0.93
   },
   {
-   "name": "先进封装",
-   "pct": 2.71,
-   "mainflow": 5690871040.0,
-   "mainflow_pct": 3.3
+   "name": "价值股",
+   "pct": 0.1,
+   "mainflow": 335275584.0,
+   "mainflow_pct": 1.01
   },
   {
-   "name": "破增发价股",
-   "pct": 2.26,
-   "mainflow": 5294274816.0,
-   "mainflow_pct": 1.76
+   "name": "粮食概念",
+   "pct": 1.32,
+   "mainflow": 316968144.0,
+   "mainflow_pct": 2.7
   },
   {
-   "name": "深股通",
-   "pct": 2.3,
-   "mainflow": 4851724288.0,
-   "mainflow_pct": 0.47
+   "name": "抽水蓄能",
+   "pct": -0.53,
+   "mainflow": 289485376.0,
+   "mainflow_pct": 1.5
   },
   {
-   "name": "昨日首板",
-   "pct": 4.94,
-   "mainflow": 4845093120.0,
-   "mainflow_pct": 2.43
+   "name": "中特估",
+   "pct": -0.28,
+   "mainflow": 276251648.0,
+   "mainflow_pct": 0.43
   },
   {
-   "name": "电池技术",
-   "pct": 2.64,
-   "mainflow": 4714066176.0,
-   "mainflow_pct": 1.61
+   "name": "转基因",
+   "pct": 1.54,
+   "mainflow": 276072000.0,
+   "mainflow_pct": 5.45
   },
   {
-   "name": "最近多板",
-   "pct": 3.69,
-   "mainflow": 4594988032.0,
-   "mainflow_pct": 1.79
+   "name": "GDR",
+   "pct": -0.28,
+   "mainflow": 271619216.0,
+   "mainflow_pct": 2.53
   },
   {
-   "name": "百度概念",
-   "pct": 3.31,
-   "mainflow": 4519570688.0,
-   "mainflow_pct": 4.85
+   "name": "农业种植",
+   "pct": 0.31,
+   "mainflow": 250987456.0,
+   "mainflow_pct": 1.54
   }
  ],
  "stock_in": [
   {
-   "code": "002131",
-   "name": "利欧股份",
-   "pct": 10.03,
-   "mainflow": 913422292.0,
-   "mainflow_pct": 42.53
+   "code": "002371",
+   "name": "北方华创",
+   "pct": -0.18,
+   "mainflow": 610484320.0,
+   "mainflow_pct": 7.93
   },
   {
-   "code": "600206",
-   "name": "有研新材",
-   "pct": 10.0,
-   "mainflow": 786719024.0,
-   "mainflow_pct": 22.37
+   "code": "600900",
+   "name": "长江电力",
+   "pct": 2.15,
+   "mainflow": 519178128.0,
+   "mainflow_pct": 10.3
   },
   {
-   "code": "603893",
-   "name": "瑞芯微",
-   "pct": 10.0,
-   "mainflow": 670332896.0,
-   "mainflow_pct": 14.67
+   "code": "601188",
+   "name": "龙江交通",
+   "pct": 10.12,
+   "mainflow": 366267137.0,
+   "mainflow_pct": 34.79
   },
   {
-   "code": "002475",
-   "name": "立讯精密",
-   "pct": 2.73,
-   "mainflow": 441546544.0,
-   "mainflow_pct": 6.42
+   "code": "003006",
+   "name": "百亚股份",
+   "pct": -1.07,
+   "mainflow": 339096958.0,
+   "mainflow_pct": 31.0
   },
   {
-   "code": "002241",
-   "name": "歌尔股份",
-   "pct": 5.33,
-   "mainflow": 390753872.0,
-   "mainflow_pct": 8.55
+   "code": "002300",
+   "name": "太阳电缆",
+   "pct": 3.02,
+   "mainflow": 276348797.0,
+   "mainflow_pct": 19.72
   },
   {
-   "code": "002156",
-   "name": "通富微电",
-   "pct": 6.9,
-   "mainflow": 368368720.0,
-   "mainflow_pct": 5.45
-  },
-  {
-   "code": "002409",
-   "name": "雅克科技",
-   "pct": 7.22,
-   "mainflow": 363444432.0,
-   "mainflow_pct": 12.0
-  },
-  {
-   "code": "002421",
-   "name": "达实智能",
-   "pct": 10.03,
-   "mainflow": 323710985.0,
-   "mainflow_pct": 30.89
-  },
-  {
-   "code": "600988",
-   "name": "赤峰黄金",
-   "pct": 8.8,
-   "mainflow": 317032448.0,
-   "mainflow_pct": 9.0
-  },
-  {
-   "code": "000426",
-   "name": "兴业银锡",
-   "pct": 7.86,
-   "mainflow": 314120080.0,
-   "mainflow_pct": 10.48
+   "code": "600410",
+   "name": "华胜天成",
+   "pct": 5.32,
+   "mainflow": 248141828.0,
+   "mainflow_pct": 15.65
   },
   {
    "code": "002929",
    "name": "润建股份",
    "pct": 10.01,
-   "mainflow": 311717512.0,
-   "mainflow_pct": 28.58
+   "mainflow": 246370448.0,
+   "mainflow_pct": 9.49
   },
   {
-   "code": "002865",
-   "name": "钧达股份",
+   "code": "600371",
+   "name": "万向德农",
+   "pct": 10.04,
+   "mainflow": 221888100.0,
+   "mainflow_pct": 27.57
+  },
+  {
+   "code": "601328",
+   "name": "交通银行",
+   "pct": 1.22,
+   "mainflow": 208795904.0,
+   "mainflow_pct": 11.92
+  },
+  {
+   "code": "601595",
+   "name": "上海电影",
    "pct": 10.0,
-   "mainflow": 292614410.0,
-   "mainflow_pct": 24.95
+   "mainflow": 197704074.0,
+   "mainflow_pct": 26.12
   },
   {
-   "code": "002487",
-   "name": "大金重工",
-   "pct": 7.4,
-   "mainflow": 287391440.0,
-   "mainflow_pct": 11.19
+   "code": "601766",
+   "name": "中国中车",
+   "pct": 2.66,
+   "mainflow": 188438520.0,
+   "mainflow_pct": 11.96
   },
   {
-   "code": "600986",
-   "name": "浙文互联",
-   "pct": 10.07,
-   "mainflow": 276972708.0,
-   "mainflow_pct": 29.15
+   "code": "601988",
+   "name": "中国银行",
+   "pct": 1.18,
+   "mainflow": 176249984.0,
+   "mainflow_pct": 8.19
   },
   {
-   "code": "003006",
-   "name": "百亚股份",
-   "pct": 2.82,
-   "mainflow": 267955280.0,
-   "mainflow_pct": 27.87
+   "code": "600028",
+   "name": "中国石化",
+   "pct": 1.75,
+   "mainflow": 170646547.0,
+   "mainflow_pct": 10.32
   },
   {
-   "code": "002821",
-   "name": "凯莱英",
-   "pct": 8.47,
-   "mainflow": 256201072.0,
-   "mainflow_pct": 11.71
+   "code": "600327",
+   "name": "大东方",
+   "pct": 10.09,
+   "mainflow": 167316980.0,
+   "mainflow_pct": 19.35
   },
   {
-   "code": "603799",
-   "name": "华友钴业",
-   "pct": 5.61,
-   "mainflow": 251790560.0,
-   "mainflow_pct": 9.36
+   "code": "600641",
+   "name": "先导基电",
+   "pct": 1.23,
+   "mainflow": 166630464.0,
+   "mainflow_pct": 3.17
   },
   {
-   "code": "002086",
-   "name": "东方海洋",
-   "pct": 10.06,
-   "mainflow": 251518336.0,
-   "mainflow_pct": 8.62
+   "code": "002149",
+   "name": "西部材料",
+   "pct": 3.54,
+   "mainflow": 166162506.0,
+   "mainflow_pct": 7.35
   },
   {
-   "code": "002709",
-   "name": "天赐材料",
-   "pct": 5.45,
-   "mainflow": 245517385.0,
-   "mainflow_pct": 8.25
+   "code": "600941",
+   "name": "中国移动",
+   "pct": 3.24,
+   "mainflow": 159227869.0,
+   "mainflow_pct": 8.84
   },
   {
-   "code": "002506",
-   "name": "协鑫集成",
-   "pct": 9.96,
-   "mainflow": 239173067.0,
-   "mainflow_pct": 46.71
+   "code": "603366",
+   "name": "日出东方",
+   "pct": 10.04,
+   "mainflow": 155602483.0,
+   "mainflow_pct": 31.96
+  },
+  {
+   "code": "601728",
+   "name": "中国电信",
+   "pct": 4.22,
+   "mainflow": 151331161.0,
+   "mainflow_pct": 13.13
+  },
+  {
+   "code": "600089",
+   "name": "特变电工",
+   "pct": 2.22,
+   "mainflow": 147440047.0,
+   "mainflow_pct": 6.14
   }
  ],
  "stock_out": [
   {
    "code": "002384",
    "name": "东山精密",
-   "pct": -5.54,
-   "mainflow": -1654916016.0,
-   "mainflow_pct": -10.37
-  },
-  {
-   "code": "002463",
-   "name": "沪电股份",
-   "pct": -5.76,
-   "mainflow": -1142568576.0,
-   "mainflow_pct": -13.42
+   "pct": -10.0,
+   "mainflow": -1669024336.0,
+   "mainflow_pct": -13.57
   },
   {
    "code": "603986",
    "name": "兆易创新",
-   "pct": -3.03,
-   "mainflow": -1116200912.0,
-   "mainflow_pct": -9.68
-  },
-  {
-   "code": "002428",
-   "name": "云南锗业",
-   "pct": 4.8,
-   "mainflow": -979151440.0,
-   "mainflow_pct": -10.45
+   "pct": -8.99,
+   "mainflow": -1335772864.0,
+   "mainflow_pct": -13.4
   },
   {
    "code": "601138",
    "name": "工业富联",
-   "pct": -2.12,
-   "mainflow": -782722512.0,
-   "mainflow_pct": -12.16
+   "pct": -8.08,
+   "mainflow": -749863648.0,
+   "mainflow_pct": -12.43
   },
   {
    "code": "600183",
    "name": "生益科技",
-   "pct": -3.83,
-   "mainflow": -776732240.0,
-   "mainflow_pct": -8.97
+   "pct": -9.37,
+   "mainflow": -672526432.0,
+   "mainflow_pct": -9.66
   },
   {
-   "code": "601872",
-   "name": "招商轮船",
-   "pct": -3.83,
-   "mainflow": -494812016.0,
-   "mainflow_pct": -16.58
-  },
-  {
-   "code": "000725",
-   "name": "京东方Ａ",
-   "pct": -0.86,
-   "mainflow": -384862352.0,
-   "mainflow_pct": -8.47
-  },
-  {
-   "code": "601088",
-   "name": "中国神华",
-   "pct": -6.26,
-   "mainflow": -381463487.0,
-   "mainflow_pct": -12.2
-  },
-  {
-   "code": "600188",
-   "name": "兖矿能源",
-   "pct": -6.08,
-   "mainflow": -377302392.0,
-   "mainflow_pct": -24.07
-  },
-  {
-   "code": "600519",
-   "name": "贵州茅台",
-   "pct": 0.38,
-   "mainflow": -370850048.0,
-   "mainflow_pct": -5.49
-  },
-  {
-   "code": "002636",
-   "name": "金安国纪",
-   "pct": 2.28,
-   "mainflow": -355656704.0,
-   "mainflow_pct": -6.97
-  },
-  {
-   "code": "002938",
-   "name": "鹏鼎控股",
-   "pct": -3.56,
-   "mainflow": -287172424.0,
-   "mainflow_pct": -11.05
-  },
-  {
-   "code": "000636",
-   "name": "风华高科",
-   "pct": 0.06,
-   "mainflow": -259635642.0,
-   "mainflow_pct": -8.59
-  },
-  {
-   "code": "002436",
-   "name": "兴森科技",
-   "pct": -0.89,
-   "mainflow": -240998976.0,
-   "mainflow_pct": -6.28
-  },
-  {
-   "code": "600887",
-   "name": "伊利股份",
-   "pct": 1.11,
-   "mainflow": -232241987.0,
-   "mainflow_pct": -9.05
-  },
-  {
-   "code": "603083",
-   "name": "剑桥科技",
-   "pct": -4.22,
-   "mainflow": -231384608.0,
-   "mainflow_pct": -6.79
-  },
-  {
-   "code": "600584",
-   "name": "长电科技",
-   "pct": 3.65,
-   "mainflow": -230671392.0,
-   "mainflow_pct": -3.37
-  },
-  {
-   "code": "600938",
-   "name": "中国海油",
-   "pct": -6.55,
-   "mainflow": -218634448.0,
-   "mainflow_pct": -6.87
+   "code": "002428",
+   "name": "云南锗业",
+   "pct": -8.32,
+   "mainflow": -609265392.0,
+   "mainflow_pct": -11.4
   },
   {
    "code": "600487",
    "name": "亨通光电",
-   "pct": 0.44,
-   "mainflow": -217845088.0,
-   "mainflow_pct": -2.8
+   "pct": -6.43,
+   "mainflow": -524372240.0,
+   "mainflow_pct": -10.19
+  },
+  {
+   "code": "002131",
+   "name": "利欧股份",
+   "pct": -2.96,
+   "mainflow": -511908336.0,
+   "mainflow_pct": -16.69
+  },
+  {
+   "code": "601899",
+   "name": "紫金矿业",
+   "pct": -4.07,
+   "mainflow": -457392064.0,
+   "mainflow_pct": -6.46
+  },
+  {
+   "code": "603259",
+   "name": "药明康德",
+   "pct": -4.83,
+   "mainflow": -412843424.0,
+   "mainflow_pct": -5.92
+  },
+  {
+   "code": "600206",
+   "name": "有研新材",
+   "pct": -0.26,
+   "mainflow": -411089136.0,
+   "mainflow_pct": -8.38
+  },
+  {
+   "code": "002463",
+   "name": "沪电股份",
+   "pct": -9.62,
+   "mainflow": -394905904.0,
+   "mainflow_pct": -6.74
+  },
+  {
+   "code": "001309",
+   "name": "德明利",
+   "pct": -7.39,
+   "mainflow": -385755376.0,
+   "mainflow_pct": -11.96
+  },
+  {
+   "code": "603083",
+   "name": "剑桥科技",
+   "pct": -10.0,
+   "mainflow": -334918080.0,
+   "mainflow_pct": -13.37
+  },
+  {
+   "code": "600519",
+   "name": "贵州茅台",
+   "pct": 0.07,
+   "mainflow": -318894480.0,
+   "mainflow_pct": -5.14
+  },
+  {
+   "code": "600601",
+   "name": "方正科技",
+   "pct": -6.64,
+   "mainflow": -316753316.0,
+   "mainflow_pct": -16.62
+  },
+  {
+   "code": "002281",
+   "name": "光迅科技",
+   "pct": -6.16,
+   "mainflow": -314107233.0,
+   "mainflow_pct": -9.83
+  },
+  {
+   "code": "601869",
+   "name": "长飞光纤",
+   "pct": -8.69,
+   "mainflow": -312713104.0,
+   "mainflow_pct": -10.41
+  },
+  {
+   "code": "600176",
+   "name": "中国巨石",
+   "pct": -5.44,
+   "mainflow": -309974416.0,
+   "mainflow_pct": -7.63
+  },
+  {
+   "code": "603893",
+   "name": "瑞芯微",
+   "pct": -2.36,
+   "mainflow": -308725712.0,
+   "mainflow_pct": -7.74
+  },
+  {
+   "code": "601208",
+   "name": "东材科技",
+   "pct": -4.99,
+   "mainflow": -282100787.0,
+   "mainflow_pct": -14.64
   }
  ]
 }
